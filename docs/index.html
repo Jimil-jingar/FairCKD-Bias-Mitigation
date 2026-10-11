@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FairCKD: Fair Machine Learning for CKD Diagnosis</title>
+<meta name="description" content="FairCKD detects, measures, reduces and explains bias in machine-learning models for automated Chronic Kidney Disease diagnosis. M.Tech Phase-II, PIET, Parul University.">
+<link rel="icon" href="site/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#14213D; --navy-2:#1B2A4A; --ink:#14213D; --muted:#5B6476;
+  --teal:#0F766E; --teal-2:#2BB3A3; --rose:#E0566F;
+  --bg:#F5F7F9; --card:#FFFFFF; --line:#E3E8EE; --soft:#EAF4F2;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Source Sans 3",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--teal)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Source Serif 4",Georgia,serif;line-height:1.15;margin:0}
+h2{font-size:clamp(28px,3.6vw,38px);margin-bottom:14px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);margin-bottom:10px}
+.lead{color:var(--muted);max-width:720px;margin:0 0 32px}
+section{padding:84px 0}
+
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:rgba(20,33,61,.96);backdrop-filter:blur(6px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:700;font-size:19px}
+.brand img{width:26px;height:26px}
+.brand span{color:var(--teal-2)}
+.navlinks{display:flex;gap:22px;align-items:center}
+.navlinks a{color:#C9D2E3;text-decoration:none;font-size:15px;font-weight:500}
+.navlinks a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:10px;font-weight:700;text-decoration:none;font-size:16px;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--teal-2);color:#08262A;box-shadow:0 6px 20px rgba(43,179,163,.35)}
+.btn-ghost{color:#fff;border:1.5px solid rgba(255,255,255,.35)}
+.btn-sm{padding:8px 14px;font-size:14px}
+
+/* hero */
+.hero{background:var(--navy);color:#fff;padding:76px 0 88px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(40px,6vw,66px);letter-spacing:-.01em}
+.hero p{color:#C9D2E3;font-size:19px;max-width:560px;margin:22px 0 30px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.meta{margin-top:30px;font-size:14px;color:#93A0B8;line-height:1.55}
+.gap-card{background:var(--navy-2);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:28px}
+.gap-card .q{color:#C9D2E3;font-size:15px;margin-bottom:22px}
+.row{margin-bottom:20px}
+.row .lbl{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px}
+.row b{font-size:30px;font-family:"Source Serif 4",serif}
+.track{height:12px;border-radius:6px;background:rgba(255,255,255,.1);overflow:hidden}
+.fill{height:100%;border-radius:6px}
+.src{font-size:13px;color:#93A0B8;margin-top:6px}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:-44px;position:relative}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:0 8px 24px rgba(20,33,61,.06)}
+.stat .n{font-family:"Source Serif 4",serif;font-size:38px;font-weight:700;line-height:1}
+.stat .t{color:var(--muted);font-size:14px;margin-top:8px}
+
+/* cards */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+.card h3{font-size:21px;margin-bottom:8px}
+.card p{margin:0;color:var(--muted);font-size:16px}
+.num{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:9px;background:var(--soft);color:var(--teal);font-weight:700;margin-bottom:14px}
+.figure{margin:22px 0 0;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin-top:22px}
+.figure figcaption{color:var(--muted);font-size:14px;margin-top:10px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+
+/* stages */
+.stages{display:grid;grid-template-columns:repeat(9,1fr);gap:10px;margin-top:8px}
+.stage{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--teal);border-radius:10px;padding:14px 12px;font-size:14px}
+.stage.fair{border-top-color:var(--rose)}
+.stage b{display:block;font-size:20px;font-family:"Source Serif 4",serif;color:var(--teal)}
+.stage.fair b{color:var(--rose)}
+.stage span{color:var(--muted);display:block;margin-top:2px;font-size:13px;line-height:1.35}
+.note{font-size:14px;color:var(--muted);margin-top:12px}
+
+/* table */
+.tbl{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:14px}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:15px}
+th,td{padding:13px 16px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:#FAFBFC}
+td.r,th.r{text-align:right;font-variant-numeric:tabular-nums}
+tr:last-child td{border-bottom:none}
+.hl{background:var(--soft);color:var(--teal);font-weight:700}
+.bar{display:inline-block;width:70px;height:6px;border-radius:3px;background:#E3E8EE;vertical-align:middle;margin-right:8px;position:relative;overflow:hidden}
+.bar i{position:absolute;left:0;top:0;bottom:0;background:var(--teal);border-radius:3px}
+
+/* shots */
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.shot{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.shot img{border-bottom:1px solid var(--line);aspect-ratio:16/11;object-fit:cover;object-position:top}
+.shot div{padding:14px 18px}
+.shot b{display:block}
+.shot span{color:var(--muted);font-size:15px}
+
+/* final cta */
+.final{background:var(--navy);color:#fff;text-align:center;border-radius:20px;padding:56px 24px}
+.final p{color:#C9D2E3;max-width:580px;margin:12px auto 26px}
+footer{padding:40px 0 56px;color:var(--muted);font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:28px}
+.disc{font-size:13px;margin-top:6px}
+
+@media (max-width:960px){
+  .hero .wrap{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .grid3{grid-template-columns:1fr}
+  .stages{grid-template-columns:repeat(3,1fr)}
+  .two,.shots{grid-template-columns:1fr}
+  .navlinks a:not(.btn){display:none}
+}
+@media (max-width:520px){
+  .wrap{padding:0 16px}
+  section{padding:60px 0}
+  .hero{padding:52px 0 76px}
+  .stat .n{font-size:30px}
+  .stages{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="site/icon.svg" alt=""><b style="font-weight:700">Fair<span>CKD</span></b></a>
+    <div class="navlinks">
+      <a href="#problem">Problem</a>
+      <a href="#method">Method</a>
+      <a href="#results">Results</a>
+      <a href="#app">App</a>
+      <a href="https://github.com/jimiljingar-dotcom/FairCKD-Bias-Mitigation">Code</a>
+      <a class="btn btn-primary btn-sm" href="https://fairckd.streamlit.app/">Open Live App</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow" style="color:var(--teal-2)">M.Tech Dissertation · Phase-II</div>
+      <h1>Same disease.<br>Unequal detection.</h1>
+      <p>Machine-learning models for chronic kidney disease can look accurate overall while missing far more cases in some patient groups. FairCKD finds these gaps, measures them, reduces them, and explains every prediction.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://fairckd.streamlit.app/">▶ Open Live App</a>
+        <a class="btn btn-ghost" href="https://github.com/jimiljingar-dotcom/FairCKD-Bias-Mitigation">View Source Code</a>
+      </div>
+      <div class="meta">Investigating Bias and Fairness in Machine Learning Models for Automated Chronic Kidney Disease Diagnosis<br>
+        <b style="color:#fff">Jimil Jingar</b> · Guide: Ramizraja Shethwala · Co-guide: Robin Hojiwala<br>
+        Department of AI &amp; Data Science, PIET, Parul University</div>
+    </div>
+    <div class="gap-card">
+      <div class="q">Share of real CKD cases a standard XGBoost model detects</div>
+      <div class="row"><div class="lbl"><span>Adults 60 and older</span><b>85%</b></div>
+        <div class="track"><div class="fill" style="width:85%;background:var(--teal-2)"></div></div></div>
+      <div class="row"><div class="lbl"><span>Adults under 60</span><b>32%</b></div>
+        <div class="track"><div class="fill" style="width:32%;background:var(--rose)"></div></div></div>
+      <div class="src">5,063 US adults (NHANES 2017-18), repeated 5-fold cross-validation</div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="stats">
+    <div class="stat"><div class="n">5,454</div><div class="t">patients analysed (NHANES + UCI)</div></div>
+    <div class="stat"><div class="n">7</div><div class="t">ML models compared</div></div>
+    <div class="stat"><div class="n">5</div><div class="t">fairness metrics measured</div></div>
+    <div class="stat"><div class="n">7</div><div class="t">thesis experiments run</div></div>
+  </div>
+</div>
+
+<section id="problem">
+  <div class="wrap">
+    <div class="eyebrow">The problem</div>
+    <h2>High accuracy can hide unfair errors</h2>
+    <p class="lead">A diagnosis model is usually judged by its overall accuracy. But when we split the results by patient group, every one of the seven models detects CKD far less often in younger adults. A missed case means a patient who does not get early treatment.</p>
+    <figure class="figure">
+      <img src="site/04_sensitivity_by_group.jpg" alt="Bar chart of CKD detection rate by age group for 7 models; older adults are detected far more often than younger adults" loading="lazy">
+      <figcaption>CKD detection rate (sensitivity) for adults 60+ versus under 60, across all seven models. NHANES 2017-18.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="method" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="eyebrow">The method</div>
+    <h2>A nine-stage fairness-aware framework</h2>
+    <p class="lead">A standard pipeline goes from data to prediction. FairCKD adds a fairness layer in the middle that detects bias, measures it and reduces it before a model is used for patients.</p>
+    <div class="stages" style="margin-bottom:0">
+      <div class="stage"><b>1</b>Data<span>UCI, NHANES or your CSV</span></div>
+      <div class="stage"><b>2</b>Preprocess<span>impute and scale on training folds</span></div>
+      <div class="stage"><b>3</b>Features<span>mutual-information ranking</span></div>
+      <div class="stage"><b>4</b>Models<span>7 classifiers</span></div>
+      <div class="stage fair"><b>5</b>Detect<span>error rates per group</span></div>
+      <div class="stage fair"><b>6</b>Measure<span>5 fairness metrics</span></div>
+      <div class="stage fair"><b>7</b>Reduce<span>5 methods + FairCKD-Select</span></div>
+      <div class="stage"><b>8</b>Explain<span>SHAP</span></div>
+      <div class="stage"><b>9</b>Decide<span>patient risk + PDF report</span></div>
+    </div>
+    <p class="note">Stages 5 to 7, in red, are the fairness layer that a standard diagnostic pipeline leaves out.</p>
+
+    <div class="grid3" style="margin-top:36px">
+      <div class="card"><div class="num">1</div><h3>Detect and measure</h3><p>Sensitivity, false-positive rate and precision are compared for each group, then summarised with Demographic Parity, Disparate Impact, Equal Opportunity, Equalized Odds and Predictive Parity.</p></div>
+      <div class="card"><div class="num">2</div><h3>Reduce</h3><p>Reweighing (pre-processing), Exponentiated Gradient (in-processing), Threshold Optimizer (post-processing), and a new hybrid of Reweighing and Threshold Optimizer.</p></div>
+      <div class="card"><div class="num">3</div><h3>FairCKD-Select</h3><p>Inside each training fold, picks the model and mitigation with the smallest fairness gap while keeping balanced accuracy within 3 points of the best model. Evaluated with nested cross-validation.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="results">
+  <div class="wrap">
+    <div class="eyebrow">Results</div>
+    <h2>Fairness gaps shrink, accuracy stays close</h2>
+    <p class="lead">Equalized Odds gap: the largest difference in error rates between patient groups (lower is fairer). FairCKD-Select reduced the gap in all seven experiments.</p>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>Dataset</th><th>Patient groups</th><th>Feature set</th><th class="r">Patients</th><th class="r">Worst gap (7 models)</th><th class="r">FairCKD-Select gap</th><th class="r">Balanced acc.</th></tr></thead>
+        <tbody>
+          <tr><td>NHANES</td><td>Age group</td><td>Routine blood tests</td><td class="r">5,063</td><td class="r">0.564</td><td class="r"><span class="bar"><i style="width:39%"></i></span><b>0.392</b></td><td class="r">0.721</td></tr>
+          <tr><td>NHANES</td><td>Age × Race</td><td>Routine blood tests</td><td class="r">5,063</td><td class="r">0.686</td><td class="r"><span class="bar"><i style="width:48%"></i></span><b>0.484</b></td><td class="r">0.723</td></tr>
+          <tr><td>NHANES</td><td>Age × Sex</td><td>Routine blood tests</td><td class="r">5,063</td><td class="r">0.626</td><td class="r"><span class="bar"><i style="width:43%"></i></span><b>0.425</b></td><td class="r">0.711</td></tr>
+          <tr><td>NHANES</td><td>Race/ethnicity</td><td>Routine blood tests</td><td class="r">5,063</td><td class="r">0.259</td><td class="r"><span class="bar"><i style="width:13%"></i></span><b>0.128</b></td><td class="r">0.719</td></tr>
+          <tr><td>NHANES</td><td>Sex</td><td>Routine blood tests</td><td class="r">5,063</td><td class="r">0.088</td><td class="r"><span class="bar"><i style="width:3%"></i></span><b>0.031</b></td><td class="r">0.727</td></tr>
+          <tr><td>UCI (India)</td><td>Age group</td><td>Full clinical panel</td><td class="r">391</td><td class="r">0.046</td><td class="r"><span class="bar"><i style="width:1.2%"></i></span><b>0.012</b></td><td class="r">0.993</td></tr>
+          <tr><td>UCI (India)</td><td>Age group</td><td>Primary-care screening</td><td class="r">391</td><td class="r">0.138</td><td class="r"><span class="bar"><i style="width:4%"></i></span><b>0.043</b></td><td class="r">0.908</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <figure class="figure">
+      <img src="site/06_mitigation.jpg" alt="Charts comparing fairness gaps and balanced accuracy for each mitigation method" loading="lazy">
+      <figcaption>Effect of each mitigation method on the fairness gap (left, middle) and on balanced accuracy (right). NHANES, age group.</figcaption>
+    </figure>
+    <figure class="figure" style="max-width:860px;margin-left:auto;margin-right:auto">
+      <img src="site/09_shap_summary.jpg" alt="SHAP summary plot showing which features drive CKD predictions" loading="lazy">
+      <figcaption>SHAP explanation: which patient features drive the model's CKD predictions.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="app" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="eyebrow">The web application</div>
+    <h2>Nine pages, from dataset to patient report</h2>
+    <p class="lead">Everything in the thesis can be explored in the browser: choose a dataset and a patient attribute, audit a model, compare mitigation methods, and diagnose a new patient with a downloadable PDF report.</p>
+    <div class="shots">
+      <div class="shot"><img src="site/01_overview_uci.jpg" alt="FairCKD overview page" loading="lazy"><div><b>Overview</b><span>Results of all experiments and the framework at a glance</span></div></div>
+      <div class="shot"><img src="site/04_fairness_audit_nhanes_race.jpg" alt="FairCKD fairness audit page" loading="lazy"><div><b>Fairness audit</b><span>Error rates per group and five fairness metrics</span></div></div>
+      <div class="shot"><img src="site/05_bias_mitigation_nhanes_race.jpg" alt="FairCKD bias mitigation page" loading="lazy"><div><b>Bias mitigation</b><span>Compare methods and get an automatic recommendation</span></div></div>
+      <div class="shot"><img src="site/08_patient_diagnosis_uci.jpg" alt="FairCKD patient diagnosis page" loading="lazy"><div><b>Patient diagnosis</b><span>CKD probability, SHAP explanation and PDF report</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="final">
+      <h2>Try FairCKD yourself</h2>
+      <p>No installation needed. The app opens in your browser with all thesis results already loaded.</p>
+      <div class="cta" style="justify-content:center">
+        <a class="btn btn-primary" href="https://fairckd.streamlit.app/">▶ Open Live App</a>
+        <a class="btn btn-ghost" href="https://github.com/jimiljingar-dotcom/FairCKD-Bias-Mitigation">View Source Code</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><b style="color:var(--ink)">FairCKD</b> · Jimil Jingar · M.Tech, Department of AI &amp; Data Science, PIET, Parul University
+      <div class="disc">Research prototype for academic demonstration. Not a medical device; predictions must be confirmed by a clinician.</div></div>
+    <div>Data: UCI CKD dataset, NHANES 2015-2018 (US CDC)</div>
+  </div>
+</footer>
+
+</body>
+</html>
