@@ -1,5 +1,10 @@
 # FairCKD: Fairness-aware Machine Learning System for Automated CKD Diagnosis
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-fairckd.streamlit.app-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://fairckd.streamlit.app/)
+[![Project Website](https://img.shields.io/badge/Project%20Website-GitHub%20Pages-0F766E?style=for-the-badge&logo=github&logoColor=white)](https://jimiljingar-dotcom.github.io/FairCKD-Bias-Mitigation/)
+
+**▶ Try the app live: https://fairckd.streamlit.app/** (no installation needed)
+
 **M.Tech Dissertation Phase-II implementation**<br>
 *Investigating Bias and Fairness in Machine Learning Models for Automated Chronic Kidney Disease Diagnosis*<br>
 Jimil Jingar · Guide: Ramizraja Shethwala · Co-guide: Robin Hojiwala<br>
