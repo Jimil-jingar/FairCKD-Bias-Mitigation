@@ -1,0 +1,8 @@
+Model,W Accuracy,W Balanced acc.,W EOpp diff,W EOdds diff,W DP diff,W TPR [Hispanic],W TPR [Non-Hispanic Asian],W TPR [Non-Hispanic Black],W TPR [Non-Hispanic White],W TPR [Other/Multi-racial]
+Logistic Regression,0.787,0.731,0.275,0.275,0.106,0.498,0.549,0.636,0.719,0.444
+Decision Tree,0.784,0.694,0.192,0.192,0.098,0.459,0.47,0.512,0.62,0.529
+Random Forest,0.781,0.739,0.186,0.186,0.099,0.564,0.56,0.642,0.73,0.648
+SVM,0.85,0.703,0.184,0.184,0.072,0.357,0.428,0.508,0.542,0.42
+KNN,0.806,0.694,0.142,0.142,0.065,0.451,0.447,0.482,0.582,0.525
+Naive Bayes,0.848,0.715,0.142,0.142,0.084,0.459,0.432,0.528,0.564,0.429
+XGBoost,0.809,0.722,0.174,0.174,0.087,0.517,0.476,0.58,0.647,0.501

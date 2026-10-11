@@ -1,0 +1,21 @@
+,Group,Patients,Observed CKD (%),Mean predicted (%),Calibration-in-the-large (pp),ECE,Brier,Model
+0,60+ Hispanic,372,27.6882,32.099,4.4109,0.0547,0.1468,Logistic Regression
+1,60+ Non-Hispanic Asian,199,24.6231,30.9367,6.3135,0.0813,0.168,Logistic Regression
+2,60+ Non-Hispanic Black,423,41.3712,34.0684,-7.3027,0.073,0.1854,Logistic Regression
+3,60+ Non-Hispanic White,763,36.0419,35.806,-0.2359,0.0248,0.1706,Logistic Regression
+4,60+ Other/Multi-racial,70,34.2857,31.0839,-3.2018,0.0888,0.1886,Logistic Regression
+5,<60 Hispanic,832,9.4952,9.3034,-0.1918,0.0134,0.0795,Logistic Regression
+6,<60 Non-Hispanic Asian,510,9.6078,10.6305,1.0227,0.0385,0.0765,Logistic Regression
+7,<60 Non-Hispanic Black,698,10.8883,10.9806,0.0924,0.0383,0.0888,Logistic Regression
+8,<60 Non-Hispanic White,999,8.6086,9.3454,0.7368,0.0102,0.0729,Logistic Regression
+9,<60 Other/Multi-racial,197,11.6751,9.9154,-1.7597,0.0378,0.0868,Logistic Regression
+10,60+ Hispanic,372,27.6882,30.6679,2.9798,0.0615,0.1508,XGBoost
+11,60+ Non-Hispanic Asian,199,24.6231,27.5114,2.8883,0.0884,0.173,XGBoost
+12,60+ Non-Hispanic Black,423,41.3712,34.065,-7.3061,0.0969,0.184,XGBoost
+13,60+ Non-Hispanic White,763,36.0419,37.0479,1.006,0.0464,0.1753,XGBoost
+14,60+ Other/Multi-racial,70,34.2857,30.7406,-3.5451,0.1158,0.212,XGBoost
+15,<60 Hispanic,832,9.4952,9.4748,-0.0204,0.0256,0.078,XGBoost
+16,<60 Non-Hispanic Asian,510,9.6078,9.2847,-0.3232,0.0234,0.0767,XGBoost
+17,<60 Non-Hispanic Black,698,10.8883,11.1264,0.2381,0.0464,0.0912,XGBoost
+18,<60 Non-Hispanic White,999,8.6086,8.9909,0.3823,0.0158,0.0744,XGBoost
+19,<60 Other/Multi-racial,197,11.6751,9.7663,-1.9089,0.0191,0.0823,XGBoost

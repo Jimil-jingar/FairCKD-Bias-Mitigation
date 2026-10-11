@@ -1,0 +1,11 @@
+,Model,Method,Δ EOdds gap,95% CI (EOdds),p (EOdds),Δ Balanced acc.,95% CI (Bal. acc.),p (Bal. acc.)
+0,Logistic Regression,Unawareness,-0.099,"[-0.213, -0.019]",0.03,-0.008,"[-0.016, 0.000]",0.066
+1,Logistic Regression,Reweighing,-0.314,"[-0.467, -0.185]",0.0,-0.04,"[-0.055, -0.026]",0.0
+2,Logistic Regression,Exp. Gradient,-0.442,"[-0.604, -0.286]",0.0,-0.087,"[-0.106, -0.069]",0.0
+3,Logistic Regression,Threshold Opt.,-0.44,"[-0.625, -0.229]",0.002,-0.104,"[-0.123, -0.086]",0.0
+4,Logistic Regression,RW + TO (hybrid),-0.441,"[-0.618, -0.261]",0.0,-0.111,"[-0.129, -0.093]",0.0
+5,XGBoost,Unawareness,-0.113,"[-0.220, 0.004]",0.06,-0.01,"[-0.022, 0.002]",0.092
+6,XGBoost,Reweighing,-0.318,"[-0.447, -0.174]",0.0,-0.042,"[-0.055, -0.028]",0.0
+7,XGBoost,Exp. Gradient,-0.312,"[-0.443, -0.193]",0.0,-0.045,"[-0.060, -0.030]",0.0
+8,XGBoost,Threshold Opt.,-0.402,"[-0.578, -0.219]",0.0,-0.118,"[-0.135, -0.100]",0.0
+9,XGBoost,RW + TO (hybrid),-0.4,"[-0.583, -0.204]",0.0,-0.121,"[-0.140, -0.103]",0.0

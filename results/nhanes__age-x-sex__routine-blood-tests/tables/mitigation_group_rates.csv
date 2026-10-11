@@ -1,0 +1,13 @@
+Model,Method,TPR [60+ Female],FPR [60+ Female],TPR [60+ Male],FPR [60+ Male],TPR [<60 Female],FPR [<60 Female],TPR [<60 Male],FPR [<60 Male]
+Logistic Regression,Baseline,0.911,0.611,0.878,0.567,0.292,0.095,0.421,0.101
+Logistic Regression,Unawareness (drop sensitive attribute),0.825,0.471,0.835,0.483,0.305,0.097,0.46,0.141
+Logistic Regression,Reweighing (pre-processing),0.764,0.411,0.708,0.333,0.465,0.221,0.569,0.214
+Logistic Regression,Exponentiated Gradient (in-processing),0.657,0.335,0.612,0.263,0.518,0.313,0.581,0.243
+Logistic Regression,Threshold Optimizer (post-processing),0.484,0.253,0.483,0.246,0.449,0.255,0.47,0.262
+Logistic Regression,Reweighing + Threshold Optimizer (hybrid),0.444,0.207,0.449,0.198,0.425,0.214,0.434,0.216
+XGBoost,Baseline,0.839,0.459,0.85,0.495,0.272,0.082,0.396,0.087
+XGBoost,Unawareness (drop sensitive attribute),0.772,0.394,0.803,0.423,0.303,0.104,0.469,0.134
+XGBoost,Reweighing (pre-processing),0.675,0.244,0.692,0.263,0.429,0.206,0.533,0.188
+XGBoost,Exponentiated Gradient (in-processing),0.661,0.225,0.638,0.23,0.361,0.15,0.437,0.127
+XGBoost,Threshold Optimizer (post-processing),0.508,0.287,0.513,0.274,0.512,0.283,0.511,0.284
+XGBoost,Reweighing + Threshold Optimizer (hybrid),0.466,0.235,0.462,0.232,0.466,0.249,0.469,0.243

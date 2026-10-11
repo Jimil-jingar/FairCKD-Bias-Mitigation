@@ -1,0 +1,25 @@
+,Elderly (>=60),Non-elderly (<60),Overall
+Haemoglobin (g/dl),2.0049,2.2201,2.137
+Serum creatinine (mg/dl),1.7171,1.5018,1.5849
+Specific gravity,1.1476,1.0906,1.1126
+Albumin (0-5),0.7348,0.7324,0.7333
+Sodium (mEq/L),0.4357,0.4511,0.4452
+Blood glucose random (mg/dl),0.3961,0.3967,0.3965
+Age (years),0.4723,0.3403,0.3913
+Packed cell volume (%),0.2357,0.2591,0.2501
+RBC count (millions/cmm),0.1677,0.203,0.1893
+Diabetes mellitus,0.2047,0.1477,0.1697
+Blood urea (mg/dl),0.1371,0.1606,0.1515
+Hypertension,0.1485,0.1054,0.1221
+WBC count (cells/cumm),0.0816,0.0928,0.0885
+Blood pressure (mm Hg),0.0354,0.0351,0.0352
+Potassium (mEq/L),0.0184,0.0148,0.0162
+Sugar (0-5),0.0,0.0,0.0
+Pus cell clumps,0.0,0.0,0.0
+Pus cell abnormal,0.0,0.0,0.0
+Red blood cells abnormal,0.0,0.0,0.0
+Bacteria,0.0,0.0,0.0
+Coronary artery disease,0.0,0.0,0.0
+Poor appetite,0.0,0.0,0.0
+Pedal oedema,0.0,0.0,0.0
+Anaemia,0.0,0.0,0.0

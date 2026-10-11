@@ -1,0 +1,18 @@
+,Missing (%),Missing (%) [Elderly (>=60)],Missing (%) [Non-elderly (<60)]
+dbp,4.7,4.3,4.9
+htn,4.4,3.6,4.8
+sbp,4.4,3.6,4.8
+bmi,1.2,1.4,1.1
+hct,0.1,0.1,0.0
+dm,0.1,0.0,0.1
+wbc,0.1,0.1,0.0
+rbc,0.1,0.1,0.0
+potassium,0.1,0.1,0.0
+hemo,0.1,0.1,0.0
+age,0.0,0.0,0.0
+female,0.0,0.0,0.0
+glucose,0.0,0.0,0.1
+bun,0.0,0.0,0.1
+sodium,0.0,0.0,0.0
+albumin_serum,0.0,0.0,0.0
+uric_acid,0.0,0.0,0.1

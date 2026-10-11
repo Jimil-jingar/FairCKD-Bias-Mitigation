@@ -1,0 +1,6 @@
+,Group,Patients,Share (%),CKD cases,CKD prevalence (%),Missing values / patient
+0,60+ Female,896,17.7,308,34.4,0.17
+1,60+ Male,931,18.4,318,34.2,0.1
+2,<60 Female,1731,34.2,173,10.0,0.18
+3,<60 Male,1505,29.7,140,9.3,0.14
+4,All,5063,100.0,939,18.5,0.15
