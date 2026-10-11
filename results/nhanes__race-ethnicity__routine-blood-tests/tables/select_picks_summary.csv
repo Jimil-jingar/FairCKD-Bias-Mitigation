@@ -1,3 +1,4 @@
 ,Model,Method,Times selected
-0,Logistic Regression,Exp. Gradient,8
-1,XGBoost,Exp. Gradient,2
+0,Logistic Regression,Exp. Gradient,3
+1,Logistic Regression,Reject Option,3
+2,XGBoost,Reject Option,4

@@ -94,8 +94,8 @@ def write_pdf(R, path: Path):
                             topMargin=1.5 * cm, bottomMargin=1.5 * cm, title="FairCKD Fairness Audit Report")
     W = A4[0] - 3.2 * cm
     s = [Paragraph("FairCKD: Fairness Audit Report", H1),
-         Paragraph("Investigating Bias and Fairness in Machine Learning Models for Automated CKD Diagnosis<br/>"
-                   "M.Tech Dissertation Phase-II · Jimil Jingar · PIET, Parul University", P),
+         Paragraph("Fairness-aware machine learning for automated chronic kidney disease diagnosis<br/>"
+                   "fairckd.streamlit.app · Built by Jimil Jingar · PIET, Parul University", P),
          Spacer(1, 10), _table(pd.Series(R["config"]).to_frame("Value"), font=8), Spacer(1, 10),
          Paragraph("Key findings", H2)]
     s += [Paragraph("• " + f, P) for f in key_findings(R)]
@@ -154,8 +154,13 @@ def write_pdf(R, path: Path):
         fig("14_external_validation")
     if "representation" in R:
         s += [Paragraph("5. Representation-bias experiment", H2)]; fig("08_representation_bias")
-    s += [PageBreak(), Paragraph("6. Explainability (SHAP)", H2)]
+    s += [PageBreak(), Paragraph("6. Explainability (SHAP and LIME)", H2)]
     fig("10_shap_by_group", W * 0.75); fig("09_shap_summary", W * 0.7)
+    if "lime_shap_agreement" in R:
+        s += [Paragraph("<b>SHAP vs. LIME agreement</b>: for a sample of patients per group, how many of the 5 most "
+                        "important SHAP features LIME also ranks in its top 5 (XGBoost). High overlap means the two "
+                        "explanation methods tell the same story.", P),
+              _table(R["lime_shap_agreement"], font=8), Spacer(1, 6)]
     if "label_bias" in R:
         s += [Paragraph("7. Label bias (eGFR equation)", H2), _table(R["label_bias"].rename(columns={"CKD % (2021 race-free eGFR)": "CKD % 2021\n(race-free)", "CKD % (2009 race-based eGFR)": "CKD % 2009\n(race-based)", "Change (percentage points)": "Change\n(pp)", "Patients whose label changes": "Labels\nchanged"}), font=8)]; fig("11_label_bias", W * 0.8)
     s += [Spacer(1, 8), Paragraph("Protocol: repeated stratified 5-fold cross-validation (stratified on label × group); "
@@ -209,7 +214,7 @@ def patient_report_pdf(bundle, values: dict, prob: float, positive: bool, waterf
         s += [Spacer(1, 6), Paragraph("Why this prediction? (SHAP explanation)", ss["Heading3"]),
               Image(waterfall_png, width=w, height=w * ih / iw),
               Paragraph("Red bars push the prediction towards CKD, blue bars away from CKD.", P)]
-    s += [Spacer(1, 8), Paragraph("<i>Research prototype (M.Tech dissertation, PIET, Parul University). Not a medical "
+    s += [Spacer(1, 8), Paragraph("<i>FairCKD research prototype (PIET, Parul University). Not a medical "
                                   "device; the result must be confirmed by a clinician with eGFR and urine ACR testing.</i>", P)]
     doc.build(s)
     return buf.getvalue()

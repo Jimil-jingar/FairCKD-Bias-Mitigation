@@ -2,18 +2,24 @@ Model,Method,Balanced acc.,EOdds diff,Pareto-optimal
 Logistic Regression,Baseline,0.929,0.081,False
 Logistic Regression,Unawareness (drop sensitive attribute),0.929,0.086,False
 Logistic Regression,Reweighing (pre-processing),0.921,0.052,False
+Logistic Regression,Group-balanced SMOTE (pre-processing),0.931,0.071,False
 Logistic Regression,Exponentiated Gradient (in-processing),0.931,0.072,False
 Logistic Regression,Threshold Optimizer (post-processing),0.911,0.038,False
+Logistic Regression,Reject Option Classification (post-processing),0.928,0.053,False
 Logistic Regression,Reweighing + Threshold Optimizer (hybrid),0.906,0.038,False
 Random Forest,Baseline,0.948,0.035,True
 Random Forest,Unawareness (drop sensitive attribute),0.944,0.082,False
 Random Forest,Reweighing (pre-processing),0.944,0.039,False
+Random Forest,Group-balanced SMOTE (pre-processing),0.947,0.037,False
 Random Forest,Exponentiated Gradient (in-processing),0.947,0.036,False
 Random Forest,Threshold Optimizer (post-processing),0.937,0.029,True
+Random Forest,Reject Option Classification (post-processing),0.947,0.036,False
 Random Forest,Reweighing + Threshold Optimizer (hybrid),0.932,0.03,False
 XGBoost,Baseline,0.904,0.089,False
 XGBoost,Unawareness (drop sensitive attribute),0.901,0.09,False
 XGBoost,Reweighing (pre-processing),0.906,0.043,False
+XGBoost,Group-balanced SMOTE (pre-processing),0.914,0.05,False
 XGBoost,Exponentiated Gradient (in-processing),0.902,0.079,False
 XGBoost,Threshold Optimizer (post-processing),0.895,0.022,True
+XGBoost,Reject Option Classification (post-processing),0.902,0.056,False
 XGBoost,Reweighing + Threshold Optimizer (hybrid),0.892,0.028,False

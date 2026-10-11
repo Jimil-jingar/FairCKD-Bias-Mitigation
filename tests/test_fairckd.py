@@ -201,3 +201,33 @@ def test_intersectional_attributes():
     spec = D.load_nhanes()
     X, y, A = spec.get(list(spec.feature_sets)[0], "Age × Race")
     assert A.nunique() == 10 and spec.weights("Age × Race").notna().all()
+
+
+def test_group_smote_balances_every_cell():
+    from fairckd.mitigation import group_smote
+    rng = np.random.default_rng(0)
+    Z = rng.normal(size=(60, 3))
+    y = np.r_[np.ones(8), np.zeros(37), np.ones(3), np.zeros(12)].astype(int)      # group a: 8/37, group b: 3/12
+    A = np.r_[np.repeat("a", 45), np.repeat("b", 15)]
+    Zs, ys = group_smote(Z, y, A)
+    assert len(Zs) == len(ys) == 4 * 37 and ys.mean() == 0.5
+    assert np.isfinite(Zs).all()
+
+
+def test_reject_option_only_changes_the_band():
+    from fairckd.mitigation import reject_option
+    p = np.array([0.1, 0.45, 0.55, 0.9, 0.48, 0.52]); A = np.array(["lo", "lo", "lo", "hi", "hi", "hi"])
+    pred = reject_option(p, A, 0.5, ["lo"], 0.06)
+    assert list(pred) == [0, 1, 1, 1, 0, 0]
+
+
+def test_lime_explanation(uci_screen):
+    from fairckd.explain import lime_explain
+    from fairckd.models import make_classifier
+    from fairckd.preprocessing import make_preprocessor
+    X, y, A = uci_screen
+    pre = make_preprocessor().fit(X)
+    m = make_classifier("Logistic Regression").fit(pre.transform(X), y)
+    t, info = lime_explain(m, pre, X.iloc[[0]], n_samples=500)
+    assert len(t) == X.shape[1] and t.Contribution.abs().is_monotonic_decreasing
+    assert 0 <= info["model_prediction"] <= 1

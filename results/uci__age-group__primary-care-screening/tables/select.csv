@@ -1,3 +1,3 @@
 Strategy,Accuracy,Balanced acc.,Recall,EOpp diff,EOdds diff,DP diff
-FairCKD-Select,0.893 ± 0.011,0.908 ± 0.001,0.843 ± 0.041,0.043 ± 0.011,0.043 ± 0.011,0.212 ± 0.042
+FairCKD-Select,0.894 ± 0.013,0.909 ± 0.003,0.845 ± 0.044,0.039 ± 0.017,0.039 ± 0.017,0.210 ± 0.039
 Accuracy-driven selection,0.910 ± 0.000,0.928 ± 0.000,0.855 ± 0.000,0.084 ± 0.000,0.084 ± 0.000,0.281 ± 0.000

@@ -1,0 +1,12 @@
+Group,Patients,Mean top-5 overlap (of 5),Mean LIME local R2
+60+ Hispanic,25.0,2.88,0.49
+60+ Non-Hispanic Asian,25.0,3.16,0.5
+60+ Non-Hispanic Black,25.0,3.08,0.52
+60+ Non-Hispanic White,25.0,3.4,0.53
+60+ Other/Multi-racial,25.0,3.36,0.5
+<60 Hispanic,25.0,3.08,0.46
+<60 Non-Hispanic Asian,25.0,3.12,0.46
+<60 Non-Hispanic Black,25.0,3.12,0.46
+<60 Non-Hispanic White,25.0,3.04,0.45
+<60 Other/Multi-racial,25.0,2.96,0.47
+All,250.0,3.12,0.49

@@ -45,9 +45,8 @@ st.markdown(f"""
     <p>Machine-learning models for chronic kidney disease can look accurate overall while missing far more
     cases in some patient groups. FairCKD finds these gaps, measures them with five fairness metrics,
     reduces them with its FairCKD-Select method, and explains every prediction.</p>
-    <div class="who">M.Tech Dissertation Phase-II: Investigating Bias and Fairness in Machine Learning Models
-    for Automated Chronic Kidney Disease Diagnosis<br>Jimil Jingar, guided by Ramizraja Shethwala
-    and Robin Hojiwala. Department of AI &amp; DS, PIET, Parul University</div>
+    <div class="who">Fairness-aware machine learning for automated chronic kidney disease diagnosis<br>Built by Jimil Jingar,
+    guided by Ramizraja Shethwala and Robin Hojiwala. Department of AI &amp; DS, PIET, Parul University</div>
   </div>{bars}
 </div>""", unsafe_allow_html=True)
 
@@ -69,7 +68,7 @@ if runs:
     k[3].metric("Largest fairness gap closed", f"{_red(best['EOdds gap before → after']):.2f}",
                 help=f"Equalized Odds gap {best['EOdds gap before → after']} ({best['Sensitive attribute']}, "
                      f"{best['Best mitigation']})")
-    st.markdown("## Results of all thesis experiments")
+    st.markdown("## Results of all experiments")
     fs_short = {"Routine blood tests": "routine tests", "Primary-care screening": "screening",
                 "Full clinical panel": "full panel"}
     short = lambda m: str(m).replace("Logistic Regression", "Log. Reg.").replace("Random Forest", "Rand. Forest")
@@ -128,4 +127,4 @@ if cfg:
     st.info("Use the pages in the sidebar in order, from Dataset analysis to Reports. "
             "Change the dataset, feature set or patient group at any time in the sidebar.")
 
-st.caption("Research prototype for academic demonstration. Not a medical device; predictions must be confirmed by a clinician.")
+st.caption("Research prototype, not a medical device; predictions must be confirmed by a clinician.")

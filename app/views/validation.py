@@ -13,8 +13,8 @@ if not cfg:
 spec, fs, at, X, y, A = cfg
 R = saved_results(spec, fs, at)
 if not R:
-    st.info("Validation results come from the saved thesis runs (`python main.py --all`). "
-            "Choose one of the thesis configurations in the sidebar.")
+    st.info("Validation results come from the saved runs (`python main.py --all`). "
+            "Choose one of the saved configurations in the sidebar.")
     st.stop()
 
 sig = R.get("significance")

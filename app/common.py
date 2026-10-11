@@ -21,7 +21,8 @@ INK, TEAL, MAROON, PAPER, LINE, MUTED = "#14213D", "#0F766E", "#9F1D35", "#F5F7F
 # one fixed colour per group everywhere in the app (sorted group order)
 GROUP_COLORS = [TEAL, MAROON, "#C27C0E", "#4F46E5", "#64748B", "#0E7490"]
 METHOD_COLORS = {"Baseline": "#94A3B8", "Unawareness": "#C9A227", "Reweighing": "#4F46E5",
-                 "Exp. Gradient": "#0E7490", "Threshold Opt.": MAROON, "RW + TO (hybrid)": "#7C3AED"}
+                 "Exp. Gradient": "#0E7490", "Threshold Opt.": MAROON, "RW + TO (hybrid)": "#7C3AED",
+                 "SMOTE": "#C2410C", "Reject Option": "#BE185D"}
 SEQ = [TEAL, "#4F46E5", "#C27C0E", MAROON]
 
 import plotly.io as pio
@@ -232,10 +233,10 @@ def sidebar():
         saved = saved_results(spec, fs, at)
         st.markdown(f"<div class='side-meta'>{len(y):,} patients, {X.shape[1]} features, {A.nunique()} groups<br>"
                     f"CKD prevalence {100 * y.mean():.1f}%<br>"
-                    f"{'Saved thesis results loaded' if saved else 'No saved results: run live'}</div>",
+                    f"{'Saved results loaded' if saved else 'No saved results: run live'}</div>",
                     unsafe_allow_html=True)
         st.markdown("---")
-        st.markdown("<div class='side-meta'>FairCKD 1.0<br>M.Tech Phase-II, Jimil Jingar<br>"
+        st.markdown("<div class='side-meta'>FairCKD 1.1<br>Fair AI for kidney disease diagnosis<br>Built by Jimil Jingar<br>"
                     "PIET, Parul University</div>", unsafe_allow_html=True)
     return spec, fs, at, X, y, A
 

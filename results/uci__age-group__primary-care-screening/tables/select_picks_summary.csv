@@ -1,5 +1,5 @@
 ,Model,Method,Times selected
 0,Logistic Regression,RW + TO (hybrid),3
-1,Logistic Regression,Reweighing,1
-2,Logistic Regression,Threshold Opt.,5
+1,Logistic Regression,Reject Option,2
+2,Logistic Regression,Threshold Opt.,4
 3,XGBoost,Reweighing,1

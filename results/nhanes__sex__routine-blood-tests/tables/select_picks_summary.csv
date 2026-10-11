@@ -3,4 +3,5 @@
 1,Logistic Regression,RW + TO (hybrid),1
 2,Logistic Regression,Threshold Opt.,3
 3,XGBoost,RW + TO (hybrid),2
-4,XGBoost,Threshold Opt.,3
+4,XGBoost,Reject Option,1
+5,XGBoost,Threshold Opt.,2

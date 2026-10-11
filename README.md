@@ -5,14 +5,12 @@
 
 **▶ Try the app live: https://fairckd.streamlit.app/** (no installation needed)
 
-**M.Tech Dissertation Phase-II implementation**<br>
-*Investigating Bias and Fairness in Machine Learning Models for Automated Chronic Kidney Disease Diagnosis*<br>
-Jimil Jingar · Guide: Ramizraja Shethwala · Co-guide: Robin Hojiwala<br>
+Built by **Jimil Jingar** · Guide: Ramizraja Shethwala · Co-guide: Robin Hojiwala<br>
 Department of Artificial Intelligence & Data Science, PIET, Parul University
 
-FairCKD is a complete software system that implements the nine-stage fairness-aware framework proposed in Phase-I:
+FairCKD is a complete software system built on a nine-stage fairness-aware framework:
 it trains CKD diagnosis models, **detects** bias between patient groups, **measures** it with five fairness metrics,
-**reduces** it with pre-, in- and post-processing techniques, **explains** predictions with SHAP, and offers a
+**reduces** it with pre-, in- and post-processing techniques, **explains** predictions with SHAP and LIME, and offers a
 **clinical decision-support** web application with downloadable patient reports.
 
 ![architecture](docs/architecture.png)
@@ -31,11 +29,11 @@ it trains CKD diagnosis models, **detects** bias between patient groups, **measu
 ```bash
 pip install -r requirements.txt
 streamlit run app/Home.py          # web application
-python main.py --all               # re-run all thesis experiments (~45-60 min)
-python -m pytest -q                # run the 31 automated tests
+python main.py --all               # re-run all experiments (~1-2 hours)
+python -m pytest -q                # run the 36 automated tests
 ```
 
-All thesis experiments are **already computed** and stored in `results/`, and the trained models in `models/`,
+All experiments are **already computed** and stored in `results/`, and the trained models in `models/`,
 so the app works immediately without re-running anything.
 
 ![FairCKD web application](docs/screenshots/01_overview_uci.png)
@@ -50,10 +48,10 @@ so the app works immediately without re-running anything.
 | **Dataset analysis** | 1-3 | group representation, CKD prevalence per group, missing values, feature ranking, upload your **own CSV** |
 | **Model training** | 4 | train and compare 7 ML models live (or view saved results) |
 | **Fairness audit** | 5-6 | sensitivity / false-positive rate / precision per group; DP, DI, EOpp, EOdds, PP metrics |
-| **Bias mitigation** | 7 | compare Reweighing, Exponentiated Gradient, Threshold Optimizer, Unawareness; trade-off chart; automatic recommendation |
-| **Explainability** | 8 | SHAP global importance, feature reliance per group, explanation for any patient |
+| **Bias mitigation** | 7 | compare Reweighing, SMOTE, Exponentiated Gradient, Threshold Optimizer, Reject Option, Unawareness; trade-off chart; automatic recommendation |
+| **Explainability** | 8 | SHAP global importance, feature reliance per group, SHAP + LIME explanation for any patient |
 | **Validation** | – | significance tests, calibration by group, survey-weighted estimates, external validation |
-| **Patient diagnosis** | 9 | enter a patient's values → CKD probability, decision, SHAP explanation, **PDF patient report** |
+| **Patient diagnosis** | 9 | enter a patient's values → CKD probability, decision, SHAP explanation (+ LIME second opinion), **PDF patient report** |
 | **Reports** | – | download the PDF audit reports, Excel tables and all figures; generate a report for any configuration |
 
 Every analysis page opens with a headline finding computed from the results (for example the detection gap between groups, or how much a mitigation method shrinks it).
@@ -84,10 +82,17 @@ Two feature sets per dataset:
 * **Fairness metrics:** Demographic Parity difference, Disparate Impact ratio, Equal Opportunity difference,
   Equalized Odds difference, Predictive Parity difference (+ accuracy gap), plus a *perfect-classifier reference*
   showing which metrics are driven by real prevalence differences
-* **Bias mitigation:** Unawareness (naive), Reweighing (Kamiran & Calders 2012, pre-processing),
+* **Bias mitigation:** Unawareness (naive),
+  Reweighing (Kamiran & Calders 2012, pre-processing),
+  group-balanced SMOTE (Chawla et al. 2002, pre-processing; every group × label cell oversampled to the largest cell),
   Exponentiated Gradient + Equalized Odds (Agarwal et al. 2018, in-processing),
-  Threshold Optimizer + Equalized Odds (Hardt et al. 2016, post-processing; thresholds learned on out-of-fold scores)
-* **Explainability:** SHAP (TreeExplainer / LinearExplainer)
+  Threshold Optimizer + Equalized Odds (Hardt et al. 2016, post-processing; thresholds learned on out-of-fold scores),
+  Reject Option Classification (Kamiran, Karim & Zhang 2012, post-processing; band width learned on out-of-fold scores),
+  and a Reweighing + Threshold Optimizer hybrid
+* **Explainability:** SHAP (TreeExplainer / LinearExplainer) and LIME (Ribeiro et al. 2016, tabular, implemented in
+  `fairckd/explain.py`), with a SHAP-vs-LIME agreement check on a sample of patients per group
+* **Not included:** adversarial debiasing needs a deep-learning framework (TensorFlow / PyTorch), too heavy for the
+  free hosted app; it is left for future work
 * **Evaluation protocol:** repeated stratified 5-fold cross-validation (stratified on label × group);
   preprocessing (median imputation + scaling) and mitigation fitted on training folds only; mean ± SD over repeats
 * **Imbalanced data (NHANES, 18.5 % CKD):** decision threshold = training-set CKD prevalence
@@ -96,7 +101,7 @@ Two feature sets per dataset:
 
 ---
 
-## 4b. Proposed method: FairCKD-Select
+## 4b. FairCKD-Select
 
 No single mitigation method is best for every patient group. **FairCKD-Select** chooses, inside each training
 fold, the classifier × mitigation pipeline with the smallest Equalized Odds gap among those whose balanced
@@ -151,7 +156,7 @@ FairCKD/
 
 ---
 
-## 6. Thesis experiments (`python main.py --all`)
+## 6. Experiments (`python main.py --all`)
 
 | # | Dataset | Feature set | Sensitive attribute | Extra |
 |---|---|---|---|---|
@@ -171,4 +176,4 @@ List options: `python main.py --list`
 
 ---
 
-*Research prototype for academic demonstration. Not a medical device; predictions must be confirmed by a clinician.*
+*Research prototype, not a medical device; predictions must be confirmed by a clinician.*

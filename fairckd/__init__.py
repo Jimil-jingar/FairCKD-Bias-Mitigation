@@ -1,9 +1,7 @@
 """
 FairCKD - Fairness-aware Machine Learning System for Automated Chronic Kidney Disease Diagnosis
 ===============================================================================================
-M.Tech Dissertation Phase-II implementation
-"Investigating Bias and Fairness in Machine Learning Models for Automated CKD Diagnosis"
-Jimil Jingar, Dept. of AI & DS, PIET, Parul University
+Built by Jimil Jingar, Dept. of AI & DS, PIET, Parul University
 
 Package layout (one module per stage of the proposed nine-stage framework):
 
