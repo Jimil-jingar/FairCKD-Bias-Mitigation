@@ -2,12 +2,16 @@ Model,Method,TPR [Elderly (>=60)],FPR [Elderly (>=60)],TPR [Non-elderly (<60)],F
 Logistic Regression,Baseline,1.0,0.0,0.984,0.0
 Logistic Regression,Unawareness (drop sensitive attribute),1.0,0.0,0.976,0.0
 Logistic Regression,Reweighing (pre-processing),1.0,0.0,0.992,0.0
+Logistic Regression,Group-balanced SMOTE (pre-processing),1.0,0.0,0.982,0.0
 Logistic Regression,Exponentiated Gradient (in-processing),1.0,0.0,0.984,0.0
 Logistic Regression,Threshold Optimizer (post-processing),0.997,0.0,0.992,0.003
+Logistic Regression,Reject Option Classification (post-processing),0.998,0.0,0.99,0.002
 Logistic Regression,Reweighing + Threshold Optimizer (hybrid),0.998,0.0,0.998,0.003
 XGBoost,Baseline,1.0,0.0,0.987,0.019
 XGBoost,Unawareness (drop sensitive attribute),0.998,0.0,0.984,0.016
 XGBoost,Reweighing (pre-processing),1.0,0.0,0.985,0.024
+XGBoost,Group-balanced SMOTE (pre-processing),1.0,0.0,0.984,0.019
 XGBoost,Exponentiated Gradient (in-processing),1.0,0.0,0.987,0.019
 XGBoost,Threshold Optimizer (post-processing),0.976,0.024,0.979,0.016
+XGBoost,Reject Option Classification (post-processing),1.0,0.0,0.989,0.019
 XGBoost,Reweighing + Threshold Optimizer (hybrid),0.973,0.03,0.977,0.016

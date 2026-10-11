@@ -15,9 +15,9 @@ spec, fs, at, X, y, A = cfg
 store = run_store(spec, fs, at)
 saved = saved_results(spec, fs, at)
 
-src = "Saved thesis results" if saved else "Run live"
+src = "Saved results" if saved else "Run live"
 if saved:
-    src = st.radio("Results source", ["Saved thesis results", "Run live"], horizontal=True,
+    src = st.radio("Results source", ["Saved results", "Run live"], horizontal=True,
                    help="Saved results come from `python main.py --all` (more CV repeats).")
 
 if src == "Run live":

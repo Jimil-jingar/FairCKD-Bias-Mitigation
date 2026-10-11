@@ -1,3 +1,5 @@
 ,Model,Method,Times selected
-0,XGBoost,Exp. Gradient,1
-1,XGBoost,Unawareness,9
+0,Logistic Regression,Reject Option,2
+1,XGBoost,Exp. Gradient,1
+2,XGBoost,Reject Option,6
+3,XGBoost,Unawareness,1

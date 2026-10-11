@@ -22,13 +22,16 @@ with st.expander("About the methods", expanded=False):
 |---|---|---|
 | **Unawareness** | naive | remove the sensitive attribute from the model inputs |
 | **Reweighing** (Kamiran & Calders 2012) | pre-processing | weight training samples so that group and label become independent |
+| **SMOTE** (Chawla et al. 2002), group-balanced | pre-processing | create synthetic patients so every group has as many CKD and non-CKD examples as the largest group |
 | **Exponentiated Gradient** (Agarwal et al. 2018) | in-processing | train under an Equalized-Odds constraint |
 | **Threshold Optimizer** (Hardt et al. 2016) | post-processing | a separate decision threshold per group, learned on out-of-fold scores |
+| **Reject Option Classification** (Kamiran et al. 2012) | post-processing | for uncertain patients near the threshold, give the CKD flag to the group the model under-detects |
+| **RW + TO (hybrid)** | pre + post-processing | Reweighing followed by the Threshold Optimizer |
 """)
 
-src = "Saved thesis results" if saved else "Run live"
+src = "Saved results" if saved else "Run live"
 if saved:
-    src = st.radio("Results source", ["Saved thesis results", "Run live"], horizontal=True)
+    src = st.radio("Results source", ["Saved results", "Run live"], horizontal=True)
 if src == "Run live":
     c = st.columns([2, 3, 1])
     models = c[0].multiselect("Models", MODEL_NAMES, default=["Logistic Regression", "XGBoost"])
@@ -147,7 +150,7 @@ if saved and "select" in saved:
 """)
 
 if saved and "representation" in saved:
-    st.markdown("### Representation-bias experiment (saved thesis run)")
+    st.markdown("### Representation-bias experiment (saved run)")
     st.caption("One group is under-sampled in the TRAINING data only; test data are unchanged.")
     st.image(fig_path(saved["figures"]["08_representation_bias"]))
     st.dataframe(saved["representation"], width="stretch", hide_index=True)

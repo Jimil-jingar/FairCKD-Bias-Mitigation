@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 
 from .data import ROOT
-from .explain import explain
+from .explain import explain, lime_explain
 from .fairness import reweighing_weights
 from .models import make_classifier
 from .preprocessing import make_preprocessor
@@ -50,3 +50,10 @@ def predict_patient(bundle, values: dict):
     p = float(bundle["model"].predict_proba(bundle["preprocessor"].transform(x))[0, 1])
     sv = explain(bundle["model"], bundle["preprocessor"], x, bundle["labels"])
     return p, p >= bundle["threshold"], sv[0]
+
+
+def lime_patient(bundle, values: dict, n_samples: int = 3000):
+    """LIME explanation of one patient for a saved model bundle."""
+    x = pd.DataFrame([{f: values.get(f, np.nan) for f in bundle["features"]}], dtype=float)
+    return lime_explain(bundle["model"], bundle["preprocessor"], x, bundle["labels"], bundle.get("binary", ()),
+                        n_samples=n_samples)

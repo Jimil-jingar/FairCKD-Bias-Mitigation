@@ -7,7 +7,7 @@
 5,1,3,Accuracy-driven selection,Logistic Regression,Baseline,0.737,0.052
 6,1,4,FairCKD-Select,Logistic Regression,Threshold Opt.,0.733,0.006
 7,1,4,Accuracy-driven selection,Logistic Regression,Baseline,0.742,0.061
-8,1,5,FairCKD-Select,XGBoost,Threshold Opt.,0.711,0.021
+8,1,5,FairCKD-Select,XGBoost,Reject Option,0.721,0.018
 9,1,5,Accuracy-driven selection,Logistic Regression,Baseline,0.731,0.053
 10,2,1,FairCKD-Select,XGBoost,Threshold Opt.,0.724,0.006
 11,2,1,Accuracy-driven selection,XGBoost,Baseline,0.739,0.083

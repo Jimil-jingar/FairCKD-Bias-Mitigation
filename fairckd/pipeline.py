@@ -9,14 +9,14 @@ import joblib
 import numpy as np
 import pandas as pd
 
-from . import plots
+from . import SEED, plots
 from .data import ROOT, group_summary
 from .diagnosis import train_final_model
 from .evaluation import bootstrap_compare, cross_validate, downsample_group, summarize
 from .explain import explain, importance_by_group
 from .fairness import FAIR, PERF, calibration_by_group, fairness_report, reference_values
 from .features import feature_ranking
-from .mitigation import BASELINE, EXPGRAD, METHODS, REWEIGH, SHORT, UNAWARE, fit_predict
+from .mitigation import BASELINE, EXPGRAD, HYBRID, METHODS, REJECT, REWEIGH, SHORT, SMOTE, THRESH, UNAWARE, fit_predict
 from .select import nested_select, pareto_front
 from .models import MODEL_NAMES, make_classifier
 from .preprocessing import make_preprocessor, missing_report
@@ -40,6 +40,28 @@ def label_bias_table(spec) -> pd.DataFrame | None:
     flips = spec.df.groupby("race").apply(lambda d: int((d.ckd != d.ckd_2009).sum()), include_groups=False)
     lb["Patients whose label changes"] = flips
     return lb.round(2)
+
+
+def lime_agreement(model, pre, X, A, sv, spec, per_group=25, top=5, seed=SEED):
+    """For a sample of patients per group: how many of the top-5 SHAP features LIME also ranks in its top 5."""
+    from .explain import lime_explain
+    rng = np.random.default_rng(seed)
+    binary = [c for c in spec.binary if c in X.columns]
+    rows = []
+    Av = np.asarray(A)
+    for g in sorted(pd.unique(Av)):
+        idx = np.where(Av == g)[0]
+        for i in rng.choice(idx, min(per_group, len(idx)), replace=False):
+            lt, info = lime_explain(model, pre, X.iloc[[i]], spec.labels, binary, n_samples=1500, seed=int(i))
+            s_top = {sv.feature_names[k] for k in np.argsort(-np.abs(sv[i].values))[:top]}
+            rows.append({"Group": g, "Top-5 overlap": len(s_top & set(lt.Feature.head(top))),
+                         "LIME local R2": info["local_r2"]})
+    d = pd.DataFrame(rows)
+    out = d.groupby("Group").agg(**{"Patients": ("Top-5 overlap", "size"),
+                                    "Mean top-5 overlap (of 5)": ("Top-5 overlap", "mean"),
+                                    "Mean LIME local R2": ("LIME local R2", "mean")})
+    out.loc["All"] = [len(d), d["Top-5 overlap"].mean(), d["LIME local R2"].mean()]
+    return out.round(2)
 
 
 def run_experiment(spec, feature_set, attribute, models=MODEL_NAMES, mitigation_models=("Logistic Regression", "XGBoost"),
@@ -145,8 +167,7 @@ def run_experiment(spec, feature_set, attribute, models=MODEL_NAMES, mitigation_
         Xe, ye, Ae = external.get(feature_set, attribute)
         rows = []
         for m in mitigation_models:
-            for meth in [BASELINE, REWEIGH, EXPGRAD, "Threshold Optimizer (post-processing)",
-                         "Reweighing + Threshold Optimizer (hybrid)"]:
+            for meth in [BASELINE, REWEIGH, SMOTE, EXPGRAD, THRESH, REJECT, HYBRID]:
                 p, pr = fit_predict(meth, m, X, y, A, Xe, Ae, threshold=thr, proxy_cols=proxy)
                 r = fairness_report(ye, p, Ae, pr)
                 rows.append({"Model": m, "Method": SHORT[meth], **{k: r[k] for k in
@@ -159,7 +180,7 @@ def run_experiment(spec, feature_set, attribute, models=MODEL_NAMES, mitigation_
         rows = []
         for m in mitigation_models:
             for f in [1.0, 0.5, 0.25, 0.1]:
-                for meth in [BASELINE, REWEIGH]:
+                for meth in [BASELINE, REWEIGH, SMOTE]:
                     d = cross_validate(X, y, A, m, meth, n_repeats=repeats_mit, threshold=thr,
                                        train_filter=downsample_group(representation_group, f)).mean(numeric_only=True)
                     rows.append({"Model": m, "Kept (%)": int(f * 100), "Method": SHORT[meth],
@@ -167,11 +188,12 @@ def run_experiment(spec, feature_set, attribute, models=MODEL_NAMES, mitigation_
                                  **{k: d[k] for k in d.index if k.startswith(("Accuracy [", "TPR ["))}})
         R["representation"] = pd.DataFrame(rows).round(3)
 
-    log("[8]   Explainability (SHAP)")
+    log("[8]   Explainability (SHAP + LIME)")
     pre = make_preprocessor().fit(X)
     xgb = make_classifier("XGBoost").fit(pre.transform(X), y)
     sv = explain(xgb, pre, X, spec.labels)
     R["shap_by_group"] = importance_by_group(sv, A)
+    R["lime_shap_agreement"] = lime_agreement(xgb, pre, X, A, sv, spec)
 
     log("[9]   Training final fairness-aware model for decision support")
     train_final_model(spec, feature_set, attribute)

@@ -13,7 +13,8 @@ plt.rcParams.update({"savefig.dpi": 300, "savefig.bbox": "tight", "axes.spines.t
 GROUP_COLORS = ["#0F766E", "#9F1D35", "#C27C0E", "#4F46E5", "#64748B", "#0E7490", "#7C3AED", "#B45309",
                 "#15803D", "#BE185D"]
 METHOD_COLORS = {"Baseline": "#94A3B8", "Unawareness": "#C9A227", "Reweighing": "#4F46E5",
-                 "Exp. Gradient": "#0E7490", "Threshold Opt.": "#9F1D35", "RW + TO (hybrid)": "#7C3AED"}
+                 "Exp. Gradient": "#0E7490", "Threshold Opt.": "#9F1D35", "RW + TO (hybrid)": "#7C3AED",
+                 "SMOTE": "#C2410C", "Reject Option": "#BE185D"}
 
 
 def _wrap(s, n=12):

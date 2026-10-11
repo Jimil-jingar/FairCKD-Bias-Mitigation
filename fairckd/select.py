@@ -24,9 +24,9 @@ from sklearn.model_selection import StratifiedKFold
 
 from . import SEED
 from .fairness import fairness_report
-from .mitigation import BASELINE, EXPGRAD, HYBRID, REWEIGH, SHORT, THRESH, UNAWARE, fit_predict
+from .mitigation import BASELINE, EXPGRAD, HYBRID, REJECT, REWEIGH, SHORT, SMOTE, THRESH, UNAWARE, fit_predict
 
-DEFAULT_METHODS = [BASELINE, UNAWARE, REWEIGH, EXPGRAD, THRESH, HYBRID]
+DEFAULT_METHODS = [BASELINE, UNAWARE, REWEIGH, SMOTE, EXPGRAD, THRESH, REJECT, HYBRID]
 
 
 def _key(y, A):

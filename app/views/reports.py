@@ -10,7 +10,7 @@ page_setup("Reports", "📄")
 page_header("Reports", None, "PDF fairness-audit reports, Excel result tables and 300-dpi figures for every experiment.")
 cfg = sidebar()
 
-st.markdown("### Saved thesis experiments")
+st.markdown("### Saved experiments")
 runs = sorted(p for p in RESULTS.glob("*/results.joblib"))
 if not runs:
     st.info("No saved runs yet. Run `python main.py --all` in the project folder.")

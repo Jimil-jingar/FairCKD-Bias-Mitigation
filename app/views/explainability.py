@@ -1,16 +1,16 @@
-"""Stage 8: explainable AI with SHAP."""
+"""Stage 8: explainable AI with SHAP and LIME."""
 import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import shap
 from common import TEAL, group_colors, insight, np, page_header, page_setup, pd, px, sidebar, st
-from fairckd.explain import explain, importance_by_group
+from fairckd.explain import explain, importance_by_group, lime_explain, lime_figure
 from fairckd.models import make_classifier
 from fairckd.preprocessing import make_preprocessor
 
 page_setup("Explainability", "🔍")
-page_header("Explainability", "Stage 8: explainable AI (SHAP)",
+page_header("Explainability", "Stage 8: explainable AI (SHAP and LIME)",
             "Which clinical features drive the predictions, overall, for each group and for one patient.")
 cfg = sidebar()
 if not cfg:
@@ -75,6 +75,19 @@ with t3:
     i = c[2].select_slider("Patient", options=list(idx), value=int(idx[0]))
     p = float(model.predict_proba(pre.transform(X.iloc[[i]]))[0, 1])
     st.markdown(f"Patient **#{i}** · group *{g}* · true status **{lab}** · predicted probability of CKD **{100 * p:.1f}%**")
-    plt.figure(); shap.plots.waterfall(sv[i], max_display=10, show=False)
-    st.pyplot(plt.gcf(), clear_figure=True)
-    st.caption("Red bars push the prediction towards CKD, blue bars away from CKD (log-odds scale for tree models).")
+    l1, l2 = st.columns(2, gap="large")
+    with l1:
+        st.markdown("**SHAP**: exact contribution of each feature")
+        plt.figure(); shap.plots.waterfall(sv[i], max_display=10, show=False)
+        st.pyplot(plt.gcf(), clear_figure=True)
+        st.caption("Red bars push the prediction towards CKD, blue bars away from CKD (log-odds scale for tree models).")
+    with l2:
+        st.markdown("**LIME**: a simple local model fitted around this patient")
+        lt, linfo = lime_explain(model, pre, X.iloc[[i]], spec.labels, [c for c in spec.binary if c in X.columns])
+        st.pyplot(lime_figure(lt), clear_figure=True)
+        st.caption(f"Red pushes towards CKD, blue away (probability scale). Local fit R² = {linfo['local_r2']:.2f}.")
+    shap_top = [sv.feature_names[k] for k in np.argsort(-np.abs(sv[i].values))[:5]]
+    common5 = [f for f in lt.Feature.head(5) if f in shap_top]
+    st.info(f"SHAP and LIME agree on **{len(common5)} of the top 5** features for this patient"
+            + (f": {', '.join(common5)}." if common5 else ".")
+            + " Two different explanation methods pointing to the same features makes the explanation more trustworthy.")

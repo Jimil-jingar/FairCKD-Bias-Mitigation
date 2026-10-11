@@ -1,0 +1,6 @@
+Group,Patients,Mean top-5 overlap (of 5),Mean LIME local R2
+60+ Female,25.0,3.24,0.5
+60+ Male,25.0,3.36,0.5
+<60 Female,25.0,2.92,0.46
+<60 Male,25.0,3.0,0.47
+All,100.0,3.13,0.49

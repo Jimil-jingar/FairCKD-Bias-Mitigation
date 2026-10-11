@@ -4,8 +4,10 @@
 |--------------------------------|------------------|------------------------------|
 | Unawareness                    | naive baseline   | drop the sensitive attribute |
 | Reweighing                     | pre-processing   | Kamiran & Calders, 2012      |
+| Group-balanced SMOTE           | pre-processing   | Chawla et al., 2002 (per group x label cell) |
 | Exponentiated Gradient + EOdds | in-processing    | Agarwal et al., 2018         |
 | Threshold Optimizer + EOdds    | post-processing  | Hardt et al., 2016           |
+| Reject Option Classification   | post-processing  | Kamiran, Karim & Zhang, 2012 |
 """
 import numpy as np
 from fairlearn.postprocessing import ThresholdOptimizer
@@ -23,14 +25,91 @@ REWEIGH = "Reweighing (pre-processing)"
 EXPGRAD = "Exponentiated Gradient (in-processing)"
 THRESH = "Threshold Optimizer (post-processing)"
 HYBRID = "Reweighing + Threshold Optimizer (hybrid)"
-METHODS = [BASELINE, UNAWARE, REWEIGH, EXPGRAD, THRESH, HYBRID]
-SHORT = {BASELINE: "Baseline", UNAWARE: "Unawareness", REWEIGH: "Reweighing",
-         EXPGRAD: "Exp. Gradient", THRESH: "Threshold Opt.", HYBRID: "RW + TO (hybrid)"}
+SMOTE = "Group-balanced SMOTE (pre-processing)"
+REJECT = "Reject Option Classification (post-processing)"
+METHODS = [BASELINE, UNAWARE, REWEIGH, SMOTE, EXPGRAD, THRESH, REJECT, HYBRID]
+SHORT = {BASELINE: "Baseline", UNAWARE: "Unawareness", REWEIGH: "Reweighing", SMOTE: "SMOTE",
+         EXPGRAD: "Exp. Gradient", THRESH: "Threshold Opt.", REJECT: "Reject Option", HYBRID: "RW + TO (hybrid)"}
 
 
 def _cut(proba, ytr, threshold):
     t = float(np.mean(ytr)) if threshold == "prevalence" else float(threshold)
     return (np.asarray(proba) >= t).astype(int)
+
+
+def group_smote(Z, y, A, k=5, seed=SEED):
+    """Oversample every (group, label) cell to the size of the largest cell with SMOTE interpolation.
+
+    Plain SMOTE only balances the classes; here each demographic group gets as many CKD and non-CKD
+    examples as the best-represented cell, so no group is under-represented in either class.
+    """
+    rng = np.random.default_rng(seed)
+    Z, y, A = np.asarray(Z, dtype=float), np.asarray(y), np.asarray(A)
+    cells = {(a, c): np.where((A == a) & (y == c))[0] for a in np.unique(A) for c in (0, 1)}
+    target = max(len(i) for i in cells.values())
+    newZ, newy = [Z], [y]
+    for (a, c), idx in cells.items():
+        need = target - len(idx)
+        if need <= 0 or len(idx) == 0:
+            continue
+        P = Z[idx]
+        if len(idx) == 1:                                # nothing to interpolate with: duplicate
+            newZ.append(np.repeat(P, need, axis=0)); newy.append(np.full(need, c)); continue
+        kk = min(k, len(idx) - 1)
+        d = ((P[:, None, :] - P[None, :, :]) ** 2).sum(-1)
+        np.fill_diagonal(d, np.inf)
+        nn = np.argsort(d, axis=1)[:, :kk]
+        base = rng.integers(0, len(idx), need)
+        mate = nn[base, rng.integers(0, kk, need)]
+        gap = rng.random((need, 1))
+        newZ.append(P[base] + gap * (P[mate] - P[base])); newy.append(np.full(need, c))
+    return np.vstack(newZ), np.concatenate(newy)
+
+
+def _eodds_gap(y, pred, A):
+    gaps = []
+    for lab in (1, 0):
+        rates = [pred[(A == a) & (y == lab)].mean() for a in np.unique(A) if ((A == a) & (y == lab)).any()]
+        gaps.append(max(rates) - min(rates) if rates else 0.0)
+    return max(gaps)
+
+
+def _bal_acc(y, pred):
+    tpr = pred[y == 1].mean() if (y == 1).any() else 0.0
+    tnr = 1 - pred[y == 0].mean() if (y == 0).any() else 0.0
+    return (tpr + tnr) / 2
+
+
+def reject_option(p, A, t, low_groups, theta):
+    """Inside the band |p - t| <= theta, the groups with lower detection get a CKD flag and the others do not."""
+    p, A = np.asarray(p), np.asarray(A)
+    pred = (p >= t).astype(int)
+    band = np.abs(p - t) <= theta
+    low = np.isin(A, list(low_groups))
+    pred[band & low] = 1
+    pred[band & ~low] = 0
+    return pred
+
+
+def fit_reject_option(oof, y, A, t, max_loss=0.03):
+    """Learn the disadvantaged groups and the band width on out-of-fold training scores.
+
+    The widest fairness gain is chosen among bands that keep balanced accuracy within `max_loss`.
+    """
+    oof, y, A = np.asarray(oof), np.asarray(y), np.asarray(A)
+    base = (oof >= t).astype(int)
+    overall = base[y == 1].mean()
+    low = [a for a in np.unique(A) if ((A == a) & (y == 1)).any() and base[(A == a) & (y == 1)].mean() < overall]
+    best_theta, best_gap = 0.0, _eodds_gap(y, base, A)
+    ref = _bal_acc(y, base)
+    for theta in np.linspace(0.01, 0.4, 40):
+        pr = reject_option(oof, A, t, low, theta)
+        if _bal_acc(y, pr) < ref - max_loss:
+            continue
+        g = _eodds_gap(y, pr, A)
+        if g < best_gap - 1e-9:
+            best_theta, best_gap = float(theta), g
+    return low, best_theta
 
 
 def fit_predict(method, model_name, Xtr, ytr, Atr, Xte, Ate, threshold=0.5, proxy_cols=(), seed=SEED):
@@ -57,6 +136,22 @@ def fit_predict(method, model_name, Xtr, ytr, Atr, Xte, Ate, threshold=0.5, prox
             clf.fit(Ztr, ytr, sample_weight=w)
         p = clf.predict_proba(Zte)[:, 1]
         return _cut(p, ytr, threshold), p
+
+    if method == SMOTE:
+        Zs, ys = group_smote(Ztr, ytr, Atr, seed=seed)
+        clf.fit(Zs, ys)
+        p = clf.predict_proba(Zte)[:, 1]
+        # the oversampled training set is already class-balanced, so the "prevalence" rule becomes 0.5
+        return _cut(p, ys, 0.5 if threshold == "prevalence" else threshold), p
+
+    if method == REJECT:
+        t = float(np.mean(ytr)) if threshold == "prevalence" else float(threshold)
+        inner = StratifiedKFold(n_splits=5, shuffle=True, random_state=seed)
+        oof = cross_val_predict(make_classifier(model_name), Ztr, ytr, cv=inner, method="predict_proba")[:, 1]
+        low, theta = fit_reject_option(oof, ytr, Atr, t)
+        clf.fit(Ztr, ytr)
+        p = clf.predict_proba(Zte)[:, 1]
+        return reject_option(p, Ate, t, low, theta), p
 
     if method == EXPGRAD:
         if model_name == "KNN":

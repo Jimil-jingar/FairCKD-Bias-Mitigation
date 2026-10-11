@@ -5,7 +5,8 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import shap
 from common import gauge, np, page_header, page_setup, saved_results, sidebar, st
-from fairckd.diagnosis import load_model, model_path, predict_patient, train_final_model
+from fairckd.diagnosis import lime_patient, load_model, model_path, predict_patient, train_final_model
+from fairckd.explain import lime_figure
 
 page_setup("Patient Diagnosis", "🩺")
 page_header("Patient diagnosis", "Stage 9: clinical decision support",
@@ -95,8 +96,13 @@ if submitted:
         plt.gcf().savefig(png, dpi=200, bbox_inches="tight")
         st.pyplot(plt.gcf(), clear_figure=True)
         st.caption("Red bars push the estimate towards CKD, blue bars away from it.")
+        with st.expander("Second opinion: LIME explanation"):
+            lt, linfo = lime_patient(b, vals)
+            st.pyplot(lime_figure(lt), clear_figure=True)
+            st.caption(f"LIME fits a simple model around this patient (local fit R² = {linfo['local_r2']:.2f}). "
+                       "Red pushes towards CKD, blue away.")
         from fairckd.report import patient_report_pdf
         pdf = patient_report_pdf(b, vals, p, pos, png, patient_id=pid, group=grp)
         st.download_button("Download patient report (PDF)", pdf, f"FairCKD_patient_{pid or 'report'}.pdf",
                            "application/pdf", type="primary")
-st.caption("Research prototype for academic demonstration only; not a medical device.")
+st.caption("Research prototype, not a medical device. Results must be confirmed by a clinician.")

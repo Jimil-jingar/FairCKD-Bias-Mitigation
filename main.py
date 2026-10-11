@@ -1,7 +1,7 @@
 """
 FairCKD command-line runner
 ===========================
-Run every Phase-II experiment (tables, figures, Excel + PDF reports, trained models):
+Run every experiment (tables, figures, Excel + PDF reports, trained models):
 
     python main.py --all
 
@@ -20,7 +20,7 @@ from fairckd.data import load
 from fairckd.models import MODEL_NAMES
 from fairckd.pipeline import run_experiment
 
-THESIS_EXPERIMENTS = [
+EXPERIMENTS = [
     # dataset, feature-set keyword, attribute, mitigation models, under-represented group
     ("uci", "screening", "Age group", ["Logistic Regression", "Random Forest", "XGBoost"], "Non-elderly (<60)"),
     ("uci", "full", "Age group", ["Logistic Regression", "XGBoost"], None),
@@ -51,7 +51,7 @@ def pick(spec, word):
 
 def main():
     ap = argparse.ArgumentParser(description="FairCKD - fairness-aware CKD diagnosis pipeline")
-    ap.add_argument("--all", action="store_true", help="run all thesis experiments")
+    ap.add_argument("--all", action="store_true", help="run all experiments")
     ap.add_argument("--dataset", choices=["uci", "nhanes"])
     ap.add_argument("--attribute")
     ap.add_argument("--features", default="")
@@ -65,7 +65,7 @@ def main():
             print(f"\n{k}: {s.name}\n  feature sets: {list(s.feature_sets)}\n  attributes:   {list(s.sensitive)}")
         return
     if a.all:
-        for ds, fw, attr, mm, rep in THESIS_EXPERIMENTS:
+        for ds, fw, attr, mm, rep in EXPERIMENTS:
             spec = load(ds)
             run_experiment(spec, pick(spec, fw), attr, mitigation_models=mm, representation_group=rep,
                            repeats_base=10 if ds == "uci" else a.repeats, repeats_mit=a.repeats,

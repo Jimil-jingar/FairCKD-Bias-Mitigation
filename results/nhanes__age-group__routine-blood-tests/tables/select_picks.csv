@@ -1,21 +1,21 @@
 ,Repeat,Fold,Strategy,Model,Method,Inner balanced acc.,Inner EOdds gap
-0,1,1,FairCKD-Select,XGBoost,Unawareness,0.724,0.366
+0,1,1,FairCKD-Select,XGBoost,Reject Option,0.72,0.28
 1,1,1,Accuracy-driven selection,Logistic Regression,Baseline,0.74,0.546
-2,1,2,FairCKD-Select,XGBoost,Unawareness,0.722,0.41
+2,1,2,FairCKD-Select,XGBoost,Reject Option,0.705,0.251
 3,1,2,Accuracy-driven selection,XGBoost,Baseline,0.731,0.492
-4,1,3,FairCKD-Select,XGBoost,Unawareness,0.715,0.382
+4,1,3,FairCKD-Select,Logistic Regression,Reject Option,0.704,0.332
 5,1,3,Accuracy-driven selection,XGBoost,Baseline,0.733,0.498
-6,1,4,FairCKD-Select,XGBoost,Unawareness,0.726,0.42
+6,1,4,FairCKD-Select,XGBoost,Reject Option,0.708,0.253
 7,1,4,Accuracy-driven selection,Logistic Regression,Baseline,0.731,0.534
 8,1,5,FairCKD-Select,XGBoost,Exp. Gradient,0.709,0.234
 9,1,5,Accuracy-driven selection,Logistic Regression,Baseline,0.735,0.517
-10,2,1,FairCKD-Select,XGBoost,Unawareness,0.723,0.392
+10,2,1,FairCKD-Select,XGBoost,Reject Option,0.711,0.244
 11,2,1,Accuracy-driven selection,Logistic Regression,Baseline,0.739,0.55
-12,2,2,FairCKD-Select,XGBoost,Unawareness,0.728,0.436
+12,2,2,FairCKD-Select,Logistic Regression,Reject Option,0.71,0.28
 13,2,2,Accuracy-driven selection,Logistic Regression,Baseline,0.736,0.54
-14,2,3,FairCKD-Select,XGBoost,Unawareness,0.715,0.378
+14,2,3,FairCKD-Select,XGBoost,Reject Option,0.713,0.326
 15,2,3,Accuracy-driven selection,Logistic Regression,Baseline,0.736,0.52
 16,2,4,FairCKD-Select,XGBoost,Unawareness,0.717,0.414
 17,2,4,Accuracy-driven selection,Logistic Regression,Baseline,0.739,0.522
-18,2,5,FairCKD-Select,XGBoost,Unawareness,0.716,0.384
+18,2,5,FairCKD-Select,XGBoost,Reject Option,0.718,0.348
 19,2,5,Accuracy-driven selection,Logistic Regression,Baseline,0.731,0.575

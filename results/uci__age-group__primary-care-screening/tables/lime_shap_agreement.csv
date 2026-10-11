@@ -1,0 +1,4 @@
+Group,Patients,Mean top-5 overlap (of 5),Mean LIME local R2
+Elderly (>=60),25.0,3.92,0.51
+Non-elderly (<60),25.0,3.68,0.53
+All,50.0,3.8,0.52
