@@ -1,0 +1,25 @@
+,Feature,Description,Mutual information,Missing (%)
+0,hemo,Haemoglobin (g/dl),0.4443,12.8
+1,pcv,Packed cell volume (%),0.4054,17.4
+2,sc,Serum creatinine (mg/dl),0.3986,4.3
+3,rc,RBC count (millions/cmm),0.348,32.0
+4,sg,Specific gravity,0.2915,11.3
+5,sod,Sodium (mEq/L),0.282,21.5
+6,htn,Hypertension,0.242,0.5
+7,pot,Potassium (mEq/L),0.2344,21.7
+8,al,Albumin (0-5),0.2224,11.0
+9,bgr,Blood glucose random (mg/dl),0.1773,11.0
+10,dm,Diabetes mellitus,0.1762,0.5
+11,bu,Blood urea (mg/dl),0.1734,4.9
+12,bp,Blood pressure (mm Hg),0.1725,3.1
+13,appet,Poor appetite,0.1437,0.3
+14,wc,WBC count (cells/cumm),0.1243,25.8
+15,pc,Pus cell abnormal,0.1227,15.6
+16,pe,Pedal oedema,0.0883,0.3
+17,su,Sugar (0-5),0.0867,11.8
+18,ba,Bacteria,0.0806,1.0
+19,ane,Anaemia,0.0784,0.3
+20,age,Age (years),0.0557,0.0
+21,rbc,Red blood cells abnormal,0.0518,37.6
+22,pcc,Pus cell clumps,0.0312,1.0
+23,cad,Coronary artery disease,0.0147,0.5

@@ -1,0 +1,5 @@
+,Group,Patients,Observed CKD (%),Mean predicted (%),Calibration-in-the-large (pp),ECE,Brier,Model
+0,Elderly (>=60),151,78.1457,73.7045,-4.4412,0.0444,0.0572,Logistic Regression
+1,Non-elderly (<60),240,51.6667,53.3964,1.7297,0.0555,0.0858,Logistic Regression
+2,Elderly (>=60),151,78.1457,75.8095,-2.3362,0.0472,0.0666,XGBoost
+3,Non-elderly (<60),240,51.6667,50.5596,-1.1071,0.0385,0.0838,XGBoost

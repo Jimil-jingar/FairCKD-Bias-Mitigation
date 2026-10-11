@@ -1,0 +1,11 @@
+,Group,Patients,Observed CKD (%),Mean predicted (%),Calibration-in-the-large (pp),ECE,Brier,Model
+0,Hispanic,1204,15.1163,16.2779,1.1616,0.0254,0.1009,Logistic Regression
+1,Non-Hispanic Asian,709,13.8223,16.3454,2.5232,0.0357,0.1014,Logistic Regression
+2,Non-Hispanic Black,1121,22.3907,19.5978,-2.7929,0.0421,0.1255,Logistic Regression
+3,Non-Hispanic White,1762,20.4881,20.753,0.2649,0.0216,0.1151,Logistic Regression
+4,Other/Multi-racial,267,17.603,15.4176,-2.1853,0.0417,0.1142,Logistic Regression
+5,Hispanic,1204,15.1163,15.873,0.7567,0.0308,0.1028,XGBoost
+6,Non-Hispanic Asian,709,13.8223,14.5478,0.7255,0.0376,0.1027,XGBoost
+7,Non-Hispanic Black,1121,22.3907,19.5281,-2.8626,0.0319,0.125,XGBoost
+8,Non-Hispanic White,1762,20.4881,21.1714,0.6833,0.017,0.1168,XGBoost
+9,Other/Multi-racial,267,17.603,14.7728,-2.8302,0.0355,0.1141,XGBoost

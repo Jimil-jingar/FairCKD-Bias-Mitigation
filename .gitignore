@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Raw NHANES files (shipped separately, see data/RAW_NHANES_README.txt)
+data/nhanes/
+data/nhanes_2015/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

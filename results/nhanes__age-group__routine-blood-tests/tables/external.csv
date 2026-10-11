@@ -1,0 +1,11 @@
+,Model,Method,Accuracy,Balanced acc.,Recall,AUC,EOpp diff,EOdds diff,TPR [Elderly (>=60)],TPR [Non-elderly (<60)]
+0,Logistic Regression,Baseline,0.784,0.749,0.696,0.807,0.475,0.508,0.872,0.396
+1,Logistic Regression,Reweighing,0.742,0.705,0.65,0.757,0.173,0.173,0.714,0.541
+2,Logistic Regression,Exp. Gradient,0.682,0.656,0.618,0.659,0.017,0.066,0.624,0.607
+3,Logistic Regression,Threshold Opt.,0.673,0.644,0.601,,0.009,0.021,0.598,0.607
+4,Logistic Regression,RW + TO (hybrid),0.712,0.657,0.576,,0.034,0.034,0.563,0.597
+5,XGBoost,Baseline,0.791,0.74,0.666,0.814,0.453,0.453,0.833,0.381
+6,XGBoost,Reweighing,0.744,0.696,0.626,0.759,0.109,0.109,0.666,0.557
+7,XGBoost,Exp. Gradient,0.791,0.698,0.561,0.732,0.131,0.131,0.609,0.478
+8,XGBoost,Threshold Opt.,0.696,0.663,0.614,,0.073,0.073,0.587,0.66
+9,XGBoost,RW + TO (hybrid),0.668,0.653,0.63,,0.092,0.092,0.596,0.689

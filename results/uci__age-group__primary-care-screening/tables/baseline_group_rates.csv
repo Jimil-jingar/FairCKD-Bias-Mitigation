@@ -1,0 +1,8 @@
+Model,TPR [Elderly (>=60)],FPR [Elderly (>=60)],PPV [Elderly (>=60)],Accuracy [Elderly (>=60)],Selection rate [Elderly (>=60)],TPR [Non-elderly (<60)],FPR [Non-elderly (<60)],PPV [Non-elderly (<60)],Accuracy [Non-elderly (<60)],Selection rate [Non-elderly (<60)]
+Decision Tree,0.907,0.0,1.0,0.927,0.709,0.769,0.028,0.967,0.867,0.411
+KNN,0.925,0.009,0.997,0.939,0.725,0.808,0.005,0.994,0.898,0.42
+Logistic Regression,0.898,0.0,1.0,0.921,0.702,0.819,0.0,1.0,0.907,0.423
+Naive Bayes,0.907,0.0,1.0,0.927,0.709,0.806,0.0,1.0,0.9,0.417
+Random Forest,0.932,0.0,1.0,0.947,0.728,0.898,0.022,0.977,0.936,0.475
+SVM,0.931,0.012,0.996,0.943,0.73,0.86,0.006,0.994,0.925,0.447
+XGBoost,0.917,0.17,0.951,0.898,0.754,0.873,0.073,0.927,0.899,0.486

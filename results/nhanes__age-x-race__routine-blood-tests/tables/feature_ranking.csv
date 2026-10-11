@@ -1,0 +1,18 @@
+,Feature,Description,Mutual information,Missing (%)
+0,bun,Blood urea nitrogen (mg/dl),0.0619,0.0
+1,age,Age (years),0.0561,0.0
+2,dm,Diabetes (self-reported),0.0341,0.1
+3,sbp,Systolic BP (mm Hg),0.0283,4.4
+4,rbc,RBC (million cells/uL),0.0229,0.1
+5,glucose,Serum glucose (mg/dl),0.0223,0.0
+6,htn,Hypertension (BP >= 140/90),0.0203,4.4
+7,hct,Haematocrit (%),0.0163,0.1
+8,uric_acid,Uric acid (mg/dl),0.0118,0.0
+9,potassium,Potassium (mmol/L),0.0105,0.1
+10,dbp,Diastolic BP (mm Hg),0.0103,4.7
+11,hemo,Haemoglobin (g/dl),0.0091,0.1
+12,albumin_serum,Serum albumin (g/dl),0.0036,0.0
+13,wbc,WBC (1000 cells/uL),0.0036,0.1
+14,bmi,BMI (kg/m2),0.0026,1.2
+15,sodium,Sodium (mmol/L),0.0026,0.0
+16,female,Female,0.0,0.0

@@ -1,0 +1,18 @@
+,Elderly (>=60),Non-elderly (<60),Overall
+Age (years),0.5387,0.4791,0.5006
+Blood urea nitrogen (mg/dl),0.5501,0.3258,0.4067
+Systolic BP (mm Hg),0.2682,0.2238,0.2398
+Uric acid (mg/dl),0.2693,0.218,0.2365
+Diabetes (self-reported),0.2094,0.1606,0.1782
+Serum glucose (mg/dl),0.1842,0.1621,0.1701
+WBC (1000 cells/uL),0.1221,0.1265,0.1249
+Haemoglobin (g/dl),0.1242,0.1248,0.1246
+BMI (kg/m2),0.0899,0.1397,0.1217
+RBC (million cells/uL),0.1092,0.114,0.1123
+Diastolic BP (mm Hg),0.0953,0.0882,0.0907
+Haematocrit (%),0.0882,0.0915,0.0903
+Serum albumin (g/dl),0.09,0.0664,0.0749
+Potassium (mmol/L),0.0671,0.0653,0.066
+Female,0.0527,0.0569,0.0554
+Sodium (mmol/L),0.0282,0.0288,0.0286
+Hypertension (BP >= 140/90),0.0,0.0,0.0

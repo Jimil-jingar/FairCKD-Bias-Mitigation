@@ -1,0 +1,5 @@
+,Group,Patients,Observed CKD (%),Mean predicted (%),Calibration-in-the-large (pp),ECE,Brier,Model
+0,Female,2627,18.3099,18.2931,-0.0167,0.0281,0.1121,Logistic Regression
+1,Male,2436,18.8013,18.7947,-0.0066,0.0156,0.1112,Logistic Regression
+2,Female,2627,18.3099,17.8172,-0.4927,0.0193,0.1125,XGBoost
+3,Male,2436,18.8013,18.6869,-0.1144,0.0202,0.1127,XGBoost

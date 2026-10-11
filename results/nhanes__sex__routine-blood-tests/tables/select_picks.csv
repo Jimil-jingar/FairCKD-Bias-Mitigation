@@ -1,0 +1,21 @@
+,Repeat,Fold,Strategy,Model,Method,Inner balanced acc.,Inner EOdds gap
+0,1,1,FairCKD-Select,XGBoost,RW + TO (hybrid),0.709,0.006
+1,1,1,Accuracy-driven selection,XGBoost,Baseline,0.73,0.053
+2,1,2,FairCKD-Select,XGBoost,RW + TO (hybrid),0.724,0.008
+3,1,2,Accuracy-driven selection,XGBoost,Baseline,0.744,0.063
+4,1,3,FairCKD-Select,Logistic Regression,Threshold Opt.,0.725,0.008
+5,1,3,Accuracy-driven selection,Logistic Regression,Baseline,0.737,0.052
+6,1,4,FairCKD-Select,Logistic Regression,Threshold Opt.,0.733,0.006
+7,1,4,Accuracy-driven selection,Logistic Regression,Baseline,0.742,0.061
+8,1,5,FairCKD-Select,XGBoost,Threshold Opt.,0.711,0.021
+9,1,5,Accuracy-driven selection,Logistic Regression,Baseline,0.731,0.053
+10,2,1,FairCKD-Select,XGBoost,Threshold Opt.,0.724,0.006
+11,2,1,Accuracy-driven selection,XGBoost,Baseline,0.739,0.083
+12,2,2,FairCKD-Select,Logistic Regression,RW + TO (hybrid),0.722,0.004
+13,2,2,Accuracy-driven selection,Logistic Regression,Baseline,0.733,0.049
+14,2,3,FairCKD-Select,Logistic Regression,Exp. Gradient,0.725,0.002
+15,2,3,Accuracy-driven selection,XGBoost,Baseline,0.728,0.06
+16,2,4,FairCKD-Select,Logistic Regression,Threshold Opt.,0.724,0.012
+17,2,4,Accuracy-driven selection,Logistic Regression,Baseline,0.735,0.041
+18,2,5,FairCKD-Select,XGBoost,Threshold Opt.,0.719,0.01
+19,2,5,Accuracy-driven selection,XGBoost,Baseline,0.74,0.076

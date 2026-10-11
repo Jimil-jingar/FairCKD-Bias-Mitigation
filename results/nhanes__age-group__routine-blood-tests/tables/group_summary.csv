@@ -1,0 +1,4 @@
+,Group,Patients,Share (%),CKD cases,CKD prevalence (%),Missing values / patient
+0,Elderly (>=60),1827,36.1,626,34.3,0.13
+1,Non-elderly (<60),3236,63.9,313,9.7,0.16
+2,All,5063,100.0,939,18.5,0.15

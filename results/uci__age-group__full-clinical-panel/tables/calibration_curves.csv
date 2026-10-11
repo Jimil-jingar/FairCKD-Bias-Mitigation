@@ -1,0 +1,16 @@
+,Group,Mean predicted,Observed CKD rate,n,Model
+0,Elderly (>=60),0.012880818161855505,0.0,33,Logistic Regression
+1,Elderly (>=60),0.6806462007161121,1.0,3,Logistic Regression
+2,Elderly (>=60),0.9932248578073661,1.0,115,Logistic Regression
+3,Non-elderly (<60),0.025529242668041463,0.0,112,Logistic Regression
+4,Non-elderly (<60),0.31814758021645184,0.2,5,Logistic Regression
+5,Non-elderly (<60),0.5215242100770139,1.0,4,Logistic Regression
+6,Non-elderly (<60),0.7892131088110745,1.0,2,Logistic Regression
+7,Non-elderly (<60),0.9864542244496936,1.0,117,Logistic Regression
+8,Elderly (>=60),0.006514761043063393,0.0,33,XGBoost
+9,Elderly (>=60),0.9934583528567169,1.0,118,XGBoost
+10,Non-elderly (<60),0.011846469939752882,0.008928571428571428,112,XGBoost
+11,Non-elderly (<60),0.2630528161923091,0.3333333333333333,3,XGBoost
+12,Non-elderly (<60),0.4604107439517975,0.0,1,XGBoost
+13,Non-elderly (<60),0.731599748134613,0.0,2,XGBoost
+14,Non-elderly (<60),0.9875466022335115,1.0,122,XGBoost

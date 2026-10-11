@@ -1,0 +1,11 @@
+,Model,Method,Accuracy,Balanced acc.,Recall,AUC,EOpp diff,EOdds diff,TPR [Female],TPR [Male]
+0,Logistic Regression,Baseline,0.784,0.749,0.696,0.807,0.033,0.033,0.681,0.714
+1,Logistic Regression,Reweighing,0.783,0.748,0.696,0.807,0.019,0.031,0.687,0.707
+2,Logistic Regression,Exp. Gradient,0.773,0.746,0.705,0.746,0.013,0.032,0.698,0.711
+3,Logistic Regression,Threshold Opt.,0.827,0.724,0.571,,0.003,0.017,0.573,0.57
+4,Logistic Regression,RW + TO (hybrid),0.827,0.727,0.578,,0.002,0.016,0.577,0.579
+5,XGBoost,Baseline,0.791,0.74,0.666,0.814,0.007,0.021,0.663,0.67
+6,XGBoost,Reweighing,0.79,0.74,0.666,0.811,0.012,0.017,0.661,0.672
+7,XGBoost,Exp. Gradient,0.804,0.728,0.615,0.751,0.142,0.142,0.683,0.54
+8,XGBoost,Threshold Opt.,0.8,0.728,0.622,,0.053,0.053,0.648,0.594
+9,XGBoost,RW + TO (hybrid),0.786,0.735,0.658,,0.029,0.029,0.672,0.643

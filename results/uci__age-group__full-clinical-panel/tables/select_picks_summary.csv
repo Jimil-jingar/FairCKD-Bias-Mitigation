@@ -1,0 +1,6 @@
+,Model,Method,Times selected
+0,Logistic Regression,Baseline,2
+1,Logistic Regression,Reweighing,2
+2,Logistic Regression,Threshold Opt.,4
+3,Logistic Regression,Unawareness,1
+4,XGBoost,Threshold Opt.,1
