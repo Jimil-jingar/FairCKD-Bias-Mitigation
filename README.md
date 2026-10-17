@@ -1,7 +1,7 @@
 # FairCKD: Fairness-aware Machine Learning System for Automated CKD Diagnosis
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-fairckd.streamlit.app-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://fairckd.streamlit.app/)
-[![Project Website](https://img.shields.io/badge/Project%20Website-GitHub%20Pages-0F766E?style=for-the-badge&logo=github&logoColor=white)](https://jimiljingar-dotcom.github.io/FairCKD-Bias-Mitigation/)
+[![Project Website](https://img.shields.io/badge/Project%20Website-GitHub%20Pages-0F766E?style=for-the-badge&logo=github&logoColor=white)](https://jimil-jingar.github.io/FairCKD-Bias-Mitigation/)
 
 **▶ Try the app live: https://fairckd.streamlit.app/** (no installation needed)
 
@@ -22,7 +22,7 @@ it trains CKD diagnosis models, **detects** bias between patient groups, **measu
 ### Windows (easiest)
 1. Install **Python 3.10 or newer** from python.org (tick *"Add Python to PATH"* during installation).
 2. Download this repository (green **Code** button → **Download ZIP**) and unzip it, or clone it:
-   `git clone https://github.com/jimiljingar-dotcom/FairCKD-Bias-Mitigation.git`
+   `git clone https://github.com/jimil-jingar/FairCKD-Bias-Mitigation.git`
 3. Double-click **`run_app.bat`**. The first run installs the libraries (a few minutes), then the app opens in the browser at http://localhost:8501.
 
 ### Any OS (terminal)
