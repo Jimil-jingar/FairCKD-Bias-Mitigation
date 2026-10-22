@@ -29,6 +29,8 @@ EXPERIMENTS = [
     ("nhanes", "routine", "Age group", ["Logistic Regression", "XGBoost"], None),
     ("nhanes", "routine", "Age × Sex", ["Logistic Regression", "XGBoost"], None),
     ("nhanes", "routine", "Age × Race", ["Logistic Regression", "XGBoost"], None),
+    ("nhanes", "routine", "Income group", ["Logistic Regression", "XGBoost"], None),
+    ("nhanes", "routine", "Income group", ["Logistic Regression", "XGBoost"], None),
 ]
 
 

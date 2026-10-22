@@ -1,0 +1,4 @@
+Group,Patients,Mean top-5 overlap (of 5),Mean LIME local R2
+Higher income (PIR >= 1.3),25.0,3.2,0.48
+Low income (PIR < 1.3),25.0,3.24,0.49
+All,50.0,3.22,0.48

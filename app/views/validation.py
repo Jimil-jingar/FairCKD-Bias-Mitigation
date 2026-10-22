@@ -31,6 +31,8 @@ if "weighted_baseline" in R:
     tabs.append("Population-weighted (survey weights)")
 if "external" in R:
     tabs.append("External validation (NHANES 2015-16)")
+if "fairness_drift" in R:
+    tabs.append("Monitoring: drift")
 T = st.tabs(tabs)
 
 with T[0]:
@@ -88,3 +90,46 @@ if "external" in R:
                      width="stretch", hide_index=True)
         if "14_external_validation" in R["figures"]:
             st.image(fig_path(R["figures"]["14_external_validation"]))
+
+if "fairness_drift" in R:
+    with T[tabs.index("Monitoring: drift")]:
+        fd, dd, pv = R["fairness_drift"], R["data_drift"], R["prevalence_drift"]
+        held = (fd["Fairness held?"] == "Yes").sum()
+        shifted = (dd.Shift != "Stable").sum()
+        st.markdown(
+            "A model that was fair at validation can become unfair after deployment when the patient mix, the "
+            "measurements or the disease prevalence change. Here the 2015-16 NHANES cohort plays the role of "
+            f"new patients. **{held} of {len(fd)}** pipelines keep their Equalized Odds gap within 0.05 of the "
+            f"development estimate, and **{shifted}** feature(s) shift at least moderately inside some group "
+            "(PSI > 0.1). This is why FairCKD recommends re-running the fairness audit on new data at regular intervals.")
+        d = fd.copy(); d["Pipeline"] = d.Model.str.replace("Logistic Regression", "LR") + " · " + d.Method
+        long = d.melt("Pipeline", ["EOdds diff (internal)", "EOdds diff (external)"], var_name="Cohort",
+                      value_name="EOdds gap")
+        long["Cohort"] = long.Cohort.map({"EOdds diff (internal)": "Development (CV, 2017-18)",
+                                          "EOdds diff (external)": "External (2015-16)"})
+        f = px.bar(long, x="EOdds gap", y="Pipeline", color="Cohort", barmode="group", orientation="h",
+                   height=46 * len(d) + 140, title="Fairness drift: Equalized Odds gap per pipeline (lower is fairer)",
+                   color_discrete_map={"Development (CV, 2017-18)": "#0F766E", "External (2015-16)": "#9F1D35"})
+        f.update_yaxes(title=None, autorange="reversed")
+        f.update_layout(legend_title_text="", margin=dict(t=60, b=10), legend=dict(orientation="h", y=-0.08, x=0))
+        st.plotly_chart(f, width="stretch", theme=None)
+        st.dataframe(style_table(fd, lower_better=["EOdds diff (internal)", "EOdds diff (external)", "Δ EOdds gap"]),
+                     width="stretch", hide_index=True)
+        c1, c2 = st.columns(2, gap="large")
+        with c1:
+            st.markdown("**CKD prevalence per group in each cohort**")
+            st.dataframe(pv, width="stretch", hide_index=True)
+            if "sensitivity_drift" in R and len(R["sensitivity_drift"]):
+                st.markdown("**Sensitivity per group: development vs external (unmitigated models)**")
+                st.dataframe(R["sensitivity_drift"], width="stretch", hide_index=True)
+        with c2:
+            top = dd.head(10)[::-1]
+            f = px.bar(top, x="Max group PSI", y="Feature", orientation="h", color="Shift", height=380,
+                       color_discrete_map={"Significant": "#9F1D35", "Moderate": "#C27C0E", "Stable": "#94A3B8"},
+                       title="Data drift: largest within-group PSI per feature")
+            f.add_vline(x=0.1, line=dict(dash="dot", color="#C27C0E")); f.add_vline(x=0.2, line=dict(dash="dot", color="#9F1D35"))
+            f.update_yaxes(title=None); f.update_layout(legend_title_text="", margin=dict(t=50, b=10))
+            st.plotly_chart(f, width="stretch", theme=None)
+            st.caption("Population Stability Index: < 0.1 stable, 0.1-0.2 moderate shift, > 0.2 significant shift.")
+        with st.expander("Full data-drift table (PSI overall and per group)"):
+            st.dataframe(dd, width="stretch", hide_index=True)

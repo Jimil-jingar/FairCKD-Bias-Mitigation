@@ -24,9 +24,10 @@ from sklearn.model_selection import StratifiedKFold
 
 from . import SEED
 from .fairness import fairness_report
-from .mitigation import BASELINE, EXPGRAD, HYBRID, REJECT, REWEIGH, SHORT, SMOTE, THRESH, UNAWARE, fit_predict
+from .mitigation import (ADVERSARIAL, BASELINE, EXPGRAD, HYBRID, REJECT, REWEIGH, SHORT, SMOTE, THRESH, UNAWARE,
+                         fit_predict, supports)
 
-DEFAULT_METHODS = [BASELINE, UNAWARE, REWEIGH, SMOTE, EXPGRAD, THRESH, REJECT, HYBRID]
+DEFAULT_METHODS = [BASELINE, UNAWARE, REWEIGH, SMOTE, EXPGRAD, ADVERSARIAL, THRESH, REJECT, HYBRID]
 
 
 def _key(y, A):
@@ -72,7 +73,7 @@ def nested_select(X, y, A, models=("Logistic Regression", "XGBoost"), methods=DE
     Returns (per-repeat metrics DataFrame, selection log DataFrame)."""
     y, A = pd.Series(np.asarray(y)), pd.Series(np.asarray(A))
     methods = [m for m in methods if not (m == UNAWARE and not proxy_cols)]
-    candidates = [(mo, me) for mo in models for me in methods if not (me == EXPGRAD and mo == "KNN")]
+    candidates = [(mo, me) for mo in models for me in methods if supports(me, mo)]
     rows, picks = [], []
     for rep in range(outer_repeats):
         skf = StratifiedKFold(n_splits=outer_splits, shuffle=True, random_state=SEED + 100 + rep)

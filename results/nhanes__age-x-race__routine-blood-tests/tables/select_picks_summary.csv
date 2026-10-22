@@ -1,3 +1,4 @@
 ,Model,Method,Times selected
-0,Logistic Regression,Reject Option,4
-1,XGBoost,Reject Option,6
+0,Logistic Regression,Adversarial,1
+1,Logistic Regression,Reject Option,3
+2,XGBoost,Reject Option,6

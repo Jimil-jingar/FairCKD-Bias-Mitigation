@@ -17,7 +17,7 @@ Package layout (one module per stage of the proposed nine-stage framework):
     pipeline.py       End-to-end experiment runner
     plots.py, report.py  Figures, Excel and PDF reports
 """
-__version__ = "1.0.0"
+__version__ = "1.2.0"
 SEED = 42
 
 import warnings as _w

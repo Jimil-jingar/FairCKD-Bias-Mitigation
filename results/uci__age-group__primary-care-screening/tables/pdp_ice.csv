@@ -1,0 +1,1033 @@
+,Feature,Value,Curve,Kind,CKD probability
+0,Blood glucose random (mg/dl),74.0,All patients,PDP,0.5365877747535706
+1,Blood glucose random (mg/dl),74.0,Elderly (>=60),Group PDP,0.6911301612854004
+2,Blood glucose random (mg/dl),74.0,Non-elderly (<60),Group PDP,0.4393547475337982
+3,Blood glucose random (mg/dl),74.0,patient 381,ICE,0.0331687368452549
+4,Blood glucose random (mg/dl),74.0,patient 187,ICE,0.9834854006767273
+5,Blood glucose random (mg/dl),74.0,patient 207,ICE,0.9845351576805115
+6,Blood glucose random (mg/dl),74.0,patient 386,ICE,0.009664016775786877
+7,Blood glucose random (mg/dl),74.0,patient 290,ICE,0.03599807247519493
+8,Blood glucose random (mg/dl),74.0,patient 31,ICE,0.9969582557678223
+9,Blood glucose random (mg/dl),74.0,patient 5,ICE,0.9950467348098755
+10,Blood glucose random (mg/dl),74.0,patient 332,ICE,0.032270412892103195
+11,Blood glucose random (mg/dl),74.0,patient 277,ICE,0.10430166870355606
+12,Blood glucose random (mg/dl),74.0,patient 95,ICE,0.9932869076728821
+13,Blood glucose random (mg/dl),74.0,patient 14,ICE,0.9990425705909729
+14,Blood glucose random (mg/dl),74.0,patient 235,ICE,0.9809654355049133
+15,Blood glucose random (mg/dl),74.0,patient 8,ICE,0.9953699707984924
+16,Blood glucose random (mg/dl),74.0,patient 67,ICE,0.08344688266515732
+17,Blood glucose random (mg/dl),74.0,patient 180,ICE,0.9936293959617615
+18,Blood glucose random (mg/dl),74.0,patient 355,ICE,0.1437840610742569
+19,Blood glucose random (mg/dl),74.0,patient 26,ICE,0.9933273792266846
+20,Blood glucose random (mg/dl),74.0,patient 12,ICE,0.9987776875495911
+21,Blood glucose random (mg/dl),74.0,patient 34,ICE,0.9989579916000366
+22,Blood glucose random (mg/dl),74.0,patient 165,ICE,0.9808552861213684
+23,Blood glucose random (mg/dl),74.0,patient 221,ICE,0.6220840811729431
+24,Blood glucose random (mg/dl),74.0,patient 323,ICE,0.10391201823949814
+25,Blood glucose random (mg/dl),74.0,patient 267,ICE,0.052532635629177094
+26,Blood glucose random (mg/dl),74.0,patient 293,ICE,0.07372047752141953
+27,Blood glucose random (mg/dl),74.0,patient 148,ICE,0.9946001768112183
+28,Blood glucose random (mg/dl),74.0,patient 103,ICE,0.10388336330652237
+29,Blood glucose random (mg/dl),74.0,patient 209,ICE,0.9602676033973694
+30,Blood glucose random (mg/dl),74.0,patient 183,ICE,0.994042694568634
+31,Blood glucose random (mg/dl),74.0,patient 331,ICE,0.08118486404418945
+32,Blood glucose random (mg/dl),74.0,patient 250,ICE,0.035046663135290146
+33,Blood glucose random (mg/dl),74.0,patient 346,ICE,0.04138927906751633
+34,Blood glucose random (mg/dl),74.0,patient 63,ICE,0.009664016775786877
+35,Blood glucose random (mg/dl),74.0,patient 304,ICE,0.009664016775786877
+36,Blood glucose random (mg/dl),74.0,patient 200,ICE,0.9930117726325989
+37,Blood glucose random (mg/dl),74.0,patient 1,ICE,0.9387499690055847
+38,Blood glucose random (mg/dl),74.0,patient 116,ICE,0.984167754650116
+39,Blood glucose random (mg/dl),74.0,patient 109,ICE,0.9933776259422302
+40,Blood glucose random (mg/dl),74.0,patient 299,ICE,0.034915294498205185
+41,Blood glucose random (mg/dl),74.0,patient 224,ICE,0.9303311705589294
+42,Blood glucose random (mg/dl),74.0,patient 232,ICE,0.9971739053726196
+43,Blood glucose random (mg/dl),81.0,All patients,PDP,0.5193691849708557
+44,Blood glucose random (mg/dl),81.0,Elderly (>=60),Group PDP,0.6773975491523743
+45,Blood glucose random (mg/dl),81.0,Non-elderly (<60),Group PDP,0.41994303464889526
+46,Blood glucose random (mg/dl),81.0,patient 381,ICE,0.02372579835355282
+47,Blood glucose random (mg/dl),81.0,patient 187,ICE,0.9778717160224915
+48,Blood glucose random (mg/dl),81.0,patient 207,ICE,0.9783071279525757
+49,Blood glucose random (mg/dl),81.0,patient 386,ICE,0.006865211296826601
+50,Blood glucose random (mg/dl),81.0,patient 290,ICE,0.02964380569756031
+51,Blood glucose random (mg/dl),81.0,patient 31,ICE,0.9958939552307129
+52,Blood glucose random (mg/dl),81.0,patient 5,ICE,0.9933179616928101
+53,Blood glucose random (mg/dl),81.0,patient 332,ICE,0.023077119141817093
+54,Blood glucose random (mg/dl),81.0,patient 277,ICE,0.07953735440969467
+55,Blood glucose random (mg/dl),81.0,patient 95,ICE,0.9918065071105957
+56,Blood glucose random (mg/dl),81.0,patient 14,ICE,0.9987101554870605
+57,Blood glucose random (mg/dl),81.0,patient 235,ICE,0.9744487404823303
+58,Blood glucose random (mg/dl),81.0,patient 8,ICE,0.9937534928321838
+59,Blood glucose random (mg/dl),81.0,patient 67,ICE,0.06328427791595459
+60,Blood glucose random (mg/dl),81.0,patient 180,ICE,0.9918573498725891
+61,Blood glucose random (mg/dl),81.0,patient 355,ICE,0.11080517619848251
+62,Blood glucose random (mg/dl),81.0,patient 26,ICE,0.9910287261009216
+63,Blood glucose random (mg/dl),81.0,patient 12,ICE,0.9983536005020142
+64,Blood glucose random (mg/dl),81.0,patient 34,ICE,0.9986562728881836
+65,Blood glucose random (mg/dl),81.0,patient 165,ICE,0.9743709564208984
+66,Blood glucose random (mg/dl),81.0,patient 221,ICE,0.562469482421875
+67,Blood glucose random (mg/dl),81.0,patient 323,ICE,0.07591018080711365
+68,Blood glucose random (mg/dl),81.0,patient 267,ICE,0.041504185646772385
+69,Blood glucose random (mg/dl),81.0,patient 293,ICE,0.05336998030543327
+70,Blood glucose random (mg/dl),81.0,patient 148,ICE,0.9927167892456055
+71,Blood glucose random (mg/dl),81.0,patient 103,ICE,0.0792095810174942
+72,Blood glucose random (mg/dl),81.0,patient 209,ICE,0.9470472931861877
+73,Blood glucose random (mg/dl),81.0,patient 183,ICE,0.9927276372909546
+74,Blood glucose random (mg/dl),81.0,patient 331,ICE,0.05890486389398575
+75,Blood glucose random (mg/dl),81.0,patient 250,ICE,0.02508295513689518
+76,Blood glucose random (mg/dl),81.0,patient 346,ICE,0.03261968120932579
+77,Blood glucose random (mg/dl),81.0,patient 63,ICE,0.006865211296826601
+78,Blood glucose random (mg/dl),81.0,patient 304,ICE,0.006865211296826601
+79,Blood glucose random (mg/dl),81.0,patient 200,ICE,0.9906054139137268
+80,Blood glucose random (mg/dl),81.0,patient 1,ICE,0.9228967428207397
+81,Blood glucose random (mg/dl),81.0,patient 116,ICE,0.9798170924186707
+82,Blood glucose random (mg/dl),81.0,patient 109,ICE,0.9910961389541626
+83,Blood glucose random (mg/dl),81.0,patient 299,ICE,0.024987967684864998
+84,Blood glucose random (mg/dl),81.0,patient 224,ICE,0.9081031084060669
+85,Blood glucose random (mg/dl),81.0,patient 232,ICE,0.9961953163146973
+86,Blood glucose random (mg/dl),89.0,All patients,PDP,0.5311970114707947
+87,Blood glucose random (mg/dl),89.0,Elderly (>=60),Group PDP,0.6969043016433716
+88,Blood glucose random (mg/dl),89.0,Non-elderly (<60),Group PDP,0.4269395172595978
+89,Blood glucose random (mg/dl),89.0,patient 381,ICE,0.03267918527126312
+90,Blood glucose random (mg/dl),89.0,patient 187,ICE,0.985601007938385
+91,Blood glucose random (mg/dl),89.0,patient 207,ICE,0.9761279225349426
+92,Blood glucose random (mg/dl),89.0,patient 386,ICE,0.009517962113022804
+93,Blood glucose random (mg/dl),89.0,patient 290,ICE,0.04073727875947952
+94,Blood glucose random (mg/dl),89.0,patient 31,ICE,0.9973452687263489
+95,Blood glucose random (mg/dl),89.0,patient 5,ICE,0.9956758618354797
+96,Blood glucose random (mg/dl),89.0,patient 332,ICE,0.035298049449920654
+97,Blood glucose random (mg/dl),89.0,patient 277,ICE,0.11804497987031937
+98,Blood glucose random (mg/dl),89.0,patient 95,ICE,0.9940922856330872
+99,Blood glucose random (mg/dl),89.0,patient 14,ICE,0.9991669654846191
+100,Blood glucose random (mg/dl),89.0,patient 235,ICE,0.9833532571792603
+101,Blood glucose random (mg/dl),89.0,patient 8,ICE,0.9954985976219177
+102,Blood glucose random (mg/dl),89.0,patient 67,ICE,0.0947328582406044
+103,Blood glucose random (mg/dl),89.0,patient 180,ICE,0.9910269379615784
+104,Blood glucose random (mg/dl),89.0,patient 355,ICE,0.16178999841213226
+105,Blood glucose random (mg/dl),89.0,patient 26,ICE,0.9941897392272949
+106,Blood glucose random (mg/dl),89.0,patient 12,ICE,0.9989364743232727
+107,Blood glucose random (mg/dl),89.0,patient 34,ICE,0.9991320967674255
+108,Blood glucose random (mg/dl),89.0,patient 165,ICE,0.9833021759986877
+109,Blood glucose random (mg/dl),89.0,patient 221,ICE,0.6412004828453064
+110,Blood glucose random (mg/dl),89.0,patient 323,ICE,0.0768914744257927
+111,Blood glucose random (mg/dl),89.0,patient 267,ICE,0.03777770325541496
+112,Blood glucose random (mg/dl),89.0,patient 293,ICE,0.0486321747303009
+113,Blood glucose random (mg/dl),89.0,patient 148,ICE,0.9947500824928284
+114,Blood glucose random (mg/dl),89.0,patient 103,ICE,0.1175786480307579
+115,Blood glucose random (mg/dl),89.0,patient 209,ICE,0.9651598930358887
+116,Blood glucose random (mg/dl),89.0,patient 183,ICE,0.9947578310966492
+117,Blood glucose random (mg/dl),89.0,patient 331,ICE,0.0567169226706028
+118,Blood glucose random (mg/dl),89.0,patient 250,ICE,0.02542528137564659
+119,Blood glucose random (mg/dl),89.0,patient 346,ICE,0.02966621145606041
+120,Blood glucose random (mg/dl),89.0,patient 63,ICE,0.009517962113022804
+121,Blood glucose random (mg/dl),89.0,patient 304,ICE,0.009517962113022804
+122,Blood glucose random (mg/dl),89.0,patient 200,ICE,0.9939145445823669
+123,Blood glucose random (mg/dl),89.0,patient 1,ICE,0.9156311750411987
+124,Blood glucose random (mg/dl),89.0,patient 116,ICE,0.9853984117507935
+125,Blood glucose random (mg/dl),89.0,patient 109,ICE,0.9942334294319153
+126,Blood glucose random (mg/dl),89.0,patient 299,ICE,0.02532903291285038
+127,Blood glucose random (mg/dl),89.0,patient 224,ICE,0.9321427345275879
+128,Blood glucose random (mg/dl),89.0,patient 232,ICE,0.9975403547286987
+129,Blood glucose random (mg/dl),93.0,All patients,PDP,0.5482572317123413
+130,Blood glucose random (mg/dl),93.0,Elderly (>=60),Group PDP,0.7300246357917786
+131,Blood glucose random (mg/dl),93.0,Non-elderly (<60),Group PDP,0.4338952302932739
+132,Blood glucose random (mg/dl),93.0,patient 381,ICE,0.050786953419446945
+133,Blood glucose random (mg/dl),93.0,patient 187,ICE,0.9931909441947937
+134,Blood glucose random (mg/dl),93.0,patient 207,ICE,0.9627733826637268
+135,Blood glucose random (mg/dl),93.0,patient 386,ICE,0.015911370515823364
+136,Blood glucose random (mg/dl),93.0,patient 290,ICE,0.08364271372556686
+137,Blood glucose random (mg/dl),93.0,patient 31,ICE,0.9985038042068481
+138,Blood glucose random (mg/dl),93.0,patient 5,ICE,0.9975612163543701
+139,Blood glucose random (mg/dl),93.0,patient 332,ICE,0.06812243908643723
+140,Blood glucose random (mg/dl),93.0,patient 277,ICE,0.2274533361196518
+141,Blood glucose random (mg/dl),93.0,patient 95,ICE,0.996938943862915
+142,Blood glucose random (mg/dl),93.0,patient 14,ICE,0.9995738863945007
+143,Blood glucose random (mg/dl),93.0,patient 235,ICE,0.9908526539802551
+144,Blood glucose random (mg/dl),93.0,patient 8,ICE,0.9970614314079285
+145,Blood glucose random (mg/dl),93.0,patient 67,ICE,0.1729201376438141
+146,Blood glucose random (mg/dl),93.0,patient 180,ICE,0.9872926473617554
+147,Blood glucose random (mg/dl),93.0,patient 355,ICE,0.2804175913333893
+148,Blood glucose random (mg/dl),93.0,patient 26,ICE,0.9970207810401917
+149,Blood glucose random (mg/dl),93.0,patient 12,ICE,0.9995006322860718
+150,Blood glucose random (mg/dl),93.0,patient 34,ICE,0.9995112419128418
+151,Blood glucose random (mg/dl),93.0,patient 165,ICE,0.9923393726348877
+152,Blood glucose random (mg/dl),93.0,patient 221,ICE,0.7604039907455444
+153,Blood glucose random (mg/dl),93.0,patient 323,ICE,0.08708222955465317
+154,Blood glucose random (mg/dl),93.0,patient 267,ICE,0.027009613811969757
+155,Blood glucose random (mg/dl),93.0,patient 293,ICE,0.0370912104845047
+156,Blood glucose random (mg/dl),93.0,patient 148,ICE,0.9967725872993469
+157,Blood glucose random (mg/dl),93.0,patient 103,ICE,0.19635795056819916
+158,Blood glucose random (mg/dl),93.0,patient 209,ICE,0.9800839424133301
+159,Blood glucose random (mg/dl),93.0,patient 183,ICE,0.9972846508026123
+160,Blood glucose random (mg/dl),93.0,patient 331,ICE,0.04839605465531349
+161,Blood glucose random (mg/dl),93.0,patient 250,ICE,0.02715390920639038
+162,Blood glucose random (mg/dl),93.0,patient 346,ICE,0.02115936018526554
+163,Blood glucose random (mg/dl),93.0,patient 63,ICE,0.015911370515823364
+164,Blood glucose random (mg/dl),93.0,patient 304,ICE,0.015911370515823364
+165,Blood glucose random (mg/dl),93.0,patient 200,ICE,0.9965651631355286
+166,Blood glucose random (mg/dl),93.0,patient 1,ICE,0.8841866850852966
+167,Blood glucose random (mg/dl),93.0,patient 116,ICE,0.9912135004997253
+168,Blood glucose random (mg/dl),93.0,patient 109,ICE,0.9967455863952637
+169,Blood glucose random (mg/dl),93.0,patient 299,ICE,0.02932179719209671
+170,Blood glucose random (mg/dl),93.0,patient 224,ICE,0.9560549855232239
+171,Blood glucose random (mg/dl),93.0,patient 232,ICE,0.9987276196479797
+172,Blood glucose random (mg/dl),98.0,All patients,PDP,0.5742719173431396
+173,Blood glucose random (mg/dl),98.0,Elderly (>=60),Group PDP,0.7649177312850952
+174,Blood glucose random (mg/dl),98.0,Non-elderly (<60),Group PDP,0.4543238878250122
+175,Blood glucose random (mg/dl),98.0,patient 381,ICE,0.08449537307024002
+176,Blood glucose random (mg/dl),98.0,patient 187,ICE,0.9966187477111816
+177,Blood glucose random (mg/dl),98.0,patient 207,ICE,0.9623824954032898
+178,Blood glucose random (mg/dl),98.0,patient 386,ICE,0.02713380753993988
+179,Blood glucose random (mg/dl),98.0,patient 290,ICE,0.104851134121418
+180,Blood glucose random (mg/dl),98.0,patient 31,ICE,0.9990620017051697
+181,Blood glucose random (mg/dl),98.0,patient 5,ICE,0.9984569549560547
+182,Blood glucose random (mg/dl),98.0,patient 332,ICE,0.14647406339645386
+183,Blood glucose random (mg/dl),98.0,patient 277,ICE,0.40869104862213135
+184,Blood glucose random (mg/dl),98.0,patient 95,ICE,0.9972952008247375
+185,Blood glucose random (mg/dl),98.0,patient 14,ICE,0.9997108578681946
+186,Blood glucose random (mg/dl),98.0,patient 235,ICE,0.9948779344558716
+187,Blood glucose random (mg/dl),98.0,patient 8,ICE,0.9981404542922974
+188,Blood glucose random (mg/dl),98.0,patient 67,ICE,0.32922235131263733
+189,Blood glucose random (mg/dl),98.0,patient 180,ICE,0.9846944212913513
+190,Blood glucose random (mg/dl),98.0,patient 355,ICE,0.421187162399292
+191,Blood glucose random (mg/dl),98.0,patient 26,ICE,0.9980091452598572
+192,Blood glucose random (mg/dl),98.0,patient 12,ICE,0.9997305274009705
+193,Blood glucose random (mg/dl),98.0,patient 34,ICE,0.999693751335144
+194,Blood glucose random (mg/dl),98.0,patient 165,ICE,0.9959173798561096
+195,Blood glucose random (mg/dl),98.0,patient 221,ICE,0.7822830677032471
+196,Blood glucose random (mg/dl),98.0,patient 323,ICE,0.12956580519676208
+197,Blood glucose random (mg/dl),98.0,patient 267,ICE,0.02488648146390915
+198,Blood glucose random (mg/dl),98.0,patient 293,ICE,0.04781373590230942
+199,Blood glucose random (mg/dl),98.0,patient 148,ICE,0.9978086352348328
+200,Blood glucose random (mg/dl),98.0,patient 103,ICE,0.31330230832099915
+201,Blood glucose random (mg/dl),98.0,patient 209,ICE,0.9887335300445557
+202,Blood glucose random (mg/dl),98.0,patient 183,ICE,0.9976008534431458
+203,Blood glucose random (mg/dl),98.0,patient 331,ICE,0.06573028862476349
+204,Blood glucose random (mg/dl),98.0,patient 250,ICE,0.03348518908023834
+205,Blood glucose random (mg/dl),98.0,patient 346,ICE,0.019486887380480766
+206,Blood glucose random (mg/dl),98.0,patient 63,ICE,0.02713380753993988
+207,Blood glucose random (mg/dl),98.0,patient 304,ICE,0.02713380753993988
+208,Blood glucose random (mg/dl),98.0,patient 200,ICE,0.9979914426803589
+209,Blood glucose random (mg/dl),98.0,patient 1,ICE,0.863423228263855
+210,Blood glucose random (mg/dl),98.0,patient 116,ICE,0.9922311902046204
+211,Blood glucose random (mg/dl),98.0,patient 109,ICE,0.9980971217155457
+212,Blood glucose random (mg/dl),98.0,patient 299,ICE,0.03815985843539238
+213,Blood glucose random (mg/dl),98.0,patient 224,ICE,0.9740449786186218
+214,Blood glucose random (mg/dl),98.0,patient 232,ICE,0.9993131160736084
+215,Blood glucose random (mg/dl),100.0,All patients,PDP,0.6061314940452576
+216,Blood glucose random (mg/dl),100.0,Elderly (>=60),Group PDP,0.7993165850639343
+217,Blood glucose random (mg/dl),100.0,Non-elderly (<60),Group PDP,0.48458579182624817
+218,Blood glucose random (mg/dl),100.0,patient 381,ICE,0.16756373643875122
+219,Blood glucose random (mg/dl),100.0,patient 187,ICE,0.9969491362571716
+220,Blood glucose random (mg/dl),100.0,patient 207,ICE,0.9528800249099731
+221,Blood glucose random (mg/dl),100.0,patient 386,ICE,0.05734144151210785
+222,Blood glucose random (mg/dl),100.0,patient 290,ICE,0.09854956716299057
+223,Blood glucose random (mg/dl),100.0,patient 31,ICE,0.999529242515564
+224,Blood glucose random (mg/dl),100.0,patient 5,ICE,0.999225378036499
+225,Blood glucose random (mg/dl),100.0,patient 332,ICE,0.28169143199920654
+226,Blood glucose random (mg/dl),100.0,patient 277,ICE,0.5008083581924438
+227,Blood glucose random (mg/dl),100.0,patient 95,ICE,0.998062789440155
+228,Blood glucose random (mg/dl),100.0,patient 14,ICE,0.9998207688331604
+229,Blood glucose random (mg/dl),100.0,patient 235,ICE,0.9975680708885193
+230,Blood glucose random (mg/dl),100.0,patient 8,ICE,0.9990217685699463
+231,Blood glucose random (mg/dl),100.0,patient 67,ICE,0.5416367650032043
+232,Blood glucose random (mg/dl),100.0,patient 180,ICE,0.9806112051010132
+233,Blood glucose random (mg/dl),100.0,patient 355,ICE,0.5051651000976562
+234,Blood glucose random (mg/dl),100.0,patient 26,ICE,0.9982038736343384
+235,Blood glucose random (mg/dl),100.0,patient 12,ICE,0.9998328685760498
+236,Blood glucose random (mg/dl),100.0,patient 34,ICE,0.9998540878295898
+237,Blood glucose random (mg/dl),100.0,patient 165,ICE,0.9965218305587769
+238,Blood glucose random (mg/dl),100.0,patient 221,ICE,0.8311176300048828
+239,Blood glucose random (mg/dl),100.0,patient 323,ICE,0.20137327909469604
+240,Blood glucose random (mg/dl),100.0,patient 267,ICE,0.027722544968128204
+241,Blood glucose random (mg/dl),100.0,patient 293,ICE,0.0648219957947731
+242,Blood glucose random (mg/dl),100.0,patient 148,ICE,0.9988470077514648
+243,Blood glucose random (mg/dl),100.0,patient 103,ICE,0.5234609842300415
+244,Blood glucose random (mg/dl),100.0,patient 209,ICE,0.9947452545166016
+245,Blood glucose random (mg/dl),100.0,patient 183,ICE,0.9982818365097046
+246,Blood glucose random (mg/dl),100.0,patient 331,ICE,0.09919296950101852
+247,Blood glucose random (mg/dl),100.0,patient 250,ICE,0.05543449893593788
+248,Blood glucose random (mg/dl),100.0,patient 346,ICE,0.024005481973290443
+249,Blood glucose random (mg/dl),100.0,patient 63,ICE,0.05734144151210785
+250,Blood glucose random (mg/dl),100.0,patient 304,ICE,0.05734144151210785
+251,Blood glucose random (mg/dl),100.0,patient 200,ICE,0.9988629817962646
+252,Blood glucose random (mg/dl),100.0,patient 1,ICE,0.8324902653694153
+253,Blood glucose random (mg/dl),100.0,patient 116,ICE,0.9938522577285767
+254,Blood glucose random (mg/dl),100.0,patient 109,ICE,0.9990930557250977
+255,Blood glucose random (mg/dl),100.0,patient 299,ICE,0.0629737451672554
+256,Blood glucose random (mg/dl),100.0,patient 224,ICE,0.9879299402236938
+257,Blood glucose random (mg/dl),100.0,patient 232,ICE,0.9996728897094727
+258,Blood glucose random (mg/dl),105.0,All patients,PDP,0.6495219469070435
+259,Blood glucose random (mg/dl),105.0,Elderly (>=60),Group PDP,0.8050716519355774
+260,Blood glucose random (mg/dl),105.0,Non-elderly (<60),Group PDP,0.5516552329063416
+261,Blood glucose random (mg/dl),105.0,patient 381,ICE,0.47777536511421204
+262,Blood glucose random (mg/dl),105.0,patient 187,ICE,0.9953727126121521
+263,Blood glucose random (mg/dl),105.0,patient 207,ICE,0.9778335094451904
+264,Blood glucose random (mg/dl),105.0,patient 386,ICE,0.11457756161689758
+265,Blood glucose random (mg/dl),105.0,patient 290,ICE,0.06210210919380188
+266,Blood glucose random (mg/dl),105.0,patient 31,ICE,0.9997125267982483
+267,Blood glucose random (mg/dl),105.0,patient 5,ICE,0.9995334148406982
+268,Blood glucose random (mg/dl),105.0,patient 332,ICE,0.34242281317710876
+269,Blood glucose random (mg/dl),105.0,patient 277,ICE,0.4226894974708557
+270,Blood glucose random (mg/dl),105.0,patient 95,ICE,0.9978398084640503
+271,Blood glucose random (mg/dl),105.0,patient 14,ICE,0.999816358089447
+272,Blood glucose random (mg/dl),105.0,patient 235,ICE,0.9985142350196838
+273,Blood glucose random (mg/dl),105.0,patient 8,ICE,0.9997549653053284
+274,Blood glucose random (mg/dl),105.0,patient 67,ICE,0.6107591986656189
+275,Blood glucose random (mg/dl),105.0,patient 180,ICE,0.9806709289550781
+276,Blood glucose random (mg/dl),105.0,patient 355,ICE,0.4749344289302826
+277,Blood glucose random (mg/dl),105.0,patient 26,ICE,0.9979733824729919
+278,Blood glucose random (mg/dl),105.0,patient 12,ICE,0.9997696280479431
+279,Blood glucose random (mg/dl),105.0,patient 34,ICE,0.9999109506607056
+280,Blood glucose random (mg/dl),105.0,patient 165,ICE,0.99472576379776
+281,Blood glucose random (mg/dl),105.0,patient 221,ICE,0.8281481266021729
+282,Blood glucose random (mg/dl),105.0,patient 323,ICE,0.27017658948898315
+283,Blood glucose random (mg/dl),105.0,patient 267,ICE,0.02815983071923256
+284,Blood glucose random (mg/dl),105.0,patient 293,ICE,0.09757843613624573
+285,Blood glucose random (mg/dl),105.0,patient 148,ICE,0.9993540644645691
+286,Blood glucose random (mg/dl),105.0,patient 103,ICE,0.671848714351654
+287,Blood glucose random (mg/dl),105.0,patient 209,ICE,0.9967861175537109
+288,Blood glucose random (mg/dl),105.0,patient 183,ICE,0.9980840682983398
+289,Blood glucose random (mg/dl),105.0,patient 331,ICE,0.13873203098773956
+290,Blood glucose random (mg/dl),105.0,patient 250,ICE,0.13119933009147644
+291,Blood glucose random (mg/dl),105.0,patient 346,ICE,0.023740757256746292
+292,Blood glucose random (mg/dl),105.0,patient 63,ICE,0.11457756161689758
+293,Blood glucose random (mg/dl),105.0,patient 304,ICE,0.11457756161689758
+294,Blood glucose random (mg/dl),105.0,patient 200,ICE,0.9992192983627319
+295,Blood glucose random (mg/dl),105.0,patient 1,ICE,0.8329287767410278
+296,Blood glucose random (mg/dl),105.0,patient 116,ICE,0.9969948530197144
+297,Blood glucose random (mg/dl),105.0,patient 109,ICE,0.9995131492614746
+298,Blood glucose random (mg/dl),105.0,patient 299,ICE,0.16221116483211517
+299,Blood glucose random (mg/dl),105.0,patient 224,ICE,0.9970695376396179
+300,Blood glucose random (mg/dl),105.0,patient 232,ICE,0.9997419714927673
+301,Blood glucose random (mg/dl),109.0,All patients,PDP,0.6289424896240234
+302,Blood glucose random (mg/dl),109.0,Elderly (>=60),Group PDP,0.7937514185905457
+303,Blood glucose random (mg/dl),109.0,Non-elderly (<60),Group PDP,0.5252501964569092
+304,Blood glucose random (mg/dl),109.0,patient 381,ICE,0.41009581089019775
+305,Blood glucose random (mg/dl),109.0,patient 187,ICE,0.994472324848175
+306,Blood glucose random (mg/dl),109.0,patient 207,ICE,0.969111979007721
+307,Blood glucose random (mg/dl),109.0,patient 386,ICE,0.09300137311220169
+308,Blood glucose random (mg/dl),109.0,patient 290,ICE,0.04782070592045784
+309,Blood glucose random (mg/dl),109.0,patient 31,ICE,0.9996227025985718
+310,Blood glucose random (mg/dl),109.0,patient 5,ICE,0.9993875026702881
+311,Blood glucose random (mg/dl),109.0,patient 332,ICE,0.3101097345352173
+312,Blood glucose random (mg/dl),109.0,patient 277,ICE,0.3797895014286041
+313,Blood glucose random (mg/dl),109.0,patient 95,ICE,0.997535228729248
+314,Blood glucose random (mg/dl),109.0,patient 14,ICE,0.9997702240943909
+315,Blood glucose random (mg/dl),109.0,patient 235,ICE,0.998050332069397
+316,Blood glucose random (mg/dl),109.0,patient 8,ICE,0.9996775388717651
+317,Blood glucose random (mg/dl),109.0,patient 67,ICE,0.6025289297103882
+318,Blood glucose random (mg/dl),109.0,patient 180,ICE,0.9736992716789246
+319,Blood glucose random (mg/dl),109.0,patient 355,ICE,0.4003101587295532
+320,Blood glucose random (mg/dl),109.0,patient 26,ICE,0.9972557425498962
+321,Blood glucose random (mg/dl),109.0,patient 12,ICE,0.9997456669807434
+322,Blood glucose random (mg/dl),109.0,patient 34,ICE,0.9998955726623535
+323,Blood glucose random (mg/dl),109.0,patient 165,ICE,0.9937002658843994
+324,Blood glucose random (mg/dl),109.0,patient 221,ICE,0.7969335913658142
+325,Blood glucose random (mg/dl),109.0,patient 323,ICE,0.21436984837055206
+326,Blood glucose random (mg/dl),109.0,patient 267,ICE,0.019000887870788574
+327,Blood glucose random (mg/dl),109.0,patient 293,ICE,0.07381704449653625
+328,Blood glucose random (mg/dl),109.0,patient 148,ICE,0.9991849064826965
+329,Blood glucose random (mg/dl),109.0,patient 103,ICE,0.6357440948486328
+330,Blood glucose random (mg/dl),109.0,patient 209,ICE,0.9957848191261292
+331,Blood glucose random (mg/dl),109.0,patient 183,ICE,0.9978138208389282
+332,Blood glucose random (mg/dl),109.0,patient 331,ICE,0.10612789541482925
+333,Blood glucose random (mg/dl),109.0,patient 250,ICE,0.08877426385879517
+334,Blood glucose random (mg/dl),109.0,patient 346,ICE,0.0159954521805048
+335,Blood glucose random (mg/dl),109.0,patient 63,ICE,0.09300137311220169
+336,Blood glucose random (mg/dl),109.0,patient 304,ICE,0.09300137311220169
+337,Blood glucose random (mg/dl),109.0,patient 200,ICE,0.9990842342376709
+338,Blood glucose random (mg/dl),109.0,patient 1,ICE,0.7843852639198303
+339,Blood glucose random (mg/dl),109.0,patient 116,ICE,0.9963124394416809
+340,Blood glucose random (mg/dl),109.0,patient 109,ICE,0.999428927898407
+341,Blood glucose random (mg/dl),109.0,patient 299,ICE,0.1110396683216095
+342,Blood glucose random (mg/dl),109.0,patient 224,ICE,0.9959533214569092
+343,Blood glucose random (mg/dl),109.0,patient 232,ICE,0.9997329115867615
+344,Blood glucose random (mg/dl),114.0,All patients,PDP,0.6240491271018982
+345,Blood glucose random (mg/dl),114.0,Elderly (>=60),Group PDP,0.7965790033340454
+346,Blood glucose random (mg/dl),114.0,Non-elderly (<60),Group PDP,0.5154990553855896
+347,Blood glucose random (mg/dl),114.0,patient 381,ICE,0.3673904240131378
+348,Blood glucose random (mg/dl),114.0,patient 187,ICE,0.9949659705162048
+349,Blood glucose random (mg/dl),114.0,patient 207,ICE,0.9666574597358704
+350,Blood glucose random (mg/dl),114.0,patient 386,ICE,0.08737236261367798
+351,Blood glucose random (mg/dl),114.0,patient 290,ICE,0.05288928002119064
+352,Blood glucose random (mg/dl),114.0,patient 31,ICE,0.9996159076690674
+353,Blood glucose random (mg/dl),114.0,patient 5,ICE,0.9993764758110046
+354,Blood glucose random (mg/dl),114.0,patient 332,ICE,0.30628323554992676
+355,Blood glucose random (mg/dl),114.0,patient 277,ICE,0.4021783173084259
+356,Blood glucose random (mg/dl),114.0,patient 95,ICE,0.9975206255912781
+357,Blood glucose random (mg/dl),114.0,patient 14,ICE,0.9998012185096741
+358,Blood glucose random (mg/dl),114.0,patient 235,ICE,0.9980150461196899
+359,Blood glucose random (mg/dl),114.0,patient 8,ICE,0.9996140599250793
+360,Blood glucose random (mg/dl),114.0,patient 67,ICE,0.598223090171814
+361,Blood glucose random (mg/dl),114.0,patient 180,ICE,0.9719288349151611
+362,Blood glucose random (mg/dl),114.0,patient 355,ICE,0.42308348417282104
+363,Blood glucose random (mg/dl),114.0,patient 26,ICE,0.9975014328956604
+364,Blood glucose random (mg/dl),114.0,patient 12,ICE,0.9997798800468445
+365,Blood glucose random (mg/dl),114.0,patient 34,ICE,0.9998936653137207
+366,Blood glucose random (mg/dl),114.0,patient 165,ICE,0.9942623972892761
+367,Blood glucose random (mg/dl),114.0,patient 221,ICE,0.7876219749450684
+368,Blood glucose random (mg/dl),114.0,patient 323,ICE,0.20136524736881256
+369,Blood glucose random (mg/dl),114.0,patient 267,ICE,0.01779203675687313
+370,Blood glucose random (mg/dl),114.0,patient 293,ICE,0.06859450042247772
+371,Blood glucose random (mg/dl),114.0,patient 148,ICE,0.9991270899772644
+372,Blood glucose random (mg/dl),114.0,patient 103,ICE,0.6315780282020569
+373,Blood glucose random (mg/dl),114.0,patient 209,ICE,0.9957088232040405
+374,Blood glucose random (mg/dl),114.0,patient 183,ICE,0.997800886631012
+375,Blood glucose random (mg/dl),114.0,patient 331,ICE,0.0988633930683136
+376,Blood glucose random (mg/dl),114.0,patient 250,ICE,0.07848609983921051
+377,Blood glucose random (mg/dl),114.0,patient 346,ICE,0.014974892139434814
+378,Blood glucose random (mg/dl),114.0,patient 63,ICE,0.08737236261367798
+379,Blood glucose random (mg/dl),114.0,patient 304,ICE,0.08737236261367798
+380,Blood glucose random (mg/dl),114.0,patient 200,ICE,0.9992075562477112
+381,Blood glucose random (mg/dl),114.0,patient 1,ICE,0.7728441953659058
+382,Blood glucose random (mg/dl),114.0,patient 116,ICE,0.9956415891647339
+383,Blood glucose random (mg/dl),114.0,patient 109,ICE,0.9994187355041504
+384,Blood glucose random (mg/dl),114.0,patient 299,ICE,0.09844991564750671
+385,Blood glucose random (mg/dl),114.0,patient 224,ICE,0.9951596856117249
+386,Blood glucose random (mg/dl),114.0,patient 232,ICE,0.9997281432151794
+387,Blood glucose random (mg/dl),119.0,All patients,PDP,0.5970703959465027
+388,Blood glucose random (mg/dl),119.0,Elderly (>=60),Group PDP,0.7536254525184631
+389,Blood glucose random (mg/dl),119.0,Non-elderly (<60),Group PDP,0.4985712766647339
+390,Blood glucose random (mg/dl),119.0,patient 381,ICE,0.2152974158525467
+391,Blood glucose random (mg/dl),119.0,patient 187,ICE,0.9890539646148682
+392,Blood glucose random (mg/dl),119.0,patient 207,ICE,0.9790763854980469
+393,Blood glucose random (mg/dl),119.0,patient 386,ICE,0.04327235743403435
+394,Blood glucose random (mg/dl),119.0,patient 290,ICE,0.03171687573194504
+395,Blood glucose random (mg/dl),119.0,patient 31,ICE,0.9992079138755798
+396,Blood glucose random (mg/dl),119.0,patient 5,ICE,0.9986810088157654
+397,Blood glucose random (mg/dl),119.0,patient 332,ICE,0.17057888209819794
+398,Blood glucose random (mg/dl),119.0,patient 277,ICE,0.2388387769460678
+399,Blood glucose random (mg/dl),119.0,patient 95,ICE,0.9957028031349182
+400,Blood glucose random (mg/dl),119.0,patient 14,ICE,0.9995904564857483
+401,Blood glucose random (mg/dl),119.0,patient 235,ICE,0.9959132075309753
+402,Blood glucose random (mg/dl),119.0,patient 8,ICE,0.9991833567619324
+403,Blood glucose random (mg/dl),119.0,patient 67,ICE,0.40952953696250916
+404,Blood glucose random (mg/dl),119.0,patient 180,ICE,0.9851020574569702
+405,Blood glucose random (mg/dl),119.0,patient 355,ICE,0.2586269676685333
+406,Blood glucose random (mg/dl),119.0,patient 26,ICE,0.9947620034217834
+407,Blood glucose random (mg/dl),119.0,patient 12,ICE,0.999528169631958
+408,Blood glucose random (mg/dl),119.0,patient 34,ICE,0.9997805953025818
+409,Blood glucose random (mg/dl),119.0,patient 165,ICE,0.9875345230102539
+410,Blood glucose random (mg/dl),119.0,patient 221,ICE,0.6835907697677612
+411,Blood glucose random (mg/dl),119.0,patient 323,ICE,0.19627144932746887
+412,Blood glucose random (mg/dl),119.0,patient 267,ICE,0.027199015021324158
+413,Blood glucose random (mg/dl),119.0,patient 293,ICE,0.07769667357206345
+414,Blood glucose random (mg/dl),119.0,patient 148,ICE,0.9981541037559509
+415,Blood glucose random (mg/dl),119.0,patient 103,ICE,0.45381829142570496
+416,Blood glucose random (mg/dl),119.0,patient 209,ICE,0.9911866784095764
+417,Blood glucose random (mg/dl),119.0,patient 183,ICE,0.9961876273155212
+418,Blood glucose random (mg/dl),119.0,patient 331,ICE,0.10188519954681396
+419,Blood glucose random (mg/dl),119.0,patient 250,ICE,0.07983086258172989
+420,Blood glucose random (mg/dl),119.0,patient 346,ICE,0.022927170619368553
+421,Blood glucose random (mg/dl),119.0,patient 63,ICE,0.04327235743403435
+422,Blood glucose random (mg/dl),119.0,patient 304,ICE,0.04327235743403435
+423,Blood glucose random (mg/dl),119.0,patient 200,ICE,0.9985089898109436
+424,Blood glucose random (mg/dl),119.0,patient 1,ICE,0.8666235208511353
+425,Blood glucose random (mg/dl),119.0,patient 116,ICE,0.9922621250152588
+426,Blood glucose random (mg/dl),119.0,patient 109,ICE,0.9988013505935669
+427,Blood glucose random (mg/dl),119.0,patient 299,ICE,0.1000996083021164
+428,Blood glucose random (mg/dl),119.0,patient 224,ICE,0.9898097515106201
+429,Blood glucose random (mg/dl),119.0,patient 232,ICE,0.9994164705276489
+430,Blood glucose random (mg/dl),123.0,All patients,PDP,0.6058875322341919
+431,Blood glucose random (mg/dl),123.0,Elderly (>=60),Group PDP,0.785554826259613
+432,Blood glucose random (mg/dl),123.0,Non-elderly (<60),Group PDP,0.49284684658050537
+433,Blood glucose random (mg/dl),123.0,patient 381,ICE,0.20895065367221832
+434,Blood glucose random (mg/dl),123.0,patient 187,ICE,0.9933892488479614
+435,Blood glucose random (mg/dl),123.0,patient 207,ICE,0.9719454050064087
+436,Blood glucose random (mg/dl),123.0,patient 386,ICE,0.058999158442020416
+437,Blood glucose random (mg/dl),123.0,patient 290,ICE,0.054562654346227646
+438,Blood glucose random (mg/dl),123.0,patient 31,ICE,0.9996126294136047
+439,Blood glucose random (mg/dl),123.0,patient 5,ICE,0.9993265867233276
+440,Blood glucose random (mg/dl),123.0,patient 332,ICE,0.2861558496952057
+441,Blood glucose random (mg/dl),123.0,patient 277,ICE,0.33313241600990295
+442,Blood glucose random (mg/dl),123.0,patient 95,ICE,0.9977769255638123
+443,Blood glucose random (mg/dl),123.0,patient 14,ICE,0.9997134804725647
+444,Blood glucose random (mg/dl),123.0,patient 235,ICE,0.9978330731391907
+445,Blood glucose random (mg/dl),123.0,patient 8,ICE,0.9992290735244751
+446,Blood glucose random (mg/dl),123.0,patient 67,ICE,0.5374855399131775
+447,Blood glucose random (mg/dl),123.0,patient 180,ICE,0.9873320460319519
+448,Blood glucose random (mg/dl),123.0,patient 355,ICE,0.32857227325439453
+449,Blood glucose random (mg/dl),123.0,patient 26,ICE,0.9964195489883423
+450,Blood glucose random (mg/dl),123.0,patient 12,ICE,0.9997090697288513
+451,Blood glucose random (mg/dl),123.0,patient 34,ICE,0.999864935874939
+452,Blood glucose random (mg/dl),123.0,patient 165,ICE,0.9924669861793518
+453,Blood glucose random (mg/dl),123.0,patient 221,ICE,0.8002854585647583
+454,Blood glucose random (mg/dl),123.0,patient 323,ICE,0.15714336931705475
+455,Blood glucose random (mg/dl),123.0,patient 267,ICE,0.03190423548221588
+456,Blood glucose random (mg/dl),123.0,patient 293,ICE,0.0726788118481636
+457,Blood glucose random (mg/dl),123.0,patient 148,ICE,0.9987888932228088
+458,Blood glucose random (mg/dl),123.0,patient 103,ICE,0.5509085655212402
+459,Blood glucose random (mg/dl),123.0,patient 209,ICE,0.995108425617218
+460,Blood glucose random (mg/dl),123.0,patient 183,ICE,0.9980282187461853
+461,Blood glucose random (mg/dl),123.0,patient 331,ICE,0.09238158911466599
+462,Blood glucose random (mg/dl),123.0,patient 250,ICE,0.05459979176521301
+463,Blood glucose random (mg/dl),123.0,patient 346,ICE,0.026913834735751152
+464,Blood glucose random (mg/dl),123.0,patient 63,ICE,0.058999158442020416
+465,Blood glucose random (mg/dl),123.0,patient 304,ICE,0.058999158442020416
+466,Blood glucose random (mg/dl),123.0,patient 200,ICE,0.9990633130073547
+467,Blood glucose random (mg/dl),123.0,patient 1,ICE,0.8845087289810181
+468,Blood glucose random (mg/dl),123.0,patient 116,ICE,0.9951529502868652
+469,Blood glucose random (mg/dl),123.0,patient 109,ICE,0.9992225170135498
+470,Blood glucose random (mg/dl),123.0,patient 299,ICE,0.07784920930862427
+471,Blood glucose random (mg/dl),123.0,patient 224,ICE,0.9896670579910278
+472,Blood glucose random (mg/dl),123.0,patient 232,ICE,0.9996665716171265
+473,Blood glucose random (mg/dl),128.0,All patients,PDP,0.5458242893218994
+474,Blood glucose random (mg/dl),128.0,Elderly (>=60),Group PDP,0.7467292547225952
+475,Blood glucose random (mg/dl),128.0,Non-elderly (<60),Group PDP,0.41942155361175537
+476,Blood glucose random (mg/dl),128.0,patient 381,ICE,0.07894540578126907
+477,Blood glucose random (mg/dl),128.0,patient 187,ICE,0.9885645508766174
+478,Blood glucose random (mg/dl),128.0,patient 207,ICE,0.9145199656486511
+479,Blood glucose random (mg/dl),128.0,patient 386,ICE,0.022288601845502853
+480,Blood glucose random (mg/dl),128.0,patient 290,ICE,0.03453315049409866
+481,Blood glucose random (mg/dl),128.0,patient 31,ICE,0.9993000030517578
+482,Blood glucose random (mg/dl),128.0,patient 5,ICE,0.9987025260925293
+483,Blood glucose random (mg/dl),128.0,patient 332,ICE,0.1600113958120346
+484,Blood glucose random (mg/dl),128.0,patient 277,ICE,0.20349594950675964
+485,Blood glucose random (mg/dl),128.0,patient 95,ICE,0.9968143105506897
+486,Blood glucose random (mg/dl),128.0,patient 14,ICE,0.9994934797286987
+487,Blood glucose random (mg/dl),128.0,patient 235,ICE,0.9958726763725281
+488,Blood glucose random (mg/dl),128.0,patient 8,ICE,0.9982109069824219
+489,Blood glucose random (mg/dl),128.0,patient 67,ICE,0.3727799654006958
+490,Blood glucose random (mg/dl),128.0,patient 180,ICE,0.9673901796340942
+491,Blood glucose random (mg/dl),128.0,patient 355,ICE,0.19747865200042725
+492,Blood glucose random (mg/dl),128.0,patient 26,ICE,0.993687093257904
+493,Blood glucose random (mg/dl),128.0,patient 12,ICE,0.9994944334030151
+494,Blood glucose random (mg/dl),128.0,patient 34,ICE,0.9997732043266296
+495,Blood glucose random (mg/dl),128.0,patient 165,ICE,0.9862627983093262
+496,Blood glucose random (mg/dl),128.0,patient 221,ICE,0.6665781736373901
+497,Blood glucose random (mg/dl),128.0,patient 323,ICE,0.055319420993328094
+498,Blood glucose random (mg/dl),128.0,patient 267,ICE,0.012388281524181366
+499,Blood glucose random (mg/dl),128.0,patient 293,ICE,0.024025142192840576
+500,Blood glucose random (mg/dl),128.0,patient 148,ICE,0.9971911311149597
+501,Blood glucose random (mg/dl),128.0,patient 103,ICE,0.3815121054649353
+502,Blood glucose random (mg/dl),128.0,patient 209,ICE,0.9906206130981445
+503,Blood glucose random (mg/dl),128.0,patient 183,ICE,0.9971740245819092
+504,Blood glucose random (mg/dl),128.0,patient 331,ICE,0.030978836119174957
+505,Blood glucose random (mg/dl),128.0,patient 250,ICE,0.017522219568490982
+506,Blood glucose random (mg/dl),128.0,patient 346,ICE,0.010417679324746132
+507,Blood glucose random (mg/dl),128.0,patient 63,ICE,0.022288601845502853
+508,Blood glucose random (mg/dl),128.0,patient 304,ICE,0.022288601845502853
+509,Blood glucose random (mg/dl),128.0,patient 200,ICE,0.9983452558517456
+510,Blood glucose random (mg/dl),128.0,patient 1,ICE,0.7445758581161499
+511,Blood glucose random (mg/dl),128.0,patient 116,ICE,0.9904301762580872
+512,Blood glucose random (mg/dl),128.0,patient 109,ICE,0.9986261129379272
+513,Blood glucose random (mg/dl),128.0,patient 299,ICE,0.025407742708921432
+514,Blood glucose random (mg/dl),128.0,patient 224,ICE,0.970337986946106
+515,Blood glucose random (mg/dl),128.0,patient 232,ICE,0.9994205236434937
+516,Blood glucose random (mg/dl),132.0,All patients,PDP,0.5453004837036133
+517,Blood glucose random (mg/dl),132.0,Elderly (>=60),Group PDP,0.7490760087966919
+518,Blood glucose random (mg/dl),132.0,Non-elderly (<60),Group PDP,0.4170917570590973
+519,Blood glucose random (mg/dl),132.0,patient 381,ICE,0.07224518805742264
+520,Blood glucose random (mg/dl),132.0,patient 187,ICE,0.989521861076355
+521,Blood glucose random (mg/dl),132.0,patient 207,ICE,0.9108620882034302
+522,Blood glucose random (mg/dl),132.0,patient 386,ICE,0.02029099315404892
+523,Blood glucose random (mg/dl),132.0,patient 290,ICE,0.03430839255452156
+524,Blood glucose random (mg/dl),132.0,patient 31,ICE,0.9993168115615845
+525,Blood glucose random (mg/dl),132.0,patient 5,ICE,0.9987655878067017
+526,Blood glucose random (mg/dl),132.0,patient 332,ICE,0.16913555562496185
+527,Blood glucose random (mg/dl),132.0,patient 277,ICE,0.2089611440896988
+528,Blood glucose random (mg/dl),132.0,patient 95,ICE,0.996896505355835
+529,Blood glucose random (mg/dl),132.0,patient 14,ICE,0.9994890689849854
+530,Blood glucose random (mg/dl),132.0,patient 235,ICE,0.9959712624549866
+531,Blood glucose random (mg/dl),132.0,patient 8,ICE,0.9980310797691345
+532,Blood glucose random (mg/dl),132.0,patient 67,ICE,0.3884263038635254
+533,Blood glucose random (mg/dl),132.0,patient 180,ICE,0.965974748134613
+534,Blood glucose random (mg/dl),132.0,patient 355,ICE,0.19610071182250977
+535,Blood glucose random (mg/dl),132.0,patient 26,ICE,0.9939709901809692
+536,Blood glucose random (mg/dl),132.0,patient 12,ICE,0.9995111227035522
+537,Blood glucose random (mg/dl),132.0,patient 34,ICE,0.9997785687446594
+538,Blood glucose random (mg/dl),132.0,patient 165,ICE,0.9874102473258972
+539,Blood glucose random (mg/dl),132.0,patient 221,ICE,0.6779979467391968
+540,Blood glucose random (mg/dl),132.0,patient 323,ICE,0.05780414491891861
+541,Blood glucose random (mg/dl),132.0,patient 267,ICE,0.01186189241707325
+542,Blood glucose random (mg/dl),132.0,patient 293,ICE,0.025141660124063492
+543,Blood glucose random (mg/dl),132.0,patient 148,ICE,0.9969092011451721
+544,Blood glucose random (mg/dl),132.0,patient 103,ICE,0.38725563883781433
+545,Blood glucose random (mg/dl),132.0,patient 209,ICE,0.9908435344696045
+546,Blood glucose random (mg/dl),132.0,patient 183,ICE,0.9972469806671143
+547,Blood glucose random (mg/dl),132.0,patient 331,ICE,0.03240778297185898
+548,Blood glucose random (mg/dl),132.0,patient 250,ICE,0.01636556163430214
+549,Blood glucose random (mg/dl),132.0,patient 346,ICE,0.009974176064133644
+550,Blood glucose random (mg/dl),132.0,patient 63,ICE,0.02029099315404892
+551,Blood glucose random (mg/dl),132.0,patient 304,ICE,0.02029099315404892
+552,Blood glucose random (mg/dl),132.0,patient 200,ICE,0.9983848333358765
+553,Blood glucose random (mg/dl),132.0,patient 1,ICE,0.7361273169517517
+554,Blood glucose random (mg/dl),132.0,patient 116,ICE,0.989497184753418
+555,Blood glucose random (mg/dl),132.0,patient 109,ICE,0.9986590147018433
+556,Blood glucose random (mg/dl),132.0,patient 299,ICE,0.022891033440828323
+557,Blood glucose random (mg/dl),132.0,patient 224,ICE,0.9674484133720398
+558,Blood glucose random (mg/dl),132.0,patient 232,ICE,0.9994576573371887
+559,Blood glucose random (mg/dl),139.0,All patients,PDP,0.6550143361091614
+560,Blood glucose random (mg/dl),139.0,Elderly (>=60),Group PDP,0.8525919318199158
+561,Blood glucose random (mg/dl),139.0,Non-elderly (<60),Group PDP,0.5307050943374634
+562,Blood glucose random (mg/dl),139.0,patient 381,ICE,0.3107576370239258
+563,Blood glucose random (mg/dl),139.0,patient 187,ICE,0.997326135635376
+564,Blood glucose random (mg/dl),139.0,patient 207,ICE,0.9694386720657349
+565,Blood glucose random (mg/dl),139.0,patient 386,ICE,0.1291663646697998
+566,Blood glucose random (mg/dl),139.0,patient 290,ICE,0.15550589561462402
+567,Blood glucose random (mg/dl),139.0,patient 31,ICE,0.9998002648353577
+568,Blood glucose random (mg/dl),139.0,patient 5,ICE,0.9996123909950256
+569,Blood glucose random (mg/dl),139.0,patient 332,ICE,0.5603879690170288
+570,Blood glucose random (mg/dl),139.0,patient 277,ICE,0.5676995515823364
+571,Blood glucose random (mg/dl),139.0,patient 95,ICE,0.9991945624351501
+572,Blood glucose random (mg/dl),139.0,patient 14,ICE,0.9998477697372437
+573,Blood glucose random (mg/dl),139.0,patient 235,ICE,0.9988791346549988
+574,Blood glucose random (mg/dl),139.0,patient 8,ICE,0.9993866682052612
+575,Blood glucose random (mg/dl),139.0,patient 67,ICE,0.7715377807617188
+576,Blood glucose random (mg/dl),139.0,patient 180,ICE,0.9885913729667664
+577,Blood glucose random (mg/dl),139.0,patient 355,ICE,0.5405004024505615
+578,Blood glucose random (mg/dl),139.0,patient 26,ICE,0.9984192848205566
+579,Blood glucose random (mg/dl),139.0,patient 12,ICE,0.9998587369918823
+580,Blood glucose random (mg/dl),139.0,patient 34,ICE,0.9999202489852905
+581,Blood glucose random (mg/dl),139.0,patient 165,ICE,0.9967377781867981
+582,Blood glucose random (mg/dl),139.0,patient 221,ICE,0.9274981021881104
+583,Blood glucose random (mg/dl),139.0,patient 323,ICE,0.2347535938024521
+584,Blood glucose random (mg/dl),139.0,patient 267,ICE,0.054532796144485474
+585,Blood glucose random (mg/dl),139.0,patient 293,ICE,0.11025387793779373
+586,Blood glucose random (mg/dl),139.0,patient 148,ICE,0.9990839958190918
+587,Blood glucose random (mg/dl),139.0,patient 103,ICE,0.7652382850646973
+588,Blood glucose random (mg/dl),139.0,patient 209,ICE,0.9976270794868469
+589,Blood glucose random (mg/dl),139.0,patient 183,ICE,0.9992856383323669
+590,Blood glucose random (mg/dl),139.0,patient 331,ICE,0.1434507817029953
+591,Blood glucose random (mg/dl),139.0,patient 250,ICE,0.08079862594604492
+592,Blood glucose random (mg/dl),139.0,patient 346,ICE,0.04617168754339218
+593,Blood glucose random (mg/dl),139.0,patient 63,ICE,0.1291663646697998
+594,Blood glucose random (mg/dl),139.0,patient 304,ICE,0.1291663646697998
+595,Blood glucose random (mg/dl),139.0,patient 200,ICE,0.9995785355567932
+596,Blood glucose random (mg/dl),139.0,patient 1,ICE,0.8973278999328613
+597,Blood glucose random (mg/dl),139.0,patient 116,ICE,0.997557520866394
+598,Blood glucose random (mg/dl),139.0,patient 109,ICE,0.9996724128723145
+599,Blood glucose random (mg/dl),139.0,patient 299,ICE,0.1067291796207428
+600,Blood glucose random (mg/dl),139.0,patient 224,ICE,0.9896275997161865
+601,Blood glucose random (mg/dl),139.0,patient 232,ICE,0.9998534917831421
+602,Blood glucose random (mg/dl),153.0,All patients,PDP,0.8809731006622314
+603,Blood glucose random (mg/dl),153.0,Elderly (>=60),Group PDP,0.9683440923690796
+604,Blood glucose random (mg/dl),153.0,Non-elderly (<60),Group PDP,0.8260021805763245
+605,Blood glucose random (mg/dl),153.0,patient 381,ICE,0.8842313289642334
+606,Blood glucose random (mg/dl),153.0,patient 187,ICE,0.9989643096923828
+607,Blood glucose random (mg/dl),153.0,patient 207,ICE,0.9958338737487793
+608,Blood glucose random (mg/dl),153.0,patient 386,ICE,0.751977264881134
+609,Blood glucose random (mg/dl),153.0,patient 290,ICE,0.7093067765235901
+610,Blood glucose random (mg/dl),153.0,patient 31,ICE,0.999897837638855
+611,Blood glucose random (mg/dl),153.0,patient 5,ICE,0.9998273253440857
+612,Blood glucose random (mg/dl),153.0,patient 332,ICE,0.9511259198188782
+613,Blood glucose random (mg/dl),153.0,patient 277,ICE,0.9456560015678406
+614,Blood glucose random (mg/dl),153.0,patient 95,ICE,0.999583899974823
+615,Blood glucose random (mg/dl),153.0,patient 14,ICE,0.999921441078186
+616,Blood glucose random (mg/dl),153.0,patient 235,ICE,0.9994895458221436
+617,Blood glucose random (mg/dl),153.0,patient 8,ICE,0.9996734857559204
+618,Blood glucose random (mg/dl),153.0,patient 67,ICE,0.9781419634819031
+619,Blood glucose random (mg/dl),153.0,patient 180,ICE,0.9984708428382874
+620,Blood glucose random (mg/dl),153.0,patient 355,ICE,0.9397115111351013
+621,Blood glucose random (mg/dl),153.0,patient 26,ICE,0.9992584586143494
+622,Blood glucose random (mg/dl),153.0,patient 12,ICE,0.9999270439147949
+623,Blood glucose random (mg/dl),153.0,patient 34,ICE,0.9999457597732544
+624,Blood glucose random (mg/dl),153.0,patient 165,ICE,0.9986349940299988
+625,Blood glucose random (mg/dl),153.0,patient 221,ICE,0.9945675134658813
+626,Blood glucose random (mg/dl),153.0,patient 323,ICE,0.8317272663116455
+627,Blood glucose random (mg/dl),153.0,patient 267,ICE,0.4629846215248108
+628,Blood glucose random (mg/dl),153.0,patient 293,ICE,0.6662846207618713
+629,Blood glucose random (mg/dl),153.0,patient 148,ICE,0.9995958209037781
+630,Blood glucose random (mg/dl),153.0,patient 103,ICE,0.9773722290992737
+631,Blood glucose random (mg/dl),153.0,patient 209,ICE,0.9994577765464783
+632,Blood glucose random (mg/dl),153.0,patient 183,ICE,0.9996310472488403
+633,Blood glucose random (mg/dl),153.0,patient 331,ICE,0.7296128273010254
+634,Blood glucose random (mg/dl),153.0,patient 250,ICE,0.5861406326293945
+635,Blood glucose random (mg/dl),153.0,patient 346,ICE,0.43818333745002747
+636,Blood glucose random (mg/dl),153.0,patient 63,ICE,0.751977264881134
+637,Blood glucose random (mg/dl),153.0,patient 304,ICE,0.751977264881134
+638,Blood glucose random (mg/dl),153.0,patient 200,ICE,0.9998117089271545
+639,Blood glucose random (mg/dl),153.0,patient 1,ICE,0.9864031076431274
+640,Blood glucose random (mg/dl),153.0,patient 116,ICE,0.999184787273407
+641,Blood glucose random (mg/dl),153.0,patient 109,ICE,0.9998732805252075
+642,Blood glucose random (mg/dl),153.0,patient 299,ICE,0.6581328511238098
+643,Blood glucose random (mg/dl),153.0,patient 224,ICE,0.9980853796005249
+644,Blood glucose random (mg/dl),153.0,patient 232,ICE,0.9999243021011353
+645,Blood glucose random (mg/dl),171.92947368421056,All patients,PDP,0.8809731006622314
+646,Blood glucose random (mg/dl),171.92947368421056,Elderly (>=60),Group PDP,0.9683440923690796
+647,Blood glucose random (mg/dl),171.92947368421056,Non-elderly (<60),Group PDP,0.8260021805763245
+648,Blood glucose random (mg/dl),171.92947368421056,patient 381,ICE,0.8842313289642334
+649,Blood glucose random (mg/dl),171.92947368421056,patient 187,ICE,0.9989643096923828
+650,Blood glucose random (mg/dl),171.92947368421056,patient 207,ICE,0.9958338737487793
+651,Blood glucose random (mg/dl),171.92947368421056,patient 386,ICE,0.751977264881134
+652,Blood glucose random (mg/dl),171.92947368421056,patient 290,ICE,0.7093067765235901
+653,Blood glucose random (mg/dl),171.92947368421056,patient 31,ICE,0.999897837638855
+654,Blood glucose random (mg/dl),171.92947368421056,patient 5,ICE,0.9998273253440857
+655,Blood glucose random (mg/dl),171.92947368421056,patient 332,ICE,0.9511259198188782
+656,Blood glucose random (mg/dl),171.92947368421056,patient 277,ICE,0.9456560015678406
+657,Blood glucose random (mg/dl),171.92947368421056,patient 95,ICE,0.999583899974823
+658,Blood glucose random (mg/dl),171.92947368421056,patient 14,ICE,0.999921441078186
+659,Blood glucose random (mg/dl),171.92947368421056,patient 235,ICE,0.9994895458221436
+660,Blood glucose random (mg/dl),171.92947368421056,patient 8,ICE,0.9996734857559204
+661,Blood glucose random (mg/dl),171.92947368421056,patient 67,ICE,0.9781419634819031
+662,Blood glucose random (mg/dl),171.92947368421056,patient 180,ICE,0.9984708428382874
+663,Blood glucose random (mg/dl),171.92947368421056,patient 355,ICE,0.9397115111351013
+664,Blood glucose random (mg/dl),171.92947368421056,patient 26,ICE,0.9992584586143494
+665,Blood glucose random (mg/dl),171.92947368421056,patient 12,ICE,0.9999270439147949
+666,Blood glucose random (mg/dl),171.92947368421056,patient 34,ICE,0.9999457597732544
+667,Blood glucose random (mg/dl),171.92947368421056,patient 165,ICE,0.9986349940299988
+668,Blood glucose random (mg/dl),171.92947368421056,patient 221,ICE,0.9945675134658813
+669,Blood glucose random (mg/dl),171.92947368421056,patient 323,ICE,0.8317272663116455
+670,Blood glucose random (mg/dl),171.92947368421056,patient 267,ICE,0.4629846215248108
+671,Blood glucose random (mg/dl),171.92947368421056,patient 293,ICE,0.6662846207618713
+672,Blood glucose random (mg/dl),171.92947368421056,patient 148,ICE,0.9995958209037781
+673,Blood glucose random (mg/dl),171.92947368421056,patient 103,ICE,0.9773722290992737
+674,Blood glucose random (mg/dl),171.92947368421056,patient 209,ICE,0.9994577765464783
+675,Blood glucose random (mg/dl),171.92947368421056,patient 183,ICE,0.9996310472488403
+676,Blood glucose random (mg/dl),171.92947368421056,patient 331,ICE,0.7296128273010254
+677,Blood glucose random (mg/dl),171.92947368421056,patient 250,ICE,0.5861406326293945
+678,Blood glucose random (mg/dl),171.92947368421056,patient 346,ICE,0.43818333745002747
+679,Blood glucose random (mg/dl),171.92947368421056,patient 63,ICE,0.751977264881134
+680,Blood glucose random (mg/dl),171.92947368421056,patient 304,ICE,0.751977264881134
+681,Blood glucose random (mg/dl),171.92947368421056,patient 200,ICE,0.9998117089271545
+682,Blood glucose random (mg/dl),171.92947368421056,patient 1,ICE,0.9864031076431274
+683,Blood glucose random (mg/dl),171.92947368421056,patient 116,ICE,0.999184787273407
+684,Blood glucose random (mg/dl),171.92947368421056,patient 109,ICE,0.9998732805252075
+685,Blood glucose random (mg/dl),171.92947368421056,patient 299,ICE,0.6581328511238098
+686,Blood glucose random (mg/dl),171.92947368421056,patient 224,ICE,0.9980853796005249
+687,Blood glucose random (mg/dl),171.92947368421056,patient 232,ICE,0.9999243021011353
+688,Blood glucose random (mg/dl),211.3863157894736,All patients,PDP,0.8809731006622314
+689,Blood glucose random (mg/dl),211.3863157894736,Elderly (>=60),Group PDP,0.9683440923690796
+690,Blood glucose random (mg/dl),211.3863157894736,Non-elderly (<60),Group PDP,0.8260021805763245
+691,Blood glucose random (mg/dl),211.3863157894736,patient 381,ICE,0.8842313289642334
+692,Blood glucose random (mg/dl),211.3863157894736,patient 187,ICE,0.9989643096923828
+693,Blood glucose random (mg/dl),211.3863157894736,patient 207,ICE,0.9958338737487793
+694,Blood glucose random (mg/dl),211.3863157894736,patient 386,ICE,0.751977264881134
+695,Blood glucose random (mg/dl),211.3863157894736,patient 290,ICE,0.7093067765235901
+696,Blood glucose random (mg/dl),211.3863157894736,patient 31,ICE,0.999897837638855
+697,Blood glucose random (mg/dl),211.3863157894736,patient 5,ICE,0.9998273253440857
+698,Blood glucose random (mg/dl),211.3863157894736,patient 332,ICE,0.9511259198188782
+699,Blood glucose random (mg/dl),211.3863157894736,patient 277,ICE,0.9456560015678406
+700,Blood glucose random (mg/dl),211.3863157894736,patient 95,ICE,0.999583899974823
+701,Blood glucose random (mg/dl),211.3863157894736,patient 14,ICE,0.999921441078186
+702,Blood glucose random (mg/dl),211.3863157894736,patient 235,ICE,0.9994895458221436
+703,Blood glucose random (mg/dl),211.3863157894736,patient 8,ICE,0.9996734857559204
+704,Blood glucose random (mg/dl),211.3863157894736,patient 67,ICE,0.9781419634819031
+705,Blood glucose random (mg/dl),211.3863157894736,patient 180,ICE,0.9984708428382874
+706,Blood glucose random (mg/dl),211.3863157894736,patient 355,ICE,0.9397115111351013
+707,Blood glucose random (mg/dl),211.3863157894736,patient 26,ICE,0.9992584586143494
+708,Blood glucose random (mg/dl),211.3863157894736,patient 12,ICE,0.9999270439147949
+709,Blood glucose random (mg/dl),211.3863157894736,patient 34,ICE,0.9999457597732544
+710,Blood glucose random (mg/dl),211.3863157894736,patient 165,ICE,0.9986349940299988
+711,Blood glucose random (mg/dl),211.3863157894736,patient 221,ICE,0.9945675134658813
+712,Blood glucose random (mg/dl),211.3863157894736,patient 323,ICE,0.8317272663116455
+713,Blood glucose random (mg/dl),211.3863157894736,patient 267,ICE,0.4629846215248108
+714,Blood glucose random (mg/dl),211.3863157894736,patient 293,ICE,0.6662846207618713
+715,Blood glucose random (mg/dl),211.3863157894736,patient 148,ICE,0.9995958209037781
+716,Blood glucose random (mg/dl),211.3863157894736,patient 103,ICE,0.9773722290992737
+717,Blood glucose random (mg/dl),211.3863157894736,patient 209,ICE,0.9994577765464783
+718,Blood glucose random (mg/dl),211.3863157894736,patient 183,ICE,0.9996310472488403
+719,Blood glucose random (mg/dl),211.3863157894736,patient 331,ICE,0.7296128273010254
+720,Blood glucose random (mg/dl),211.3863157894736,patient 250,ICE,0.5861406326293945
+721,Blood glucose random (mg/dl),211.3863157894736,patient 346,ICE,0.43818333745002747
+722,Blood glucose random (mg/dl),211.3863157894736,patient 63,ICE,0.751977264881134
+723,Blood glucose random (mg/dl),211.3863157894736,patient 304,ICE,0.751977264881134
+724,Blood glucose random (mg/dl),211.3863157894736,patient 200,ICE,0.9998117089271545
+725,Blood glucose random (mg/dl),211.3863157894736,patient 1,ICE,0.9864031076431274
+726,Blood glucose random (mg/dl),211.3863157894736,patient 116,ICE,0.999184787273407
+727,Blood glucose random (mg/dl),211.3863157894736,patient 109,ICE,0.9998732805252075
+728,Blood glucose random (mg/dl),211.3863157894736,patient 299,ICE,0.6581328511238098
+729,Blood glucose random (mg/dl),211.3863157894736,patient 224,ICE,0.9980853796005249
+730,Blood glucose random (mg/dl),211.3863157894736,patient 232,ICE,0.9999243021011353
+731,Blood glucose random (mg/dl),245.9789473684209,All patients,PDP,0.8809731006622314
+732,Blood glucose random (mg/dl),245.9789473684209,Elderly (>=60),Group PDP,0.9683440923690796
+733,Blood glucose random (mg/dl),245.9789473684209,Non-elderly (<60),Group PDP,0.8260021805763245
+734,Blood glucose random (mg/dl),245.9789473684209,patient 381,ICE,0.8842313289642334
+735,Blood glucose random (mg/dl),245.9789473684209,patient 187,ICE,0.9989643096923828
+736,Blood glucose random (mg/dl),245.9789473684209,patient 207,ICE,0.9958338737487793
+737,Blood glucose random (mg/dl),245.9789473684209,patient 386,ICE,0.751977264881134
+738,Blood glucose random (mg/dl),245.9789473684209,patient 290,ICE,0.7093067765235901
+739,Blood glucose random (mg/dl),245.9789473684209,patient 31,ICE,0.999897837638855
+740,Blood glucose random (mg/dl),245.9789473684209,patient 5,ICE,0.9998273253440857
+741,Blood glucose random (mg/dl),245.9789473684209,patient 332,ICE,0.9511259198188782
+742,Blood glucose random (mg/dl),245.9789473684209,patient 277,ICE,0.9456560015678406
+743,Blood glucose random (mg/dl),245.9789473684209,patient 95,ICE,0.999583899974823
+744,Blood glucose random (mg/dl),245.9789473684209,patient 14,ICE,0.999921441078186
+745,Blood glucose random (mg/dl),245.9789473684209,patient 235,ICE,0.9994895458221436
+746,Blood glucose random (mg/dl),245.9789473684209,patient 8,ICE,0.9996734857559204
+747,Blood glucose random (mg/dl),245.9789473684209,patient 67,ICE,0.9781419634819031
+748,Blood glucose random (mg/dl),245.9789473684209,patient 180,ICE,0.9984708428382874
+749,Blood glucose random (mg/dl),245.9789473684209,patient 355,ICE,0.9397115111351013
+750,Blood glucose random (mg/dl),245.9789473684209,patient 26,ICE,0.9992584586143494
+751,Blood glucose random (mg/dl),245.9789473684209,patient 12,ICE,0.9999270439147949
+752,Blood glucose random (mg/dl),245.9789473684209,patient 34,ICE,0.9999457597732544
+753,Blood glucose random (mg/dl),245.9789473684209,patient 165,ICE,0.9986349940299988
+754,Blood glucose random (mg/dl),245.9789473684209,patient 221,ICE,0.9945675134658813
+755,Blood glucose random (mg/dl),245.9789473684209,patient 323,ICE,0.8317272663116455
+756,Blood glucose random (mg/dl),245.9789473684209,patient 267,ICE,0.4629846215248108
+757,Blood glucose random (mg/dl),245.9789473684209,patient 293,ICE,0.6662846207618713
+758,Blood glucose random (mg/dl),245.9789473684209,patient 148,ICE,0.9995958209037781
+759,Blood glucose random (mg/dl),245.9789473684209,patient 103,ICE,0.9773722290992737
+760,Blood glucose random (mg/dl),245.9789473684209,patient 209,ICE,0.9994577765464783
+761,Blood glucose random (mg/dl),245.9789473684209,patient 183,ICE,0.9996310472488403
+762,Blood glucose random (mg/dl),245.9789473684209,patient 331,ICE,0.7296128273010254
+763,Blood glucose random (mg/dl),245.9789473684209,patient 250,ICE,0.5861406326293945
+764,Blood glucose random (mg/dl),245.9789473684209,patient 346,ICE,0.43818333745002747
+765,Blood glucose random (mg/dl),245.9789473684209,patient 63,ICE,0.751977264881134
+766,Blood glucose random (mg/dl),245.9789473684209,patient 304,ICE,0.751977264881134
+767,Blood glucose random (mg/dl),245.9789473684209,patient 200,ICE,0.9998117089271545
+768,Blood glucose random (mg/dl),245.9789473684209,patient 1,ICE,0.9864031076431274
+769,Blood glucose random (mg/dl),245.9789473684209,patient 116,ICE,0.999184787273407
+770,Blood glucose random (mg/dl),245.9789473684209,patient 109,ICE,0.9998732805252075
+771,Blood glucose random (mg/dl),245.9789473684209,patient 299,ICE,0.6581328511238098
+772,Blood glucose random (mg/dl),245.9789473684209,patient 224,ICE,0.9980853796005249
+773,Blood glucose random (mg/dl),245.9789473684209,patient 232,ICE,0.9999243021011353
+774,Blood glucose random (mg/dl),291.16421052631586,All patients,PDP,0.8809731006622314
+775,Blood glucose random (mg/dl),291.16421052631586,Elderly (>=60),Group PDP,0.9683440923690796
+776,Blood glucose random (mg/dl),291.16421052631586,Non-elderly (<60),Group PDP,0.8260021805763245
+777,Blood glucose random (mg/dl),291.16421052631586,patient 381,ICE,0.8842313289642334
+778,Blood glucose random (mg/dl),291.16421052631586,patient 187,ICE,0.9989643096923828
+779,Blood glucose random (mg/dl),291.16421052631586,patient 207,ICE,0.9958338737487793
+780,Blood glucose random (mg/dl),291.16421052631586,patient 386,ICE,0.751977264881134
+781,Blood glucose random (mg/dl),291.16421052631586,patient 290,ICE,0.7093067765235901
+782,Blood glucose random (mg/dl),291.16421052631586,patient 31,ICE,0.999897837638855
+783,Blood glucose random (mg/dl),291.16421052631586,patient 5,ICE,0.9998273253440857
+784,Blood glucose random (mg/dl),291.16421052631586,patient 332,ICE,0.9511259198188782
+785,Blood glucose random (mg/dl),291.16421052631586,patient 277,ICE,0.9456560015678406
+786,Blood glucose random (mg/dl),291.16421052631586,patient 95,ICE,0.999583899974823
+787,Blood glucose random (mg/dl),291.16421052631586,patient 14,ICE,0.999921441078186
+788,Blood glucose random (mg/dl),291.16421052631586,patient 235,ICE,0.9994895458221436
+789,Blood glucose random (mg/dl),291.16421052631586,patient 8,ICE,0.9996734857559204
+790,Blood glucose random (mg/dl),291.16421052631586,patient 67,ICE,0.9781419634819031
+791,Blood glucose random (mg/dl),291.16421052631586,patient 180,ICE,0.9984708428382874
+792,Blood glucose random (mg/dl),291.16421052631586,patient 355,ICE,0.9397115111351013
+793,Blood glucose random (mg/dl),291.16421052631586,patient 26,ICE,0.9992584586143494
+794,Blood glucose random (mg/dl),291.16421052631586,patient 12,ICE,0.9999270439147949
+795,Blood glucose random (mg/dl),291.16421052631586,patient 34,ICE,0.9999457597732544
+796,Blood glucose random (mg/dl),291.16421052631586,patient 165,ICE,0.9986349940299988
+797,Blood glucose random (mg/dl),291.16421052631586,patient 221,ICE,0.9945675134658813
+798,Blood glucose random (mg/dl),291.16421052631586,patient 323,ICE,0.8317272663116455
+799,Blood glucose random (mg/dl),291.16421052631586,patient 267,ICE,0.4629846215248108
+800,Blood glucose random (mg/dl),291.16421052631586,patient 293,ICE,0.6662846207618713
+801,Blood glucose random (mg/dl),291.16421052631586,patient 148,ICE,0.9995958209037781
+802,Blood glucose random (mg/dl),291.16421052631586,patient 103,ICE,0.9773722290992737
+803,Blood glucose random (mg/dl),291.16421052631586,patient 209,ICE,0.9994577765464783
+804,Blood glucose random (mg/dl),291.16421052631586,patient 183,ICE,0.9996310472488403
+805,Blood glucose random (mg/dl),291.16421052631586,patient 331,ICE,0.7296128273010254
+806,Blood glucose random (mg/dl),291.16421052631586,patient 250,ICE,0.5861406326293945
+807,Blood glucose random (mg/dl),291.16421052631586,patient 346,ICE,0.43818333745002747
+808,Blood glucose random (mg/dl),291.16421052631586,patient 63,ICE,0.751977264881134
+809,Blood glucose random (mg/dl),291.16421052631586,patient 304,ICE,0.751977264881134
+810,Blood glucose random (mg/dl),291.16421052631586,patient 200,ICE,0.9998117089271545
+811,Blood glucose random (mg/dl),291.16421052631586,patient 1,ICE,0.9864031076431274
+812,Blood glucose random (mg/dl),291.16421052631586,patient 116,ICE,0.999184787273407
+813,Blood glucose random (mg/dl),291.16421052631586,patient 109,ICE,0.9998732805252075
+814,Blood glucose random (mg/dl),291.16421052631586,patient 299,ICE,0.6581328511238098
+815,Blood glucose random (mg/dl),291.16421052631586,patient 224,ICE,0.9980853796005249
+816,Blood glucose random (mg/dl),291.16421052631586,patient 232,ICE,0.9999243021011353
+817,Blood glucose random (mg/dl),423.06,All patients,PDP,0.8809731006622314
+818,Blood glucose random (mg/dl),423.06,Elderly (>=60),Group PDP,0.9683440923690796
+819,Blood glucose random (mg/dl),423.06,Non-elderly (<60),Group PDP,0.8260021805763245
+820,Blood glucose random (mg/dl),423.06,patient 381,ICE,0.8842313289642334
+821,Blood glucose random (mg/dl),423.06,patient 187,ICE,0.9989643096923828
+822,Blood glucose random (mg/dl),423.06,patient 207,ICE,0.9958338737487793
+823,Blood glucose random (mg/dl),423.06,patient 386,ICE,0.751977264881134
+824,Blood glucose random (mg/dl),423.06,patient 290,ICE,0.7093067765235901
+825,Blood glucose random (mg/dl),423.06,patient 31,ICE,0.999897837638855
+826,Blood glucose random (mg/dl),423.06,patient 5,ICE,0.9998273253440857
+827,Blood glucose random (mg/dl),423.06,patient 332,ICE,0.9511259198188782
+828,Blood glucose random (mg/dl),423.06,patient 277,ICE,0.9456560015678406
+829,Blood glucose random (mg/dl),423.06,patient 95,ICE,0.999583899974823
+830,Blood glucose random (mg/dl),423.06,patient 14,ICE,0.999921441078186
+831,Blood glucose random (mg/dl),423.06,patient 235,ICE,0.9994895458221436
+832,Blood glucose random (mg/dl),423.06,patient 8,ICE,0.9996734857559204
+833,Blood glucose random (mg/dl),423.06,patient 67,ICE,0.9781419634819031
+834,Blood glucose random (mg/dl),423.06,patient 180,ICE,0.9984708428382874
+835,Blood glucose random (mg/dl),423.06,patient 355,ICE,0.9397115111351013
+836,Blood glucose random (mg/dl),423.06,patient 26,ICE,0.9992584586143494
+837,Blood glucose random (mg/dl),423.06,patient 12,ICE,0.9999270439147949
+838,Blood glucose random (mg/dl),423.06,patient 34,ICE,0.9999457597732544
+839,Blood glucose random (mg/dl),423.06,patient 165,ICE,0.9986349940299988
+840,Blood glucose random (mg/dl),423.06,patient 221,ICE,0.9945675134658813
+841,Blood glucose random (mg/dl),423.06,patient 323,ICE,0.8317272663116455
+842,Blood glucose random (mg/dl),423.06,patient 267,ICE,0.4629846215248108
+843,Blood glucose random (mg/dl),423.06,patient 293,ICE,0.6662846207618713
+844,Blood glucose random (mg/dl),423.06,patient 148,ICE,0.9995958209037781
+845,Blood glucose random (mg/dl),423.06,patient 103,ICE,0.9773722290992737
+846,Blood glucose random (mg/dl),423.06,patient 209,ICE,0.9994577765464783
+847,Blood glucose random (mg/dl),423.06,patient 183,ICE,0.9996310472488403
+848,Blood glucose random (mg/dl),423.06,patient 331,ICE,0.7296128273010254
+849,Blood glucose random (mg/dl),423.06,patient 250,ICE,0.5861406326293945
+850,Blood glucose random (mg/dl),423.06,patient 346,ICE,0.43818333745002747
+851,Blood glucose random (mg/dl),423.06,patient 63,ICE,0.751977264881134
+852,Blood glucose random (mg/dl),423.06,patient 304,ICE,0.751977264881134
+853,Blood glucose random (mg/dl),423.06,patient 200,ICE,0.9998117089271545
+854,Blood glucose random (mg/dl),423.06,patient 1,ICE,0.9864031076431274
+855,Blood glucose random (mg/dl),423.06,patient 116,ICE,0.999184787273407
+856,Blood glucose random (mg/dl),423.06,patient 109,ICE,0.9998732805252075
+857,Blood glucose random (mg/dl),423.06,patient 299,ICE,0.6581328511238098
+858,Blood glucose random (mg/dl),423.06,patient 224,ICE,0.9980853796005249
+859,Blood glucose random (mg/dl),423.06,patient 232,ICE,0.9999243021011353
+860,Hypertension,0.0,All patients,PDP,0.595920205116272
+861,Hypertension,0.0,Elderly (>=60),Group PDP,0.7409957051277161
+862,Hypertension,0.0,Non-elderly (<60),Group PDP,0.5046434998512268
+863,Hypertension,0.0,patient 381,ICE,0.12207440286874771
+864,Hypertension,0.0,patient 187,ICE,0.9268836975097656
+865,Hypertension,0.0,patient 207,ICE,0.9932534098625183
+866,Hypertension,0.0,patient 386,ICE,0.2440735548734665
+867,Hypertension,0.0,patient 290,ICE,0.03453315049409866
+868,Hypertension,0.0,patient 31,ICE,0.9998065829277039
+869,Hypertension,0.0,patient 5,ICE,0.9746612310409546
+870,Hypertension,0.0,patient 332,ICE,0.1600113958120346
+871,Hypertension,0.0,patient 277,ICE,0.07953735440969467
+872,Hypertension,0.0,patient 95,ICE,0.9622596502304077
+873,Hypertension,0.0,patient 14,ICE,0.9998624324798584
+874,Hypertension,0.0,patient 235,ICE,0.9978354573249817
+875,Hypertension,0.0,patient 8,ICE,0.991460919380188
+876,Hypertension,0.0,patient 67,ICE,0.6117959022521973
+877,Hypertension,0.0,patient 180,ICE,0.9947248101234436
+878,Hypertension,0.0,patient 355,ICE,0.2586269676685333
+879,Hypertension,0.0,patient 26,ICE,0.9981176853179932
+880,Hypertension,0.0,patient 12,ICE,0.9998722076416016
+881,Hypertension,0.0,patient 34,ICE,0.9999128580093384
+882,Hypertension,0.0,patient 165,ICE,0.9432039856910706
+883,Hypertension,0.0,patient 221,ICE,0.9945675134658813
+884,Hypertension,0.0,patient 323,ICE,0.3389444649219513
+885,Hypertension,0.0,patient 267,ICE,0.07384543120861053
+886,Hypertension,0.0,patient 293,ICE,0.024025142192840576
+887,Hypertension,0.0,patient 148,ICE,0.999433696269989
+888,Hypertension,0.0,patient 103,ICE,0.6503766179084778
+889,Hypertension,0.0,patient 209,ICE,0.9602676033973694
+890,Hypertension,0.0,patient 183,ICE,0.9993109703063965
+891,Hypertension,0.0,patient 331,ICE,0.09919296950101852
+892,Hypertension,0.0,patient 250,ICE,0.03348518908023834
+893,Hypertension,0.0,patient 346,ICE,0.019747935235500336
+894,Hypertension,0.0,patient 63,ICE,0.751977264881134
+895,Hypertension,0.0,patient 304,ICE,0.11457756161689758
+896,Hypertension,0.0,patient 200,ICE,0.9994744658470154
+897,Hypertension,0.0,patient 1,ICE,0.9487952589988708
+898,Hypertension,0.0,patient 116,ICE,0.8910645246505737
+899,Hypertension,0.0,patient 109,ICE,0.999582827091217
+900,Hypertension,0.0,patient 299,ICE,0.024987967684864998
+901,Hypertension,0.0,patient 224,ICE,0.9960660338401794
+902,Hypertension,0.0,patient 232,ICE,0.9998611211776733
+903,Hypertension,1.0,All patients,PDP,0.8826215863227844
+904,Hypertension,1.0,Elderly (>=60),Group PDP,0.9501073956489563
+905,Hypertension,1.0,Non-elderly (<60),Group PDP,0.8401617407798767
+906,Hypertension,1.0,patient 381,ICE,0.8546951413154602
+907,Hypertension,1.0,patient 187,ICE,0.9946547746658325
+908,Hypertension,1.0,patient 207,ICE,0.9991095662117004
+909,Hypertension,1.0,patient 386,ICE,0.9151329398155212
+910,Hypertension,1.0,patient 290,ICE,0.6434952616691589
+911,Hypertension,1.0,patient 31,ICE,0.999897837638855
+912,Hypertension,1.0,patient 5,ICE,0.9950467348098755
+913,Hypertension,1.0,patient 332,ICE,0.8939295411109924
+914,Hypertension,1.0,patient 277,ICE,0.7869161367416382
+915,Hypertension,1.0,patient 95,ICE,0.994272768497467
+916,Hypertension,1.0,patient 14,ICE,0.999921441078186
+917,Hypertension,1.0,patient 235,ICE,0.9994895458221436
+918,Hypertension,1.0,patient 8,ICE,0.9984807372093201
+919,Hypertension,1.0,patient 67,ICE,0.9842871427536011
+920,Hypertension,1.0,patient 180,ICE,0.9992443323135376
+921,Hypertension,1.0,patient 355,ICE,0.9297311305999756
+922,Hypertension,1.0,patient 26,ICE,0.9992584586143494
+923,Hypertension,1.0,patient 12,ICE,0.9999270439147949
+924,Hypertension,1.0,patient 34,ICE,0.9999457597732544
+925,Hypertension,1.0,patient 165,ICE,0.9960812926292419
+926,Hypertension,1.0,patient 221,ICE,0.9980008006095886
+927,Hypertension,1.0,patient 323,ICE,0.9524816870689392
+928,Hypertension,1.0,patient 267,ICE,0.7884114384651184
+929,Hypertension,1.0,patient 293,ICE,0.5342990159988403
+930,Hypertension,1.0,patient 148,ICE,0.9995958209037781
+931,Hypertension,1.0,patient 103,ICE,0.9866561889648438
+932,Hypertension,1.0,patient 209,ICE,0.993593156337738
+933,Hypertension,1.0,patient 183,ICE,0.9996310472488403
+934,Hypertension,1.0,patient 331,ICE,0.8114917278289795
+935,Hypertension,1.0,patient 250,ICE,0.5944153666496277
+936,Hypertension,1.0,patient 346,ICE,0.5139102339744568
+937,Hypertension,1.0,patient 63,ICE,0.9682056307792664
+938,Hypertension,1.0,patient 304,ICE,0.8464896082878113
+939,Hypertension,1.0,patient 200,ICE,0.9998117089271545
+940,Hypertension,1.0,patient 1,ICE,0.9957844614982605
+941,Hypertension,1.0,patient 116,ICE,0.9904301762580872
+942,Hypertension,1.0,patient 109,ICE,0.9998732805252075
+943,Hypertension,1.0,patient 299,ICE,0.5302883982658386
+944,Hypertension,1.0,patient 224,ICE,0.9994331002235413
+945,Hypertension,1.0,patient 232,ICE,0.9999243021011353
+946,Diabetes mellitus,0.0,All patients,PDP,0.5967527627944946
+947,Diabetes mellitus,0.0,Elderly (>=60),Group PDP,0.7513002157211304
+948,Diabetes mellitus,0.0,Non-elderly (<60),Group PDP,0.49951663613319397
+949,Diabetes mellitus,0.0,patient 381,ICE,0.12207440286874771
+950,Diabetes mellitus,0.0,patient 187,ICE,0.9129796028137207
+951,Diabetes mellitus,0.0,patient 207,ICE,0.9932534098625183
+952,Diabetes mellitus,0.0,patient 386,ICE,0.2440735548734665
+953,Diabetes mellitus,0.0,patient 290,ICE,0.03453315049409866
+954,Diabetes mellitus,0.0,patient 31,ICE,0.9997304081916809
+955,Diabetes mellitus,0.0,patient 5,ICE,0.9826475977897644
+956,Diabetes mellitus,0.0,patient 332,ICE,0.1600113958120346
+957,Diabetes mellitus,0.0,patient 277,ICE,0.07953735440969467
+958,Diabetes mellitus,0.0,patient 95,ICE,0.9825711846351624
+959,Diabetes mellitus,0.0,patient 14,ICE,0.9998366832733154
+960,Diabetes mellitus,0.0,patient 235,ICE,0.9994895458221436
+961,Diabetes mellitus,0.0,patient 8,ICE,0.9955897331237793
+962,Diabetes mellitus,0.0,patient 67,ICE,0.6117959022521973
+963,Diabetes mellitus,0.0,patient 180,ICE,0.9947248101234436
+964,Diabetes mellitus,0.0,patient 355,ICE,0.2586269676685333
+965,Diabetes mellitus,0.0,patient 26,ICE,0.9951798915863037
+966,Diabetes mellitus,0.0,patient 12,ICE,0.9998483657836914
+967,Diabetes mellitus,0.0,patient 34,ICE,0.9999192953109741
+968,Diabetes mellitus,0.0,patient 165,ICE,0.9960812926292419
+969,Diabetes mellitus,0.0,patient 221,ICE,0.9392899870872498
+970,Diabetes mellitus,0.0,patient 323,ICE,0.3389444649219513
+971,Diabetes mellitus,0.0,patient 267,ICE,0.07384543120861053
+972,Diabetes mellitus,0.0,patient 293,ICE,0.024025142192840576
+973,Diabetes mellitus,0.0,patient 148,ICE,0.9994447827339172
+974,Diabetes mellitus,0.0,patient 103,ICE,0.6503766179084778
+975,Diabetes mellitus,0.0,patient 209,ICE,0.7139575481414795
+976,Diabetes mellitus,0.0,patient 183,ICE,0.9992153644561768
+977,Diabetes mellitus,0.0,patient 331,ICE,0.09919296950101852
+978,Diabetes mellitus,0.0,patient 250,ICE,0.03348518908023834
+979,Diabetes mellitus,0.0,patient 346,ICE,0.019747935235500336
+980,Diabetes mellitus,0.0,patient 63,ICE,0.751977264881134
+981,Diabetes mellitus,0.0,patient 304,ICE,0.11457756161689758
+982,Diabetes mellitus,0.0,patient 200,ICE,0.9988769888877869
+983,Diabetes mellitus,0.0,patient 1,ICE,0.9487952589988708
+984,Diabetes mellitus,0.0,patient 116,ICE,0.9394304752349854
+985,Diabetes mellitus,0.0,patient 109,ICE,0.9985452890396118
+986,Diabetes mellitus,0.0,patient 299,ICE,0.024987967684864998
+987,Diabetes mellitus,0.0,patient 224,ICE,0.9960660338401794
+988,Diabetes mellitus,0.0,patient 232,ICE,0.9998427629470825
+989,Diabetes mellitus,1.0,All patients,PDP,0.8887414932250977
+990,Diabetes mellitus,1.0,Elderly (>=60),Group PDP,0.9527980089187622
+991,Diabetes mellitus,1.0,Non-elderly (<60),Group PDP,0.8484393358230591
+992,Diabetes mellitus,1.0,patient 381,ICE,0.8601266741752625
+993,Diabetes mellitus,1.0,patient 187,ICE,0.9946547746658325
+994,Diabetes mellitus,1.0,patient 207,ICE,0.998568058013916
+995,Diabetes mellitus,1.0,patient 386,ICE,0.9302123188972473
+996,Diabetes mellitus,1.0,patient 290,ICE,0.6338772773742676
+997,Diabetes mellitus,1.0,patient 31,ICE,0.999897837638855
+998,Diabetes mellitus,1.0,patient 5,ICE,0.9950467348098755
+999,Diabetes mellitus,1.0,patient 332,ICE,0.8994097113609314
+1000,Diabetes mellitus,1.0,patient 277,ICE,0.8071976900100708
+1001,Diabetes mellitus,1.0,patient 95,ICE,0.994272768497467
+1002,Diabetes mellitus,1.0,patient 14,ICE,0.999921441078186
+1003,Diabetes mellitus,1.0,patient 235,ICE,0.9998785257339478
+1004,Diabetes mellitus,1.0,patient 8,ICE,0.9984807372093201
+1005,Diabetes mellitus,1.0,patient 67,ICE,0.9852256178855896
+1006,Diabetes mellitus,1.0,patient 180,ICE,0.9989073276519775
+1007,Diabetes mellitus,1.0,patient 355,ICE,0.9365524053573608
+1008,Diabetes mellitus,1.0,patient 26,ICE,0.9992584586143494
+1009,Diabetes mellitus,1.0,patient 12,ICE,0.9999270439147949
+1010,Diabetes mellitus,1.0,patient 34,ICE,0.9999457597732544
+1011,Diabetes mellitus,1.0,patient 165,ICE,0.9991033673286438
+1012,Diabetes mellitus,1.0,patient 221,ICE,0.9945675134658813
+1013,Diabetes mellitus,1.0,patient 323,ICE,0.9591591358184814
+1014,Diabetes mellitus,1.0,patient 267,ICE,0.8065173029899597
+1015,Diabetes mellitus,1.0,patient 293,ICE,0.56740403175354
+1016,Diabetes mellitus,1.0,patient 148,ICE,0.9995958209037781
+1017,Diabetes mellitus,1.0,patient 103,ICE,0.987454891204834
+1018,Diabetes mellitus,1.0,patient 209,ICE,0.9602676033973694
+1019,Diabetes mellitus,1.0,patient 183,ICE,0.9996310472488403
+1020,Diabetes mellitus,1.0,patient 331,ICE,0.841589629650116
+1021,Diabetes mellitus,1.0,patient 250,ICE,0.627021074295044
+1022,Diabetes mellitus,1.0,patient 346,ICE,0.5273534059524536
+1023,Diabetes mellitus,1.0,patient 63,ICE,0.9908604621887207
+1024,Diabetes mellitus,1.0,patient 304,ICE,0.8568708300590515
+1025,Diabetes mellitus,1.0,patient 200,ICE,0.9998117089271545
+1026,Diabetes mellitus,1.0,patient 1,ICE,0.9966117739677429
+1027,Diabetes mellitus,1.0,patient 116,ICE,0.9904301762580872
+1028,Diabetes mellitus,1.0,patient 109,ICE,0.9998732805252075
+1029,Diabetes mellitus,1.0,patient 299,ICE,0.5734062194824219
+1030,Diabetes mellitus,1.0,patient 224,ICE,0.9991617202758789
+1031,Diabetes mellitus,1.0,patient 232,ICE,0.9999243021011353

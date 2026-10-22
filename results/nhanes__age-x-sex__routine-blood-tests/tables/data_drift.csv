@@ -1,0 +1,18 @@
+,Feature,PSI (all),PSI [60+ Female],PSI [60+ Male],PSI [<60 Female],PSI [<60 Male],Max group PSI,Shift
+0,Serum albumin (g/dl),0.601,0.618,0.542,0.532,0.854,0.854,Significant
+1,Sodium (mmol/L),0.661,0.699,0.56,0.697,0.717,0.717,Significant
+2,Potassium (mmol/L),0.292,0.197,0.244,0.36,0.384,0.384,Significant
+3,Diastolic BP (mm Hg),0.059,0.151,0.132,0.036,0.075,0.151,Moderate
+4,Serum glucose (mg/dl),0.031,0.035,0.04,0.039,0.065,0.065,Stable
+5,Systolic BP (mm Hg),0.013,0.053,0.012,0.014,0.011,0.053,Stable
+6,WBC (1000 cells/uL),0.005,0.016,0.038,0.007,0.019,0.038,Stable
+7,Uric acid (mg/dl),0.008,0.031,0.028,0.01,0.01,0.031,Stable
+8,Blood urea nitrogen (mg/dl),0.01,0.022,0.029,0.007,0.014,0.029,Stable
+9,Hypertension (BP >= 140/90),0.011,0.027,0.0,0.008,0.005,0.027,Stable
+10,Haemoglobin (g/dl),0.004,0.011,0.026,0.02,0.02,0.026,Stable
+11,RBC (million cells/uL),0.006,0.019,0.023,0.009,0.008,0.023,Stable
+12,Age (years),0.016,0.015,0.014,0.02,0.009,0.02,Stable
+13,BMI (kg/m2),0.005,0.015,0.012,0.012,0.018,0.018,Stable
+14,Haematocrit (%),0.005,0.012,0.01,0.007,0.016,0.016,Stable
+15,Diabetes (self-reported),0.001,0.0,0.002,0.001,0.0,0.002,Stable
+16,Female,0.0,0.0,0.0,0.0,0.0,0.0,Stable

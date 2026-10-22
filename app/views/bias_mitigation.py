@@ -2,7 +2,7 @@
 from common import METHOD_COLORS, wrap, fig_path, insight, page_header, page_setup, style_table, pd, px, run_store, saved_results, sidebar, st
 from fairckd.evaluation import cross_validate, summarize
 from fairckd.fairness import FAIR
-from fairckd.mitigation import EXPGRAD, METHODS, SHORT, UNAWARE
+from fairckd.mitigation import METHODS, SHORT, UNAWARE, supports
 from fairckd.models import MODEL_NAMES
 
 page_setup("Bias Mitigation", "🛠️")
@@ -24,6 +24,7 @@ with st.expander("About the methods", expanded=False):
 | **Reweighing** (Kamiran & Calders 2012) | pre-processing | weight training samples so that group and label become independent |
 | **SMOTE** (Chawla et al. 2002), group-balanced | pre-processing | create synthetic patients so every group has as many CKD and non-CKD examples as the largest group |
 | **Exponentiated Gradient** (Agarwal et al. 2018) | in-processing | train under an Equalized-Odds constraint |
+| **Adversarial Debiasing** (Zhang et al. 2018) | in-processing | a logistic-regression predictor is trained against an adversary that tries to guess the patient's group from its output (Logistic Regression only) |
 | **Threshold Optimizer** (Hardt et al. 2016) | post-processing | a separate decision threshold per group, learned on out-of-fold scores |
 | **Reject Option Classification** (Kamiran et al. 2012) | post-processing | for uncertain patients near the threshold, give the CKD flag to the group the model under-detects |
 | **RW + TO (hybrid)** | pre + post-processing | Reweighing followed by the Threshold Optimizer |
@@ -39,7 +40,7 @@ if src == "Run live":
     reps = c[2].number_input("CV repeats", 1, 10, 1 if len(y) > 2000 else 3)
     if st.button("▶ Run mitigation comparison", type="primary"):
         out, todo = [], [(m, k) for m in models for k in meths
-                         if not (k == UNAWARE and not proxy) and not (k == EXPGRAD and m == "KNN")]
+                         if not (k == UNAWARE and not proxy) and supports(k, m)]
         pb = st.progress(0.0)
         for i, (m, k) in enumerate(todo):
             pb.progress(i / len(todo), f"{m} · {SHORT[k]}…")
@@ -49,7 +50,7 @@ if src == "Run live":
     raw = store.get("mitigation")
     if raw is None:
         st.info("Select models and methods, then press **Run mitigation comparison**. "
-                "Exponentiated Gradient is the slowest method.")
+                "Exponentiated Gradient and Adversarial Debiasing are the slowest methods.")
         st.stop()
 else:
     raw = saved["mitigation_raw"]
@@ -79,19 +80,49 @@ if _best and _best[0] > 0:
 else:
     insight("No safe fix", "No mitigation method reduced the fairness gap without losing more than 3 points of balanced "
             "accuracy for this configuration. The trade-off chart below shows the options.")
-st.markdown("### Comparison table (mean ± SD over CV repeats)")
-st.dataframe(style_table(raw.assign(Method=raw.Method.map(SHORT)).groupby(["Model", "Method"], sort=False).apply(lambda d: summarize(d, cols), include_groups=False), lower_better=["DP diff", "EOpp diff", "EOdds diff", "PP diff", "Acc. gap"], higher_better=["Accuracy", "Balanced acc.", "Recall", "DI ratio"]),
-             width="stretch")
-
 mm = raw.groupby(["Model", "Method"], sort=False).mean(numeric_only=True).reset_index()
 mm["Method"] = mm.Method.map(SHORT)
-c1, c2 = st.columns(2)
-for c, met in [(c1, "EOpp diff"), (c2, "EOdds diff")]:
-    f = px.bar(mm.assign(Model=mm.Model.map(wrap)), x="Model", y=met, color="Method", barmode="group",
-               color_discrete_map=METHOD_COLORS, title=f"{met} (lower = fairer)", height=420)
-    f.update_layout(margin=dict(t=50, b=10, r=10), legend_title_text="", xaxis_title=None,
-                    legend=dict(orientation="h", yanchor="top", y=-0.18, x=0, font=dict(size=11)))
-    c.plotly_chart(f, width="stretch", theme=None)
+
+st.markdown("### Fairness gap before and after each method")
+met = st.radio("Fairness metric", ["EOdds diff", "EOpp diff", "DP diff", "PP diff"], horizontal=True,
+               format_func=lambda m: {"EOdds diff": "Equalized Odds", "EOpp diff": "Equal Opportunity",
+                                      "DP diff": "Demographic Parity", "PP diff": "Predictive Parity"}[m])
+import plotly.graph_objects as go
+models_ = list(mm.Model.unique())
+cols_ = st.columns(len(models_))
+for col, mod in zip(cols_, models_):
+    d = mm[mm.Model == mod].set_index("Method")
+    if "Baseline" not in d.index:
+        continue
+    b0 = d.loc["Baseline", met]
+    d = d.drop(index="Baseline").sort_values(met)
+    fig = go.Figure()
+    for k, r in d.iterrows():                                   # line from baseline to the method's value
+        fig.add_trace(go.Scatter(x=[b0, r[met]], y=[k, k], mode="lines", showlegend=False, hoverinfo="skip",
+                                 line=dict(color="#CBD5E1", width=3)))
+    fig.add_trace(go.Scatter(x=[b0] * len(d), y=d.index, mode="markers", name="Baseline",
+                             marker=dict(color="#94A3B8", size=11, symbol="line-ns-open", line=dict(width=3)),
+                             hovertemplate="Baseline: %{x:.3f}<extra></extra>"))
+    fig.add_trace(go.Scatter(x=d[met], y=d.index, mode="markers+text", name="After mitigation",
+                             marker=dict(color=[METHOD_COLORS.get(k, "#0F766E") for k in d.index], size=14,
+                                         line=dict(width=1, color="white")),
+                             text=[f"{v:.3f}" for v in d[met]], textposition="top center",
+                             customdata=d["Balanced acc."],
+                             hovertemplate="%{y}: %{x:.3f}<br>balanced acc. %{customdata:.3f}<extra></extra>"))
+    fig.update_layout(title=f"{mod} · baseline {b0:.3f}", height=46 * len(d) + 120, showlegend=False,
+                      xaxis_title=f"{met} (lower = fairer)", margin=dict(t=50, b=10, l=10, r=50))
+    fig.update_yaxes(autorange="reversed", title=None)
+    col.plotly_chart(fig, width="stretch", theme=None)
+st.caption("Grey tick = the model without mitigation; dot = after the method; methods sorted from fairest to least fair.")
+
+st.markdown("### Comparison table (mean ± SD over CV repeats)")
+tab = raw.assign(Method=raw.Method.map(SHORT)).groupby(["Model", "Method"], sort=False).apply(
+    lambda d: summarize(d, cols), include_groups=False)
+key_cols = ["Balanced acc.", "Recall", "EOdds diff", "EOpp diff", "DP diff"]
+st.dataframe(style_table(tab[key_cols], lower_better=["EOdds diff"], higher_better=["Balanced acc."]),
+             width="stretch")
+with st.expander("All metrics"):
+    st.dataframe(tab, width="stretch")
 
 acc = "Balanced acc."
 f = px.scatter(mm, x="EOdds diff", y=acc, color="Method", symbol="Model", color_discrete_map=METHOD_COLORS,

@@ -4,6 +4,7 @@ Logistic Regression,Unawareness (drop sensitive attribute),0.84,0.482,0.369,0.11
 Logistic Regression,Reweighing (pre-processing),0.73,0.373,0.507,0.221
 Logistic Regression,Group-balanced SMOTE (pre-processing),0.719,0.351,0.491,0.234
 Logistic Regression,Exponentiated Gradient (in-processing),0.631,0.29,0.554,0.289
+Logistic Regression,Adversarial Debiasing (in-processing),0.644,0.319,0.509,0.231
 Logistic Regression,Threshold Optimizer (post-processing),0.564,0.272,0.536,0.27
 Logistic Regression,Reject Option Classification (post-processing),0.789,0.407,0.496,0.226
 Logistic Regression,Reweighing + Threshold Optimizer (hybrid),0.515,0.222,0.501,0.221

@@ -21,7 +21,7 @@ INK, TEAL, MAROON, PAPER, LINE, MUTED = "#14213D", "#0F766E", "#9F1D35", "#F5F7F
 # one fixed colour per group everywhere in the app (sorted group order)
 GROUP_COLORS = [TEAL, MAROON, "#C27C0E", "#4F46E5", "#64748B", "#0E7490"]
 METHOD_COLORS = {"Baseline": "#94A3B8", "Unawareness": "#C9A227", "Reweighing": "#4F46E5",
-                 "Exp. Gradient": "#0E7490", "Threshold Opt.": MAROON, "RW + TO (hybrid)": "#7C3AED",
+                 "Exp. Gradient": "#0E7490", "Adversarial": "#15803D", "Threshold Opt.": MAROON, "RW + TO (hybrid)": "#7C3AED",
                  "SMOTE": "#C2410C", "Reject Option": "#BE185D"}
 SEQ = [TEAL, "#4F46E5", "#C27C0E", MAROON]
 
@@ -80,6 +80,8 @@ section[data-testid="stSidebar"] [data-baseweb="select"] * {color: #14213D !impo
 section[data-testid="stSidebar"] [data-baseweb="select"] svg {fill: #14213D !important;}
 section[data-testid="stSidebar"] label p {color: #9FB3CC !important; font-size: 0.82rem !important;}
 section[data-testid="stSidebar"] hr {border-color: #2E4170;}
+section[data-testid="stSidebar"] [data-testid="stCheckbox"] label > div:nth-of-type(1) {background: #3A4F7A !important;}
+section[data-testid="stSidebar"] [data-testid="stCheckbox"] label:has(input:checked) > div:nth-of-type(1) {background: #0F766E !important;}
 .side-title {font-size: 0.95rem; font-weight: 600; color: #fff !important; margin: 0.4rem 0 0.2rem;}
 .side-meta {font-size: 0.8rem; color: #9FB3CC !important; line-height: 1.5;}
 
@@ -184,6 +186,122 @@ section[data-testid="stSidebar"] [data-testid="stSidebarNavLink"][aria-current="
 """
 
 
+# ----------------------------------------------------------------------------- dark mode
+pio.templates["fairckd_dark"] = go.layout.Template(layout=dict(
+    font=dict(family="IBM Plex Sans, Segoe UI, Arial, sans-serif", color="#E2E8F0", size=13),
+    title=dict(font=dict(size=15, color="#F1F5F9"), x=0, xanchor="left"),
+    colorway=["#2BB3A3", "#E0566F", "#E0A23B", "#8B85F0", "#94A3B8", "#38BDF8"],
+    paper_bgcolor="#111A2E", plot_bgcolor="#111A2E",
+    xaxis=dict(gridcolor="#24324D", linecolor="#2E3F5E", zerolinecolor="#2E3F5E", ticks="", automargin=True),
+    yaxis=dict(gridcolor="#24324D", linecolor="#2E3F5E", zerolinecolor="#2E3F5E", ticks=""),
+    legend=dict(bgcolor="rgba(0,0,0,0)", font=dict(size=12, color="#E2E8F0")),
+    hoverlabel=dict(bgcolor="#111A2E", bordercolor="#2E3F5E", font=dict(color="#E2E8F0")), bargap=0.25))
+
+DARK_CSS = """
+<style>
+.stApp {background: #0B1220 !important;}
+.stApp, .stApp p, .stApp li, .stApp label, .stApp span, .stMarkdown, [data-testid="stCaptionContainer"] {color: #CBD5E1;}
+.stApp h1, .stApp h2, .stApp h3, .stApp h4, .stApp strong, .stApp b {color: #F1F5F9 !important;}
+.ph {border-bottom-color: #23314D;} .ph p {color: #94A3B8;}
+.ph-stage {background: #0F2E2B; color: #5EEAD4;}
+[data-testid="stMetric"], [data-testid="stPlotlyChart"], [data-testid="stDataFrame"], [data-testid="stForm"],
+[data-testid="stExpander"], [data-testid="stExpander"] details {background: #111A2E !important; border-color: #23314D !important;}
+[data-testid="stMetricLabel"] p {color: #94A3B8 !important;} [data-testid="stMetricValue"] {color: #F1F5F9;}
+[data-testid="stDataFrame"] {background: #FFFFFF !important;}
+[data-testid="stPlotlyChart"] > div, [data-testid="stPlotlyChart"] .js-plotly-plot, [data-testid="stPlotlyChart"] .plot-container
+  {background: #111A2E !important;}
+[data-testid="stImage"] img, [data-testid="stPyplot"] img, [data-testid="stImage"] {background: #FFFFFF; border-radius: 8px;}
+.stTabs [data-baseweb="tab-list"] {border-bottom-color: #23314D;}
+.stTabs [data-baseweb="tab"] p {color: #94A3B8;} .stTabs [aria-selected="true"] p {color: #5EEAD4 !important;}
+.main [data-testid="stNumberInputContainer"], [data-testid="stForm"] [data-testid="stNumberInputContainer"],
+[data-testid="stForm"] [data-testid="stTextInputRootElement"], [data-testid="stTextInputRootElement"],
+.main [data-baseweb="select"] > div, [data-testid="stForm"] [data-baseweb="select"] > div
+  {background: #0B1220 !important; border-color: #2E3F5E !important;}
+.main input, .main textarea, [data-testid="stForm"] input {color: #E2E8F0 !important; -webkit-text-fill-color: #E2E8F0;}
+.main [data-baseweb="select"] div, [data-testid="stForm"] [data-baseweb="select"] div {color: #E2E8F0;}
+section[data-testid="stSidebar"] [data-baseweb="select"] *, section[data-testid="stSidebar"] [data-baseweb="select"] input
+  {color: #14213D !important; -webkit-text-fill-color: #14213D !important;}
+.stApp button[kind="secondary"] {background: #111A2E; border-color: #2E3F5E; color: #E2E8F0;}
+.hero, .ins {background: #111A2E; border: 1px solid #23314D;}
+.gap-card, .ins .bars {background: #0B1220;}
+.pipe div {background: #111A2E; border-color: #23314D; color: #CBD5E1;}
+.rx {background: #111A2E; border-color: #23314D;} .rx-body {color: #E2E8F0;}
+.rx-body div {border-bottom-color: #23314D;} .rx-body span {color: #94A3B8;}
+.rx-note {background: #0B1220; color: #CBD5E1;}
+.xt {background: #111A2E; border-color: #23314D;}
+.xt th {background: #0B1220; color: #94A3B8;} .xt th.hl {background: #0F2E2B; color: #5EEAD4;}
+.xt td {color: #E2E8F0; border-top-color: #23314D;} .xt tr:hover td {background: #16213A;}
+.xt .gbar {background: #23314D;}
+.small {color: #94A3B8;}
+</style>
+"""
+
+
+def is_dark() -> bool:
+    return bool(st.session_state.get("dark_mode", False))
+
+
+def apply_theme():
+    """Dark/light switch (per viewer). Called once per run by the router, before the page renders."""
+    if is_dark():
+        st.markdown(DARK_CSS, unsafe_allow_html=True)
+
+
+from streamlit.delta_generator import DeltaGenerator as _DG
+
+
+def _darken(fig):
+    """Dark theme for one Plotly figure: background, every text colour, grid and axis lines."""
+    txt, sub, grid = "#E2E8F0", "#CBD5E1", "#24324D"
+    fig.update_layout(template="plotly_dark+fairckd_dark", paper_bgcolor="#111A2E", plot_bgcolor="#111A2E",
+                      font_color=txt, title_font_color="#F1F5F9", legend_font_color=txt, legend_title_font_color=txt)
+    fig.update_xaxes(color=sub, tickfont_color=sub, title_font_color=sub, gridcolor=grid, linecolor="#2E3F5E",
+                     zerolinecolor="#2E3F5E")
+    fig.update_yaxes(color=sub, tickfont_color=sub, title_font_color=sub, gridcolor=grid, linecolor="#2E3F5E",
+                     zerolinecolor="#2E3F5E")
+    for t in fig.data:
+        try:
+            if getattr(t, "type", "") in ("bar", "scatter") and getattr(t, "text", None) is not None:
+                t.textfont.color = txt
+        except Exception:
+            pass
+    try:
+        fig.update_coloraxes(colorbar_tickfont_color=sub, colorbar_title_font_color=sub)
+    except Exception:
+        pass
+    for ann in fig.layout.annotations or []:
+        ann.font.color = txt
+
+if not getattr(_DG.plotly_chart, "_fairckd_themed", False):
+    _orig_plotly_chart = _DG.plotly_chart
+
+    def _themed_plotly_chart(self, figure_or_data, *args, **kwargs):
+        """Every Plotly chart (st.* and columns/tabs) follows the viewer's theme; session-specific."""
+        try:
+            if is_dark():
+                _darken(figure_or_data)
+        except Exception:
+            pass
+        return _orig_plotly_chart(self, figure_or_data, *args, **kwargs)
+
+    _themed_plotly_chart._fairckd_themed = True
+    _DG.plotly_chart = _themed_plotly_chart
+
+if not getattr(st.plotly_chart, "_fairckd_themed", False):
+    _orig_st_plotly_chart = st.plotly_chart          # bound to the main area; not affected by the class patch
+
+    def _themed_st_plotly_chart(figure_or_data, *args, **kwargs):
+        try:
+            if is_dark():
+                _darken(figure_or_data)
+        except Exception:
+            pass
+        return _orig_st_plotly_chart(figure_or_data, *args, **kwargs)
+
+    _themed_st_plotly_chart._fairckd_themed = True
+    st.plotly_chart = _themed_st_plotly_chart
+
+
 DATASETS = {"UCI Chronic Kidney Disease (India)": "uci", "NHANES 2017-18 (USA)": "nhanes", "Upload your own CSV": "custom"}
 
 
@@ -236,7 +354,7 @@ def sidebar():
                     f"{'Saved results loaded' if saved else 'No saved results: run live'}</div>",
                     unsafe_allow_html=True)
         st.markdown("---")
-        st.markdown("<div class='side-meta'>FairCKD 1.1<br>Fair AI for kidney disease diagnosis<br>Built by Jimil Jingar<br>"
+        st.markdown("<div class='side-meta'>FairCKD 1.2<br>Fair AI for kidney disease diagnosis<br>Built by Jimil Jingar<br>"
                     "PIET, Parul University</div>", unsafe_allow_html=True)
     return spec, fs, at, X, y, A
 

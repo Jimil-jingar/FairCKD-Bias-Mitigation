@@ -88,3 +88,81 @@ def lime_figure(table: pd.DataFrame, top: int = 10, title: str = "Why this predi
         ax.spines[s].set_visible(False)
     fig.tight_layout()
     return fig
+
+
+def pdp_ice(model, preprocessor, X: pd.DataFrame, A, features, labels: dict | None = None,
+            grid_points: int = 20, ice_patients: int = 40, seed: int = 0) -> pd.DataFrame:
+    """Partial dependence (PDP) and individual conditional expectation (ICE) curves.
+
+    For each grid value v of a feature, every patient's value is set to v and the model's mean CKD probability
+    is recorded: overall (PDP), per sensitive group (group PDP: does the same lab value move risk differently
+    for different groups?) and for a random sample of individual patients (ICE).
+    Returns a long table: Feature, Value, Curve, Kind ('PDP' | 'Group PDP' | 'ICE'), CKD probability.
+    """
+    labels = labels or {}
+    A = np.asarray(A).astype(str)
+    rng = np.random.default_rng(seed)
+    ice_idx = rng.choice(len(X), min(ice_patients, len(X)), replace=False)
+    rows = []
+    for f in features:
+        col = X[f].dropna()
+        if col.nunique() <= 2:
+            grid = np.sort(col.unique())
+        else:
+            grid = np.unique(np.quantile(col, np.linspace(0.02, 0.98, grid_points)))
+        for v in grid:
+            Xv = X.copy(); Xv[f] = v
+            p = model.predict_proba(preprocessor.transform(Xv))[:, 1]
+            name = labels.get(f, f)
+            rows.append({"Feature": name, "Value": float(v), "Curve": "All patients", "Kind": "PDP",
+                         "CKD probability": float(p.mean())})
+            for g in np.unique(A):
+                rows.append({"Feature": name, "Value": float(v), "Curve": g, "Kind": "Group PDP",
+                             "CKD probability": float(p[A == g].mean())})
+            for i in ice_idx:
+                rows.append({"Feature": name, "Value": float(v), "Curve": f"patient {i}", "Kind": "ICE",
+                             "CKD probability": float(p[i])})
+    return pd.DataFrame(rows)
+
+
+def probability_contributions(sv, top: int = 10) -> tuple[pd.DataFrame, float, float]:
+    """Turn one patient's SHAP values (log-odds for tree / linear models) into percentage-point contributions.
+
+    The change from the average risk to this patient's risk (in probability) is shared among the features in
+    proportion to their SHAP values, so the bars add up exactly to (patient risk - average risk).
+    Returns (table with Feature, Value, Contribution (pp); the `top` largest plus 'other features'),
+    base probability, patient probability."""
+    vals = np.asarray(sv.values, float)
+    base = float(np.ravel(sv.base_values)[0])
+    total = vals.sum()
+    if 0 <= base <= 1 and abs(base + total) <= 1.0001 and (base + total) >= -1e-6:
+        p0, p1 = base, base + total                      # model explained on probability scale already
+    else:
+        p0, p1 = 1 / (1 + np.exp(-base)), 1 / (1 + np.exp(-(base + total)))
+    scale = (p1 - p0) / total if abs(total) > 1e-12 else 0.0
+    d = pd.DataFrame({"Feature": sv.feature_names, "Value": np.asarray(sv.data, float),
+                      "Contribution (pp)": 100 * vals * scale})
+    d = d.reindex(d["Contribution (pp)"].abs().sort_values(ascending=False).index)
+    head, rest = d.head(top), d.iloc[top:]
+    if len(rest):
+        head = pd.concat([head, pd.DataFrame([{"Feature": f"{len(rest)} other features", "Value": np.nan,
+                                               "Contribution (pp)": rest["Contribution (pp)"].sum()}])],
+                         ignore_index=True)
+    return head.reset_index(drop=True), p0, p1
+
+
+def contribution_figure(table: pd.DataFrame, p0: float, p1: float, title="Why this prediction? (SHAP)"):
+    """Matplotlib version (for the PDF report): percentage-point contributions in the FairCKD colours."""
+    import matplotlib.pyplot as plt
+    d = table[::-1]
+    lab = [f"{f}  = {v:.3g}" if not np.isnan(v) else f for f, v in zip(d.Feature, d.Value)]
+    col = ["#9F1D35" if c > 0 else "#0F766E" for c in d["Contribution (pp)"]]
+    fig, ax = plt.subplots(figsize=(7, 0.36 * len(d) + 1.4))
+    ax.barh(lab, d["Contribution (pp)"], color=col)
+    for i, c in enumerate(d["Contribution (pp)"]):
+        ax.text(c, i, f" {c:+.1f}" if c >= 0 else f"{c:+.1f} ", va="center", ha="left" if c >= 0 else "right", fontsize=8)
+    ax.axvline(0, color="#14213D", lw=0.8)
+    ax.set_xlabel(f"Change in CKD risk (percentage points)  ·  average {100 * p0:.1f}% → this patient {100 * p1:.1f}%")
+    ax.set_title(title); ax.spines[["top", "right"]].set_visible(False)
+    fig.tight_layout()
+    return fig

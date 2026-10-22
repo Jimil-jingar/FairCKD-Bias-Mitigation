@@ -52,11 +52,22 @@ def key_findings(R) -> list[str]:
         ok = sg[(sg["p (EOdds)"] < 0.05) & (sg["Δ EOdds gap"] < 0)]
         out.append(f"Statistical significance: {len(ok)} of {len(sg)} mitigation results reduce the Equalized Odds gap "
                    "significantly (paired bootstrap, p < 0.05).")
+    if "proxy_auc" in R and len(R["proxy_auc"]):
+        pa = R["proxy_auc"].iloc[-1]
+        auc = max(pa["AUC (Logistic Regression)"], pa["AUC (XGBoost)"])
+        out.append(f"Proxy audit: the patient's group can be recovered from {pa['Feature set'].lower()} with AUC "
+                   f"<b>{auc:.2f}</b> (0.5 = no group information)"
+                   + (", so dropping the sensitive attribute alone cannot remove group information." if auc >= 0.7 else "."))
     if "external" in R:
         ex = R["external"]; b0 = ex[ex.Method == "Baseline"]
         out.append(f"External validation (NHANES 2015–16): baseline balanced accuracy {b0['Balanced acc.'].min():.3f}–"
                    f"{b0['Balanced acc.'].max():.3f}, Equalized Odds gap {b0['EOdds diff'].min():.3f}–{b0['EOdds diff'].max():.3f}; "
                    f"best mitigated gap {ex['EOdds diff'].min():.3f}.")
+    if "fairness_drift" in R:
+        fd = R["fairness_drift"]; dd = R["data_drift"]
+        out.append(f"Monitoring: {int((fd['Fairness held?'] == 'Yes').sum())} of {len(fd)} pipelines keep their Equalized "
+                   f"Odds gap within 0.05 on the 2015–16 cohort; {int((dd.Shift != 'Stable').sum())} feature(s) shift at "
+                   "least moderately within a group (PSI &gt; 0.1).")
     if "label_bias" in R:
         lb = R["label_bias"]
         bl = lb.loc["Non-Hispanic Black"] if "Non-Hispanic Black" in lb.index else None
@@ -119,6 +130,14 @@ def write_pdf(R, path: Path):
 
     s += [Paragraph("1. Dataset and groups", H2), _table(R["group_summary"], index=False, font=8)]
     fig("01_group_summary")
+    if "proxy_auc" in R:
+        s += [Paragraph("1b. Proxy-feature audit", H2),
+              Paragraph("How much group information do the clinical features carry? A classifier is trained to recover "
+                        "the patient's group from the model inputs (5-fold cross-validated AUC; 0.5 = no information). "
+                        "A high AUC without the sensitive column means that simply dropping it ('unawareness') cannot "
+                        "make the model blind to the group.", P),
+              _table(R["proxy_auc"], index=False, font=8), Spacer(1, 4)]
+        fig("15_proxy_audit")
     s += [PageBreak(), Paragraph("2. Baseline model performance", H2), _table(R["baseline_performance"])]
     fig("03_performance")
     s += [Paragraph("3. Bias detection and fairness evaluation", H2), _table(R["baseline_fairness"])]
@@ -152,6 +171,14 @@ def write_pdf(R, path: Path):
         s += [PageBreak(), Paragraph("4e. External validation (trained on NHANES 2017–18, tested on NHANES 2015–16)", H2),
               _table(R["external"].drop(columns=[c for c in R["external"].columns if c.startswith("TPR [")]), index=False, font=7)]
         fig("14_external_validation")
+    if "fairness_drift" in R:
+        s += [PageBreak(), Paragraph("4f. Monitoring: data and fairness drift (development 2017–18 vs. 2015–16)", H2),
+              Paragraph("Population Stability Index (PSI) per feature and group (&lt; 0.1 stable, 0.1–0.2 moderate, "
+                        "&gt; 0.2 significant), CKD prevalence per group in both cohorts, and the change of each "
+                        "pipeline's Equalized Odds gap between the internal estimate and the external cohort.", P),
+              _table(R["prevalence_drift"], index=False, font=7), Spacer(1, 4),
+              _table(R["fairness_drift"].drop(columns=["Fairness held?"]), index=False, font=6.5), Spacer(1, 4)]
+        fig("17_drift")
     if "representation" in R:
         s += [Paragraph("5. Representation-bias experiment", H2)]; fig("08_representation_bias")
     s += [PageBreak(), Paragraph("6. Explainability (SHAP and LIME)", H2)]
@@ -161,6 +188,11 @@ def write_pdf(R, path: Path):
                         "important SHAP features LIME also ranks in its top 5 (XGBoost). High overlap means the two "
                         "explanation methods tell the same story.", P),
               _table(R["lime_shap_agreement"], font=8), Spacer(1, 6)]
+    if "16_pdp_by_group" in R["figures"]:
+        s += [Paragraph("<b>Partial dependence by group</b> (top 3 SHAP features, XGBoost): the coloured lines show the "
+                        "average predicted risk in each group when the feature is set to the same value for everyone; "
+                        "grey lines are individual patients (ICE).", P)]
+        fig("16_pdp_by_group")
     if "label_bias" in R:
         s += [Paragraph("7. Label bias (eGFR equation)", H2), _table(R["label_bias"].rename(columns={"CKD % (2021 race-free eGFR)": "CKD % 2021\n(race-free)", "CKD % (2009 race-based eGFR)": "CKD % 2009\n(race-based)", "Change (percentage points)": "Change\n(pp)", "Patients whose label changes": "Labels\nchanged"}), font=8)]; fig("11_label_bias", W * 0.8)
     s += [Spacer(1, 8), Paragraph("Protocol: repeated stratified 5-fold cross-validation (stratified on label × group); "

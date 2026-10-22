@@ -1,0 +1,16 @@
+Model,Method,Balanced acc.,EOdds diff,Pareto-optimal
+Logistic Regression,Baseline,0.736,0.066,False
+Logistic Regression,Reweighing (pre-processing),0.736,0.067,False
+Logistic Regression,Group-balanced SMOTE (pre-processing),0.728,0.077,False
+Logistic Regression,Exponentiated Gradient (in-processing),0.729,0.075,False
+Logistic Regression,Adversarial Debiasing (in-processing),0.732,0.049,False
+Logistic Regression,Threshold Optimizer (post-processing),0.725,0.011,True
+Logistic Regression,Reject Option Classification (post-processing),0.734,0.02,True
+Logistic Regression,Reweighing + Threshold Optimizer (hybrid),0.723,0.012,False
+XGBoost,Baseline,0.738,0.089,True
+XGBoost,Reweighing (pre-processing),0.736,0.088,False
+XGBoost,Group-balanced SMOTE (pre-processing),0.709,0.072,False
+XGBoost,Exponentiated Gradient (in-processing),0.735,0.084,False
+XGBoost,Threshold Optimizer (post-processing),0.711,0.017,False
+XGBoost,Reject Option Classification (post-processing),0.737,0.043,True
+XGBoost,Reweighing + Threshold Optimizer (hybrid),0.715,0.023,False

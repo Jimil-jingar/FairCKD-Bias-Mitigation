@@ -13,7 +13,7 @@ plt.rcParams.update({"savefig.dpi": 300, "savefig.bbox": "tight", "axes.spines.t
 GROUP_COLORS = ["#0F766E", "#9F1D35", "#C27C0E", "#4F46E5", "#64748B", "#0E7490", "#7C3AED", "#B45309",
                 "#15803D", "#BE185D"]
 METHOD_COLORS = {"Baseline": "#94A3B8", "Unawareness": "#C9A227", "Reweighing": "#4F46E5",
-                 "Exp. Gradient": "#0E7490", "Threshold Opt.": "#9F1D35", "RW + TO (hybrid)": "#7C3AED",
+                 "Exp. Gradient": "#0E7490", "Adversarial": "#15803D", "Threshold Opt.": "#9F1D35", "RW + TO (hybrid)": "#7C3AED",
                  "SMOTE": "#C2410C", "Reject Option": "#BE185D"}
 
 
@@ -206,4 +206,62 @@ def external(ext: pd.DataFrame, groups):
     ax[1].bar(x, d["EOdds diff"], color=[METHOD_COLORS.get(m, "grey") for m in d.Method])
     ax[1].set_xticks(x); ax[1].set_xticklabels(d.Label, fontsize=6, rotation=60, ha="right")
     ax[1].set_title("External validation: Equalized Odds gap (lower is fairer)")
+    return fig
+
+
+def proxy(features: pd.DataFrame, auc: pd.DataFrame, top=10):
+    """Left: features that differ most between groups (standardised mean difference).
+    Right: how well the group can be recovered from the features (cross-validated AUC)."""
+    d = features.sort_values("Max standardised mean difference", ascending=False).head(top)[::-1]
+    fig, ax = plt.subplots(1, 2, figsize=(12, 0.32 * len(d) + 1.6), gridspec_kw={"width_ratios": [1.4, 1]})
+    c = ["#9F1D35" if v == "Yes" else "#94A3B8" for v in d["Potential proxy"]]
+    ax[0].barh(d.Description, d["Max standardised mean difference"], color=c)
+    ax[0].axvline(0.5, ls=":", color="#14213D"); ax[0].set_xlabel("Largest standardised mean difference between groups")
+    ax[0].set_title("Features that differ between groups (red = potential proxy, ≥ 0.5)")
+    a = auc.set_index("Feature set")
+    x = np.arange(len(a))
+    ax[1].bar(x - 0.18, a["AUC (Logistic Regression)"], 0.36, color="#0F766E", label="Logistic Regression")
+    ax[1].bar(x + 0.18, a["AUC (XGBoost)"], 0.36, color="#64748B", label="XGBoost")
+    for i, (u, v) in enumerate(zip(a["AUC (Logistic Regression)"], a["AUC (XGBoost)"])):
+        ax[1].text(i - 0.18, u + 0.01, f"{u:.2f}", ha="center", fontsize=8); ax[1].text(i + 0.18, v + 0.01, f"{v:.2f}", ha="center", fontsize=8)
+    ax[1].axhline(0.5, ls=":", color="#14213D"); ax[1].set_ylim(0.4, 1.08)
+    ax[1].set_xticks(x); ax[1].set_xticklabels([_wrap(s, 18) for s in a.index], fontsize=8)
+    ax[1].set_title("Can the group be predicted from the features? (AUC)"); ax[1].legend(fontsize=7, loc="lower right")
+    return fig
+
+
+def pdp_groups(pdp: pd.DataFrame, title=""):
+    """Partial dependence per group with ICE curves in the background, one panel per feature."""
+    feats = list(dict.fromkeys(pdp.Feature))
+    fig, ax = plt.subplots(1, len(feats), figsize=(4.6 * len(feats), 3.6), squeeze=False)
+    groups = sorted(pdp[pdp.Kind == "Group PDP"].Curve.unique())
+    for j, f in enumerate(feats):
+        d = pdp[pdp.Feature == f]
+        for _, ice in d[d.Kind == "ICE"].groupby("Curve"):
+            ax[0, j].plot(ice.Value, ice["CKD probability"], color="#CBD5E1", lw=0.6, zorder=1)
+        for i, g in enumerate(groups):
+            gd = d[(d.Kind == "Group PDP") & (d.Curve == g)]
+            ax[0, j].plot(gd.Value, gd["CKD probability"], color=GROUP_COLORS[i % 10], lw=2.2, label=g, zorder=3)
+        al = d[d.Kind == "PDP"]
+        ax[0, j].plot(al.Value, al["CKD probability"], color="#14213D", lw=1.6, ls="--", label="All patients", zorder=4)
+        ax[0, j].set_title(f); ax[0, j].set_ylim(0, 1); ax[0, j].set_ylabel("Predicted CKD probability" if j == 0 else "")
+    ax[0, -1].legend(fontsize=7, loc="best")
+    fig.suptitle(title or "Partial dependence by group (lines) with individual ICE curves (grey)", y=1.03)
+    return fig
+
+
+def drift(fairness: pd.DataFrame, data: pd.DataFrame, top=10):
+    """Left: Equalized Odds gap internal vs external per pipeline. Right: largest feature shifts (PSI)."""
+    fig, ax = plt.subplots(1, 2, figsize=(14, 4.4), gridspec_kw={"width_ratios": [1.5, 1], "wspace": 0.55})
+    d = fairness.copy(); d["Label"] = d.Model.str.replace("Logistic Regression", "LR") + "\n" + d.Method
+    x = np.arange(len(d))
+    ax[0].bar(x - 0.2, d["EOdds diff (internal)"], 0.4, color="#0F766E", label="Development (CV, 2017-18)")
+    ax[0].bar(x + 0.2, d["EOdds diff (external)"], 0.4, color="#9F1D35", label="External (2015-16)")
+    ax[0].set_xticks(x); ax[0].set_xticklabels(d.Label, fontsize=6, rotation=60, ha="right")
+    ax[0].set_title("Fairness drift: Equalized Odds gap (lower is fairer)"); ax[0].legend(fontsize=7, loc="upper right", framealpha=0.95)
+    t = data.head(top)[::-1]
+    c = ["#9F1D35" if s == "Significant" else "#C27C0E" if s == "Moderate" else "#94A3B8" for s in t.Shift]
+    ax[1].barh(t.Feature, t["Max group PSI"], color=c)
+    ax[1].axvline(0.1, ls=":", color="#C27C0E"); ax[1].axvline(0.2, ls=":", color="#9F1D35")
+    ax[1].set_xlabel("Largest within-group PSI"); ax[1].set_title("Data drift by feature")
     return fig

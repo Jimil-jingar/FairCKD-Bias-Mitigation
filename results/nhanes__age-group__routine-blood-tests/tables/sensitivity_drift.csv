@@ -1,0 +1,5 @@
+,Model,Group,Sensitivity (internal),Sensitivity (external),Change
+0,Logistic Regression,Elderly (>=60),0.892,0.872,-0.02
+1,Logistic Regression,Non-elderly (<60),0.353,0.396,0.043
+2,XGBoost,Elderly (>=60),0.848,0.833,-0.015
+3,XGBoost,Non-elderly (<60),0.317,0.381,0.064

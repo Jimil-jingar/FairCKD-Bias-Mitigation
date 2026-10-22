@@ -15,6 +15,22 @@
   --teal:#0F766E; --teal-2:#2BB3A3; --rose:#E0566F;
   --bg:#F5F7F9; --card:#FFFFFF; --line:#E3E8EE; --soft:#EAF4F2;
 }
+/* dark theme: follows the system setting until the visitor picks one with the toggle */
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ink:#E2E8F0; --muted:#94A3B8; --bg:#0B1220; --card:#111A2E; --line:#23314D; --soft:#0F2E2B;
+    --navy:#0E1729; --navy-2:#16213A; --teal:#2BB3A3; --th:#0B1220; --track:#23314D; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#E2E8F0; --muted:#94A3B8; --bg:#0B1220; --card:#111A2E; --line:#23314D; --soft:#0F2E2B;
+  --navy:#0E1729; --navy-2:#16213A; --teal:#2BB3A3; --th:#0B1220; --track:#23314D; color-scheme:dark;
+}
+:root{--th:#FAFBFC; --track:#E3E8EE}
+.theme-btn{background:transparent;border:1.5px solid rgba(255,255,255,.3);color:#C9D2E3;border-radius:9px;
+  width:36px;height:36px;display:inline-grid;place-items:center;cursor:pointer;font-size:16px;padding:0}
+.theme-btn:hover{color:#fff;border-color:#fff}
+.figure img,.shot img{background:#fff}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Source Sans 3",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
@@ -87,11 +103,11 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .tbl{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:14px}
 table{border-collapse:collapse;width:100%;min-width:760px;font-size:15px}
 th,td{padding:13px 16px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
-th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:#FAFBFC}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--th)}
 td.r,th.r{text-align:right;font-variant-numeric:tabular-nums}
 tr:last-child td{border-bottom:none}
 .hl{background:var(--soft);color:var(--teal);font-weight:700}
-.bar{display:inline-block;width:70px;height:6px;border-radius:3px;background:#E3E8EE;vertical-align:middle;margin-right:8px;position:relative;overflow:hidden}
+.bar{display:inline-block;width:70px;height:6px;border-radius:3px;background:var(--track);vertical-align:middle;margin-right:8px;position:relative;overflow:hidden}
 .bar i{position:absolute;left:0;top:0;bottom:0;background:var(--teal);border-radius:3px}
 
 /* shots */
@@ -138,6 +154,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
       <a href="#app">App</a>
       <a href="https://github.com/jimil-jingar/FairCKD-Bias-Mitigation">Code</a>
       <a class="btn btn-primary btn-sm" href="https://fairckd.streamlit.app/">Open Live App</a>
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch light / dark mode" title="Light / dark mode">◐</button>
     </div>
   </div>
 </nav>
@@ -171,7 +188,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
     <div class="stat"><div class="n">5,454</div><div class="t">patients analysed (NHANES + UCI)</div></div>
     <div class="stat"><div class="n">7</div><div class="t">ML models compared</div></div>
     <div class="stat"><div class="n">5</div><div class="t">fairness metrics measured</div></div>
-    <div class="stat"><div class="n">7</div><div class="t">experiments run</div></div>
+    <div class="stat"><div class="n">8</div><div class="t">experiments run</div></div>
   </div>
 </div>
 
@@ -187,7 +204,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
   </div>
 </section>
 
-<section id="method" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+<section id="method" style="background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
   <div class="wrap">
     <div class="eyebrow">The method</div>
     <h2>A nine-stage fairness-aware framework</h2>
@@ -195,19 +212,19 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
     <div class="stages" style="margin-bottom:0">
       <div class="stage"><b>1</b>Data<span>UCI, NHANES or your CSV</span></div>
       <div class="stage"><b>2</b>Preprocess<span>impute and scale on training folds</span></div>
-      <div class="stage"><b>3</b>Features<span>mutual-information ranking</span></div>
+      <div class="stage"><b>3</b>Features<span>MI, correlation, RFE + proxy check</span></div>
       <div class="stage"><b>4</b>Models<span>7 classifiers</span></div>
       <div class="stage fair"><b>5</b>Detect<span>error rates per group</span></div>
       <div class="stage fair"><b>6</b>Measure<span>5 fairness metrics</span></div>
-      <div class="stage fair"><b>7</b>Reduce<span>7 methods + FairCKD-Select</span></div>
-      <div class="stage"><b>8</b>Explain<span>SHAP + LIME</span></div>
+      <div class="stage fair"><b>7</b>Reduce<span>8 methods + FairCKD-Select</span></div>
+      <div class="stage"><b>8</b>Explain<span>SHAP, LIME, PDP/ICE</span></div>
       <div class="stage"><b>9</b>Decide<span>patient risk + PDF report</span></div>
     </div>
     <p class="note">Stages 5 to 7, in red, are the fairness layer that a standard diagnostic pipeline leaves out.</p>
 
     <div class="grid3" style="margin-top:36px">
       <div class="card"><div class="num">1</div><h3>Detect and measure</h3><p>Sensitivity, false-positive rate and precision are compared for each group, then summarised with Demographic Parity, Disparate Impact, Equal Opportunity, Equalized Odds and Predictive Parity.</p></div>
-      <div class="card"><div class="num">2</div><h3>Reduce</h3><p>Pre-processing: Reweighing and group-balanced SMOTE. In-processing: Exponentiated Gradient. Post-processing: Threshold Optimizer and Reject Option Classification. Plus a hybrid of Reweighing and Threshold Optimizer.</p></div>
+      <div class="card"><div class="num">2</div><h3>Reduce</h3><p>Pre-processing: Reweighing and group-balanced SMOTE. In-processing: Exponentiated Gradient and Adversarial Debiasing. Post-processing: Threshold Optimizer and Reject Option Classification. Plus a hybrid of Reweighing and Threshold Optimizer.</p></div>
       <div class="card"><div class="num">3</div><h3>FairCKD-Select</h3><p>Inside each training fold, picks the model and mitigation with the smallest fairness gap while keeping balanced accuracy within 3 points of the best model. Evaluated with nested cross-validation.</p></div>
     </div>
   </div>
@@ -217,18 +234,19 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
   <div class="wrap">
     <div class="eyebrow">Results</div>
     <h2>Fairness gaps shrink, accuracy stays close</h2>
-    <p class="lead">Equalized Odds gap: the largest difference in error rates between patient groups (lower is fairer). FairCKD-Select reduced the gap in all seven experiments. Reject Option Classification was the strongest single method in four of them.</p>
+    <p class="lead">Equalized Odds gap: the largest difference in error rates between patient groups (lower is fairer). FairCKD-Select reduced the gap in all eight experiments. Reject Option Classification was the strongest single method in four of them.</p>
     <div class="tbl">
       <table>
         <thead><tr><th>Dataset</th><th>Patient groups</th><th>Feature set</th><th class="r">Patients</th><th class="r">Worst gap (7 models)</th><th class="r">FairCKD-Select gap</th><th class="r">Balanced acc.</th></tr></thead>
         <tbody>
-          <tr><td>NHANES</td><td>Age group</td><td>Routine blood tests</td><td class="r">5,063</td><td class="r">0.564</td><td class="r"><span class="bar"><i style="width:30%"></i></span><b>0.305</b></td><td class="r">0.710</td></tr>
-          <tr><td>NHANES</td><td>Age × Race</td><td>Routine blood tests</td><td class="r">5,063</td><td class="r">0.686</td><td class="r"><span class="bar"><i style="width:36%"></i></span><b>0.365</b></td><td class="r">0.711</td></tr>
-          <tr><td>NHANES</td><td>Age × Sex</td><td>Routine blood tests</td><td class="r">5,063</td><td class="r">0.626</td><td class="r"><span class="bar"><i style="width:39%"></i></span><b>0.389</b></td><td class="r">0.708</td></tr>
-          <tr><td>NHANES</td><td>Race/ethnicity</td><td>Routine blood tests</td><td class="r">5,063</td><td class="r">0.259</td><td class="r"><span class="bar"><i style="width:11%"></i></span><b>0.113</b></td><td class="r">0.721</td></tr>
-          <tr><td>NHANES</td><td>Sex</td><td>Routine blood tests</td><td class="r">5,063</td><td class="r">0.088</td><td class="r"><span class="bar"><i style="width:3%"></i></span><b>0.028</b></td><td class="r">0.726</td></tr>
-          <tr><td>UCI (India)</td><td>Age group</td><td>Full clinical panel</td><td class="r">391</td><td class="r">0.046</td><td class="r"><span class="bar"><i style="width:1%"></i></span><b>0.012</b></td><td class="r">0.993</td></tr>
-          <tr><td>UCI (India)</td><td>Age group</td><td>Primary-care screening</td><td class="r">391</td><td class="r">0.138</td><td class="r"><span class="bar"><i style="width:4%"></i></span><b>0.039</b></td><td class="r">0.909</td></tr>
+          <tr><td>NHANES</td><td>Age group</td><td>Routine blood tests</td><td class="r">5,063</td><td class="r">0.564</td><td class="r"><span class="bar"><i style="width:44%"></i></span><b>0.305</b></td><td class="r">0.710</td></tr>
+          <tr><td>NHANES</td><td>Age × Race</td><td>Routine blood tests</td><td class="r">5,063</td><td class="r">0.686</td><td class="r"><span class="bar"><i style="width:52%"></i></span><b>0.367</b></td><td class="r">0.713</td></tr>
+          <tr><td>NHANES</td><td>Age × Sex</td><td>Routine blood tests</td><td class="r">5,063</td><td class="r">0.626</td><td class="r"><span class="bar"><i style="width:56%"></i></span><b>0.389</b></td><td class="r">0.708</td></tr>
+          <tr><td>NHANES</td><td>Race/ethnicity</td><td>Routine blood tests</td><td class="r">5,063</td><td class="r">0.259</td><td class="r"><span class="bar"><i style="width:16%"></i></span><b>0.113</b></td><td class="r">0.721</td></tr>
+          <tr><td>NHANES</td><td>Income group</td><td>Routine blood tests</td><td class="r">4,411</td><td class="r">0.095</td><td class="r"><span class="bar"><i style="width:1%"></i></span><b>0.007</b></td><td class="r">0.729</td></tr>
+          <tr><td>NHANES</td><td>Sex</td><td>Routine blood tests</td><td class="r">5,063</td><td class="r">0.088</td><td class="r"><span class="bar"><i style="width:4%"></i></span><b>0.028</b></td><td class="r">0.726</td></tr>
+          <tr><td>UCI (India)</td><td>Age group</td><td>Full clinical panel</td><td class="r">391</td><td class="r">0.046</td><td class="r"><span class="bar"><i style="width:2%"></i></span><b>0.012</b></td><td class="r">0.993</td></tr>
+          <tr><td>UCI (India)</td><td>Age group</td><td>Primary-care screening</td><td class="r">391</td><td class="r">0.138</td><td class="r"><span class="bar"><i style="width:6%"></i></span><b>0.039</b></td><td class="r">0.909</td></tr>
         </tbody>
       </table>
     </div>
@@ -244,7 +262,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
   </div>
 </section>
 
-<section id="app" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+<section id="app" style="background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
   <div class="wrap">
     <div class="eyebrow">The web application</div>
     <h2>Nine pages, from dataset to patient report</h2>
@@ -279,5 +297,20 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
   </div>
 </footer>
 
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById("themeBtn");
+  try{var saved=localStorage.getItem("fairckd-theme"); if(saved){root.setAttribute("data-theme",saved);}}catch(e){}
+  function isDark(){var t=root.getAttribute("data-theme"); if(t){return t==="dark";}
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;}
+  function label(){btn.textContent=isDark()?"☀":"☾";}
+  label();
+  btn.addEventListener("click",function(){
+    var next=isDark()?"light":"dark"; root.setAttribute("data-theme",next);
+    try{localStorage.setItem("fairckd-theme",next);}catch(e){}
+    label();
+  });
+})();
+</script>
 </body>
 </html>

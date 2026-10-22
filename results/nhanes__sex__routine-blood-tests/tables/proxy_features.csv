@@ -1,0 +1,18 @@
+,Feature,Description,MI with group,Max standardised mean difference,Highest in,Lowest in,Potential proxy
+0,female,Female,0.6933,2.001,Female,Male,Yes
+1,hct,Haematocrit (%),0.1893,1.038,Male,Female,Yes
+2,hemo,Haemoglobin (g/dl),0.189,1.043,Male,Female,Yes
+3,rbc,RBC (million cells/uL),0.1132,0.863,Male,Female,Yes
+4,uric_acid,Uric acid (mg/dl),0.1007,0.821,Male,Female,Yes
+5,albumin_serum,Serum albumin (g/dl),0.0383,0.505,Male,Female,Yes
+6,potassium,Potassium (mmol/L),0.0284,0.368,Male,Female,No
+7,bun,Blood urea nitrogen (mg/dl),0.0247,0.313,Male,Female,No
+8,sbp,Systolic BP (mm Hg),0.0201,0.103,Male,Female,No
+9,dbp,Diastolic BP (mm Hg),0.0085,0.239,Male,Female,No
+10,glucose,Serum glucose (mg/dl),0.0083,0.164,Male,Female,No
+11,bmi,BMI (kg/m2),0.0081,0.12,Female,Male,No
+12,wbc,WBC (1000 cells/uL),0.0025,0.042,Female,Male,No
+13,age,Age (years),0.0,0.055,Male,Female,No
+14,htn,Hypertension (BP >= 140/90),0.0,0.011,Male,Female,No
+15,dm,Diabetes (self-reported),0.0,0.138,Male,Female,No
+16,sodium,Sodium (mmol/L),0.0,0.054,Male,Female,No
