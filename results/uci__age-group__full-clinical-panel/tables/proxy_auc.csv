@@ -1,0 +1,3 @@
+,Feature set,Features,AUC (Logistic Regression),AUC (XGBoost)
+0,All model features,24,0.984,1.0
+1,Without age (unawareness),23,0.71,0.708

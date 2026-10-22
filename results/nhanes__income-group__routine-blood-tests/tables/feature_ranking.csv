@@ -1,0 +1,18 @@
+,Feature,Description,Mutual information,|Correlation| with CKD,RFE rank,Missing (%),Consensus rank
+0,bun,Blood urea nitrogen (mg/dl),0.0655,0.3658,2,0.0,1
+1,age,Age (years),0.0633,0.3379,1,0.0,2
+2,dm,Diabetes (self-reported),0.0394,0.2748,5,0.0,3
+3,sbp,Systolic BP (mm Hg),0.0269,0.2607,4,4.0,4
+4,htn,Hypertension (BP >= 140/90),0.024,0.2071,14,4.0,7
+5,glucose,Serum glucose (mg/dl),0.0238,0.2113,9,0.0,5
+6,potassium,Potassium (mmol/L),0.0229,0.0926,15,0.1,11
+7,hemo,Haemoglobin (g/dl),0.017,0.1268,6,0.0,6
+8,dbp,Diastolic BP (mm Hg),0.017,0.0123,16,4.2,14
+9,uric_acid,Uric acid (mg/dl),0.0164,0.1658,8,0.0,7
+10,hct,Haematocrit (%),0.0147,0.1182,7,0.0,9
+11,albumin_serum,Serum albumin (g/dl),0.0105,0.1125,11,0.0,11
+12,rbc,RBC (million cells/uL),0.0083,0.1348,13,0.0,11
+13,sodium,Sodium (mmol/L),0.0012,0.0088,17,0.0,17
+14,female,Female,0.0,0.0049,10,0.0,16
+15,bmi,BMI (kg/m2),0.0,0.0602,12,1.1,15
+16,wbc,WBC (1000 cells/uL),0.0,0.0478,3,0.0,10

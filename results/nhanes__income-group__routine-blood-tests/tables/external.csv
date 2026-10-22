@@ -1,0 +1,16 @@
+,Model,Method,Accuracy,Balanced acc.,Recall,AUC,EOpp diff,EOdds diff,TPR [Higher income (PIR >= 1.3)],TPR [Low income (PIR < 1.3)]
+0,Logistic Regression,Baseline,0.78,0.744,0.692,0.806,0.026,0.026,0.681,0.707
+1,Logistic Regression,Reweighing,0.781,0.745,0.692,0.806,0.026,0.026,0.681,0.707
+2,Logistic Regression,SMOTE,0.747,0.732,0.71,0.795,0.006,0.009,0.708,0.713
+3,Logistic Regression,Exp. Gradient,0.772,0.747,0.71,0.758,0.033,0.033,0.697,0.73
+4,Logistic Regression,Adversarial,0.778,0.743,0.693,0.805,0.034,0.034,0.679,0.713
+5,Logistic Regression,Threshold Opt.,0.782,0.744,0.689,,0.09,0.09,0.653,0.743
+6,Logistic Regression,Reject Option,0.788,0.75,0.693,0.806,0.083,0.083,0.659,0.743
+7,Logistic Regression,RW + TO (hybrid),0.782,0.746,0.694,,0.081,0.081,0.662,0.743
+8,XGBoost,Baseline,0.795,0.747,0.676,0.811,0.03,0.03,0.664,0.694
+9,XGBoost,Reweighing,0.797,0.746,0.671,0.806,0.033,0.033,0.657,0.691
+10,XGBoost,SMOTE,0.836,0.686,0.465,0.775,0.013,0.013,0.459,0.472
+11,XGBoost,Exp. Gradient,0.813,0.724,0.593,0.746,0.016,0.016,0.587,0.603
+12,XGBoost,Threshold Opt.,0.827,0.724,0.573,,0.065,0.065,0.547,0.612
+13,XGBoost,Reject Option,0.799,0.743,0.661,0.811,0.098,0.098,0.622,0.72
+14,XGBoost,RW + TO (hybrid),0.816,0.717,0.571,,0.097,0.097,0.532,0.629

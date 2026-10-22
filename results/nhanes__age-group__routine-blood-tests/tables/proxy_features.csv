@@ -1,0 +1,18 @@
+,Feature,Description,MI with group,Max standardised mean difference,Highest in,Lowest in,Potential proxy
+0,age,Age (years),0.654,1.686,Elderly (>=60),Non-elderly (<60),Yes
+1,sbp,Systolic BP (mm Hg),0.0915,0.811,Elderly (>=60),Non-elderly (<60),Yes
+2,bun,Blood urea nitrogen (mg/dl),0.0745,0.764,Elderly (>=60),Non-elderly (<60),Yes
+3,glucose,Serum glucose (mg/dl),0.0546,0.347,Elderly (>=60),Non-elderly (<60),No
+4,htn,Hypertension (BP >= 140/90),0.0398,0.593,Elderly (>=60),Non-elderly (<60),Yes
+5,dm,Diabetes (self-reported),0.0342,0.582,Elderly (>=60),Non-elderly (<60),Yes
+6,potassium,Potassium (mmol/L),0.019,0.299,Elderly (>=60),Non-elderly (<60),No
+7,albumin_serum,Serum albumin (g/dl),0.0182,0.24,Non-elderly (<60),Elderly (>=60),No
+8,rbc,RBC (million cells/uL),0.0171,0.363,Non-elderly (<60),Elderly (>=60),No
+9,dbp,Diastolic BP (mm Hg),0.0104,0.205,Non-elderly (<60),Elderly (>=60),No
+10,bmi,BMI (kg/m2),0.0102,0.037,Non-elderly (<60),Elderly (>=60),No
+11,wbc,WBC (1000 cells/uL),0.009,0.006,Non-elderly (<60),Elderly (>=60),No
+12,hemo,Haemoglobin (g/dl),0.0065,0.14,Non-elderly (<60),Elderly (>=60),No
+13,female,Female,0.006,0.089,Non-elderly (<60),Elderly (>=60),No
+14,sodium,Sodium (mmol/L),0.0054,0.129,Elderly (>=60),Non-elderly (<60),No
+15,uric_acid,Uric acid (mg/dl),0.0,0.288,Elderly (>=60),Non-elderly (<60),No
+16,hct,Haematocrit (%),0.0,0.123,Non-elderly (<60),Elderly (>=60),No

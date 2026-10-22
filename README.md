@@ -30,7 +30,7 @@ it trains CKD diagnosis models, **detects** bias between patient groups, **measu
 pip install -r requirements.txt
 streamlit run app/Home.py          # web application
 python main.py --all               # re-run all experiments (~1-2 hours)
-python -m pytest -q                # run the 36 automated tests
+python -m pytest -q                # run the 50 automated tests
 ```
 
 All experiments are **already computed** and stored in `results/`, and the trained models in `models/`,
@@ -45,17 +45,17 @@ so the app works immediately without re-running anything.
 | Page | Framework stage | What you can do |
 |---|---|---|
 | **Overview** | overview | the 9-stage framework, results dashboard of all experiments, key findings |
-| **Dataset analysis** | 1-3 | group representation, CKD prevalence per group, missing values, feature ranking, upload your **own CSV** |
+| **Dataset analysis** | 1-3 | group representation, CKD prevalence per group, missing values, feature selection (MI, correlation, RFE, consensus), **proxy check**, upload your **own CSV** |
 | **Model training** | 4 | train and compare 7 ML models live (or view saved results) |
 | **Fairness audit** | 5-6 | sensitivity / false-positive rate / precision per group; DP, DI, EOpp, EOdds, PP metrics |
-| **Bias mitigation** | 7 | compare Reweighing, SMOTE, Exponentiated Gradient, Threshold Optimizer, Reject Option, Unawareness; trade-off chart; automatic recommendation |
-| **Explainability** | 8 | SHAP global importance, feature reliance per group, SHAP + LIME explanation for any patient |
-| **Validation** | – | significance tests, calibration by group, survey-weighted estimates, external validation |
-| **Patient diagnosis** | 9 | enter a patient's values → CKD probability, decision, SHAP explanation (+ LIME second opinion), **PDF patient report** |
+| **Bias mitigation** | 7 | compare Reweighing, SMOTE, Exponentiated Gradient, Adversarial Debiasing, Threshold Optimizer, Reject Option, RW + TO hybrid, Unawareness; before → after chart; trade-off chart; automatic recommendation |
+| **Explainability** | 8 | SHAP global importance, feature reliance per group, partial dependence (PDP / ICE) per group, SHAP + LIME explanation for any patient |
+| **Validation** | – | significance tests, calibration by group, survey-weighted estimates, external validation, **monitoring: data and fairness drift** |
+| **Patient diagnosis** | 9 | load a typical healthy or CKD patient or enter values → CKD probability, decision, SHAP explanation in percentage points of risk (+ LIME second opinion), **PDF patient report** |
 | **Reports** | – | download the PDF audit reports, Excel tables and all figures; generate a report for any configuration |
 
 Every analysis page opens with a headline finding computed from the results (for example the detection gap between groups, or how much a mitigation method shrinks it).
-The sidebar selects the **dataset** (UCI, NHANES or your own CSV), the **feature set** and the **sensitive attribute**.
+The sidebar selects the **dataset** (UCI, NHANES or your own CSV), the **feature set** and the **sensitive attribute**, and switches between **light and dark mode**.
 
 ---
 
@@ -64,11 +64,13 @@ The sidebar selects the **dataset** (UCI, NHANES or your own CSV), the **feature
 | Dataset | Patients | Sensitive attributes | Notes |
 |---|---|---|---|
 | **UCI Chronic Kidney Disease** (India) | 391 | age group (≥60 / <60) | `data/uci_ckd.csv` |
-| **NHANES 2017-2018** (US CDC) | 5,063 adults | sex, race/ethnicity, age group | built from the 7 `.XPT` files in `data/nhanes/` |
+| **NHANES 2017-2018** (US CDC) | 5,063 adults | sex, race/ethnicity, age group, income group | built from the 7 `.XPT` files in `data/nhanes/` |
 
 NHANES CKD label (KDIGO): eGFR < 60 (race-free CKD-EPI 2021) **or** urine ACR ≥ 30 mg/g.
 Creatinine, ACR and eGFR define the label and are **never** used as model inputs (no leakage).
 The race-based CKD-EPI 2009 equation is also computed to study **label bias**.
+Income group (socio-economic status): family income-to-poverty ratio < 1.3 (the US SNAP eligibility limit) vs ≥ 1.3;
+4,411 adults with known income.
 
 Two feature sets per dataset:
 * **UCI:** full clinical panel (24) vs. primary-care screening (10, no kidney lab tests)
@@ -78,6 +80,11 @@ Two feature sets per dataset:
 
 ## 4. Methods
 
+* **Feature selection:** mutual information, point-biserial correlation and Recursive Feature Elimination (logistic
+  regression), plus a consensus rank. PCA is deliberately not used: its components mix all clinical variables, so
+  explanations would no longer refer to features a clinician can read
+* **Proxy audit:** how well the patient's group can be recovered from the model inputs (cross-validated AUC, with and
+  without the direct proxy column) and the standardised mean difference of every feature between groups
 * **Models:** Logistic Regression, Decision Tree, Random Forest, SVM, KNN, Naive Bayes, XGBoost
 * **Fairness metrics:** Demographic Parity difference, Disparate Impact ratio, Equal Opportunity difference,
   Equalized Odds difference, Predictive Parity difference (+ accuracy gap), plus a *perfect-classifier reference*
@@ -86,13 +93,15 @@ Two feature sets per dataset:
   Reweighing (Kamiran & Calders 2012, pre-processing),
   group-balanced SMOTE (Chawla et al. 2002, pre-processing; every group × label cell oversampled to the largest cell),
   Exponentiated Gradient + Equalized Odds (Agarwal et al. 2018, in-processing),
+  Adversarial Debiasing + Equalized Odds (Zhang, Lemoine & Mitchell 2018, in-processing; logistic-regression predictor
+  against a group adversary, written in NumPy so it also runs in the hosted app; the adversary strength α is tuned on a
+  validation split of each training fold),
   Threshold Optimizer + Equalized Odds (Hardt et al. 2016, post-processing; thresholds learned on out-of-fold scores),
   Reject Option Classification (Kamiran, Karim & Zhang 2012, post-processing; band width learned on out-of-fold scores),
   and a Reweighing + Threshold Optimizer hybrid
 * **Explainability:** SHAP (TreeExplainer / LinearExplainer) and LIME (Ribeiro et al. 2016, tabular, implemented in
   `fairckd/explain.py`), with a SHAP-vs-LIME agreement check on a sample of patients per group
-* **Not included:** adversarial debiasing needs a deep-learning framework (TensorFlow / PyTorch), too heavy for the
-  free hosted app; it is left for future work
+* **Partial dependence:** PDP per group with ICE curves for the three most important features
 * **Evaluation protocol:** repeated stratified 5-fold cross-validation (stratified on label × group);
   preprocessing (median imputation + scaling) and mitigation fitted on training folds only; mean ± SD over repeats
 * **Imbalanced data (NHANES, 18.5 % CKD):** decision threshold = training-set CKD prevalence
@@ -117,6 +126,8 @@ accuracy is within δ = 3 points of the best unmitigated model. Candidates inclu
 * **Population-weighted estimates** – NHANES examination survey weights (WTMEC2YR)
 * **Intersectional fairness** – Age × Sex (4 groups) and Age × Race/ethnicity (10 groups)
 * **External validation** – models trained on NHANES 2017–18, tested once on NHANES 2015–16 (5,309 adults; files in `data/nhanes_2015/`)
+* **Monitoring (drift)** – Population Stability Index of every feature overall and within each group, CKD prevalence
+  per group in both cohorts, and the change of every pipeline's Equalized Odds gap from development to the new cohort
 
 All of these appear in the PDF reports and on the **Validation** page of the app.
 
@@ -134,11 +145,14 @@ FairCKD/
 ├── fairckd/                  core Python package (one module per framework stage)
 │   ├── data.py               1  data acquisition (UCI, NHANES, custom CSV), eGFR equations
 │   ├── preprocessing.py      2  imputation + scaling
-│   ├── features.py           3  feature ranking
+│   ├── features.py           3  feature selection (MI, correlation, RFE, consensus)
+│   ├── proxy.py              3b proxy-feature audit
 │   ├── models.py             4  7 classifiers
 │   ├── fairness.py           5-6 group rates + fairness metrics + reweighing weights
-│   ├── mitigation.py         7  5 mitigation methods (incl. RW+TO hybrid)
-│   ├── explain.py            8  SHAP
+│   ├── mitigation.py         7  mitigation methods (incl. RW+TO hybrid)
+│   ├── adversarial.py        7  adversarial debiasing (NumPy)
+│   ├── explain.py            8  SHAP, LIME, PDP/ICE, risk contributions in percentage points
+│   ├── drift.py              –  data / prevalence / fairness drift monitoring
 │   ├── diagnosis.py          9  final fair model, patient prediction
 │   ├── evaluation.py         cross-validation protocol, representation-bias filter
 │   ├── pipeline.py           end-to-end experiment runner
@@ -147,7 +161,7 @@ FairCKD/
 ├── data/                     UCI CSV and merged NHANES CSVs (raw .XPT files: see data/RAW_NHANES_README.txt)
 ├── models/                   trained fairness-aware models (.joblib)
 ├── results/<experiment>/     tables (CSV), figures (PNG), results.xlsx, report.pdf
-├── tests/                    31 automated tests (pytest)
+├── tests/                    50 automated tests (pytest)
 ├── docs/                     architecture diagram, app screenshots
 ├── main.py                   command-line runner
 ├── run_app.bat / run_app.sh  one-click start
@@ -167,9 +181,10 @@ FairCKD/
 | 5 | NHANES | routine blood tests | age group | |
 | 6 | NHANES | routine blood tests | age × sex | intersectional |
 | 7 | NHANES | routine blood tests | age × race/ethnicity | intersectional |
+| 8 | NHANES | routine blood tests | income group | socio-economic status |
 
 Each experiment folder in `results/` contains `report.pdf` (full fairness-audit report with key findings),
-`results.xlsx` (all tables), `figures/` (11 figures) and `tables/` (CSV).
+`results.xlsx` (all tables), `figures/` (up to 17 figures) and `tables/` (CSV).
 
 Single configuration: `python main.py --dataset nhanes --attribute "Sex" --features screening --repeats 3`
 List options: `python main.py --list`

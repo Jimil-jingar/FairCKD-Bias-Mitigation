@@ -4,9 +4,10 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import shap
-from common import gauge, np, page_header, page_setup, saved_results, sidebar, st
-from fairckd.diagnosis import lime_patient, load_model, model_path, predict_patient, train_final_model
-from fairckd.explain import lime_figure
+from common import gauge, np, page_header, page_setup, pd, saved_results, sidebar, st
+from fairckd.diagnosis import (lime_patient, load_model, model_path, predict_patient, reference_patients,
+                               train_final_model)
+from fairckd.explain import contribution_figure, lime_figure, probability_contributions
 
 page_setup("Patient Diagnosis", "🩺")
 page_header("Patient diagnosis", "Stage 9: clinical decision support",
@@ -31,24 +32,57 @@ st.markdown(f"Model: **{b['model_name']}** trained on {b['n_train']:,} patients 
 
 BIN = {"rbc": ("Normal", "Abnormal"), "pc": ("Normal", "Abnormal"), "pcc": ("Not present", "Present"),
        "ba": ("Not present", "Present"), "appet": ("Good", "Poor"), "female": ("Male", "Female")}
+examples = b.get("examples") or reference_patients(X, y)      # older saved models have no examples
+numeric = [f for f in b["features"] if f not in b["binary"]]
+binary = [f for f in b["features"] if f in b["binary"]]
+cfg_id = f"{spec.key}|{fs}"
+
+
+def load_example(name):
+    ex = examples[name]
+    for f in numeric:
+        lo, hi = float(b["mins"][f]), float(b["maxs"][f])
+        st.session_state[f"n_{f}"] = float(min(max(ex[f], lo), hi)) if not np.isnan(ex[f]) else float(b["medians"][f])
+        st.session_state[f"u_{f}"] = False
+    for f in binary:
+        opts = BIN.get(f, ("No", "Yes"))
+        st.session_state[f"b_{f}"] = opts[int(round(ex[f])) if not np.isnan(ex[f]) else 0]
+    st.session_state["pd_loaded"] = (cfg_id, name)
+
+
+if st.session_state.get("pd_loaded", (None,))[0] != cfg_id:      # first visit / new dataset: healthy patient
+    load_example("healthy")
+c = st.columns([1, 1, 3])
+if c[0].button("Load typical healthy patient", width="stretch"):
+    load_example("healthy")
+if c[1].button("Load typical CKD patient", width="stretch"):
+    load_example("ckd")
+c[2].caption(f"Currently loaded: **{'typical CKD patient' if st.session_state['pd_loaded'][1] == 'ckd' else 'typical healthy patient'}** "
+             "(median values of the patients with / without CKD in this dataset). Change any value below.")
+
 with st.form("patient"):
-    st.markdown("**Patient data** (pre-filled with dataset medians; untick *known* if a test is not available)")
     pid = st.text_input("Patient ID / name (optional, only printed on the PDF report)", "")
-    vals, cols = {}, st.columns(4)
-    for i, f in enumerate(b["features"]):
+    vals = {}
+    st.markdown("**Measurements** · tick *not measured* if a test is not available (the value is then imputed)")
+    cols = st.columns(4)
+    for i, f in enumerate(numeric):
         with cols[i % 4]:
-            name = spec.label(f)
-            if f in b["binary"]:
-                opts = BIN.get(f, ("No", "Yes"))
-                med = b["medians"][f]
-                v = st.selectbox(name, opts, index=int(round(med)) if not np.isnan(med) else 0, key=f"b_{f}")
-                vals[f] = float(opts.index(v))
+            lo, hi = float(b["mins"][f]), float(b["maxs"][f])
+            v = st.number_input(spec.label(f), lo, hi, key=f"n_{f}", format="%.3f" if hi < 3 else "%.1f")
+            if f == "age":                       # age is always known: keep the grid aligned with an empty row
+                st.markdown("<div style='height:2.475rem'></div>", unsafe_allow_html=True)
+                miss = False
             else:
-                lo, hi, med = float(b["mins"][f]), float(b["maxs"][f]), float(b["medians"][f])
-                known = True if f == "age" else st.checkbox(f"{name}: known", True, key=f"k_{f}")
-                v = st.number_input(name, lo, hi, med, key=f"n_{f}", format="%.3f" if hi < 3 else "%.1f",
-                                    label_visibility="visible")
-                vals[f] = v if known else np.nan
+                miss = st.checkbox("not measured", key=f"u_{f}")
+            vals[f] = np.nan if miss else v
+    if binary:
+        st.markdown("**Findings and history**")
+        cols = st.columns(4)
+        for i, f in enumerate(binary):
+            with cols[i % 4]:
+                opts = BIN.get(f, ("No", "Yes"))
+                v = st.selectbox(spec.label(f), opts, key=f"b_{f}")
+                vals[f] = float(opts.index(v))
     submitted = st.form_submit_button("Predict CKD risk", type="primary")
 
 if submitted:
@@ -58,6 +92,8 @@ if submitted:
         grp = "Elderly (>=60)" if vals["age"] >= 60 else "Non-elderly (<60)"
     elif at == "Sex" and "female" in vals:
         grp = "Female" if vals["female"] >= 0.5 else "Male"
+    elif at == "Age × Sex" and {"age", "female"} <= set(vals):
+        grp = ("60+" if vals["age"] >= 60 else "<60") + (" Female" if vals["female"] >= 0.5 else " Male")
     saved = saved_results(spec, fs, at)
     val_txt = ""
     if saved is not None:
@@ -90,12 +126,27 @@ if submitted:
         st.plotly_chart(gauge(p, b["threshold"]), width="stretch", theme=None)
     with c2:
         import tempfile
-        plt.figure(); shap.plots.waterfall(sv, max_display=10, show=False)
-        plt.title("Why this prediction? (SHAP)")
+
+        import plotly.graph_objects as go
+        ct, p0, p1 = probability_contributions(sv, top=10)
+        d = ct[::-1]
+        lab = [f"{f} = {v:.3g}" if not np.isnan(v) else f for f, v in zip(d.Feature, d.Value)]
+        fig = go.Figure(go.Bar(x=d["Contribution (pp)"], y=lab, orientation="h",
+                               marker_color=["#9F1D35" if v > 0 else "#0F766E" for v in d["Contribution (pp)"]],
+                               text=[f"{v:+.1f}" for v in d["Contribution (pp)"]],
+                               textposition=["outside" if v >= 0 else "inside" for v in d["Contribution (pp)"]],
+                               insidetextanchor="middle", insidetextfont=dict(color="#FFFFFF"),
+                               cliponaxis=False, hovertemplate="%{y}<br>%{x:+.1f} percentage points<extra></extra>"))
+        fig.add_vline(x=0, line=dict(color="#14213D", width=1))
+        fig.update_layout(title="Why this prediction? (SHAP, percentage points)", height=34 * len(d) + 140,
+                          xaxis_title=f"Average patient {100 * p0:.1f}% → this patient {100 * p1:.1f}%",
+                          margin=dict(t=60, b=10, l=10, r=40))
+        st.plotly_chart(fig, width="stretch", theme=None, config={"displayModeBar": False})
+        st.caption("Maroon bars raise the estimated CKD risk, teal bars lower it. The bars add up to the "
+                   "difference between this patient's risk and the average patient's risk.")
+        mfig = contribution_figure(ct, p0, p1)
         png = tempfile.NamedTemporaryFile(suffix=".png", delete=False).name
-        plt.gcf().savefig(png, dpi=200, bbox_inches="tight")
-        st.pyplot(plt.gcf(), clear_figure=True)
-        st.caption("Red bars push the estimate towards CKD, blue bars away from it.")
+        mfig.savefig(png, dpi=200, bbox_inches="tight"); plt.close(mfig)
         with st.expander("Second opinion: LIME explanation"):
             lt, linfo = lime_patient(b, vals)
             st.pyplot(lime_figure(lt), clear_figure=True)

@@ -1,0 +1,16 @@
+,Model,Method,Balanced acc. (internal),EOdds diff (internal),Balanced acc. (external),EOdds diff (external),Δ EOdds gap,Δ Balanced acc.,Fairness held?
+0,Logistic Regression,Baseline,0.735,0.204,0.749,0.159,-0.045,0.014,Yes
+1,Logistic Regression,Reweighing,0.734,0.232,0.748,0.225,-0.007,0.014,Yes
+2,Logistic Regression,SMOTE,0.73,0.211,0.743,0.184,-0.027,0.013,Yes
+3,Logistic Regression,Exp. Gradient,0.72,0.092,0.73,0.086,-0.006,0.01,Yes
+4,Logistic Regression,Adversarial,0.726,0.16,0.709,0.177,0.017,-0.017,Yes
+5,Logistic Regression,Threshold Opt.,0.683,0.079,0.698,0.104,0.025,0.015,Yes
+6,Logistic Regression,Reject Option,0.724,0.116,0.735,0.152,0.036,0.011,Yes
+7,Logistic Regression,RW + TO (hybrid),0.685,0.098,0.7,0.124,0.026,0.015,Yes
+8,XGBoost,Baseline,0.736,0.259,0.74,0.199,-0.06,0.004,Yes
+9,XGBoost,Reweighing,0.734,0.238,0.735,0.206,-0.032,0.001,Yes
+10,XGBoost,SMOTE,0.704,0.23,0.701,0.184,-0.046,-0.003,Yes
+11,XGBoost,Exp. Gradient,0.729,0.222,0.736,0.227,0.005,0.007,Yes
+12,XGBoost,Threshold Opt.,0.683,0.095,0.683,0.204,0.109,-0.0,No (gap grew > 0.05)
+13,XGBoost,Reject Option,0.731,0.143,0.733,0.184,0.041,0.002,Yes
+14,XGBoost,RW + TO (hybrid),0.682,0.116,0.699,0.199,0.083,0.017,No (gap grew > 0.05)

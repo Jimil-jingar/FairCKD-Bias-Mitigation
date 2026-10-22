@@ -8,10 +8,12 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import streamlit as st
 
-from common import ASSETS, CSS
+from common import ASSETS, CSS, apply_theme
 
 st.set_page_config(page_title="FairCKD", page_icon=str(ASSETS / "icon.svg"), layout="wide")
 st.markdown(CSS, unsafe_allow_html=True)
+st.sidebar.toggle(":material/dark_mode: Dark mode", key="dark_mode")
+apply_theme()
 st.logo(str(ASSETS / "logo.svg"), size="large", icon_image=str(ASSETS / "icon.svg"))
 
 V = Path(__file__).resolve().parent / "views"

@@ -1,0 +1,5 @@
+,Group,Patients,Observed CKD (%),Mean predicted (%),Calibration-in-the-large (pp),ECE,Brier,Model
+0,Higher income (PIR >= 1.3),3112,18.5733,19.1657,0.5924,0.0153,0.1123,Logistic Regression
+1,Low income (PIR < 1.3),1299,19.1686,17.5848,-1.5838,0.0277,0.1146,Logistic Regression
+2,Higher income (PIR >= 1.3),3112,18.5733,18.5843,0.011,0.0216,0.1119,XGBoost
+3,Low income (PIR < 1.3),1299,19.1686,17.8656,-1.303,0.0388,0.1185,XGBoost

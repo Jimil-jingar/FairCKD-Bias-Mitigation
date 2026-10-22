@@ -91,20 +91,22 @@ if runs:
                 f"<td class='l'>{r['Best mitigation']}</td><td>{bef} <span class='arr'>→</span> <b>{aft}</b></td>"
                 f"<td><div class='gbar'><span style='width:{w:.0f}%'></span></div><b>{g:.3f}</b></td>"
                 f"<td>{r['FairCKD-Select bal. acc.']:.3f}</td></tr>")
-    head = ("<tr><th class='l'>Dataset</th><th class='l'>Patient groups</th><th class='l'>Best model</th>"
+    head = ("<tr><th class='l'>Dataset</th><th class='l'>Patient groups</th><th class='l'>Best model (baseline)</th>"
             "<th>Balanced acc.</th><th>Worst EOdds gap</th><th class='l'>Best single mitigation</th>"
             "<th>Gap before → after</th><th class='hl'>FairCKD-Select gap</th><th class='hl'>FairCKD-Select bal. acc.</th></tr>")
     st.markdown("<div class='xt'><table>" + head + "".join(_row(r) for _, r in show.iterrows()) + "</table></div>",
                 unsafe_allow_html=True)
-    st.caption("Best mitigation is the largest reduction in the Equalized Odds gap that keeps balanced accuracy "
+    st.caption("Best model (baseline) = highest balanced accuracy without any mitigation. Mitigation is compared on "
+               "Logistic Regression and XGBoost, so the best single mitigation can use a different model. "
+               "Best mitigation is the largest reduction in the Equalized Odds gap that keeps balanced accuracy "
                "within 3 points of the baseline model.")
 
 # ----------------------------------------------------------------------------- framework pipeline (a real sequence)
 st.markdown("## The nine-stage framework")
 stages = [("Data", "UCI, NHANES or your CSV", 0), ("Preprocess", "impute and scale on training folds", 0),
-          ("Features", "mutual-information ranking", 0), ("Models", "7 classifiers", 0),
+          ("Features", "MI, correlation, RFE + proxy check", 0), ("Models", "7 classifiers", 0),
           ("Bias detection", "error rates per group", 1), ("Fairness", "5 metrics", 1),
-          ("Mitigation", "5 methods + FairCKD-Select", 1), ("Explain", "SHAP", 0), ("Decide", "patient risk + report", 0)]
+          ("Mitigation", "8 methods + FairCKD-Select", 1), ("Explain", "SHAP, LIME, PDP/ICE", 0), ("Decide", "patient risk + report", 0)]
 st.markdown("<div class='pipe'>" + "".join(
     f"<div class='{'fair' if f else ''}'><b>{i}</b>{t}<br><span class='small'>{d}</span></div>"
     for i, (t, d, f) in enumerate(stages, 1)) + "</div>", unsafe_allow_html=True)

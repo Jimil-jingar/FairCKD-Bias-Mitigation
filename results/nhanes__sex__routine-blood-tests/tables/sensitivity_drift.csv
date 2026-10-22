@@ -1,0 +1,5 @@
+,Model,Group,Sensitivity (internal),Sensitivity (external),Change
+0,Logistic Regression,Female,0.685,0.681,-0.004
+1,Logistic Regression,Male,0.74,0.714,-0.026
+2,XGBoost,Female,0.636,0.663,0.027
+3,XGBoost,Male,0.705,0.67,-0.035

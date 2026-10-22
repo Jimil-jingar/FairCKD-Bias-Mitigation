@@ -1,0 +1,25 @@
+,Feature,Description,MI with group,Max standardised mean difference,Highest in,Lowest in,Potential proxy
+0,age,Age (years),0.6683,1.524,Elderly (>=60),Non-elderly (<60),Yes
+1,htn,Hypertension,0.0852,0.698,Elderly (>=60),Non-elderly (<60),Yes
+2,sc,Serum creatinine (mg/dl),0.0749,0.193,Elderly (>=60),Non-elderly (<60),No
+3,su,Sugar (0-5),0.0518,0.42,Elderly (>=60),Non-elderly (<60),No
+4,dm,Diabetes mellitus,0.0405,0.606,Elderly (>=60),Non-elderly (<60),Yes
+5,al,Albumin (0-5),0.037,0.195,Elderly (>=60),Non-elderly (<60),No
+6,pcv,Packed cell volume (%),0.035,0.352,Non-elderly (<60),Elderly (>=60),No
+7,hemo,Haemoglobin (g/dl),0.0286,0.265,Non-elderly (<60),Elderly (>=60),No
+8,sod,Sodium (mEq/L),0.0227,0.191,Non-elderly (<60),Elderly (>=60),No
+9,bp,Blood pressure (mm Hg),0.0226,0.019,Elderly (>=60),Non-elderly (<60),No
+10,pe,Pedal oedema,0.0221,0.122,Elderly (>=60),Non-elderly (<60),No
+11,cad,Coronary artery disease,0.0129,0.53,Elderly (>=60),Non-elderly (<60),Yes
+12,ane,Anaemia,0.0092,0.061,Non-elderly (<60),Elderly (>=60),No
+13,sg,Specific gravity,0.006,0.366,Non-elderly (<60),Elderly (>=60),No
+14,rbc,Red blood cells abnormal,0.0,0.0,Elderly (>=60),Non-elderly (<60),No
+15,pc,Pus cell abnormal,0.0,0.094,Elderly (>=60),Non-elderly (<60),No
+16,pcc,Pus cell clumps,0.0,0.34,Elderly (>=60),Non-elderly (<60),No
+17,ba,Bacteria,0.0,0.117,Elderly (>=60),Non-elderly (<60),No
+18,bgr,Blood glucose random (mg/dl),0.0,0.37,Elderly (>=60),Non-elderly (<60),No
+19,bu,Blood urea (mg/dl),0.0,0.156,Elderly (>=60),Non-elderly (<60),No
+20,pot,Potassium (mEq/L),0.0,0.031,Elderly (>=60),Non-elderly (<60),No
+21,rc,RBC count (millions/cmm),0.0,0.287,Non-elderly (<60),Elderly (>=60),No
+22,wc,WBC count (cells/cumm),0.0,0.214,Elderly (>=60),Non-elderly (<60),No
+23,appet,Poor appetite,0.0,0.205,Elderly (>=60),Non-elderly (<60),No

@@ -6,6 +6,7 @@
 | Reweighing                     | pre-processing   | Kamiran & Calders, 2012      |
 | Group-balanced SMOTE           | pre-processing   | Chawla et al., 2002 (per group x label cell) |
 | Exponentiated Gradient + EOdds | in-processing    | Agarwal et al., 2018         |
+| Adversarial Debiasing + EOdds  | in-processing    | Zhang, Lemoine & Mitchell, 2018 (Logistic Regression predictor) |
 | Threshold Optimizer + EOdds    | post-processing  | Hardt et al., 2016           |
 | Reject Option Classification   | post-processing  | Kamiran, Karim & Zhang, 2012 |
 """
@@ -15,6 +16,7 @@ from fairlearn.reductions import EqualizedOdds, ErrorRate, ExponentiatedGradient
 from sklearn.model_selection import StratifiedKFold, cross_val_predict
 
 from . import SEED
+from .adversarial import fit_tuned as fit_adversarial
 from .fairness import reweighing_weights
 from .models import Float64Proba, make_classifier
 from .preprocessing import make_preprocessor
@@ -27,9 +29,24 @@ THRESH = "Threshold Optimizer (post-processing)"
 HYBRID = "Reweighing + Threshold Optimizer (hybrid)"
 SMOTE = "Group-balanced SMOTE (pre-processing)"
 REJECT = "Reject Option Classification (post-processing)"
-METHODS = [BASELINE, UNAWARE, REWEIGH, SMOTE, EXPGRAD, THRESH, REJECT, HYBRID]
+ADVERSARIAL = "Adversarial Debiasing (in-processing)"
+METHODS = [BASELINE, UNAWARE, REWEIGH, SMOTE, EXPGRAD, ADVERSARIAL, THRESH, REJECT, HYBRID]
 SHORT = {BASELINE: "Baseline", UNAWARE: "Unawareness", REWEIGH: "Reweighing", SMOTE: "SMOTE",
-         EXPGRAD: "Exp. Gradient", THRESH: "Threshold Opt.", REJECT: "Reject Option", HYBRID: "RW + TO (hybrid)"}
+         EXPGRAD: "Exp. Gradient", ADVERSARIAL: "Adversarial", THRESH: "Threshold Opt.", REJECT: "Reject Option",
+         HYBRID: "RW + TO (hybrid)"}
+# short name -> full name (saved results store short names in some tables)
+LONG = {v: k for k, v in SHORT.items()}
+
+
+def supports(method, model_name) -> bool:
+    """Whether a mitigation method can be combined with a classifier.
+    * Exponentiated Gradient needs sample weights (KNN has none).
+    * Adversarial Debiasing trains its own logistic-regression predictor, so it is paired with Logistic Regression only."""
+    if method == EXPGRAD and model_name == "KNN":
+        return False
+    if method == ADVERSARIAL and model_name != "Logistic Regression":
+        return False
+    return True
 
 
 def _cut(proba, ytr, threshold):
@@ -152,6 +169,14 @@ def fit_predict(method, model_name, Xtr, ytr, Atr, Xte, Ate, threshold=0.5, prox
         clf.fit(Ztr, ytr)
         p = clf.predict_proba(Zte)[:, 1]
         return reject_option(p, Ate, t, low, theta), p
+
+    if method == ADVERSARIAL:
+        if model_name != "Logistic Regression":
+            raise ValueError("Adversarial Debiasing uses a logistic-regression predictor; pair it with Logistic Regression")
+        # alpha (adversary strength) is tuned on a validation split of the training fold only
+        adv, _ = fit_adversarial(Ztr, ytr, Atr, cut=lambda pr, yt: _cut(pr, yt, threshold), seed=seed)
+        p = adv.predict_proba(Zte)[:, 1]
+        return _cut(p, ytr, threshold), p
 
     if method == EXPGRAD:
         if model_name == "KNN":

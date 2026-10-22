@@ -1,0 +1,4 @@
+,Group,Patients,Share (%),CKD cases,CKD prevalence (%),Missing values / patient
+0,Higher income (PIR >= 1.3),3112,70.6,578,18.6,0.12
+1,Low income (PIR < 1.3),1299,29.4,249,19.2,0.17
+2,All,4411,100.0,827,18.7,0.14

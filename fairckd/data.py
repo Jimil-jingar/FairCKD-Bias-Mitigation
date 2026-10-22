@@ -2,7 +2,8 @@
 
 Three data sources share one interface (`DatasetSpec.get`):
   * UCI Chronic Kidney Disease dataset (400 patients, India)   sensitive attribute: age group
-  * NHANES 2017-2018 (US CDC survey, ~5,000 adults)              sensitive attributes: sex, race/ethnicity, age group
+  * NHANES 2017-2018 (US CDC survey, ~5,000 adults)              sensitive attributes: sex, race/ethnicity, age group,
+                                                                 income (family income-to-poverty ratio)
   * any custom CSV uploaded by the user
 """
 from __future__ import annotations
@@ -16,6 +17,8 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
 AGE_CUTOFF = 60
+PIR_CUTOFF = 1.3          # family income-to-poverty ratio; 1.3 = US SNAP (food assistance) eligibility limit
+LOW_INCOME, HIGHER_INCOME = f"Low income (PIR < {PIR_CUTOFF})", f"Higher income (PIR >= {PIR_CUTOFF})"
 
 
 @dataclass
@@ -144,13 +147,14 @@ def build_nhanes(folder=DATA_DIR / "nhanes", cycle="J") -> pd.DataFrame:
             raise FileNotFoundError(f"{n}.xpt missing in {folder}")
         return pd.read_sas(sorted(hit)[0], format="xport")
 
-    d = read("DEMO_J")[["SEQN", "RIAGENDR", "RIDAGEYR", "RIDRETH3", "WTMEC2YR"]]
+    d = read("DEMO_J")[["SEQN", "RIAGENDR", "RIDAGEYR", "RIDRETH3", "WTMEC2YR", "INDFMPIR"]]
     for n in NHANES_FILES[1:]:
         d = d.merge(read(n), on="SEQN", how="left")
     o = pd.DataFrame({"SEQN": d.SEQN.astype(int), "age": d.RIDAGEYR, "female": (d.RIAGENDR == 2).astype(int)})
     o["sex"] = np.where(o.female == 1, "Female", "Male")
     o["weight"] = d.WTMEC2YR                                   # NHANES MEC exam survey weight
     o["race"] = d.RIDRETH3.map(NHANES_RACE)
+    o["pir"] = d.INDFMPIR                                      # family income-to-poverty ratio (missing ~ 10 %)
     sy = [c for c in d.columns if c.startswith("BPXSY")]; di = [c for c in d.columns if c.startswith("BPXDI")]
     o["sbp"] = d[sy].where(d[sy] >= 40).mean(axis=1)            # 0 = not measurable -> missing
     o["dbp"] = d[di].where(d[di] >= 20).mean(axis=1)
@@ -172,26 +176,27 @@ def build_nhanes(folder=DATA_DIR / "nhanes", cycle="J") -> pd.DataFrame:
     o["age_short"] = np.where(o.age >= AGE_CUTOFF, "60+", "<60")
     o["age_sex"] = o.age_short + " " + o.sex                    # intersectional groups
     o["age_race"] = o.age_short + " " + o.race
+    o["income_group"] = np.where(o.pir.isna(), None, np.where(o.pir < PIR_CUTOFF, LOW_INCOME, HIGHER_INCOME))
     return o.reset_index(drop=True)
 
 
 def load_nhanes(csv=DATA_DIR / "nhanes_ckd.csv", folder=DATA_DIR / "nhanes", cycle="J") -> DatasetSpec:
     csv = Path(csv)
-    if not csv.exists() or "age_sex" not in pd.read_csv(csv, nrows=1).columns:
+    if not csv.exists() or "income_group" not in pd.read_csv(csv, nrows=1).columns:
         build_nhanes(folder, cycle).to_csv(csv, index=False)
     df = pd.read_csv(csv)
     return DatasetSpec(
         key="nhanes", name="NHANES 2017-2018 (US CDC)",
         description=f"{len(df):,} US adults with blood and urine tests. CKD = eGFR < 60 (CKD-EPI 2021) or "
                     "urine ACR >= 30 mg/g. Creatinine, ACR and eGFR define the label and are not model inputs. "
-                    "Sensitive attributes: sex, race/ethnicity, age group.",
+                    "Sensitive attributes: sex, race/ethnicity, age group, income (family income-to-poverty ratio).",
         df=df,
         feature_sets={"Routine blood tests (17 features, no kidney-function tests)": NHANES_ROUTINE,
                       "Primary-care screening (8 features)": NHANES_SCREENING},
         sensitive={"Sex": "sex", "Race/ethnicity": "race", "Age group": "age_group",
-                   "Age × Sex": "age_sex", "Age × Race": "age_race"},
+                   "Age × Sex": "age_sex", "Age × Race": "age_race", "Income group": "income_group"},
         proxy_cols={"Sex": ["female"], "Race/ethnicity": [], "Age group": ["age"],
-                    "Age × Sex": ["age", "female"], "Age × Race": ["age"]},
+                    "Age × Sex": ["age", "female"], "Age × Race": ["age"], "Income group": []},
         labels=NHANES_LABELS, binary=["female", "htn", "dm"], threshold="prevalence",
     )
 

@@ -33,11 +33,27 @@ def train_final_model(spec, feature_set, attribute, model_name="XGBoost", save=T
               "preprocessor": pre, "model": model, "threshold": thr, "labels": spec.labels,
               "binary": [c for c in spec.binary if c in X.columns],
               "medians": X.median().to_dict(), "mins": X.min().to_dict(), "maxs": X.max().to_dict(),
-              "n_train": len(y), "prevalence": float(y.mean())}
+              "n_train": len(y), "prevalence": float(y.mean()),
+              "examples": reference_patients(X, y)}
     if save:
         MODEL_DIR.mkdir(exist_ok=True)
         joblib.dump(bundle, model_path(spec, feature_set, attribute))
     return bundle
+
+
+def reference_patients(X, y) -> dict:
+    """Two ready-made demo patients: the median non-CKD patient and the median CKD patient of the dataset.
+    (The overall median is not a neutral default: in a CKD-enriched dataset like UCI it is a CKD patient.)"""
+    y = np.asarray(y)
+    out = {}
+    for name, lab in [("healthy", 0), ("ckd", 1)]:
+        sub = X[y == lab]
+        med = sub.median()
+        for c in X.columns:                          # binary features: most common value, not the median
+            if X[c].dropna().isin([0, 1]).all():
+                med[c] = float(sub[c].mode().iloc[0]) if sub[c].notna().any() else 0.0
+        out[name] = med.to_dict()
+    return out
 
 
 def load_model(path):

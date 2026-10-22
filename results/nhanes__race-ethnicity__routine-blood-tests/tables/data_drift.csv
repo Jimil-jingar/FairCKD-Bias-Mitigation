@@ -1,0 +1,18 @@
+,Feature,PSI (all),PSI [Hispanic],PSI [Non-Hispanic Asian],PSI [Non-Hispanic Black],PSI [Non-Hispanic White],PSI [Other/Multi-racial],Max group PSI,Shift
+0,Potassium (mmol/L),0.292,0.441,1.341,0.154,0.265,0.557,1.341,Significant
+1,Sodium (mmol/L),0.661,0.832,0.698,0.683,0.563,0.855,0.855,Significant
+2,Serum albumin (g/dl),0.601,0.399,0.773,0.548,0.844,0.755,0.844,Significant
+3,Age (years),0.016,0.021,0.072,0.058,0.028,0.117,0.117,Moderate
+4,BMI (kg/m2),0.005,0.015,0.111,0.024,0.019,0.056,0.111,Moderate
+5,Haematocrit (%),0.005,0.018,0.058,0.052,0.014,0.11,0.11,Moderate
+6,Systolic BP (mm Hg),0.013,0.029,0.058,0.037,0.023,0.101,0.101,Moderate
+7,Haemoglobin (g/dl),0.004,0.042,0.027,0.007,0.006,0.101,0.101,Moderate
+8,Diastolic BP (mm Hg),0.059,0.089,0.074,0.094,0.034,0.098,0.098,Stable
+9,Uric acid (mg/dl),0.008,0.022,0.035,0.015,0.015,0.081,0.081,Stable
+10,Blood urea nitrogen (mg/dl),0.01,0.032,0.025,0.01,0.021,0.079,0.079,Stable
+11,WBC (1000 cells/uL),0.005,0.022,0.044,0.028,0.011,0.078,0.078,Stable
+12,Serum glucose (mg/dl),0.031,0.027,0.055,0.065,0.034,0.063,0.065,Stable
+13,RBC (million cells/uL),0.006,0.032,0.027,0.023,0.011,0.022,0.032,Stable
+14,Diabetes (self-reported),0.001,0.003,0.013,0.0,0.013,0.025,0.025,Stable
+15,Hypertension (BP >= 140/90),0.011,0.005,0.014,0.022,0.008,0.004,0.022,Stable
+16,Female,0.0,0.001,0.007,0.0,0.001,0.0,0.007,Stable

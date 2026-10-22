@@ -1,0 +1,1893 @@
+,Feature,Value,Curve,Kind,CKD probability
+0,Haemoglobin (g/dl),6.18,All patients,PDP,0.7962009310722351
+1,Haemoglobin (g/dl),6.18,Elderly (>=60),Group PDP,0.8936248421669006
+2,Haemoglobin (g/dl),6.18,Non-elderly (<60),Group PDP,0.7349051237106323
+3,Haemoglobin (g/dl),6.18,patient 381,ICE,0.5298507213592529
+4,Haemoglobin (g/dl),6.18,patient 187,ICE,0.9994811415672302
+5,Haemoglobin (g/dl),6.18,patient 207,ICE,0.9988476037979126
+6,Haemoglobin (g/dl),6.18,patient 386,ICE,0.6751899123191833
+7,Haemoglobin (g/dl),6.18,patient 290,ICE,0.511194109916687
+8,Haemoglobin (g/dl),6.18,patient 31,ICE,0.9993565678596497
+9,Haemoglobin (g/dl),6.18,patient 5,ICE,0.9954212307929993
+10,Haemoglobin (g/dl),6.18,patient 332,ICE,0.6566670536994934
+11,Haemoglobin (g/dl),6.18,patient 277,ICE,0.27601131796836853
+12,Haemoglobin (g/dl),6.18,patient 95,ICE,0.9989063739776611
+13,Haemoglobin (g/dl),6.18,patient 14,ICE,0.9993565678596497
+14,Haemoglobin (g/dl),6.18,patient 235,ICE,0.9980582594871521
+15,Haemoglobin (g/dl),6.18,patient 8,ICE,0.9997069239616394
+16,Haemoglobin (g/dl),6.18,patient 67,ICE,0.999444305896759
+17,Haemoglobin (g/dl),6.18,patient 180,ICE,0.969244122505188
+18,Haemoglobin (g/dl),6.18,patient 355,ICE,0.6182589530944824
+19,Haemoglobin (g/dl),6.18,patient 26,ICE,0.9988512992858887
+20,Haemoglobin (g/dl),6.18,patient 12,ICE,0.9996849298477173
+21,Haemoglobin (g/dl),6.18,patient 34,ICE,0.9994668364524841
+22,Haemoglobin (g/dl),6.18,patient 165,ICE,0.9983028173446655
+23,Haemoglobin (g/dl),6.18,patient 221,ICE,0.9991372227668762
+24,Haemoglobin (g/dl),6.18,patient 323,ICE,0.19289670884609222
+25,Haemoglobin (g/dl),6.18,patient 267,ICE,0.8789769411087036
+26,Haemoglobin (g/dl),6.18,patient 293,ICE,0.5376583933830261
+27,Haemoglobin (g/dl),6.18,patient 148,ICE,0.9993150234222412
+28,Haemoglobin (g/dl),6.18,patient 103,ICE,0.994206428527832
+29,Haemoglobin (g/dl),6.18,patient 209,ICE,0.9988954067230225
+30,Haemoglobin (g/dl),6.18,patient 183,ICE,0.9994086027145386
+31,Haemoglobin (g/dl),6.18,patient 331,ICE,0.203555166721344
+32,Haemoglobin (g/dl),6.18,patient 250,ICE,0.23197460174560547
+33,Haemoglobin (g/dl),6.18,patient 346,ICE,0.3124532401561737
+34,Haemoglobin (g/dl),6.18,patient 63,ICE,0.9992721676826477
+35,Haemoglobin (g/dl),6.18,patient 304,ICE,0.6014066338539124
+36,Haemoglobin (g/dl),6.18,patient 200,ICE,0.9989933371543884
+37,Haemoglobin (g/dl),6.18,patient 1,ICE,0.9924241304397583
+38,Haemoglobin (g/dl),6.18,patient 116,ICE,0.9987596273422241
+39,Haemoglobin (g/dl),6.18,patient 109,ICE,0.9993565678596497
+40,Haemoglobin (g/dl),6.18,patient 299,ICE,0.36731669306755066
+41,Haemoglobin (g/dl),6.18,patient 224,ICE,0.9995468258857727
+42,Haemoglobin (g/dl),6.18,patient 232,ICE,0.9997313618659973
+43,Haemoglobin (g/dl),8.1,All patients,PDP,0.7962009310722351
+44,Haemoglobin (g/dl),8.1,Elderly (>=60),Group PDP,0.8936248421669006
+45,Haemoglobin (g/dl),8.1,Non-elderly (<60),Group PDP,0.7349051237106323
+46,Haemoglobin (g/dl),8.1,patient 381,ICE,0.5298507213592529
+47,Haemoglobin (g/dl),8.1,patient 187,ICE,0.9994811415672302
+48,Haemoglobin (g/dl),8.1,patient 207,ICE,0.9988476037979126
+49,Haemoglobin (g/dl),8.1,patient 386,ICE,0.6751899123191833
+50,Haemoglobin (g/dl),8.1,patient 290,ICE,0.511194109916687
+51,Haemoglobin (g/dl),8.1,patient 31,ICE,0.9993565678596497
+52,Haemoglobin (g/dl),8.1,patient 5,ICE,0.9954212307929993
+53,Haemoglobin (g/dl),8.1,patient 332,ICE,0.6566670536994934
+54,Haemoglobin (g/dl),8.1,patient 277,ICE,0.27601131796836853
+55,Haemoglobin (g/dl),8.1,patient 95,ICE,0.9989063739776611
+56,Haemoglobin (g/dl),8.1,patient 14,ICE,0.9993565678596497
+57,Haemoglobin (g/dl),8.1,patient 235,ICE,0.9980582594871521
+58,Haemoglobin (g/dl),8.1,patient 8,ICE,0.9997069239616394
+59,Haemoglobin (g/dl),8.1,patient 67,ICE,0.999444305896759
+60,Haemoglobin (g/dl),8.1,patient 180,ICE,0.969244122505188
+61,Haemoglobin (g/dl),8.1,patient 355,ICE,0.6182589530944824
+62,Haemoglobin (g/dl),8.1,patient 26,ICE,0.9988512992858887
+63,Haemoglobin (g/dl),8.1,patient 12,ICE,0.9996849298477173
+64,Haemoglobin (g/dl),8.1,patient 34,ICE,0.9994668364524841
+65,Haemoglobin (g/dl),8.1,patient 165,ICE,0.9983028173446655
+66,Haemoglobin (g/dl),8.1,patient 221,ICE,0.9991372227668762
+67,Haemoglobin (g/dl),8.1,patient 323,ICE,0.19289670884609222
+68,Haemoglobin (g/dl),8.1,patient 267,ICE,0.8789769411087036
+69,Haemoglobin (g/dl),8.1,patient 293,ICE,0.5376583933830261
+70,Haemoglobin (g/dl),8.1,patient 148,ICE,0.9993150234222412
+71,Haemoglobin (g/dl),8.1,patient 103,ICE,0.994206428527832
+72,Haemoglobin (g/dl),8.1,patient 209,ICE,0.9988954067230225
+73,Haemoglobin (g/dl),8.1,patient 183,ICE,0.9994086027145386
+74,Haemoglobin (g/dl),8.1,patient 331,ICE,0.203555166721344
+75,Haemoglobin (g/dl),8.1,patient 250,ICE,0.23197460174560547
+76,Haemoglobin (g/dl),8.1,patient 346,ICE,0.3124532401561737
+77,Haemoglobin (g/dl),8.1,patient 63,ICE,0.9992721676826477
+78,Haemoglobin (g/dl),8.1,patient 304,ICE,0.6014066338539124
+79,Haemoglobin (g/dl),8.1,patient 200,ICE,0.9989933371543884
+80,Haemoglobin (g/dl),8.1,patient 1,ICE,0.9924241304397583
+81,Haemoglobin (g/dl),8.1,patient 116,ICE,0.9987596273422241
+82,Haemoglobin (g/dl),8.1,patient 109,ICE,0.9993565678596497
+83,Haemoglobin (g/dl),8.1,patient 299,ICE,0.36731669306755066
+84,Haemoglobin (g/dl),8.1,patient 224,ICE,0.9995468258857727
+85,Haemoglobin (g/dl),8.1,patient 232,ICE,0.9997313618659973
+86,Haemoglobin (g/dl),9.21578947368421,All patients,PDP,0.7962009310722351
+87,Haemoglobin (g/dl),9.21578947368421,Elderly (>=60),Group PDP,0.8936248421669006
+88,Haemoglobin (g/dl),9.21578947368421,Non-elderly (<60),Group PDP,0.7349051237106323
+89,Haemoglobin (g/dl),9.21578947368421,patient 381,ICE,0.5298507213592529
+90,Haemoglobin (g/dl),9.21578947368421,patient 187,ICE,0.9994811415672302
+91,Haemoglobin (g/dl),9.21578947368421,patient 207,ICE,0.9988476037979126
+92,Haemoglobin (g/dl),9.21578947368421,patient 386,ICE,0.6751899123191833
+93,Haemoglobin (g/dl),9.21578947368421,patient 290,ICE,0.511194109916687
+94,Haemoglobin (g/dl),9.21578947368421,patient 31,ICE,0.9993565678596497
+95,Haemoglobin (g/dl),9.21578947368421,patient 5,ICE,0.9954212307929993
+96,Haemoglobin (g/dl),9.21578947368421,patient 332,ICE,0.6566670536994934
+97,Haemoglobin (g/dl),9.21578947368421,patient 277,ICE,0.27601131796836853
+98,Haemoglobin (g/dl),9.21578947368421,patient 95,ICE,0.9989063739776611
+99,Haemoglobin (g/dl),9.21578947368421,patient 14,ICE,0.9993565678596497
+100,Haemoglobin (g/dl),9.21578947368421,patient 235,ICE,0.9980582594871521
+101,Haemoglobin (g/dl),9.21578947368421,patient 8,ICE,0.9997069239616394
+102,Haemoglobin (g/dl),9.21578947368421,patient 67,ICE,0.999444305896759
+103,Haemoglobin (g/dl),9.21578947368421,patient 180,ICE,0.969244122505188
+104,Haemoglobin (g/dl),9.21578947368421,patient 355,ICE,0.6182589530944824
+105,Haemoglobin (g/dl),9.21578947368421,patient 26,ICE,0.9988512992858887
+106,Haemoglobin (g/dl),9.21578947368421,patient 12,ICE,0.9996849298477173
+107,Haemoglobin (g/dl),9.21578947368421,patient 34,ICE,0.9994668364524841
+108,Haemoglobin (g/dl),9.21578947368421,patient 165,ICE,0.9983028173446655
+109,Haemoglobin (g/dl),9.21578947368421,patient 221,ICE,0.9991372227668762
+110,Haemoglobin (g/dl),9.21578947368421,patient 323,ICE,0.19289670884609222
+111,Haemoglobin (g/dl),9.21578947368421,patient 267,ICE,0.8789769411087036
+112,Haemoglobin (g/dl),9.21578947368421,patient 293,ICE,0.5376583933830261
+113,Haemoglobin (g/dl),9.21578947368421,patient 148,ICE,0.9993150234222412
+114,Haemoglobin (g/dl),9.21578947368421,patient 103,ICE,0.994206428527832
+115,Haemoglobin (g/dl),9.21578947368421,patient 209,ICE,0.9988954067230225
+116,Haemoglobin (g/dl),9.21578947368421,patient 183,ICE,0.9994086027145386
+117,Haemoglobin (g/dl),9.21578947368421,patient 331,ICE,0.203555166721344
+118,Haemoglobin (g/dl),9.21578947368421,patient 250,ICE,0.23197460174560547
+119,Haemoglobin (g/dl),9.21578947368421,patient 346,ICE,0.3124532401561737
+120,Haemoglobin (g/dl),9.21578947368421,patient 63,ICE,0.9992721676826477
+121,Haemoglobin (g/dl),9.21578947368421,patient 304,ICE,0.6014066338539124
+122,Haemoglobin (g/dl),9.21578947368421,patient 200,ICE,0.9989933371543884
+123,Haemoglobin (g/dl),9.21578947368421,patient 1,ICE,0.9924241304397583
+124,Haemoglobin (g/dl),9.21578947368421,patient 116,ICE,0.9987596273422241
+125,Haemoglobin (g/dl),9.21578947368421,patient 109,ICE,0.9993565678596497
+126,Haemoglobin (g/dl),9.21578947368421,patient 299,ICE,0.36731669306755066
+127,Haemoglobin (g/dl),9.21578947368421,patient 224,ICE,0.9995468258857727
+128,Haemoglobin (g/dl),9.21578947368421,patient 232,ICE,0.9997313618659973
+129,Haemoglobin (g/dl),9.8,All patients,PDP,0.7962009310722351
+130,Haemoglobin (g/dl),9.8,Elderly (>=60),Group PDP,0.8936248421669006
+131,Haemoglobin (g/dl),9.8,Non-elderly (<60),Group PDP,0.7349051237106323
+132,Haemoglobin (g/dl),9.8,patient 381,ICE,0.5298507213592529
+133,Haemoglobin (g/dl),9.8,patient 187,ICE,0.9994811415672302
+134,Haemoglobin (g/dl),9.8,patient 207,ICE,0.9988476037979126
+135,Haemoglobin (g/dl),9.8,patient 386,ICE,0.6751899123191833
+136,Haemoglobin (g/dl),9.8,patient 290,ICE,0.511194109916687
+137,Haemoglobin (g/dl),9.8,patient 31,ICE,0.9993565678596497
+138,Haemoglobin (g/dl),9.8,patient 5,ICE,0.9954212307929993
+139,Haemoglobin (g/dl),9.8,patient 332,ICE,0.6566670536994934
+140,Haemoglobin (g/dl),9.8,patient 277,ICE,0.27601131796836853
+141,Haemoglobin (g/dl),9.8,patient 95,ICE,0.9989063739776611
+142,Haemoglobin (g/dl),9.8,patient 14,ICE,0.9993565678596497
+143,Haemoglobin (g/dl),9.8,patient 235,ICE,0.9980582594871521
+144,Haemoglobin (g/dl),9.8,patient 8,ICE,0.9997069239616394
+145,Haemoglobin (g/dl),9.8,patient 67,ICE,0.999444305896759
+146,Haemoglobin (g/dl),9.8,patient 180,ICE,0.969244122505188
+147,Haemoglobin (g/dl),9.8,patient 355,ICE,0.6182589530944824
+148,Haemoglobin (g/dl),9.8,patient 26,ICE,0.9988512992858887
+149,Haemoglobin (g/dl),9.8,patient 12,ICE,0.9996849298477173
+150,Haemoglobin (g/dl),9.8,patient 34,ICE,0.9994668364524841
+151,Haemoglobin (g/dl),9.8,patient 165,ICE,0.9983028173446655
+152,Haemoglobin (g/dl),9.8,patient 221,ICE,0.9991372227668762
+153,Haemoglobin (g/dl),9.8,patient 323,ICE,0.19289670884609222
+154,Haemoglobin (g/dl),9.8,patient 267,ICE,0.8789769411087036
+155,Haemoglobin (g/dl),9.8,patient 293,ICE,0.5376583933830261
+156,Haemoglobin (g/dl),9.8,patient 148,ICE,0.9993150234222412
+157,Haemoglobin (g/dl),9.8,patient 103,ICE,0.994206428527832
+158,Haemoglobin (g/dl),9.8,patient 209,ICE,0.9988954067230225
+159,Haemoglobin (g/dl),9.8,patient 183,ICE,0.9994086027145386
+160,Haemoglobin (g/dl),9.8,patient 331,ICE,0.203555166721344
+161,Haemoglobin (g/dl),9.8,patient 250,ICE,0.23197460174560547
+162,Haemoglobin (g/dl),9.8,patient 346,ICE,0.3124532401561737
+163,Haemoglobin (g/dl),9.8,patient 63,ICE,0.9992721676826477
+164,Haemoglobin (g/dl),9.8,patient 304,ICE,0.6014066338539124
+165,Haemoglobin (g/dl),9.8,patient 200,ICE,0.9989933371543884
+166,Haemoglobin (g/dl),9.8,patient 1,ICE,0.9924241304397583
+167,Haemoglobin (g/dl),9.8,patient 116,ICE,0.9987596273422241
+168,Haemoglobin (g/dl),9.8,patient 109,ICE,0.9993565678596497
+169,Haemoglobin (g/dl),9.8,patient 299,ICE,0.36731669306755066
+170,Haemoglobin (g/dl),9.8,patient 224,ICE,0.9995468258857727
+171,Haemoglobin (g/dl),9.8,patient 232,ICE,0.9997313618659973
+172,Haemoglobin (g/dl),10.15157894736842,All patients,PDP,0.7962009310722351
+173,Haemoglobin (g/dl),10.15157894736842,Elderly (>=60),Group PDP,0.8936248421669006
+174,Haemoglobin (g/dl),10.15157894736842,Non-elderly (<60),Group PDP,0.7349051237106323
+175,Haemoglobin (g/dl),10.15157894736842,patient 381,ICE,0.5298507213592529
+176,Haemoglobin (g/dl),10.15157894736842,patient 187,ICE,0.9994811415672302
+177,Haemoglobin (g/dl),10.15157894736842,patient 207,ICE,0.9988476037979126
+178,Haemoglobin (g/dl),10.15157894736842,patient 386,ICE,0.6751899123191833
+179,Haemoglobin (g/dl),10.15157894736842,patient 290,ICE,0.511194109916687
+180,Haemoglobin (g/dl),10.15157894736842,patient 31,ICE,0.9993565678596497
+181,Haemoglobin (g/dl),10.15157894736842,patient 5,ICE,0.9954212307929993
+182,Haemoglobin (g/dl),10.15157894736842,patient 332,ICE,0.6566670536994934
+183,Haemoglobin (g/dl),10.15157894736842,patient 277,ICE,0.27601131796836853
+184,Haemoglobin (g/dl),10.15157894736842,patient 95,ICE,0.9989063739776611
+185,Haemoglobin (g/dl),10.15157894736842,patient 14,ICE,0.9993565678596497
+186,Haemoglobin (g/dl),10.15157894736842,patient 235,ICE,0.9980582594871521
+187,Haemoglobin (g/dl),10.15157894736842,patient 8,ICE,0.9997069239616394
+188,Haemoglobin (g/dl),10.15157894736842,patient 67,ICE,0.999444305896759
+189,Haemoglobin (g/dl),10.15157894736842,patient 180,ICE,0.969244122505188
+190,Haemoglobin (g/dl),10.15157894736842,patient 355,ICE,0.6182589530944824
+191,Haemoglobin (g/dl),10.15157894736842,patient 26,ICE,0.9988512992858887
+192,Haemoglobin (g/dl),10.15157894736842,patient 12,ICE,0.9996849298477173
+193,Haemoglobin (g/dl),10.15157894736842,patient 34,ICE,0.9994668364524841
+194,Haemoglobin (g/dl),10.15157894736842,patient 165,ICE,0.9983028173446655
+195,Haemoglobin (g/dl),10.15157894736842,patient 221,ICE,0.9991372227668762
+196,Haemoglobin (g/dl),10.15157894736842,patient 323,ICE,0.19289670884609222
+197,Haemoglobin (g/dl),10.15157894736842,patient 267,ICE,0.8789769411087036
+198,Haemoglobin (g/dl),10.15157894736842,patient 293,ICE,0.5376583933830261
+199,Haemoglobin (g/dl),10.15157894736842,patient 148,ICE,0.9993150234222412
+200,Haemoglobin (g/dl),10.15157894736842,patient 103,ICE,0.994206428527832
+201,Haemoglobin (g/dl),10.15157894736842,patient 209,ICE,0.9988954067230225
+202,Haemoglobin (g/dl),10.15157894736842,patient 183,ICE,0.9994086027145386
+203,Haemoglobin (g/dl),10.15157894736842,patient 331,ICE,0.203555166721344
+204,Haemoglobin (g/dl),10.15157894736842,patient 250,ICE,0.23197460174560547
+205,Haemoglobin (g/dl),10.15157894736842,patient 346,ICE,0.3124532401561737
+206,Haemoglobin (g/dl),10.15157894736842,patient 63,ICE,0.9992721676826477
+207,Haemoglobin (g/dl),10.15157894736842,patient 304,ICE,0.6014066338539124
+208,Haemoglobin (g/dl),10.15157894736842,patient 200,ICE,0.9989933371543884
+209,Haemoglobin (g/dl),10.15157894736842,patient 1,ICE,0.9924241304397583
+210,Haemoglobin (g/dl),10.15157894736842,patient 116,ICE,0.9987596273422241
+211,Haemoglobin (g/dl),10.15157894736842,patient 109,ICE,0.9993565678596497
+212,Haemoglobin (g/dl),10.15157894736842,patient 299,ICE,0.36731669306755066
+213,Haemoglobin (g/dl),10.15157894736842,patient 224,ICE,0.9995468258857727
+214,Haemoglobin (g/dl),10.15157894736842,patient 232,ICE,0.9997313618659973
+215,Haemoglobin (g/dl),10.8,All patients,PDP,0.7962009310722351
+216,Haemoglobin (g/dl),10.8,Elderly (>=60),Group PDP,0.8936248421669006
+217,Haemoglobin (g/dl),10.8,Non-elderly (<60),Group PDP,0.7349051237106323
+218,Haemoglobin (g/dl),10.8,patient 381,ICE,0.5298507213592529
+219,Haemoglobin (g/dl),10.8,patient 187,ICE,0.9994811415672302
+220,Haemoglobin (g/dl),10.8,patient 207,ICE,0.9988476037979126
+221,Haemoglobin (g/dl),10.8,patient 386,ICE,0.6751899123191833
+222,Haemoglobin (g/dl),10.8,patient 290,ICE,0.511194109916687
+223,Haemoglobin (g/dl),10.8,patient 31,ICE,0.9993565678596497
+224,Haemoglobin (g/dl),10.8,patient 5,ICE,0.9954212307929993
+225,Haemoglobin (g/dl),10.8,patient 332,ICE,0.6566670536994934
+226,Haemoglobin (g/dl),10.8,patient 277,ICE,0.27601131796836853
+227,Haemoglobin (g/dl),10.8,patient 95,ICE,0.9989063739776611
+228,Haemoglobin (g/dl),10.8,patient 14,ICE,0.9993565678596497
+229,Haemoglobin (g/dl),10.8,patient 235,ICE,0.9980582594871521
+230,Haemoglobin (g/dl),10.8,patient 8,ICE,0.9997069239616394
+231,Haemoglobin (g/dl),10.8,patient 67,ICE,0.999444305896759
+232,Haemoglobin (g/dl),10.8,patient 180,ICE,0.969244122505188
+233,Haemoglobin (g/dl),10.8,patient 355,ICE,0.6182589530944824
+234,Haemoglobin (g/dl),10.8,patient 26,ICE,0.9988512992858887
+235,Haemoglobin (g/dl),10.8,patient 12,ICE,0.9996849298477173
+236,Haemoglobin (g/dl),10.8,patient 34,ICE,0.9994668364524841
+237,Haemoglobin (g/dl),10.8,patient 165,ICE,0.9983028173446655
+238,Haemoglobin (g/dl),10.8,patient 221,ICE,0.9991372227668762
+239,Haemoglobin (g/dl),10.8,patient 323,ICE,0.19289670884609222
+240,Haemoglobin (g/dl),10.8,patient 267,ICE,0.8789769411087036
+241,Haemoglobin (g/dl),10.8,patient 293,ICE,0.5376583933830261
+242,Haemoglobin (g/dl),10.8,patient 148,ICE,0.9993150234222412
+243,Haemoglobin (g/dl),10.8,patient 103,ICE,0.994206428527832
+244,Haemoglobin (g/dl),10.8,patient 209,ICE,0.9988954067230225
+245,Haemoglobin (g/dl),10.8,patient 183,ICE,0.9994086027145386
+246,Haemoglobin (g/dl),10.8,patient 331,ICE,0.203555166721344
+247,Haemoglobin (g/dl),10.8,patient 250,ICE,0.23197460174560547
+248,Haemoglobin (g/dl),10.8,patient 346,ICE,0.3124532401561737
+249,Haemoglobin (g/dl),10.8,patient 63,ICE,0.9992721676826477
+250,Haemoglobin (g/dl),10.8,patient 304,ICE,0.6014066338539124
+251,Haemoglobin (g/dl),10.8,patient 200,ICE,0.9989933371543884
+252,Haemoglobin (g/dl),10.8,patient 1,ICE,0.9924241304397583
+253,Haemoglobin (g/dl),10.8,patient 116,ICE,0.9987596273422241
+254,Haemoglobin (g/dl),10.8,patient 109,ICE,0.9993565678596497
+255,Haemoglobin (g/dl),10.8,patient 299,ICE,0.36731669306755066
+256,Haemoglobin (g/dl),10.8,patient 224,ICE,0.9995468258857727
+257,Haemoglobin (g/dl),10.8,patient 232,ICE,0.9997313618659973
+258,Haemoglobin (g/dl),11.1,All patients,PDP,0.7962009310722351
+259,Haemoglobin (g/dl),11.1,Elderly (>=60),Group PDP,0.8936248421669006
+260,Haemoglobin (g/dl),11.1,Non-elderly (<60),Group PDP,0.7349051237106323
+261,Haemoglobin (g/dl),11.1,patient 381,ICE,0.5298507213592529
+262,Haemoglobin (g/dl),11.1,patient 187,ICE,0.9994811415672302
+263,Haemoglobin (g/dl),11.1,patient 207,ICE,0.9988476037979126
+264,Haemoglobin (g/dl),11.1,patient 386,ICE,0.6751899123191833
+265,Haemoglobin (g/dl),11.1,patient 290,ICE,0.511194109916687
+266,Haemoglobin (g/dl),11.1,patient 31,ICE,0.9993565678596497
+267,Haemoglobin (g/dl),11.1,patient 5,ICE,0.9954212307929993
+268,Haemoglobin (g/dl),11.1,patient 332,ICE,0.6566670536994934
+269,Haemoglobin (g/dl),11.1,patient 277,ICE,0.27601131796836853
+270,Haemoglobin (g/dl),11.1,patient 95,ICE,0.9989063739776611
+271,Haemoglobin (g/dl),11.1,patient 14,ICE,0.9993565678596497
+272,Haemoglobin (g/dl),11.1,patient 235,ICE,0.9980582594871521
+273,Haemoglobin (g/dl),11.1,patient 8,ICE,0.9997069239616394
+274,Haemoglobin (g/dl),11.1,patient 67,ICE,0.999444305896759
+275,Haemoglobin (g/dl),11.1,patient 180,ICE,0.969244122505188
+276,Haemoglobin (g/dl),11.1,patient 355,ICE,0.6182589530944824
+277,Haemoglobin (g/dl),11.1,patient 26,ICE,0.9988512992858887
+278,Haemoglobin (g/dl),11.1,patient 12,ICE,0.9996849298477173
+279,Haemoglobin (g/dl),11.1,patient 34,ICE,0.9994668364524841
+280,Haemoglobin (g/dl),11.1,patient 165,ICE,0.9983028173446655
+281,Haemoglobin (g/dl),11.1,patient 221,ICE,0.9991372227668762
+282,Haemoglobin (g/dl),11.1,patient 323,ICE,0.19289670884609222
+283,Haemoglobin (g/dl),11.1,patient 267,ICE,0.8789769411087036
+284,Haemoglobin (g/dl),11.1,patient 293,ICE,0.5376583933830261
+285,Haemoglobin (g/dl),11.1,patient 148,ICE,0.9993150234222412
+286,Haemoglobin (g/dl),11.1,patient 103,ICE,0.994206428527832
+287,Haemoglobin (g/dl),11.1,patient 209,ICE,0.9988954067230225
+288,Haemoglobin (g/dl),11.1,patient 183,ICE,0.9994086027145386
+289,Haemoglobin (g/dl),11.1,patient 331,ICE,0.203555166721344
+290,Haemoglobin (g/dl),11.1,patient 250,ICE,0.23197460174560547
+291,Haemoglobin (g/dl),11.1,patient 346,ICE,0.3124532401561737
+292,Haemoglobin (g/dl),11.1,patient 63,ICE,0.9992721676826477
+293,Haemoglobin (g/dl),11.1,patient 304,ICE,0.6014066338539124
+294,Haemoglobin (g/dl),11.1,patient 200,ICE,0.9989933371543884
+295,Haemoglobin (g/dl),11.1,patient 1,ICE,0.9924241304397583
+296,Haemoglobin (g/dl),11.1,patient 116,ICE,0.9987596273422241
+297,Haemoglobin (g/dl),11.1,patient 109,ICE,0.9993565678596497
+298,Haemoglobin (g/dl),11.1,patient 299,ICE,0.36731669306755066
+299,Haemoglobin (g/dl),11.1,patient 224,ICE,0.9995468258857727
+300,Haemoglobin (g/dl),11.1,patient 232,ICE,0.9997313618659973
+301,Haemoglobin (g/dl),11.5,All patients,PDP,0.7962009310722351
+302,Haemoglobin (g/dl),11.5,Elderly (>=60),Group PDP,0.8936248421669006
+303,Haemoglobin (g/dl),11.5,Non-elderly (<60),Group PDP,0.7349051237106323
+304,Haemoglobin (g/dl),11.5,patient 381,ICE,0.5298507213592529
+305,Haemoglobin (g/dl),11.5,patient 187,ICE,0.9994811415672302
+306,Haemoglobin (g/dl),11.5,patient 207,ICE,0.9988476037979126
+307,Haemoglobin (g/dl),11.5,patient 386,ICE,0.6751899123191833
+308,Haemoglobin (g/dl),11.5,patient 290,ICE,0.511194109916687
+309,Haemoglobin (g/dl),11.5,patient 31,ICE,0.9993565678596497
+310,Haemoglobin (g/dl),11.5,patient 5,ICE,0.9954212307929993
+311,Haemoglobin (g/dl),11.5,patient 332,ICE,0.6566670536994934
+312,Haemoglobin (g/dl),11.5,patient 277,ICE,0.27601131796836853
+313,Haemoglobin (g/dl),11.5,patient 95,ICE,0.9989063739776611
+314,Haemoglobin (g/dl),11.5,patient 14,ICE,0.9993565678596497
+315,Haemoglobin (g/dl),11.5,patient 235,ICE,0.9980582594871521
+316,Haemoglobin (g/dl),11.5,patient 8,ICE,0.9997069239616394
+317,Haemoglobin (g/dl),11.5,patient 67,ICE,0.999444305896759
+318,Haemoglobin (g/dl),11.5,patient 180,ICE,0.969244122505188
+319,Haemoglobin (g/dl),11.5,patient 355,ICE,0.6182589530944824
+320,Haemoglobin (g/dl),11.5,patient 26,ICE,0.9988512992858887
+321,Haemoglobin (g/dl),11.5,patient 12,ICE,0.9996849298477173
+322,Haemoglobin (g/dl),11.5,patient 34,ICE,0.9994668364524841
+323,Haemoglobin (g/dl),11.5,patient 165,ICE,0.9983028173446655
+324,Haemoglobin (g/dl),11.5,patient 221,ICE,0.9991372227668762
+325,Haemoglobin (g/dl),11.5,patient 323,ICE,0.19289670884609222
+326,Haemoglobin (g/dl),11.5,patient 267,ICE,0.8789769411087036
+327,Haemoglobin (g/dl),11.5,patient 293,ICE,0.5376583933830261
+328,Haemoglobin (g/dl),11.5,patient 148,ICE,0.9993150234222412
+329,Haemoglobin (g/dl),11.5,patient 103,ICE,0.994206428527832
+330,Haemoglobin (g/dl),11.5,patient 209,ICE,0.9988954067230225
+331,Haemoglobin (g/dl),11.5,patient 183,ICE,0.9994086027145386
+332,Haemoglobin (g/dl),11.5,patient 331,ICE,0.203555166721344
+333,Haemoglobin (g/dl),11.5,patient 250,ICE,0.23197460174560547
+334,Haemoglobin (g/dl),11.5,patient 346,ICE,0.3124532401561737
+335,Haemoglobin (g/dl),11.5,patient 63,ICE,0.9992721676826477
+336,Haemoglobin (g/dl),11.5,patient 304,ICE,0.6014066338539124
+337,Haemoglobin (g/dl),11.5,patient 200,ICE,0.9989933371543884
+338,Haemoglobin (g/dl),11.5,patient 1,ICE,0.9924241304397583
+339,Haemoglobin (g/dl),11.5,patient 116,ICE,0.9987596273422241
+340,Haemoglobin (g/dl),11.5,patient 109,ICE,0.9993565678596497
+341,Haemoglobin (g/dl),11.5,patient 299,ICE,0.36731669306755066
+342,Haemoglobin (g/dl),11.5,patient 224,ICE,0.9995468258857727
+343,Haemoglobin (g/dl),11.5,patient 232,ICE,0.9997313618659973
+344,Haemoglobin (g/dl),12.0,All patients,PDP,0.7962009310722351
+345,Haemoglobin (g/dl),12.0,Elderly (>=60),Group PDP,0.8936248421669006
+346,Haemoglobin (g/dl),12.0,Non-elderly (<60),Group PDP,0.7349051237106323
+347,Haemoglobin (g/dl),12.0,patient 381,ICE,0.5298507213592529
+348,Haemoglobin (g/dl),12.0,patient 187,ICE,0.9994811415672302
+349,Haemoglobin (g/dl),12.0,patient 207,ICE,0.9988476037979126
+350,Haemoglobin (g/dl),12.0,patient 386,ICE,0.6751899123191833
+351,Haemoglobin (g/dl),12.0,patient 290,ICE,0.511194109916687
+352,Haemoglobin (g/dl),12.0,patient 31,ICE,0.9993565678596497
+353,Haemoglobin (g/dl),12.0,patient 5,ICE,0.9954212307929993
+354,Haemoglobin (g/dl),12.0,patient 332,ICE,0.6566670536994934
+355,Haemoglobin (g/dl),12.0,patient 277,ICE,0.27601131796836853
+356,Haemoglobin (g/dl),12.0,patient 95,ICE,0.9989063739776611
+357,Haemoglobin (g/dl),12.0,patient 14,ICE,0.9993565678596497
+358,Haemoglobin (g/dl),12.0,patient 235,ICE,0.9980582594871521
+359,Haemoglobin (g/dl),12.0,patient 8,ICE,0.9997069239616394
+360,Haemoglobin (g/dl),12.0,patient 67,ICE,0.999444305896759
+361,Haemoglobin (g/dl),12.0,patient 180,ICE,0.969244122505188
+362,Haemoglobin (g/dl),12.0,patient 355,ICE,0.6182589530944824
+363,Haemoglobin (g/dl),12.0,patient 26,ICE,0.9988512992858887
+364,Haemoglobin (g/dl),12.0,patient 12,ICE,0.9996849298477173
+365,Haemoglobin (g/dl),12.0,patient 34,ICE,0.9994668364524841
+366,Haemoglobin (g/dl),12.0,patient 165,ICE,0.9983028173446655
+367,Haemoglobin (g/dl),12.0,patient 221,ICE,0.9991372227668762
+368,Haemoglobin (g/dl),12.0,patient 323,ICE,0.19289670884609222
+369,Haemoglobin (g/dl),12.0,patient 267,ICE,0.8789769411087036
+370,Haemoglobin (g/dl),12.0,patient 293,ICE,0.5376583933830261
+371,Haemoglobin (g/dl),12.0,patient 148,ICE,0.9993150234222412
+372,Haemoglobin (g/dl),12.0,patient 103,ICE,0.994206428527832
+373,Haemoglobin (g/dl),12.0,patient 209,ICE,0.9988954067230225
+374,Haemoglobin (g/dl),12.0,patient 183,ICE,0.9994086027145386
+375,Haemoglobin (g/dl),12.0,patient 331,ICE,0.203555166721344
+376,Haemoglobin (g/dl),12.0,patient 250,ICE,0.23197460174560547
+377,Haemoglobin (g/dl),12.0,patient 346,ICE,0.3124532401561737
+378,Haemoglobin (g/dl),12.0,patient 63,ICE,0.9992721676826477
+379,Haemoglobin (g/dl),12.0,patient 304,ICE,0.6014066338539124
+380,Haemoglobin (g/dl),12.0,patient 200,ICE,0.9989933371543884
+381,Haemoglobin (g/dl),12.0,patient 1,ICE,0.9924241304397583
+382,Haemoglobin (g/dl),12.0,patient 116,ICE,0.9987596273422241
+383,Haemoglobin (g/dl),12.0,patient 109,ICE,0.9993565678596497
+384,Haemoglobin (g/dl),12.0,patient 299,ICE,0.36731669306755066
+385,Haemoglobin (g/dl),12.0,patient 224,ICE,0.9995468258857727
+386,Haemoglobin (g/dl),12.0,patient 232,ICE,0.9997313618659973
+387,Haemoglobin (g/dl),12.5,All patients,PDP,0.7546194791793823
+388,Haemoglobin (g/dl),12.5,Elderly (>=60),Group PDP,0.8634809255599976
+389,Haemoglobin (g/dl),12.5,Non-elderly (<60),Group PDP,0.6861275434494019
+390,Haemoglobin (g/dl),12.5,patient 381,ICE,0.3873006999492645
+391,Haemoglobin (g/dl),12.5,patient 187,ICE,0.9994811415672302
+392,Haemoglobin (g/dl),12.5,patient 207,ICE,0.9988476037979126
+393,Haemoglobin (g/dl),12.5,patient 386,ICE,0.5088871121406555
+394,Haemoglobin (g/dl),12.5,patient 290,ICE,0.342670202255249
+395,Haemoglobin (g/dl),12.5,patient 31,ICE,0.9993565678596497
+396,Haemoglobin (g/dl),12.5,patient 5,ICE,0.9924052357673645
+397,Haemoglobin (g/dl),12.5,patient 332,ICE,0.4880710542201996
+398,Haemoglobin (g/dl),12.5,patient 277,ICE,0.15969017148017883
+399,Haemoglobin (g/dl),12.5,patient 95,ICE,0.9989063739776611
+400,Haemoglobin (g/dl),12.5,patient 14,ICE,0.9993565678596497
+401,Haemoglobin (g/dl),12.5,patient 235,ICE,0.9980582594871521
+402,Haemoglobin (g/dl),12.5,patient 8,ICE,0.9997069239616394
+403,Haemoglobin (g/dl),12.5,patient 67,ICE,0.999444305896759
+404,Haemoglobin (g/dl),12.5,patient 180,ICE,0.9551846385002136
+405,Haemoglobin (g/dl),12.5,patient 355,ICE,0.47600501775741577
+406,Haemoglobin (g/dl),12.5,patient 26,ICE,0.99870765209198
+407,Haemoglobin (g/dl),12.5,patient 12,ICE,0.9996849298477173
+408,Haemoglobin (g/dl),12.5,patient 34,ICE,0.9994668364524841
+409,Haemoglobin (g/dl),12.5,patient 165,ICE,0.9983028173446655
+410,Haemoglobin (g/dl),12.5,patient 221,ICE,0.9991372227668762
+411,Haemoglobin (g/dl),12.5,patient 323,ICE,0.10645278543233871
+412,Haemoglobin (g/dl),12.5,patient 267,ICE,0.8576171398162842
+413,Haemoglobin (g/dl),12.5,patient 293,ICE,0.46152549982070923
+414,Haemoglobin (g/dl),12.5,patient 148,ICE,0.9993150234222412
+415,Haemoglobin (g/dl),12.5,patient 103,ICE,0.994206428527832
+416,Haemoglobin (g/dl),12.5,patient 209,ICE,0.9987573623657227
+417,Haemoglobin (g/dl),12.5,patient 183,ICE,0.9994086027145386
+418,Haemoglobin (g/dl),12.5,patient 331,ICE,0.11300355195999146
+419,Haemoglobin (g/dl),12.5,patient 250,ICE,0.13085781037807465
+420,Haemoglobin (g/dl),12.5,patient 346,ICE,0.18469198048114777
+421,Haemoglobin (g/dl),12.5,patient 63,ICE,0.9991224408149719
+422,Haemoglobin (g/dl),12.5,patient 304,ICE,0.429259717464447
+423,Haemoglobin (g/dl),12.5,patient 200,ICE,0.9989933371543884
+424,Haemoglobin (g/dl),12.5,patient 1,ICE,0.9888389706611633
+425,Haemoglobin (g/dl),12.5,patient 116,ICE,0.9987596273422241
+426,Haemoglobin (g/dl),12.5,patient 109,ICE,0.9993565678596497
+427,Haemoglobin (g/dl),12.5,patient 299,ICE,0.245647132396698
+428,Haemoglobin (g/dl),12.5,patient 224,ICE,0.9995468258857727
+429,Haemoglobin (g/dl),12.5,patient 232,ICE,0.9997313618659973
+430,Haemoglobin (g/dl),13.0,All patients,PDP,0.5879876613616943
+431,Haemoglobin (g/dl),13.0,Elderly (>=60),Group PDP,0.7618349194526672
+432,Haemoglobin (g/dl),13.0,Non-elderly (<60),Group PDP,0.4786088168621063
+433,Haemoglobin (g/dl),13.0,patient 381,ICE,0.004650492686778307
+434,Haemoglobin (g/dl),13.0,patient 187,ICE,0.9984831213951111
+435,Haemoglobin (g/dl),13.0,patient 207,ICE,0.9943821430206299
+436,Haemoglobin (g/dl),13.0,patient 386,ICE,0.021612059324979782
+437,Haemoglobin (g/dl),13.0,patient 290,ICE,0.00802239216864109
+438,Haemoglobin (g/dl),13.0,patient 31,ICE,0.9981428384780884
+439,Haemoglobin (g/dl),13.0,patient 5,ICE,0.9854368567466736
+440,Haemoglobin (g/dl),13.0,patient 332,ICE,0.010587518103420734
+441,Haemoglobin (g/dl),13.0,patient 277,ICE,0.0026815736200660467
+442,Haemoglobin (g/dl),13.0,patient 95,ICE,0.9969011545181274
+443,Haemoglobin (g/dl),13.0,patient 14,ICE,0.9981428384780884
+444,Haemoglobin (g/dl),13.0,patient 235,ICE,0.9825088977813721
+445,Haemoglobin (g/dl),13.0,patient 8,ICE,0.9991838335990906
+446,Haemoglobin (g/dl),13.0,patient 67,ICE,0.9978783130645752
+447,Haemoglobin (g/dl),13.0,patient 180,ICE,0.3066668212413788
+448,Haemoglobin (g/dl),13.0,patient 355,ICE,0.006917169783264399
+449,Haemoglobin (g/dl),13.0,patient 26,ICE,0.9950483441352844
+450,Haemoglobin (g/dl),13.0,patient 12,ICE,0.9991611242294312
+451,Haemoglobin (g/dl),13.0,patient 34,ICE,0.9935594797134399
+452,Haemoglobin (g/dl),13.0,patient 165,ICE,0.9700530171394348
+453,Haemoglobin (g/dl),13.0,patient 221,ICE,0.9974804520606995
+454,Haemoglobin (g/dl),13.0,patient 323,ICE,0.0019150475272908807
+455,Haemoglobin (g/dl),13.0,patient 267,ICE,0.046681713312864304
+456,Haemoglobin (g/dl),13.0,patient 293,ICE,0.0090604517608881
+457,Haemoglobin (g/dl),13.0,patient 148,ICE,0.9981428384780884
+458,Haemoglobin (g/dl),13.0,patient 103,ICE,0.9698982238769531
+459,Haemoglobin (g/dl),13.0,patient 209,ICE,0.9954534769058228
+460,Haemoglobin (g/dl),13.0,patient 183,ICE,0.9982926249504089
+461,Haemoglobin (g/dl),13.0,patient 331,ICE,0.0011450076708570123
+462,Haemoglobin (g/dl),13.0,patient 250,ICE,0.0014030080055817962
+463,Haemoglobin (g/dl),13.0,patient 346,ICE,0.003369637532159686
+464,Haemoglobin (g/dl),13.0,patient 63,ICE,0.9921438694000244
+465,Haemoglobin (g/dl),13.0,patient 304,ICE,0.005135092884302139
+466,Haemoglobin (g/dl),13.0,patient 200,ICE,0.9738213419914246
+467,Haemoglobin (g/dl),13.0,patient 1,ICE,0.6678826808929443
+468,Haemoglobin (g/dl),13.0,patient 116,ICE,0.9867544770240784
+469,Haemoglobin (g/dl),13.0,patient 109,ICE,0.9981428384780884
+470,Haemoglobin (g/dl),13.0,patient 299,ICE,0.0025854413397610188
+471,Haemoglobin (g/dl),13.0,patient 224,ICE,0.9974924325942993
+472,Haemoglobin (g/dl),13.0,patient 232,ICE,0.9992848038673401
+473,Haemoglobin (g/dl),13.576842105263156,All patients,PDP,0.5689888000488281
+474,Haemoglobin (g/dl),13.576842105263156,Elderly (>=60),Group PDP,0.7470805048942566
+475,Haemoglobin (g/dl),13.576842105263156,Non-elderly (<60),Group PDP,0.4569394886493683
+476,Haemoglobin (g/dl),13.576842105263156,patient 381,ICE,0.0031685279682278633
+477,Haemoglobin (g/dl),13.576842105263156,patient 187,ICE,0.9975581169128418
+478,Haemoglobin (g/dl),13.576842105263156,patient 207,ICE,0.9906914830207825
+479,Haemoglobin (g/dl),13.576842105263156,patient 386,ICE,0.010250371880829334
+480,Haemoglobin (g/dl),13.576842105263156,patient 290,ICE,0.003777358215302229
+481,Haemoglobin (g/dl),13.576842105263156,patient 31,ICE,0.9972188472747803
+482,Haemoglobin (g/dl),13.576842105263156,patient 5,ICE,0.9784406423568726
+483,Haemoglobin (g/dl),13.576842105263156,patient 332,ICE,0.004991983063519001
+484,Haemoglobin (g/dl),13.576842105263156,patient 277,ICE,0.0018258900381624699
+485,Haemoglobin (g/dl),13.576842105263156,patient 95,ICE,0.9955248832702637
+486,Haemoglobin (g/dl),13.576842105263156,patient 14,ICE,0.9972188472747803
+487,Haemoglobin (g/dl),13.576842105263156,patient 235,ICE,0.9719730019569397
+488,Haemoglobin (g/dl),13.576842105263156,patient 8,ICE,0.9986856579780579
+489,Haemoglobin (g/dl),13.576842105263156,patient 67,ICE,0.9965857267379761
+490,Haemoglobin (g/dl),13.576842105263156,patient 180,ICE,0.1756313145160675
+491,Haemoglobin (g/dl),13.576842105263156,patient 355,ICE,0.003210902912542224
+492,Haemoglobin (g/dl),13.576842105263156,patient 26,ICE,0.9920454025268555
+493,Haemoglobin (g/dl),13.576842105263156,patient 12,ICE,0.9986489415168762
+494,Haemoglobin (g/dl),13.576842105263156,patient 34,ICE,0.985595703125
+495,Haemoglobin (g/dl),13.576842105263156,patient 165,ICE,0.9391915202140808
+496,Haemoglobin (g/dl),13.576842105263156,patient 221,ICE,0.9962282180786133
+497,Haemoglobin (g/dl),13.576842105263156,patient 323,ICE,0.001263096695765853
+498,Haemoglobin (g/dl),13.576842105263156,patient 267,ICE,0.03126700967550278
+499,Haemoglobin (g/dl),13.576842105263156,patient 293,ICE,0.003913756459951401
+500,Haemoglobin (g/dl),13.576842105263156,patient 148,ICE,0.9972188472747803
+501,Haemoglobin (g/dl),13.576842105263156,patient 103,ICE,0.9635248184204102
+502,Haemoglobin (g/dl),13.576842105263156,patient 209,ICE,0.9929497241973877
+503,Haemoglobin (g/dl),13.576842105263156,patient 183,ICE,0.9972516894340515
+504,Haemoglobin (g/dl),13.576842105263156,patient 331,ICE,0.000831902667414397
+505,Haemoglobin (g/dl),13.576842105263156,patient 250,ICE,0.001019424176774919
+506,Haemoglobin (g/dl),13.576842105263156,patient 346,ICE,0.0016665608854964375
+507,Haemoglobin (g/dl),13.576842105263156,patient 63,ICE,0.9861352443695068
+508,Haemoglobin (g/dl),13.576842105263156,patient 304,ICE,0.0023813850712031126
+509,Haemoglobin (g/dl),13.576842105263156,patient 200,ICE,0.942854642868042
+510,Haemoglobin (g/dl),13.576842105263156,patient 1,ICE,0.47397580742836
+511,Haemoglobin (g/dl),13.576842105263156,patient 116,ICE,0.9706248641014099
+512,Haemoglobin (g/dl),13.576842105263156,patient 109,ICE,0.9972188472747803
+513,Haemoglobin (g/dl),13.576842105263156,patient 299,ICE,0.0013739550486207008
+514,Haemoglobin (g/dl),13.576842105263156,patient 224,ICE,0.9955562949180603
+515,Haemoglobin (g/dl),13.576842105263156,patient 232,ICE,0.9988479614257812
+516,Haemoglobin (g/dl),13.9,All patients,PDP,0.5670220851898193
+517,Haemoglobin (g/dl),13.9,Elderly (>=60),Group PDP,0.7449778318405151
+518,Haemoglobin (g/dl),13.9,Non-elderly (<60),Group PDP,0.455058217048645
+519,Haemoglobin (g/dl),13.9,patient 381,ICE,0.0031685279682278633
+520,Haemoglobin (g/dl),13.9,patient 187,ICE,0.9975581169128418
+521,Haemoglobin (g/dl),13.9,patient 207,ICE,0.9898051023483276
+522,Haemoglobin (g/dl),13.9,patient 386,ICE,0.010250371880829334
+523,Haemoglobin (g/dl),13.9,patient 290,ICE,0.003777358215302229
+524,Haemoglobin (g/dl),13.9,patient 31,ICE,0.9969520568847656
+525,Haemoglobin (g/dl),13.9,patient 5,ICE,0.9784406423568726
+526,Haemoglobin (g/dl),13.9,patient 332,ICE,0.004991983063519001
+527,Haemoglobin (g/dl),13.9,patient 277,ICE,0.0018258900381624699
+528,Haemoglobin (g/dl),13.9,patient 95,ICE,0.9950963854789734
+529,Haemoglobin (g/dl),13.9,patient 14,ICE,0.9969520568847656
+530,Haemoglobin (g/dl),13.9,patient 235,ICE,0.9693592190742493
+531,Haemoglobin (g/dl),13.9,patient 8,ICE,0.9985594153404236
+532,Haemoglobin (g/dl),13.9,patient 67,ICE,0.9962584972381592
+533,Haemoglobin (g/dl),13.9,patient 180,ICE,0.1756313145160675
+534,Haemoglobin (g/dl),13.9,patient 355,ICE,0.003210902912542224
+535,Haemoglobin (g/dl),13.9,patient 26,ICE,0.9912868142127991
+536,Haemoglobin (g/dl),13.9,patient 12,ICE,0.998519241809845
+537,Haemoglobin (g/dl),13.9,patient 34,ICE,0.9842318296432495
+538,Haemoglobin (g/dl),13.9,patient 165,ICE,0.9337291717529297
+539,Haemoglobin (g/dl),13.9,patient 221,ICE,0.9958667755126953
+540,Haemoglobin (g/dl),13.9,patient 323,ICE,0.001263096695765853
+541,Haemoglobin (g/dl),13.9,patient 267,ICE,0.028601448982954025
+542,Haemoglobin (g/dl),13.9,patient 293,ICE,0.003913756459951401
+543,Haemoglobin (g/dl),13.9,patient 148,ICE,0.9969520568847656
+544,Haemoglobin (g/dl),13.9,patient 103,ICE,0.9601555466651917
+545,Haemoglobin (g/dl),13.9,patient 209,ICE,0.9922767281532288
+546,Haemoglobin (g/dl),13.9,patient 183,ICE,0.9969881176948547
+547,Haemoglobin (g/dl),13.9,patient 331,ICE,0.000831902667414397
+548,Haemoglobin (g/dl),13.9,patient 250,ICE,0.001019424176774919
+549,Haemoglobin (g/dl),13.9,patient 346,ICE,0.0016665608854964375
+550,Haemoglobin (g/dl),13.9,patient 63,ICE,0.9848217368125916
+551,Haemoglobin (g/dl),13.9,patient 304,ICE,0.0023813850712031126
+552,Haemoglobin (g/dl),13.9,patient 200,ICE,0.9376994967460632
+553,Haemoglobin (g/dl),13.9,patient 1,ICE,0.47397580742836
+554,Haemoglobin (g/dl),13.9,patient 116,ICE,0.9678896069526672
+555,Haemoglobin (g/dl),13.9,patient 109,ICE,0.9969520568847656
+556,Haemoglobin (g/dl),13.9,patient 299,ICE,0.0013739550486207008
+557,Haemoglobin (g/dl),13.9,patient 224,ICE,0.9951308965682983
+558,Haemoglobin (g/dl),13.9,patient 232,ICE,0.9987372756004333
+559,Haemoglobin (g/dl),14.3,All patients,PDP,0.5670220851898193
+560,Haemoglobin (g/dl),14.3,Elderly (>=60),Group PDP,0.7449778318405151
+561,Haemoglobin (g/dl),14.3,Non-elderly (<60),Group PDP,0.455058217048645
+562,Haemoglobin (g/dl),14.3,patient 381,ICE,0.0031685279682278633
+563,Haemoglobin (g/dl),14.3,patient 187,ICE,0.9975581169128418
+564,Haemoglobin (g/dl),14.3,patient 207,ICE,0.9898051023483276
+565,Haemoglobin (g/dl),14.3,patient 386,ICE,0.010250371880829334
+566,Haemoglobin (g/dl),14.3,patient 290,ICE,0.003777358215302229
+567,Haemoglobin (g/dl),14.3,patient 31,ICE,0.9969520568847656
+568,Haemoglobin (g/dl),14.3,patient 5,ICE,0.9784406423568726
+569,Haemoglobin (g/dl),14.3,patient 332,ICE,0.004991983063519001
+570,Haemoglobin (g/dl),14.3,patient 277,ICE,0.0018258900381624699
+571,Haemoglobin (g/dl),14.3,patient 95,ICE,0.9950963854789734
+572,Haemoglobin (g/dl),14.3,patient 14,ICE,0.9969520568847656
+573,Haemoglobin (g/dl),14.3,patient 235,ICE,0.9693592190742493
+574,Haemoglobin (g/dl),14.3,patient 8,ICE,0.9985594153404236
+575,Haemoglobin (g/dl),14.3,patient 67,ICE,0.9962584972381592
+576,Haemoglobin (g/dl),14.3,patient 180,ICE,0.1756313145160675
+577,Haemoglobin (g/dl),14.3,patient 355,ICE,0.003210902912542224
+578,Haemoglobin (g/dl),14.3,patient 26,ICE,0.9912868142127991
+579,Haemoglobin (g/dl),14.3,patient 12,ICE,0.998519241809845
+580,Haemoglobin (g/dl),14.3,patient 34,ICE,0.9842318296432495
+581,Haemoglobin (g/dl),14.3,patient 165,ICE,0.9337291717529297
+582,Haemoglobin (g/dl),14.3,patient 221,ICE,0.9958667755126953
+583,Haemoglobin (g/dl),14.3,patient 323,ICE,0.001263096695765853
+584,Haemoglobin (g/dl),14.3,patient 267,ICE,0.028601448982954025
+585,Haemoglobin (g/dl),14.3,patient 293,ICE,0.003913756459951401
+586,Haemoglobin (g/dl),14.3,patient 148,ICE,0.9969520568847656
+587,Haemoglobin (g/dl),14.3,patient 103,ICE,0.9601555466651917
+588,Haemoglobin (g/dl),14.3,patient 209,ICE,0.9922767281532288
+589,Haemoglobin (g/dl),14.3,patient 183,ICE,0.9969881176948547
+590,Haemoglobin (g/dl),14.3,patient 331,ICE,0.000831902667414397
+591,Haemoglobin (g/dl),14.3,patient 250,ICE,0.001019424176774919
+592,Haemoglobin (g/dl),14.3,patient 346,ICE,0.0016665608854964375
+593,Haemoglobin (g/dl),14.3,patient 63,ICE,0.9848217368125916
+594,Haemoglobin (g/dl),14.3,patient 304,ICE,0.0023813850712031126
+595,Haemoglobin (g/dl),14.3,patient 200,ICE,0.9376994967460632
+596,Haemoglobin (g/dl),14.3,patient 1,ICE,0.47397580742836
+597,Haemoglobin (g/dl),14.3,patient 116,ICE,0.9678896069526672
+598,Haemoglobin (g/dl),14.3,patient 109,ICE,0.9969520568847656
+599,Haemoglobin (g/dl),14.3,patient 299,ICE,0.0013739550486207008
+600,Haemoglobin (g/dl),14.3,patient 224,ICE,0.9951308965682983
+601,Haemoglobin (g/dl),14.3,patient 232,ICE,0.9987372756004333
+602,Haemoglobin (g/dl),14.8,All patients,PDP,0.5670220851898193
+603,Haemoglobin (g/dl),14.8,Elderly (>=60),Group PDP,0.7449778318405151
+604,Haemoglobin (g/dl),14.8,Non-elderly (<60),Group PDP,0.455058217048645
+605,Haemoglobin (g/dl),14.8,patient 381,ICE,0.0031685279682278633
+606,Haemoglobin (g/dl),14.8,patient 187,ICE,0.9975581169128418
+607,Haemoglobin (g/dl),14.8,patient 207,ICE,0.9898051023483276
+608,Haemoglobin (g/dl),14.8,patient 386,ICE,0.010250371880829334
+609,Haemoglobin (g/dl),14.8,patient 290,ICE,0.003777358215302229
+610,Haemoglobin (g/dl),14.8,patient 31,ICE,0.9969520568847656
+611,Haemoglobin (g/dl),14.8,patient 5,ICE,0.9784406423568726
+612,Haemoglobin (g/dl),14.8,patient 332,ICE,0.004991983063519001
+613,Haemoglobin (g/dl),14.8,patient 277,ICE,0.0018258900381624699
+614,Haemoglobin (g/dl),14.8,patient 95,ICE,0.9950963854789734
+615,Haemoglobin (g/dl),14.8,patient 14,ICE,0.9969520568847656
+616,Haemoglobin (g/dl),14.8,patient 235,ICE,0.9693592190742493
+617,Haemoglobin (g/dl),14.8,patient 8,ICE,0.9985594153404236
+618,Haemoglobin (g/dl),14.8,patient 67,ICE,0.9962584972381592
+619,Haemoglobin (g/dl),14.8,patient 180,ICE,0.1756313145160675
+620,Haemoglobin (g/dl),14.8,patient 355,ICE,0.003210902912542224
+621,Haemoglobin (g/dl),14.8,patient 26,ICE,0.9912868142127991
+622,Haemoglobin (g/dl),14.8,patient 12,ICE,0.998519241809845
+623,Haemoglobin (g/dl),14.8,patient 34,ICE,0.9842318296432495
+624,Haemoglobin (g/dl),14.8,patient 165,ICE,0.9337291717529297
+625,Haemoglobin (g/dl),14.8,patient 221,ICE,0.9958667755126953
+626,Haemoglobin (g/dl),14.8,patient 323,ICE,0.001263096695765853
+627,Haemoglobin (g/dl),14.8,patient 267,ICE,0.028601448982954025
+628,Haemoglobin (g/dl),14.8,patient 293,ICE,0.003913756459951401
+629,Haemoglobin (g/dl),14.8,patient 148,ICE,0.9969520568847656
+630,Haemoglobin (g/dl),14.8,patient 103,ICE,0.9601555466651917
+631,Haemoglobin (g/dl),14.8,patient 209,ICE,0.9922767281532288
+632,Haemoglobin (g/dl),14.8,patient 183,ICE,0.9969881176948547
+633,Haemoglobin (g/dl),14.8,patient 331,ICE,0.000831902667414397
+634,Haemoglobin (g/dl),14.8,patient 250,ICE,0.001019424176774919
+635,Haemoglobin (g/dl),14.8,patient 346,ICE,0.0016665608854964375
+636,Haemoglobin (g/dl),14.8,patient 63,ICE,0.9848217368125916
+637,Haemoglobin (g/dl),14.8,patient 304,ICE,0.0023813850712031126
+638,Haemoglobin (g/dl),14.8,patient 200,ICE,0.9376994967460632
+639,Haemoglobin (g/dl),14.8,patient 1,ICE,0.47397580742836
+640,Haemoglobin (g/dl),14.8,patient 116,ICE,0.9678896069526672
+641,Haemoglobin (g/dl),14.8,patient 109,ICE,0.9969520568847656
+642,Haemoglobin (g/dl),14.8,patient 299,ICE,0.0013739550486207008
+643,Haemoglobin (g/dl),14.8,patient 224,ICE,0.9951308965682983
+644,Haemoglobin (g/dl),14.8,patient 232,ICE,0.9987372756004333
+645,Haemoglobin (g/dl),15.0,All patients,PDP,0.5670220851898193
+646,Haemoglobin (g/dl),15.0,Elderly (>=60),Group PDP,0.7449778318405151
+647,Haemoglobin (g/dl),15.0,Non-elderly (<60),Group PDP,0.455058217048645
+648,Haemoglobin (g/dl),15.0,patient 381,ICE,0.0031685279682278633
+649,Haemoglobin (g/dl),15.0,patient 187,ICE,0.9975581169128418
+650,Haemoglobin (g/dl),15.0,patient 207,ICE,0.9898051023483276
+651,Haemoglobin (g/dl),15.0,patient 386,ICE,0.010250371880829334
+652,Haemoglobin (g/dl),15.0,patient 290,ICE,0.003777358215302229
+653,Haemoglobin (g/dl),15.0,patient 31,ICE,0.9969520568847656
+654,Haemoglobin (g/dl),15.0,patient 5,ICE,0.9784406423568726
+655,Haemoglobin (g/dl),15.0,patient 332,ICE,0.004991983063519001
+656,Haemoglobin (g/dl),15.0,patient 277,ICE,0.0018258900381624699
+657,Haemoglobin (g/dl),15.0,patient 95,ICE,0.9950963854789734
+658,Haemoglobin (g/dl),15.0,patient 14,ICE,0.9969520568847656
+659,Haemoglobin (g/dl),15.0,patient 235,ICE,0.9693592190742493
+660,Haemoglobin (g/dl),15.0,patient 8,ICE,0.9985594153404236
+661,Haemoglobin (g/dl),15.0,patient 67,ICE,0.9962584972381592
+662,Haemoglobin (g/dl),15.0,patient 180,ICE,0.1756313145160675
+663,Haemoglobin (g/dl),15.0,patient 355,ICE,0.003210902912542224
+664,Haemoglobin (g/dl),15.0,patient 26,ICE,0.9912868142127991
+665,Haemoglobin (g/dl),15.0,patient 12,ICE,0.998519241809845
+666,Haemoglobin (g/dl),15.0,patient 34,ICE,0.9842318296432495
+667,Haemoglobin (g/dl),15.0,patient 165,ICE,0.9337291717529297
+668,Haemoglobin (g/dl),15.0,patient 221,ICE,0.9958667755126953
+669,Haemoglobin (g/dl),15.0,patient 323,ICE,0.001263096695765853
+670,Haemoglobin (g/dl),15.0,patient 267,ICE,0.028601448982954025
+671,Haemoglobin (g/dl),15.0,patient 293,ICE,0.003913756459951401
+672,Haemoglobin (g/dl),15.0,patient 148,ICE,0.9969520568847656
+673,Haemoglobin (g/dl),15.0,patient 103,ICE,0.9601555466651917
+674,Haemoglobin (g/dl),15.0,patient 209,ICE,0.9922767281532288
+675,Haemoglobin (g/dl),15.0,patient 183,ICE,0.9969881176948547
+676,Haemoglobin (g/dl),15.0,patient 331,ICE,0.000831902667414397
+677,Haemoglobin (g/dl),15.0,patient 250,ICE,0.001019424176774919
+678,Haemoglobin (g/dl),15.0,patient 346,ICE,0.0016665608854964375
+679,Haemoglobin (g/dl),15.0,patient 63,ICE,0.9848217368125916
+680,Haemoglobin (g/dl),15.0,patient 304,ICE,0.0023813850712031126
+681,Haemoglobin (g/dl),15.0,patient 200,ICE,0.9376994967460632
+682,Haemoglobin (g/dl),15.0,patient 1,ICE,0.47397580742836
+683,Haemoglobin (g/dl),15.0,patient 116,ICE,0.9678896069526672
+684,Haemoglobin (g/dl),15.0,patient 109,ICE,0.9969520568847656
+685,Haemoglobin (g/dl),15.0,patient 299,ICE,0.0013739550486207008
+686,Haemoglobin (g/dl),15.0,patient 224,ICE,0.9951308965682983
+687,Haemoglobin (g/dl),15.0,patient 232,ICE,0.9987372756004333
+688,Haemoglobin (g/dl),15.466315789473686,All patients,PDP,0.5670220851898193
+689,Haemoglobin (g/dl),15.466315789473686,Elderly (>=60),Group PDP,0.7449778318405151
+690,Haemoglobin (g/dl),15.466315789473686,Non-elderly (<60),Group PDP,0.455058217048645
+691,Haemoglobin (g/dl),15.466315789473686,patient 381,ICE,0.0031685279682278633
+692,Haemoglobin (g/dl),15.466315789473686,patient 187,ICE,0.9975581169128418
+693,Haemoglobin (g/dl),15.466315789473686,patient 207,ICE,0.9898051023483276
+694,Haemoglobin (g/dl),15.466315789473686,patient 386,ICE,0.010250371880829334
+695,Haemoglobin (g/dl),15.466315789473686,patient 290,ICE,0.003777358215302229
+696,Haemoglobin (g/dl),15.466315789473686,patient 31,ICE,0.9969520568847656
+697,Haemoglobin (g/dl),15.466315789473686,patient 5,ICE,0.9784406423568726
+698,Haemoglobin (g/dl),15.466315789473686,patient 332,ICE,0.004991983063519001
+699,Haemoglobin (g/dl),15.466315789473686,patient 277,ICE,0.0018258900381624699
+700,Haemoglobin (g/dl),15.466315789473686,patient 95,ICE,0.9950963854789734
+701,Haemoglobin (g/dl),15.466315789473686,patient 14,ICE,0.9969520568847656
+702,Haemoglobin (g/dl),15.466315789473686,patient 235,ICE,0.9693592190742493
+703,Haemoglobin (g/dl),15.466315789473686,patient 8,ICE,0.9985594153404236
+704,Haemoglobin (g/dl),15.466315789473686,patient 67,ICE,0.9962584972381592
+705,Haemoglobin (g/dl),15.466315789473686,patient 180,ICE,0.1756313145160675
+706,Haemoglobin (g/dl),15.466315789473686,patient 355,ICE,0.003210902912542224
+707,Haemoglobin (g/dl),15.466315789473686,patient 26,ICE,0.9912868142127991
+708,Haemoglobin (g/dl),15.466315789473686,patient 12,ICE,0.998519241809845
+709,Haemoglobin (g/dl),15.466315789473686,patient 34,ICE,0.9842318296432495
+710,Haemoglobin (g/dl),15.466315789473686,patient 165,ICE,0.9337291717529297
+711,Haemoglobin (g/dl),15.466315789473686,patient 221,ICE,0.9958667755126953
+712,Haemoglobin (g/dl),15.466315789473686,patient 323,ICE,0.001263096695765853
+713,Haemoglobin (g/dl),15.466315789473686,patient 267,ICE,0.028601448982954025
+714,Haemoglobin (g/dl),15.466315789473686,patient 293,ICE,0.003913756459951401
+715,Haemoglobin (g/dl),15.466315789473686,patient 148,ICE,0.9969520568847656
+716,Haemoglobin (g/dl),15.466315789473686,patient 103,ICE,0.9601555466651917
+717,Haemoglobin (g/dl),15.466315789473686,patient 209,ICE,0.9922767281532288
+718,Haemoglobin (g/dl),15.466315789473686,patient 183,ICE,0.9969881176948547
+719,Haemoglobin (g/dl),15.466315789473686,patient 331,ICE,0.000831902667414397
+720,Haemoglobin (g/dl),15.466315789473686,patient 250,ICE,0.001019424176774919
+721,Haemoglobin (g/dl),15.466315789473686,patient 346,ICE,0.0016665608854964375
+722,Haemoglobin (g/dl),15.466315789473686,patient 63,ICE,0.9848217368125916
+723,Haemoglobin (g/dl),15.466315789473686,patient 304,ICE,0.0023813850712031126
+724,Haemoglobin (g/dl),15.466315789473686,patient 200,ICE,0.9376994967460632
+725,Haemoglobin (g/dl),15.466315789473686,patient 1,ICE,0.47397580742836
+726,Haemoglobin (g/dl),15.466315789473686,patient 116,ICE,0.9678896069526672
+727,Haemoglobin (g/dl),15.466315789473686,patient 109,ICE,0.9969520568847656
+728,Haemoglobin (g/dl),15.466315789473686,patient 299,ICE,0.0013739550486207008
+729,Haemoglobin (g/dl),15.466315789473686,patient 224,ICE,0.9951308965682983
+730,Haemoglobin (g/dl),15.466315789473686,patient 232,ICE,0.9987372756004333
+731,Haemoglobin (g/dl),15.984210526315787,All patients,PDP,0.5670220851898193
+732,Haemoglobin (g/dl),15.984210526315787,Elderly (>=60),Group PDP,0.7449778318405151
+733,Haemoglobin (g/dl),15.984210526315787,Non-elderly (<60),Group PDP,0.455058217048645
+734,Haemoglobin (g/dl),15.984210526315787,patient 381,ICE,0.0031685279682278633
+735,Haemoglobin (g/dl),15.984210526315787,patient 187,ICE,0.9975581169128418
+736,Haemoglobin (g/dl),15.984210526315787,patient 207,ICE,0.9898051023483276
+737,Haemoglobin (g/dl),15.984210526315787,patient 386,ICE,0.010250371880829334
+738,Haemoglobin (g/dl),15.984210526315787,patient 290,ICE,0.003777358215302229
+739,Haemoglobin (g/dl),15.984210526315787,patient 31,ICE,0.9969520568847656
+740,Haemoglobin (g/dl),15.984210526315787,patient 5,ICE,0.9784406423568726
+741,Haemoglobin (g/dl),15.984210526315787,patient 332,ICE,0.004991983063519001
+742,Haemoglobin (g/dl),15.984210526315787,patient 277,ICE,0.0018258900381624699
+743,Haemoglobin (g/dl),15.984210526315787,patient 95,ICE,0.9950963854789734
+744,Haemoglobin (g/dl),15.984210526315787,patient 14,ICE,0.9969520568847656
+745,Haemoglobin (g/dl),15.984210526315787,patient 235,ICE,0.9693592190742493
+746,Haemoglobin (g/dl),15.984210526315787,patient 8,ICE,0.9985594153404236
+747,Haemoglobin (g/dl),15.984210526315787,patient 67,ICE,0.9962584972381592
+748,Haemoglobin (g/dl),15.984210526315787,patient 180,ICE,0.1756313145160675
+749,Haemoglobin (g/dl),15.984210526315787,patient 355,ICE,0.003210902912542224
+750,Haemoglobin (g/dl),15.984210526315787,patient 26,ICE,0.9912868142127991
+751,Haemoglobin (g/dl),15.984210526315787,patient 12,ICE,0.998519241809845
+752,Haemoglobin (g/dl),15.984210526315787,patient 34,ICE,0.9842318296432495
+753,Haemoglobin (g/dl),15.984210526315787,patient 165,ICE,0.9337291717529297
+754,Haemoglobin (g/dl),15.984210526315787,patient 221,ICE,0.9958667755126953
+755,Haemoglobin (g/dl),15.984210526315787,patient 323,ICE,0.001263096695765853
+756,Haemoglobin (g/dl),15.984210526315787,patient 267,ICE,0.028601448982954025
+757,Haemoglobin (g/dl),15.984210526315787,patient 293,ICE,0.003913756459951401
+758,Haemoglobin (g/dl),15.984210526315787,patient 148,ICE,0.9969520568847656
+759,Haemoglobin (g/dl),15.984210526315787,patient 103,ICE,0.9601555466651917
+760,Haemoglobin (g/dl),15.984210526315787,patient 209,ICE,0.9922767281532288
+761,Haemoglobin (g/dl),15.984210526315787,patient 183,ICE,0.9969881176948547
+762,Haemoglobin (g/dl),15.984210526315787,patient 331,ICE,0.000831902667414397
+763,Haemoglobin (g/dl),15.984210526315787,patient 250,ICE,0.001019424176774919
+764,Haemoglobin (g/dl),15.984210526315787,patient 346,ICE,0.0016665608854964375
+765,Haemoglobin (g/dl),15.984210526315787,patient 63,ICE,0.9848217368125916
+766,Haemoglobin (g/dl),15.984210526315787,patient 304,ICE,0.0023813850712031126
+767,Haemoglobin (g/dl),15.984210526315787,patient 200,ICE,0.9376994967460632
+768,Haemoglobin (g/dl),15.984210526315787,patient 1,ICE,0.47397580742836
+769,Haemoglobin (g/dl),15.984210526315787,patient 116,ICE,0.9678896069526672
+770,Haemoglobin (g/dl),15.984210526315787,patient 109,ICE,0.9969520568847656
+771,Haemoglobin (g/dl),15.984210526315787,patient 299,ICE,0.0013739550486207008
+772,Haemoglobin (g/dl),15.984210526315787,patient 224,ICE,0.9951308965682983
+773,Haemoglobin (g/dl),15.984210526315787,patient 232,ICE,0.9987372756004333
+774,Haemoglobin (g/dl),16.6,All patients,PDP,0.5670220851898193
+775,Haemoglobin (g/dl),16.6,Elderly (>=60),Group PDP,0.7449778318405151
+776,Haemoglobin (g/dl),16.6,Non-elderly (<60),Group PDP,0.455058217048645
+777,Haemoglobin (g/dl),16.6,patient 381,ICE,0.0031685279682278633
+778,Haemoglobin (g/dl),16.6,patient 187,ICE,0.9975581169128418
+779,Haemoglobin (g/dl),16.6,patient 207,ICE,0.9898051023483276
+780,Haemoglobin (g/dl),16.6,patient 386,ICE,0.010250371880829334
+781,Haemoglobin (g/dl),16.6,patient 290,ICE,0.003777358215302229
+782,Haemoglobin (g/dl),16.6,patient 31,ICE,0.9969520568847656
+783,Haemoglobin (g/dl),16.6,patient 5,ICE,0.9784406423568726
+784,Haemoglobin (g/dl),16.6,patient 332,ICE,0.004991983063519001
+785,Haemoglobin (g/dl),16.6,patient 277,ICE,0.0018258900381624699
+786,Haemoglobin (g/dl),16.6,patient 95,ICE,0.9950963854789734
+787,Haemoglobin (g/dl),16.6,patient 14,ICE,0.9969520568847656
+788,Haemoglobin (g/dl),16.6,patient 235,ICE,0.9693592190742493
+789,Haemoglobin (g/dl),16.6,patient 8,ICE,0.9985594153404236
+790,Haemoglobin (g/dl),16.6,patient 67,ICE,0.9962584972381592
+791,Haemoglobin (g/dl),16.6,patient 180,ICE,0.1756313145160675
+792,Haemoglobin (g/dl),16.6,patient 355,ICE,0.003210902912542224
+793,Haemoglobin (g/dl),16.6,patient 26,ICE,0.9912868142127991
+794,Haemoglobin (g/dl),16.6,patient 12,ICE,0.998519241809845
+795,Haemoglobin (g/dl),16.6,patient 34,ICE,0.9842318296432495
+796,Haemoglobin (g/dl),16.6,patient 165,ICE,0.9337291717529297
+797,Haemoglobin (g/dl),16.6,patient 221,ICE,0.9958667755126953
+798,Haemoglobin (g/dl),16.6,patient 323,ICE,0.001263096695765853
+799,Haemoglobin (g/dl),16.6,patient 267,ICE,0.028601448982954025
+800,Haemoglobin (g/dl),16.6,patient 293,ICE,0.003913756459951401
+801,Haemoglobin (g/dl),16.6,patient 148,ICE,0.9969520568847656
+802,Haemoglobin (g/dl),16.6,patient 103,ICE,0.9601555466651917
+803,Haemoglobin (g/dl),16.6,patient 209,ICE,0.9922767281532288
+804,Haemoglobin (g/dl),16.6,patient 183,ICE,0.9969881176948547
+805,Haemoglobin (g/dl),16.6,patient 331,ICE,0.000831902667414397
+806,Haemoglobin (g/dl),16.6,patient 250,ICE,0.001019424176774919
+807,Haemoglobin (g/dl),16.6,patient 346,ICE,0.0016665608854964375
+808,Haemoglobin (g/dl),16.6,patient 63,ICE,0.9848217368125916
+809,Haemoglobin (g/dl),16.6,patient 304,ICE,0.0023813850712031126
+810,Haemoglobin (g/dl),16.6,patient 200,ICE,0.9376994967460632
+811,Haemoglobin (g/dl),16.6,patient 1,ICE,0.47397580742836
+812,Haemoglobin (g/dl),16.6,patient 116,ICE,0.9678896069526672
+813,Haemoglobin (g/dl),16.6,patient 109,ICE,0.9969520568847656
+814,Haemoglobin (g/dl),16.6,patient 299,ICE,0.0013739550486207008
+815,Haemoglobin (g/dl),16.6,patient 224,ICE,0.9951308965682983
+816,Haemoglobin (g/dl),16.6,patient 232,ICE,0.9987372756004333
+817,Haemoglobin (g/dl),17.4,All patients,PDP,0.5670220851898193
+818,Haemoglobin (g/dl),17.4,Elderly (>=60),Group PDP,0.7449778318405151
+819,Haemoglobin (g/dl),17.4,Non-elderly (<60),Group PDP,0.455058217048645
+820,Haemoglobin (g/dl),17.4,patient 381,ICE,0.0031685279682278633
+821,Haemoglobin (g/dl),17.4,patient 187,ICE,0.9975581169128418
+822,Haemoglobin (g/dl),17.4,patient 207,ICE,0.9898051023483276
+823,Haemoglobin (g/dl),17.4,patient 386,ICE,0.010250371880829334
+824,Haemoglobin (g/dl),17.4,patient 290,ICE,0.003777358215302229
+825,Haemoglobin (g/dl),17.4,patient 31,ICE,0.9969520568847656
+826,Haemoglobin (g/dl),17.4,patient 5,ICE,0.9784406423568726
+827,Haemoglobin (g/dl),17.4,patient 332,ICE,0.004991983063519001
+828,Haemoglobin (g/dl),17.4,patient 277,ICE,0.0018258900381624699
+829,Haemoglobin (g/dl),17.4,patient 95,ICE,0.9950963854789734
+830,Haemoglobin (g/dl),17.4,patient 14,ICE,0.9969520568847656
+831,Haemoglobin (g/dl),17.4,patient 235,ICE,0.9693592190742493
+832,Haemoglobin (g/dl),17.4,patient 8,ICE,0.9985594153404236
+833,Haemoglobin (g/dl),17.4,patient 67,ICE,0.9962584972381592
+834,Haemoglobin (g/dl),17.4,patient 180,ICE,0.1756313145160675
+835,Haemoglobin (g/dl),17.4,patient 355,ICE,0.003210902912542224
+836,Haemoglobin (g/dl),17.4,patient 26,ICE,0.9912868142127991
+837,Haemoglobin (g/dl),17.4,patient 12,ICE,0.998519241809845
+838,Haemoglobin (g/dl),17.4,patient 34,ICE,0.9842318296432495
+839,Haemoglobin (g/dl),17.4,patient 165,ICE,0.9337291717529297
+840,Haemoglobin (g/dl),17.4,patient 221,ICE,0.9958667755126953
+841,Haemoglobin (g/dl),17.4,patient 323,ICE,0.001263096695765853
+842,Haemoglobin (g/dl),17.4,patient 267,ICE,0.028601448982954025
+843,Haemoglobin (g/dl),17.4,patient 293,ICE,0.003913756459951401
+844,Haemoglobin (g/dl),17.4,patient 148,ICE,0.9969520568847656
+845,Haemoglobin (g/dl),17.4,patient 103,ICE,0.9601555466651917
+846,Haemoglobin (g/dl),17.4,patient 209,ICE,0.9922767281532288
+847,Haemoglobin (g/dl),17.4,patient 183,ICE,0.9969881176948547
+848,Haemoglobin (g/dl),17.4,patient 331,ICE,0.000831902667414397
+849,Haemoglobin (g/dl),17.4,patient 250,ICE,0.001019424176774919
+850,Haemoglobin (g/dl),17.4,patient 346,ICE,0.0016665608854964375
+851,Haemoglobin (g/dl),17.4,patient 63,ICE,0.9848217368125916
+852,Haemoglobin (g/dl),17.4,patient 304,ICE,0.0023813850712031126
+853,Haemoglobin (g/dl),17.4,patient 200,ICE,0.9376994967460632
+854,Haemoglobin (g/dl),17.4,patient 1,ICE,0.47397580742836
+855,Haemoglobin (g/dl),17.4,patient 116,ICE,0.9678896069526672
+856,Haemoglobin (g/dl),17.4,patient 109,ICE,0.9969520568847656
+857,Haemoglobin (g/dl),17.4,patient 299,ICE,0.0013739550486207008
+858,Haemoglobin (g/dl),17.4,patient 224,ICE,0.9951308965682983
+859,Haemoglobin (g/dl),17.4,patient 232,ICE,0.9987372756004333
+860,Serum creatinine (mg/dl),0.5,All patients,PDP,0.5897589921951294
+861,Serum creatinine (mg/dl),0.5,Elderly (>=60),Group PDP,0.7520003914833069
+862,Serum creatinine (mg/dl),0.5,Non-elderly (<60),Group PDP,0.487682044506073
+863,Serum creatinine (mg/dl),0.5,patient 381,ICE,0.0031685279682278633
+864,Serum creatinine (mg/dl),0.5,patient 187,ICE,0.9980509281158447
+865,Serum creatinine (mg/dl),0.5,patient 207,ICE,0.9942078590393066
+866,Serum creatinine (mg/dl),0.5,patient 386,ICE,0.010250371880829334
+867,Serum creatinine (mg/dl),0.5,patient 290,ICE,0.003777358215302229
+868,Serum creatinine (mg/dl),0.5,patient 31,ICE,0.9979726672172546
+869,Serum creatinine (mg/dl),0.5,patient 5,ICE,0.996161699295044
+870,Serum creatinine (mg/dl),0.5,patient 332,ICE,0.0064750537276268005
+871,Serum creatinine (mg/dl),0.5,patient 277,ICE,0.0018258900381624699
+872,Serum creatinine (mg/dl),0.5,patient 95,ICE,0.9956228137016296
+873,Serum creatinine (mg/dl),0.5,patient 14,ICE,0.9979726672172546
+874,Serum creatinine (mg/dl),0.5,patient 235,ICE,0.6201637387275696
+875,Serum creatinine (mg/dl),0.5,patient 8,ICE,0.9990757703781128
+876,Serum creatinine (mg/dl),0.5,patient 67,ICE,0.9975793957710266
+877,Serum creatinine (mg/dl),0.5,patient 180,ICE,0.9297767877578735
+878,Serum creatinine (mg/dl),0.5,patient 355,ICE,0.003210902912542224
+879,Serum creatinine (mg/dl),0.5,patient 26,ICE,0.994158148765564
+880,Serum creatinine (mg/dl),0.5,patient 12,ICE,0.9990063309669495
+881,Serum creatinine (mg/dl),0.5,patient 34,ICE,0.9947189092636108
+882,Serum creatinine (mg/dl),0.5,patient 165,ICE,0.974202036857605
+883,Serum creatinine (mg/dl),0.5,patient 221,ICE,0.9972826242446899
+884,Serum creatinine (mg/dl),0.5,patient 323,ICE,0.0012061403831467032
+885,Serum creatinine (mg/dl),0.5,patient 267,ICE,0.0030134362168610096
+886,Serum creatinine (mg/dl),0.5,patient 293,ICE,0.0016926038078963757
+887,Serum creatinine (mg/dl),0.5,patient 148,ICE,0.9978419542312622
+888,Serum creatinine (mg/dl),0.5,patient 103,ICE,0.5997684001922607
+889,Serum creatinine (mg/dl),0.5,patient 209,ICE,0.9943844079971313
+890,Serum creatinine (mg/dl),0.5,patient 183,ICE,0.9982176423072815
+891,Serum creatinine (mg/dl),0.5,patient 331,ICE,0.0009451299556531012
+892,Serum creatinine (mg/dl),0.5,patient 250,ICE,0.001019424176774919
+893,Serum creatinine (mg/dl),0.5,patient 346,ICE,0.0016665608854964375
+894,Serum creatinine (mg/dl),0.5,patient 63,ICE,0.9979786276817322
+895,Serum creatinine (mg/dl),0.5,patient 304,ICE,0.0023813850712031126
+896,Serum creatinine (mg/dl),0.5,patient 200,ICE,0.9689491987228394
+897,Serum creatinine (mg/dl),0.5,patient 1,ICE,0.9924241304397583
+898,Serum creatinine (mg/dl),0.5,patient 116,ICE,0.6350781917572021
+899,Serum creatinine (mg/dl),0.5,patient 109,ICE,0.9979726672172546
+900,Serum creatinine (mg/dl),0.5,patient 299,ICE,0.0013739550486207008
+901,Serum creatinine (mg/dl),0.5,patient 224,ICE,0.997715950012207
+902,Serum creatinine (mg/dl),0.5,patient 232,ICE,0.9991897940635681
+903,Serum creatinine (mg/dl),0.6,All patients,PDP,0.5897589921951294
+904,Serum creatinine (mg/dl),0.6,Elderly (>=60),Group PDP,0.7520003914833069
+905,Serum creatinine (mg/dl),0.6,Non-elderly (<60),Group PDP,0.487682044506073
+906,Serum creatinine (mg/dl),0.6,patient 381,ICE,0.0031685279682278633
+907,Serum creatinine (mg/dl),0.6,patient 187,ICE,0.9980509281158447
+908,Serum creatinine (mg/dl),0.6,patient 207,ICE,0.9942078590393066
+909,Serum creatinine (mg/dl),0.6,patient 386,ICE,0.010250371880829334
+910,Serum creatinine (mg/dl),0.6,patient 290,ICE,0.003777358215302229
+911,Serum creatinine (mg/dl),0.6,patient 31,ICE,0.9979726672172546
+912,Serum creatinine (mg/dl),0.6,patient 5,ICE,0.996161699295044
+913,Serum creatinine (mg/dl),0.6,patient 332,ICE,0.0064750537276268005
+914,Serum creatinine (mg/dl),0.6,patient 277,ICE,0.0018258900381624699
+915,Serum creatinine (mg/dl),0.6,patient 95,ICE,0.9956228137016296
+916,Serum creatinine (mg/dl),0.6,patient 14,ICE,0.9979726672172546
+917,Serum creatinine (mg/dl),0.6,patient 235,ICE,0.6201637387275696
+918,Serum creatinine (mg/dl),0.6,patient 8,ICE,0.9990757703781128
+919,Serum creatinine (mg/dl),0.6,patient 67,ICE,0.9975793957710266
+920,Serum creatinine (mg/dl),0.6,patient 180,ICE,0.9297767877578735
+921,Serum creatinine (mg/dl),0.6,patient 355,ICE,0.003210902912542224
+922,Serum creatinine (mg/dl),0.6,patient 26,ICE,0.994158148765564
+923,Serum creatinine (mg/dl),0.6,patient 12,ICE,0.9990063309669495
+924,Serum creatinine (mg/dl),0.6,patient 34,ICE,0.9947189092636108
+925,Serum creatinine (mg/dl),0.6,patient 165,ICE,0.974202036857605
+926,Serum creatinine (mg/dl),0.6,patient 221,ICE,0.9972826242446899
+927,Serum creatinine (mg/dl),0.6,patient 323,ICE,0.0012061403831467032
+928,Serum creatinine (mg/dl),0.6,patient 267,ICE,0.0030134362168610096
+929,Serum creatinine (mg/dl),0.6,patient 293,ICE,0.0016926038078963757
+930,Serum creatinine (mg/dl),0.6,patient 148,ICE,0.9978419542312622
+931,Serum creatinine (mg/dl),0.6,patient 103,ICE,0.5997684001922607
+932,Serum creatinine (mg/dl),0.6,patient 209,ICE,0.9943844079971313
+933,Serum creatinine (mg/dl),0.6,patient 183,ICE,0.9982176423072815
+934,Serum creatinine (mg/dl),0.6,patient 331,ICE,0.0009451299556531012
+935,Serum creatinine (mg/dl),0.6,patient 250,ICE,0.001019424176774919
+936,Serum creatinine (mg/dl),0.6,patient 346,ICE,0.0016665608854964375
+937,Serum creatinine (mg/dl),0.6,patient 63,ICE,0.9979786276817322
+938,Serum creatinine (mg/dl),0.6,patient 304,ICE,0.0023813850712031126
+939,Serum creatinine (mg/dl),0.6,patient 200,ICE,0.9689491987228394
+940,Serum creatinine (mg/dl),0.6,patient 1,ICE,0.9924241304397583
+941,Serum creatinine (mg/dl),0.6,patient 116,ICE,0.6350781917572021
+942,Serum creatinine (mg/dl),0.6,patient 109,ICE,0.9979726672172546
+943,Serum creatinine (mg/dl),0.6,patient 299,ICE,0.0013739550486207008
+944,Serum creatinine (mg/dl),0.6,patient 224,ICE,0.997715950012207
+945,Serum creatinine (mg/dl),0.6,patient 232,ICE,0.9991897940635681
+946,Serum creatinine (mg/dl),0.7,All patients,PDP,0.5897589921951294
+947,Serum creatinine (mg/dl),0.7,Elderly (>=60),Group PDP,0.7520003914833069
+948,Serum creatinine (mg/dl),0.7,Non-elderly (<60),Group PDP,0.487682044506073
+949,Serum creatinine (mg/dl),0.7,patient 381,ICE,0.0031685279682278633
+950,Serum creatinine (mg/dl),0.7,patient 187,ICE,0.9980509281158447
+951,Serum creatinine (mg/dl),0.7,patient 207,ICE,0.9942078590393066
+952,Serum creatinine (mg/dl),0.7,patient 386,ICE,0.010250371880829334
+953,Serum creatinine (mg/dl),0.7,patient 290,ICE,0.003777358215302229
+954,Serum creatinine (mg/dl),0.7,patient 31,ICE,0.9979726672172546
+955,Serum creatinine (mg/dl),0.7,patient 5,ICE,0.996161699295044
+956,Serum creatinine (mg/dl),0.7,patient 332,ICE,0.0064750537276268005
+957,Serum creatinine (mg/dl),0.7,patient 277,ICE,0.0018258900381624699
+958,Serum creatinine (mg/dl),0.7,patient 95,ICE,0.9956228137016296
+959,Serum creatinine (mg/dl),0.7,patient 14,ICE,0.9979726672172546
+960,Serum creatinine (mg/dl),0.7,patient 235,ICE,0.6201637387275696
+961,Serum creatinine (mg/dl),0.7,patient 8,ICE,0.9990757703781128
+962,Serum creatinine (mg/dl),0.7,patient 67,ICE,0.9975793957710266
+963,Serum creatinine (mg/dl),0.7,patient 180,ICE,0.9297767877578735
+964,Serum creatinine (mg/dl),0.7,patient 355,ICE,0.003210902912542224
+965,Serum creatinine (mg/dl),0.7,patient 26,ICE,0.994158148765564
+966,Serum creatinine (mg/dl),0.7,patient 12,ICE,0.9990063309669495
+967,Serum creatinine (mg/dl),0.7,patient 34,ICE,0.9947189092636108
+968,Serum creatinine (mg/dl),0.7,patient 165,ICE,0.974202036857605
+969,Serum creatinine (mg/dl),0.7,patient 221,ICE,0.9972826242446899
+970,Serum creatinine (mg/dl),0.7,patient 323,ICE,0.0012061403831467032
+971,Serum creatinine (mg/dl),0.7,patient 267,ICE,0.0030134362168610096
+972,Serum creatinine (mg/dl),0.7,patient 293,ICE,0.0016926038078963757
+973,Serum creatinine (mg/dl),0.7,patient 148,ICE,0.9978419542312622
+974,Serum creatinine (mg/dl),0.7,patient 103,ICE,0.5997684001922607
+975,Serum creatinine (mg/dl),0.7,patient 209,ICE,0.9943844079971313
+976,Serum creatinine (mg/dl),0.7,patient 183,ICE,0.9982176423072815
+977,Serum creatinine (mg/dl),0.7,patient 331,ICE,0.0009451299556531012
+978,Serum creatinine (mg/dl),0.7,patient 250,ICE,0.001019424176774919
+979,Serum creatinine (mg/dl),0.7,patient 346,ICE,0.0016665608854964375
+980,Serum creatinine (mg/dl),0.7,patient 63,ICE,0.9979786276817322
+981,Serum creatinine (mg/dl),0.7,patient 304,ICE,0.0023813850712031126
+982,Serum creatinine (mg/dl),0.7,patient 200,ICE,0.9689491987228394
+983,Serum creatinine (mg/dl),0.7,patient 1,ICE,0.9924241304397583
+984,Serum creatinine (mg/dl),0.7,patient 116,ICE,0.6350781917572021
+985,Serum creatinine (mg/dl),0.7,patient 109,ICE,0.9979726672172546
+986,Serum creatinine (mg/dl),0.7,patient 299,ICE,0.0013739550486207008
+987,Serum creatinine (mg/dl),0.7,patient 224,ICE,0.997715950012207
+988,Serum creatinine (mg/dl),0.7,patient 232,ICE,0.9991897940635681
+989,Serum creatinine (mg/dl),0.8,All patients,PDP,0.5897589921951294
+990,Serum creatinine (mg/dl),0.8,Elderly (>=60),Group PDP,0.7520003914833069
+991,Serum creatinine (mg/dl),0.8,Non-elderly (<60),Group PDP,0.487682044506073
+992,Serum creatinine (mg/dl),0.8,patient 381,ICE,0.0031685279682278633
+993,Serum creatinine (mg/dl),0.8,patient 187,ICE,0.9980509281158447
+994,Serum creatinine (mg/dl),0.8,patient 207,ICE,0.9942078590393066
+995,Serum creatinine (mg/dl),0.8,patient 386,ICE,0.010250371880829334
+996,Serum creatinine (mg/dl),0.8,patient 290,ICE,0.003777358215302229
+997,Serum creatinine (mg/dl),0.8,patient 31,ICE,0.9979726672172546
+998,Serum creatinine (mg/dl),0.8,patient 5,ICE,0.996161699295044
+999,Serum creatinine (mg/dl),0.8,patient 332,ICE,0.0064750537276268005
+1000,Serum creatinine (mg/dl),0.8,patient 277,ICE,0.0018258900381624699
+1001,Serum creatinine (mg/dl),0.8,patient 95,ICE,0.9956228137016296
+1002,Serum creatinine (mg/dl),0.8,patient 14,ICE,0.9979726672172546
+1003,Serum creatinine (mg/dl),0.8,patient 235,ICE,0.6201637387275696
+1004,Serum creatinine (mg/dl),0.8,patient 8,ICE,0.9990757703781128
+1005,Serum creatinine (mg/dl),0.8,patient 67,ICE,0.9975793957710266
+1006,Serum creatinine (mg/dl),0.8,patient 180,ICE,0.9297767877578735
+1007,Serum creatinine (mg/dl),0.8,patient 355,ICE,0.003210902912542224
+1008,Serum creatinine (mg/dl),0.8,patient 26,ICE,0.994158148765564
+1009,Serum creatinine (mg/dl),0.8,patient 12,ICE,0.9990063309669495
+1010,Serum creatinine (mg/dl),0.8,patient 34,ICE,0.9947189092636108
+1011,Serum creatinine (mg/dl),0.8,patient 165,ICE,0.974202036857605
+1012,Serum creatinine (mg/dl),0.8,patient 221,ICE,0.9972826242446899
+1013,Serum creatinine (mg/dl),0.8,patient 323,ICE,0.0012061403831467032
+1014,Serum creatinine (mg/dl),0.8,patient 267,ICE,0.0030134362168610096
+1015,Serum creatinine (mg/dl),0.8,patient 293,ICE,0.0016926038078963757
+1016,Serum creatinine (mg/dl),0.8,patient 148,ICE,0.9978419542312622
+1017,Serum creatinine (mg/dl),0.8,patient 103,ICE,0.5997684001922607
+1018,Serum creatinine (mg/dl),0.8,patient 209,ICE,0.9943844079971313
+1019,Serum creatinine (mg/dl),0.8,patient 183,ICE,0.9982176423072815
+1020,Serum creatinine (mg/dl),0.8,patient 331,ICE,0.0009451299556531012
+1021,Serum creatinine (mg/dl),0.8,patient 250,ICE,0.001019424176774919
+1022,Serum creatinine (mg/dl),0.8,patient 346,ICE,0.0016665608854964375
+1023,Serum creatinine (mg/dl),0.8,patient 63,ICE,0.9979786276817322
+1024,Serum creatinine (mg/dl),0.8,patient 304,ICE,0.0023813850712031126
+1025,Serum creatinine (mg/dl),0.8,patient 200,ICE,0.9689491987228394
+1026,Serum creatinine (mg/dl),0.8,patient 1,ICE,0.9924241304397583
+1027,Serum creatinine (mg/dl),0.8,patient 116,ICE,0.6350781917572021
+1028,Serum creatinine (mg/dl),0.8,patient 109,ICE,0.9979726672172546
+1029,Serum creatinine (mg/dl),0.8,patient 299,ICE,0.0013739550486207008
+1030,Serum creatinine (mg/dl),0.8,patient 224,ICE,0.997715950012207
+1031,Serum creatinine (mg/dl),0.8,patient 232,ICE,0.9991897940635681
+1032,Serum creatinine (mg/dl),0.9,All patients,PDP,0.5897589921951294
+1033,Serum creatinine (mg/dl),0.9,Elderly (>=60),Group PDP,0.7520003914833069
+1034,Serum creatinine (mg/dl),0.9,Non-elderly (<60),Group PDP,0.487682044506073
+1035,Serum creatinine (mg/dl),0.9,patient 381,ICE,0.0031685279682278633
+1036,Serum creatinine (mg/dl),0.9,patient 187,ICE,0.9980509281158447
+1037,Serum creatinine (mg/dl),0.9,patient 207,ICE,0.9942078590393066
+1038,Serum creatinine (mg/dl),0.9,patient 386,ICE,0.010250371880829334
+1039,Serum creatinine (mg/dl),0.9,patient 290,ICE,0.003777358215302229
+1040,Serum creatinine (mg/dl),0.9,patient 31,ICE,0.9979726672172546
+1041,Serum creatinine (mg/dl),0.9,patient 5,ICE,0.996161699295044
+1042,Serum creatinine (mg/dl),0.9,patient 332,ICE,0.0064750537276268005
+1043,Serum creatinine (mg/dl),0.9,patient 277,ICE,0.0018258900381624699
+1044,Serum creatinine (mg/dl),0.9,patient 95,ICE,0.9956228137016296
+1045,Serum creatinine (mg/dl),0.9,patient 14,ICE,0.9979726672172546
+1046,Serum creatinine (mg/dl),0.9,patient 235,ICE,0.6201637387275696
+1047,Serum creatinine (mg/dl),0.9,patient 8,ICE,0.9990757703781128
+1048,Serum creatinine (mg/dl),0.9,patient 67,ICE,0.9975793957710266
+1049,Serum creatinine (mg/dl),0.9,patient 180,ICE,0.9297767877578735
+1050,Serum creatinine (mg/dl),0.9,patient 355,ICE,0.003210902912542224
+1051,Serum creatinine (mg/dl),0.9,patient 26,ICE,0.994158148765564
+1052,Serum creatinine (mg/dl),0.9,patient 12,ICE,0.9990063309669495
+1053,Serum creatinine (mg/dl),0.9,patient 34,ICE,0.9947189092636108
+1054,Serum creatinine (mg/dl),0.9,patient 165,ICE,0.974202036857605
+1055,Serum creatinine (mg/dl),0.9,patient 221,ICE,0.9972826242446899
+1056,Serum creatinine (mg/dl),0.9,patient 323,ICE,0.0012061403831467032
+1057,Serum creatinine (mg/dl),0.9,patient 267,ICE,0.0030134362168610096
+1058,Serum creatinine (mg/dl),0.9,patient 293,ICE,0.0016926038078963757
+1059,Serum creatinine (mg/dl),0.9,patient 148,ICE,0.9978419542312622
+1060,Serum creatinine (mg/dl),0.9,patient 103,ICE,0.5997684001922607
+1061,Serum creatinine (mg/dl),0.9,patient 209,ICE,0.9943844079971313
+1062,Serum creatinine (mg/dl),0.9,patient 183,ICE,0.9982176423072815
+1063,Serum creatinine (mg/dl),0.9,patient 331,ICE,0.0009451299556531012
+1064,Serum creatinine (mg/dl),0.9,patient 250,ICE,0.001019424176774919
+1065,Serum creatinine (mg/dl),0.9,patient 346,ICE,0.0016665608854964375
+1066,Serum creatinine (mg/dl),0.9,patient 63,ICE,0.9979786276817322
+1067,Serum creatinine (mg/dl),0.9,patient 304,ICE,0.0023813850712031126
+1068,Serum creatinine (mg/dl),0.9,patient 200,ICE,0.9689491987228394
+1069,Serum creatinine (mg/dl),0.9,patient 1,ICE,0.9924241304397583
+1070,Serum creatinine (mg/dl),0.9,patient 116,ICE,0.6350781917572021
+1071,Serum creatinine (mg/dl),0.9,patient 109,ICE,0.9979726672172546
+1072,Serum creatinine (mg/dl),0.9,patient 299,ICE,0.0013739550486207008
+1073,Serum creatinine (mg/dl),0.9,patient 224,ICE,0.997715950012207
+1074,Serum creatinine (mg/dl),0.9,patient 232,ICE,0.9991897940635681
+1075,Serum creatinine (mg/dl),0.9691578947368427,All patients,PDP,0.5897589921951294
+1076,Serum creatinine (mg/dl),0.9691578947368427,Elderly (>=60),Group PDP,0.7520003914833069
+1077,Serum creatinine (mg/dl),0.9691578947368427,Non-elderly (<60),Group PDP,0.487682044506073
+1078,Serum creatinine (mg/dl),0.9691578947368427,patient 381,ICE,0.0031685279682278633
+1079,Serum creatinine (mg/dl),0.9691578947368427,patient 187,ICE,0.9980509281158447
+1080,Serum creatinine (mg/dl),0.9691578947368427,patient 207,ICE,0.9942078590393066
+1081,Serum creatinine (mg/dl),0.9691578947368427,patient 386,ICE,0.010250371880829334
+1082,Serum creatinine (mg/dl),0.9691578947368427,patient 290,ICE,0.003777358215302229
+1083,Serum creatinine (mg/dl),0.9691578947368427,patient 31,ICE,0.9979726672172546
+1084,Serum creatinine (mg/dl),0.9691578947368427,patient 5,ICE,0.996161699295044
+1085,Serum creatinine (mg/dl),0.9691578947368427,patient 332,ICE,0.0064750537276268005
+1086,Serum creatinine (mg/dl),0.9691578947368427,patient 277,ICE,0.0018258900381624699
+1087,Serum creatinine (mg/dl),0.9691578947368427,patient 95,ICE,0.9956228137016296
+1088,Serum creatinine (mg/dl),0.9691578947368427,patient 14,ICE,0.9979726672172546
+1089,Serum creatinine (mg/dl),0.9691578947368427,patient 235,ICE,0.6201637387275696
+1090,Serum creatinine (mg/dl),0.9691578947368427,patient 8,ICE,0.9990757703781128
+1091,Serum creatinine (mg/dl),0.9691578947368427,patient 67,ICE,0.9975793957710266
+1092,Serum creatinine (mg/dl),0.9691578947368427,patient 180,ICE,0.9297767877578735
+1093,Serum creatinine (mg/dl),0.9691578947368427,patient 355,ICE,0.003210902912542224
+1094,Serum creatinine (mg/dl),0.9691578947368427,patient 26,ICE,0.994158148765564
+1095,Serum creatinine (mg/dl),0.9691578947368427,patient 12,ICE,0.9990063309669495
+1096,Serum creatinine (mg/dl),0.9691578947368427,patient 34,ICE,0.9947189092636108
+1097,Serum creatinine (mg/dl),0.9691578947368427,patient 165,ICE,0.974202036857605
+1098,Serum creatinine (mg/dl),0.9691578947368427,patient 221,ICE,0.9972826242446899
+1099,Serum creatinine (mg/dl),0.9691578947368427,patient 323,ICE,0.0012061403831467032
+1100,Serum creatinine (mg/dl),0.9691578947368427,patient 267,ICE,0.0030134362168610096
+1101,Serum creatinine (mg/dl),0.9691578947368427,patient 293,ICE,0.0016926038078963757
+1102,Serum creatinine (mg/dl),0.9691578947368427,patient 148,ICE,0.9978419542312622
+1103,Serum creatinine (mg/dl),0.9691578947368427,patient 103,ICE,0.5997684001922607
+1104,Serum creatinine (mg/dl),0.9691578947368427,patient 209,ICE,0.9943844079971313
+1105,Serum creatinine (mg/dl),0.9691578947368427,patient 183,ICE,0.9982176423072815
+1106,Serum creatinine (mg/dl),0.9691578947368427,patient 331,ICE,0.0009451299556531012
+1107,Serum creatinine (mg/dl),0.9691578947368427,patient 250,ICE,0.001019424176774919
+1108,Serum creatinine (mg/dl),0.9691578947368427,patient 346,ICE,0.0016665608854964375
+1109,Serum creatinine (mg/dl),0.9691578947368427,patient 63,ICE,0.9979786276817322
+1110,Serum creatinine (mg/dl),0.9691578947368427,patient 304,ICE,0.0023813850712031126
+1111,Serum creatinine (mg/dl),0.9691578947368427,patient 200,ICE,0.9689491987228394
+1112,Serum creatinine (mg/dl),0.9691578947368427,patient 1,ICE,0.9924241304397583
+1113,Serum creatinine (mg/dl),0.9691578947368427,patient 116,ICE,0.6350781917572021
+1114,Serum creatinine (mg/dl),0.9691578947368427,patient 109,ICE,0.9979726672172546
+1115,Serum creatinine (mg/dl),0.9691578947368427,patient 299,ICE,0.0013739550486207008
+1116,Serum creatinine (mg/dl),0.9691578947368427,patient 224,ICE,0.997715950012207
+1117,Serum creatinine (mg/dl),0.9691578947368427,patient 232,ICE,0.9991897940635681
+1118,Serum creatinine (mg/dl),1.0,All patients,PDP,0.5901688933372498
+1119,Serum creatinine (mg/dl),1.0,Elderly (>=60),Group PDP,0.752305805683136
+1120,Serum creatinine (mg/dl),1.0,Non-elderly (<60),Group PDP,0.48815783858299255
+1121,Serum creatinine (mg/dl),1.0,patient 381,ICE,0.0031685279682278633
+1122,Serum creatinine (mg/dl),1.0,patient 187,ICE,0.9980509281158447
+1123,Serum creatinine (mg/dl),1.0,patient 207,ICE,0.9942078590393066
+1124,Serum creatinine (mg/dl),1.0,patient 386,ICE,0.010729821398854256
+1125,Serum creatinine (mg/dl),1.0,patient 290,ICE,0.003955251537263393
+1126,Serum creatinine (mg/dl),1.0,patient 31,ICE,0.9979726672172546
+1127,Serum creatinine (mg/dl),1.0,patient 5,ICE,0.9963343143463135
+1128,Serum creatinine (mg/dl),1.0,patient 332,ICE,0.00677912961691618
+1129,Serum creatinine (mg/dl),1.0,patient 277,ICE,0.0019120558863505721
+1130,Serum creatinine (mg/dl),1.0,patient 95,ICE,0.9956228137016296
+1131,Serum creatinine (mg/dl),1.0,patient 14,ICE,0.9979726672172546
+1132,Serum creatinine (mg/dl),1.0,patient 235,ICE,0.6201637387275696
+1133,Serum creatinine (mg/dl),1.0,patient 8,ICE,0.9990757703781128
+1134,Serum creatinine (mg/dl),1.0,patient 67,ICE,0.9975793957710266
+1135,Serum creatinine (mg/dl),1.0,patient 180,ICE,0.9297767877578735
+1136,Serum creatinine (mg/dl),1.0,patient 355,ICE,0.003210902912542224
+1137,Serum creatinine (mg/dl),1.0,patient 26,ICE,0.9944204688072205
+1138,Serum creatinine (mg/dl),1.0,patient 12,ICE,0.9990063309669495
+1139,Serum creatinine (mg/dl),1.0,patient 34,ICE,0.9947189092636108
+1140,Serum creatinine (mg/dl),1.0,patient 165,ICE,0.974202036857605
+1141,Serum creatinine (mg/dl),1.0,patient 221,ICE,0.9972826242446899
+1142,Serum creatinine (mg/dl),1.0,patient 323,ICE,0.001263096695765853
+1143,Serum creatinine (mg/dl),1.0,patient 267,ICE,0.0030134362168610096
+1144,Serum creatinine (mg/dl),1.0,patient 293,ICE,0.0017724910285323858
+1145,Serum creatinine (mg/dl),1.0,patient 148,ICE,0.9978419542312622
+1146,Serum creatinine (mg/dl),1.0,patient 103,ICE,0.6108052134513855
+1147,Serum creatinine (mg/dl),1.0,patient 209,ICE,0.994636595249176
+1148,Serum creatinine (mg/dl),1.0,patient 183,ICE,0.9982176423072815
+1149,Serum creatinine (mg/dl),1.0,patient 331,ICE,0.000989773077890277
+1150,Serum creatinine (mg/dl),1.0,patient 250,ICE,0.0010675727389752865
+1151,Serum creatinine (mg/dl),1.0,patient 346,ICE,0.0017452212050557137
+1152,Serum creatinine (mg/dl),1.0,patient 63,ICE,0.9979786276817322
+1153,Serum creatinine (mg/dl),1.0,patient 304,ICE,0.002493700012564659
+1154,Serum creatinine (mg/dl),1.0,patient 200,ICE,0.9689491987228394
+1155,Serum creatinine (mg/dl),1.0,patient 1,ICE,0.9924241304397583
+1156,Serum creatinine (mg/dl),1.0,patient 116,ICE,0.6350781917572021
+1157,Serum creatinine (mg/dl),1.0,patient 109,ICE,0.9979726672172546
+1158,Serum creatinine (mg/dl),1.0,patient 299,ICE,0.0013739550486207008
+1159,Serum creatinine (mg/dl),1.0,patient 224,ICE,0.997715950012207
+1160,Serum creatinine (mg/dl),1.0,patient 232,ICE,0.9991897940635681
+1161,Serum creatinine (mg/dl),1.1,All patients,PDP,0.5846662521362305
+1162,Serum creatinine (mg/dl),1.1,Elderly (>=60),Group PDP,0.7467469573020935
+1163,Serum creatinine (mg/dl),1.1,Non-elderly (<60),Group PDP,0.4826905131340027
+1164,Serum creatinine (mg/dl),1.1,patient 381,ICE,0.002664069412276149
+1165,Serum creatinine (mg/dl),1.1,patient 187,ICE,0.9975643157958984
+1166,Serum creatinine (mg/dl),1.1,patient 207,ICE,0.9927690029144287
+1167,Serum creatinine (mg/dl),1.1,patient 386,ICE,0.009032444097101688
+1168,Serum creatinine (mg/dl),1.1,patient 290,ICE,0.003166102571412921
+1169,Serum creatinine (mg/dl),1.1,patient 31,ICE,0.9974666833877563
+1170,Serum creatinine (mg/dl),1.1,patient 5,ICE,0.9954212307929993
+1171,Serum creatinine (mg/dl),1.1,patient 332,ICE,0.005429633893072605
+1172,Serum creatinine (mg/dl),1.1,patient 277,ICE,0.001607316778972745
+1173,Serum creatinine (mg/dl),1.1,patient 95,ICE,0.9945335388183594
+1174,Serum creatinine (mg/dl),1.1,patient 14,ICE,0.9974666833877563
+1175,Serum creatinine (mg/dl),1.1,patient 235,ICE,0.578428328037262
+1176,Serum creatinine (mg/dl),1.1,patient 8,ICE,0.9988447427749634
+1177,Serum creatinine (mg/dl),1.1,patient 67,ICE,0.9969754219055176
+1178,Serum creatinine (mg/dl),1.1,patient 180,ICE,0.9137203693389893
+1179,Serum creatinine (mg/dl),1.1,patient 355,ICE,0.0025698826648294926
+1180,Serum creatinine (mg/dl),1.1,patient 26,ICE,0.9930340051651001
+1181,Serum creatinine (mg/dl),1.1,patient 12,ICE,0.9987579584121704
+1182,Serum creatinine (mg/dl),1.1,patient 34,ICE,0.9937220215797424
+1183,Serum creatinine (mg/dl),1.1,patient 165,ICE,0.9679531455039978
+1184,Serum creatinine (mg/dl),1.1,patient 221,ICE,0.9966049194335938
+1185,Serum creatinine (mg/dl),1.1,patient 323,ICE,0.001061677117832005
+1186,Serum creatinine (mg/dl),1.1,patient 267,ICE,0.0025336069520562887
+1187,Serum creatinine (mg/dl),1.1,patient 293,ICE,0.0014182248851284385
+1188,Serum creatinine (mg/dl),1.1,patient 148,ICE,0.9973033666610718
+1189,Serum creatinine (mg/dl),1.1,patient 103,ICE,0.5687565803527832
+1190,Serum creatinine (mg/dl),1.1,patient 209,ICE,0.9933034777641296
+1191,Serum creatinine (mg/dl),1.1,patient 183,ICE,0.9977726340293884
+1192,Serum creatinine (mg/dl),1.1,patient 331,ICE,0.000831902667414397
+1193,Serum creatinine (mg/dl),1.1,patient 250,ICE,0.0008973043295554817
+1194,Serum creatinine (mg/dl),1.1,patient 346,ICE,0.0013963977107778192
+1195,Serum creatinine (mg/dl),1.1,patient 63,ICE,0.9974741339683533
+1196,Serum creatinine (mg/dl),1.1,patient 304,ICE,0.0019955746829509735
+1197,Serum creatinine (mg/dl),1.1,patient 200,ICE,0.96326744556427
+1198,Serum creatinine (mg/dl),1.1,patient 1,ICE,0.9905462265014648
+1199,Serum creatinine (mg/dl),1.1,patient 116,ICE,0.581936776638031
+1200,Serum creatinine (mg/dl),1.1,patient 109,ICE,0.9974666833877563
+1201,Serum creatinine (mg/dl),1.1,patient 299,ICE,0.0011548778275027871
+1202,Serum creatinine (mg/dl),1.1,patient 224,ICE,0.99714595079422
+1203,Serum creatinine (mg/dl),1.1,patient 232,ICE,0.9989872574806213
+1204,Serum creatinine (mg/dl),1.2,All patients,PDP,0.6129549145698547
+1205,Serum creatinine (mg/dl),1.2,Elderly (>=60),Group PDP,0.7716004848480225
+1206,Serum creatinine (mg/dl),1.2,Non-elderly (<60),Group PDP,0.5131404399871826
+1207,Serum creatinine (mg/dl),1.2,patient 381,ICE,0.0077155656181275845
+1208,Serum creatinine (mg/dl),1.2,patient 187,ICE,0.9994057416915894
+1209,Serum creatinine (mg/dl),1.2,patient 207,ICE,0.9982292056083679
+1210,Serum creatinine (mg/dl),1.2,patient 386,ICE,0.02153933234512806
+1211,Serum creatinine (mg/dl),1.2,patient 290,ICE,0.008710404857993126
+1212,Serum creatinine (mg/dl),1.2,patient 31,ICE,0.9989408850669861
+1213,Serum creatinine (mg/dl),1.2,patient 5,ICE,0.998178243637085
+1214,Serum creatinine (mg/dl),1.2,patient 332,ICE,0.01487854216247797
+1215,Serum creatinine (mg/dl),1.2,patient 277,ICE,0.004417746793478727
+1216,Serum creatinine (mg/dl),1.2,patient 95,ICE,0.9978238344192505
+1217,Serum creatinine (mg/dl),1.2,patient 14,ICE,0.9989408850669861
+1218,Serum creatinine (mg/dl),1.2,patient 235,ICE,0.7681833505630493
+1219,Serum creatinine (mg/dl),1.2,patient 8,ICE,0.9995174407958984
+1220,Serum creatinine (mg/dl),1.2,patient 67,ICE,0.9987977743148804
+1221,Serum creatinine (mg/dl),1.2,patient 180,ICE,0.9829674959182739
+1222,Serum creatinine (mg/dl),1.2,patient 355,ICE,0.007444119080901146
+1223,Serum creatinine (mg/dl),1.2,patient 26,ICE,0.997331976890564
+1224,Serum creatinine (mg/dl),1.2,patient 12,ICE,0.9994811415672302
+1225,Serum creatinine (mg/dl),1.2,patient 34,ICE,0.9978805780410767
+1226,Serum creatinine (mg/dl),1.2,patient 165,ICE,0.9895318746566772
+1227,Serum creatinine (mg/dl),1.2,patient 221,ICE,0.9985798597335815
+1228,Serum creatinine (mg/dl),1.2,patient 323,ICE,0.0029316633008420467
+1229,Serum creatinine (mg/dl),1.2,patient 267,ICE,0.006978071294724941
+1230,Serum creatinine (mg/dl),1.2,patient 293,ICE,0.003913756459951401
+1231,Serum creatinine (mg/dl),1.2,patient 148,ICE,0.9988724589347839
+1232,Serum creatinine (mg/dl),1.2,patient 103,ICE,0.7691938281059265
+1233,Serum creatinine (mg/dl),1.2,patient 209,ICE,0.9973322153091431
+1234,Serum creatinine (mg/dl),1.2,patient 183,ICE,0.9990689158439636
+1235,Serum creatinine (mg/dl),1.2,patient 331,ICE,0.00241774320602417
+1236,Serum creatinine (mg/dl),1.2,patient 250,ICE,0.0024693321902304888
+1237,Serum creatinine (mg/dl),1.2,patient 346,ICE,0.003839449491351843
+1238,Serum creatinine (mg/dl),1.2,patient 63,ICE,0.9990352392196655
+1239,Serum creatinine (mg/dl),1.2,patient 304,ICE,0.005786853842437267
+1240,Serum creatinine (mg/dl),1.2,patient 200,ICE,0.9873418211936951
+1241,Serum creatinine (mg/dl),1.2,patient 1,ICE,0.9966228008270264
+1242,Serum creatinine (mg/dl),1.2,patient 116,ICE,0.7847800254821777
+1243,Serum creatinine (mg/dl),1.2,patient 109,ICE,0.9989408850669861
+1244,Serum creatinine (mg/dl),1.2,patient 299,ICE,0.00335433310829103
+1245,Serum creatinine (mg/dl),1.2,patient 224,ICE,0.9993033409118652
+1246,Serum creatinine (mg/dl),1.2,patient 232,ICE,0.999576985836029
+1247,Serum creatinine (mg/dl),1.4,All patients,PDP,0.7637291550636292
+1248,Serum creatinine (mg/dl),1.4,Elderly (>=60),Group PDP,0.8740779757499695
+1249,Serum creatinine (mg/dl),1.4,Non-elderly (<60),Group PDP,0.6943014860153198
+1250,Serum creatinine (mg/dl),1.4,patient 381,ICE,0.4278637766838074
+1251,Serum creatinine (mg/dl),1.4,patient 187,ICE,0.9996390342712402
+1252,Serum creatinine (mg/dl),1.4,patient 207,ICE,0.9990098476409912
+1253,Serum creatinine (mg/dl),1.4,patient 386,ICE,0.5608711838722229
+1254,Serum creatinine (mg/dl),1.4,patient 290,ICE,0.4362526834011078
+1255,Serum creatinine (mg/dl),1.4,patient 31,ICE,0.9993565678596497
+1256,Serum creatinine (mg/dl),1.4,patient 5,ICE,0.9992116689682007
+1257,Serum creatinine (mg/dl),1.4,patient 332,ICE,0.5638056993484497
+1258,Serum creatinine (mg/dl),1.4,patient 277,ICE,0.35148656368255615
+1259,Serum creatinine (mg/dl),1.4,patient 95,ICE,0.9989063739776611
+1260,Serum creatinine (mg/dl),1.4,patient 14,ICE,0.9993565678596497
+1261,Serum creatinine (mg/dl),1.4,patient 235,ICE,0.9782845377922058
+1262,Serum creatinine (mg/dl),1.4,patient 8,ICE,0.9997069239616394
+1263,Serum creatinine (mg/dl),1.4,patient 67,ICE,0.999444305896759
+1264,Serum creatinine (mg/dl),1.4,patient 180,ICE,0.9951313734054565
+1265,Serum creatinine (mg/dl),1.4,patient 355,ICE,0.4299863874912262
+1266,Serum creatinine (mg/dl),1.4,patient 26,ICE,0.9988512992858887
+1267,Serum creatinine (mg/dl),1.4,patient 12,ICE,0.9996849298477173
+1268,Serum creatinine (mg/dl),1.4,patient 34,ICE,0.9994668364524841
+1269,Serum creatinine (mg/dl),1.4,patient 165,ICE,0.9983028173446655
+1270,Serum creatinine (mg/dl),1.4,patient 221,ICE,0.9991372227668762
+1271,Serum creatinine (mg/dl),1.4,patient 323,ICE,0.2056831568479538
+1272,Serum creatinine (mg/dl),1.4,patient 267,ICE,0.28852608799934387
+1273,Serum creatinine (mg/dl),1.4,patient 293,ICE,0.2570739984512329
+1274,Serum creatinine (mg/dl),1.4,patient 148,ICE,0.9993150234222412
+1275,Serum creatinine (mg/dl),1.4,patient 103,ICE,0.9601555466651917
+1276,Serum creatinine (mg/dl),1.4,patient 209,ICE,0.9988954067230225
+1277,Serum creatinine (mg/dl),1.4,patient 183,ICE,0.9994086027145386
+1278,Serum creatinine (mg/dl),1.4,patient 331,ICE,0.22061792016029358
+1279,Serum creatinine (mg/dl),1.4,patient 250,ICE,0.2321610152721405
+1280,Serum creatinine (mg/dl),1.4,patient 346,ICE,0.31042179465293884
+1281,Serum creatinine (mg/dl),1.4,patient 63,ICE,0.999536395072937
+1282,Serum creatinine (mg/dl),1.4,patient 304,ICE,0.4155236780643463
+1283,Serum creatinine (mg/dl),1.4,patient 200,ICE,0.9989933371543884
+1284,Serum creatinine (mg/dl),1.4,patient 1,ICE,0.9990003705024719
+1285,Serum creatinine (mg/dl),1.4,patient 116,ICE,0.9678896069526672
+1286,Serum creatinine (mg/dl),1.4,patient 109,ICE,0.9993565678596497
+1287,Serum creatinine (mg/dl),1.4,patient 299,ICE,0.2445405125617981
+1288,Serum creatinine (mg/dl),1.4,patient 224,ICE,0.9996107220649719
+1289,Serum creatinine (mg/dl),1.4,patient 232,ICE,0.9997313618659973
+1290,Serum creatinine (mg/dl),1.6,All patients,PDP,0.7637291550636292
+1291,Serum creatinine (mg/dl),1.6,Elderly (>=60),Group PDP,0.8740779757499695
+1292,Serum creatinine (mg/dl),1.6,Non-elderly (<60),Group PDP,0.6943014860153198
+1293,Serum creatinine (mg/dl),1.6,patient 381,ICE,0.4278637766838074
+1294,Serum creatinine (mg/dl),1.6,patient 187,ICE,0.9996390342712402
+1295,Serum creatinine (mg/dl),1.6,patient 207,ICE,0.9990098476409912
+1296,Serum creatinine (mg/dl),1.6,patient 386,ICE,0.5608711838722229
+1297,Serum creatinine (mg/dl),1.6,patient 290,ICE,0.4362526834011078
+1298,Serum creatinine (mg/dl),1.6,patient 31,ICE,0.9993565678596497
+1299,Serum creatinine (mg/dl),1.6,patient 5,ICE,0.9992116689682007
+1300,Serum creatinine (mg/dl),1.6,patient 332,ICE,0.5638056993484497
+1301,Serum creatinine (mg/dl),1.6,patient 277,ICE,0.35148656368255615
+1302,Serum creatinine (mg/dl),1.6,patient 95,ICE,0.9989063739776611
+1303,Serum creatinine (mg/dl),1.6,patient 14,ICE,0.9993565678596497
+1304,Serum creatinine (mg/dl),1.6,patient 235,ICE,0.9782845377922058
+1305,Serum creatinine (mg/dl),1.6,patient 8,ICE,0.9997069239616394
+1306,Serum creatinine (mg/dl),1.6,patient 67,ICE,0.999444305896759
+1307,Serum creatinine (mg/dl),1.6,patient 180,ICE,0.9951313734054565
+1308,Serum creatinine (mg/dl),1.6,patient 355,ICE,0.4299863874912262
+1309,Serum creatinine (mg/dl),1.6,patient 26,ICE,0.9988512992858887
+1310,Serum creatinine (mg/dl),1.6,patient 12,ICE,0.9996849298477173
+1311,Serum creatinine (mg/dl),1.6,patient 34,ICE,0.9994668364524841
+1312,Serum creatinine (mg/dl),1.6,patient 165,ICE,0.9983028173446655
+1313,Serum creatinine (mg/dl),1.6,patient 221,ICE,0.9991372227668762
+1314,Serum creatinine (mg/dl),1.6,patient 323,ICE,0.2056831568479538
+1315,Serum creatinine (mg/dl),1.6,patient 267,ICE,0.28852608799934387
+1316,Serum creatinine (mg/dl),1.6,patient 293,ICE,0.2570739984512329
+1317,Serum creatinine (mg/dl),1.6,patient 148,ICE,0.9993150234222412
+1318,Serum creatinine (mg/dl),1.6,patient 103,ICE,0.9601555466651917
+1319,Serum creatinine (mg/dl),1.6,patient 209,ICE,0.9988954067230225
+1320,Serum creatinine (mg/dl),1.6,patient 183,ICE,0.9994086027145386
+1321,Serum creatinine (mg/dl),1.6,patient 331,ICE,0.22061792016029358
+1322,Serum creatinine (mg/dl),1.6,patient 250,ICE,0.2321610152721405
+1323,Serum creatinine (mg/dl),1.6,patient 346,ICE,0.31042179465293884
+1324,Serum creatinine (mg/dl),1.6,patient 63,ICE,0.999536395072937
+1325,Serum creatinine (mg/dl),1.6,patient 304,ICE,0.4155236780643463
+1326,Serum creatinine (mg/dl),1.6,patient 200,ICE,0.9989933371543884
+1327,Serum creatinine (mg/dl),1.6,patient 1,ICE,0.9990003705024719
+1328,Serum creatinine (mg/dl),1.6,patient 116,ICE,0.9678896069526672
+1329,Serum creatinine (mg/dl),1.6,patient 109,ICE,0.9993565678596497
+1330,Serum creatinine (mg/dl),1.6,patient 299,ICE,0.2445405125617981
+1331,Serum creatinine (mg/dl),1.6,patient 224,ICE,0.9996107220649719
+1332,Serum creatinine (mg/dl),1.6,patient 232,ICE,0.9997313618659973
+1333,Serum creatinine (mg/dl),1.8615789473684201,All patients,PDP,0.7637291550636292
+1334,Serum creatinine (mg/dl),1.8615789473684201,Elderly (>=60),Group PDP,0.8740779757499695
+1335,Serum creatinine (mg/dl),1.8615789473684201,Non-elderly (<60),Group PDP,0.6943014860153198
+1336,Serum creatinine (mg/dl),1.8615789473684201,patient 381,ICE,0.4278637766838074
+1337,Serum creatinine (mg/dl),1.8615789473684201,patient 187,ICE,0.9996390342712402
+1338,Serum creatinine (mg/dl),1.8615789473684201,patient 207,ICE,0.9990098476409912
+1339,Serum creatinine (mg/dl),1.8615789473684201,patient 386,ICE,0.5608711838722229
+1340,Serum creatinine (mg/dl),1.8615789473684201,patient 290,ICE,0.4362526834011078
+1341,Serum creatinine (mg/dl),1.8615789473684201,patient 31,ICE,0.9993565678596497
+1342,Serum creatinine (mg/dl),1.8615789473684201,patient 5,ICE,0.9992116689682007
+1343,Serum creatinine (mg/dl),1.8615789473684201,patient 332,ICE,0.5638056993484497
+1344,Serum creatinine (mg/dl),1.8615789473684201,patient 277,ICE,0.35148656368255615
+1345,Serum creatinine (mg/dl),1.8615789473684201,patient 95,ICE,0.9989063739776611
+1346,Serum creatinine (mg/dl),1.8615789473684201,patient 14,ICE,0.9993565678596497
+1347,Serum creatinine (mg/dl),1.8615789473684201,patient 235,ICE,0.9782845377922058
+1348,Serum creatinine (mg/dl),1.8615789473684201,patient 8,ICE,0.9997069239616394
+1349,Serum creatinine (mg/dl),1.8615789473684201,patient 67,ICE,0.999444305896759
+1350,Serum creatinine (mg/dl),1.8615789473684201,patient 180,ICE,0.9951313734054565
+1351,Serum creatinine (mg/dl),1.8615789473684201,patient 355,ICE,0.4299863874912262
+1352,Serum creatinine (mg/dl),1.8615789473684201,patient 26,ICE,0.9988512992858887
+1353,Serum creatinine (mg/dl),1.8615789473684201,patient 12,ICE,0.9996849298477173
+1354,Serum creatinine (mg/dl),1.8615789473684201,patient 34,ICE,0.9994668364524841
+1355,Serum creatinine (mg/dl),1.8615789473684201,patient 165,ICE,0.9983028173446655
+1356,Serum creatinine (mg/dl),1.8615789473684201,patient 221,ICE,0.9991372227668762
+1357,Serum creatinine (mg/dl),1.8615789473684201,patient 323,ICE,0.2056831568479538
+1358,Serum creatinine (mg/dl),1.8615789473684201,patient 267,ICE,0.28852608799934387
+1359,Serum creatinine (mg/dl),1.8615789473684201,patient 293,ICE,0.2570739984512329
+1360,Serum creatinine (mg/dl),1.8615789473684201,patient 148,ICE,0.9993150234222412
+1361,Serum creatinine (mg/dl),1.8615789473684201,patient 103,ICE,0.9601555466651917
+1362,Serum creatinine (mg/dl),1.8615789473684201,patient 209,ICE,0.9988954067230225
+1363,Serum creatinine (mg/dl),1.8615789473684201,patient 183,ICE,0.9994086027145386
+1364,Serum creatinine (mg/dl),1.8615789473684201,patient 331,ICE,0.22061792016029358
+1365,Serum creatinine (mg/dl),1.8615789473684201,patient 250,ICE,0.2321610152721405
+1366,Serum creatinine (mg/dl),1.8615789473684201,patient 346,ICE,0.31042179465293884
+1367,Serum creatinine (mg/dl),1.8615789473684201,patient 63,ICE,0.999536395072937
+1368,Serum creatinine (mg/dl),1.8615789473684201,patient 304,ICE,0.4155236780643463
+1369,Serum creatinine (mg/dl),1.8615789473684201,patient 200,ICE,0.9989933371543884
+1370,Serum creatinine (mg/dl),1.8615789473684201,patient 1,ICE,0.9990003705024719
+1371,Serum creatinine (mg/dl),1.8615789473684201,patient 116,ICE,0.9678896069526672
+1372,Serum creatinine (mg/dl),1.8615789473684201,patient 109,ICE,0.9993565678596497
+1373,Serum creatinine (mg/dl),1.8615789473684201,patient 299,ICE,0.2445405125617981
+1374,Serum creatinine (mg/dl),1.8615789473684201,patient 224,ICE,0.9996107220649719
+1375,Serum creatinine (mg/dl),1.8615789473684201,patient 232,ICE,0.9997313618659973
+1376,Serum creatinine (mg/dl),2.2,All patients,PDP,0.7637291550636292
+1377,Serum creatinine (mg/dl),2.2,Elderly (>=60),Group PDP,0.8740779757499695
+1378,Serum creatinine (mg/dl),2.2,Non-elderly (<60),Group PDP,0.6943014860153198
+1379,Serum creatinine (mg/dl),2.2,patient 381,ICE,0.4278637766838074
+1380,Serum creatinine (mg/dl),2.2,patient 187,ICE,0.9996390342712402
+1381,Serum creatinine (mg/dl),2.2,patient 207,ICE,0.9990098476409912
+1382,Serum creatinine (mg/dl),2.2,patient 386,ICE,0.5608711838722229
+1383,Serum creatinine (mg/dl),2.2,patient 290,ICE,0.4362526834011078
+1384,Serum creatinine (mg/dl),2.2,patient 31,ICE,0.9993565678596497
+1385,Serum creatinine (mg/dl),2.2,patient 5,ICE,0.9992116689682007
+1386,Serum creatinine (mg/dl),2.2,patient 332,ICE,0.5638056993484497
+1387,Serum creatinine (mg/dl),2.2,patient 277,ICE,0.35148656368255615
+1388,Serum creatinine (mg/dl),2.2,patient 95,ICE,0.9989063739776611
+1389,Serum creatinine (mg/dl),2.2,patient 14,ICE,0.9993565678596497
+1390,Serum creatinine (mg/dl),2.2,patient 235,ICE,0.9782845377922058
+1391,Serum creatinine (mg/dl),2.2,patient 8,ICE,0.9997069239616394
+1392,Serum creatinine (mg/dl),2.2,patient 67,ICE,0.999444305896759
+1393,Serum creatinine (mg/dl),2.2,patient 180,ICE,0.9951313734054565
+1394,Serum creatinine (mg/dl),2.2,patient 355,ICE,0.4299863874912262
+1395,Serum creatinine (mg/dl),2.2,patient 26,ICE,0.9988512992858887
+1396,Serum creatinine (mg/dl),2.2,patient 12,ICE,0.9996849298477173
+1397,Serum creatinine (mg/dl),2.2,patient 34,ICE,0.9994668364524841
+1398,Serum creatinine (mg/dl),2.2,patient 165,ICE,0.9983028173446655
+1399,Serum creatinine (mg/dl),2.2,patient 221,ICE,0.9991372227668762
+1400,Serum creatinine (mg/dl),2.2,patient 323,ICE,0.2056831568479538
+1401,Serum creatinine (mg/dl),2.2,patient 267,ICE,0.28852608799934387
+1402,Serum creatinine (mg/dl),2.2,patient 293,ICE,0.2570739984512329
+1403,Serum creatinine (mg/dl),2.2,patient 148,ICE,0.9993150234222412
+1404,Serum creatinine (mg/dl),2.2,patient 103,ICE,0.9601555466651917
+1405,Serum creatinine (mg/dl),2.2,patient 209,ICE,0.9988954067230225
+1406,Serum creatinine (mg/dl),2.2,patient 183,ICE,0.9994086027145386
+1407,Serum creatinine (mg/dl),2.2,patient 331,ICE,0.22061792016029358
+1408,Serum creatinine (mg/dl),2.2,patient 250,ICE,0.2321610152721405
+1409,Serum creatinine (mg/dl),2.2,patient 346,ICE,0.31042179465293884
+1410,Serum creatinine (mg/dl),2.2,patient 63,ICE,0.999536395072937
+1411,Serum creatinine (mg/dl),2.2,patient 304,ICE,0.4155236780643463
+1412,Serum creatinine (mg/dl),2.2,patient 200,ICE,0.9989933371543884
+1413,Serum creatinine (mg/dl),2.2,patient 1,ICE,0.9990003705024719
+1414,Serum creatinine (mg/dl),2.2,patient 116,ICE,0.9678896069526672
+1415,Serum creatinine (mg/dl),2.2,patient 109,ICE,0.9993565678596497
+1416,Serum creatinine (mg/dl),2.2,patient 299,ICE,0.2445405125617981
+1417,Serum creatinine (mg/dl),2.2,patient 224,ICE,0.9996107220649719
+1418,Serum creatinine (mg/dl),2.2,patient 232,ICE,0.9997313618659973
+1419,Serum creatinine (mg/dl),2.5,All patients,PDP,0.7637291550636292
+1420,Serum creatinine (mg/dl),2.5,Elderly (>=60),Group PDP,0.8740779757499695
+1421,Serum creatinine (mg/dl),2.5,Non-elderly (<60),Group PDP,0.6943014860153198
+1422,Serum creatinine (mg/dl),2.5,patient 381,ICE,0.4278637766838074
+1423,Serum creatinine (mg/dl),2.5,patient 187,ICE,0.9996390342712402
+1424,Serum creatinine (mg/dl),2.5,patient 207,ICE,0.9990098476409912
+1425,Serum creatinine (mg/dl),2.5,patient 386,ICE,0.5608711838722229
+1426,Serum creatinine (mg/dl),2.5,patient 290,ICE,0.4362526834011078
+1427,Serum creatinine (mg/dl),2.5,patient 31,ICE,0.9993565678596497
+1428,Serum creatinine (mg/dl),2.5,patient 5,ICE,0.9992116689682007
+1429,Serum creatinine (mg/dl),2.5,patient 332,ICE,0.5638056993484497
+1430,Serum creatinine (mg/dl),2.5,patient 277,ICE,0.35148656368255615
+1431,Serum creatinine (mg/dl),2.5,patient 95,ICE,0.9989063739776611
+1432,Serum creatinine (mg/dl),2.5,patient 14,ICE,0.9993565678596497
+1433,Serum creatinine (mg/dl),2.5,patient 235,ICE,0.9782845377922058
+1434,Serum creatinine (mg/dl),2.5,patient 8,ICE,0.9997069239616394
+1435,Serum creatinine (mg/dl),2.5,patient 67,ICE,0.999444305896759
+1436,Serum creatinine (mg/dl),2.5,patient 180,ICE,0.9951313734054565
+1437,Serum creatinine (mg/dl),2.5,patient 355,ICE,0.4299863874912262
+1438,Serum creatinine (mg/dl),2.5,patient 26,ICE,0.9988512992858887
+1439,Serum creatinine (mg/dl),2.5,patient 12,ICE,0.9996849298477173
+1440,Serum creatinine (mg/dl),2.5,patient 34,ICE,0.9994668364524841
+1441,Serum creatinine (mg/dl),2.5,patient 165,ICE,0.9983028173446655
+1442,Serum creatinine (mg/dl),2.5,patient 221,ICE,0.9991372227668762
+1443,Serum creatinine (mg/dl),2.5,patient 323,ICE,0.2056831568479538
+1444,Serum creatinine (mg/dl),2.5,patient 267,ICE,0.28852608799934387
+1445,Serum creatinine (mg/dl),2.5,patient 293,ICE,0.2570739984512329
+1446,Serum creatinine (mg/dl),2.5,patient 148,ICE,0.9993150234222412
+1447,Serum creatinine (mg/dl),2.5,patient 103,ICE,0.9601555466651917
+1448,Serum creatinine (mg/dl),2.5,patient 209,ICE,0.9988954067230225
+1449,Serum creatinine (mg/dl),2.5,patient 183,ICE,0.9994086027145386
+1450,Serum creatinine (mg/dl),2.5,patient 331,ICE,0.22061792016029358
+1451,Serum creatinine (mg/dl),2.5,patient 250,ICE,0.2321610152721405
+1452,Serum creatinine (mg/dl),2.5,patient 346,ICE,0.31042179465293884
+1453,Serum creatinine (mg/dl),2.5,patient 63,ICE,0.999536395072937
+1454,Serum creatinine (mg/dl),2.5,patient 304,ICE,0.4155236780643463
+1455,Serum creatinine (mg/dl),2.5,patient 200,ICE,0.9989933371543884
+1456,Serum creatinine (mg/dl),2.5,patient 1,ICE,0.9990003705024719
+1457,Serum creatinine (mg/dl),2.5,patient 116,ICE,0.9678896069526672
+1458,Serum creatinine (mg/dl),2.5,patient 109,ICE,0.9993565678596497
+1459,Serum creatinine (mg/dl),2.5,patient 299,ICE,0.2445405125617981
+1460,Serum creatinine (mg/dl),2.5,patient 224,ICE,0.9996107220649719
+1461,Serum creatinine (mg/dl),2.5,patient 232,ICE,0.9997313618659973
+1462,Serum creatinine (mg/dl),3.2,All patients,PDP,0.7637291550636292
+1463,Serum creatinine (mg/dl),3.2,Elderly (>=60),Group PDP,0.8740779757499695
+1464,Serum creatinine (mg/dl),3.2,Non-elderly (<60),Group PDP,0.6943014860153198
+1465,Serum creatinine (mg/dl),3.2,patient 381,ICE,0.4278637766838074
+1466,Serum creatinine (mg/dl),3.2,patient 187,ICE,0.9996390342712402
+1467,Serum creatinine (mg/dl),3.2,patient 207,ICE,0.9990098476409912
+1468,Serum creatinine (mg/dl),3.2,patient 386,ICE,0.5608711838722229
+1469,Serum creatinine (mg/dl),3.2,patient 290,ICE,0.4362526834011078
+1470,Serum creatinine (mg/dl),3.2,patient 31,ICE,0.9993565678596497
+1471,Serum creatinine (mg/dl),3.2,patient 5,ICE,0.9992116689682007
+1472,Serum creatinine (mg/dl),3.2,patient 332,ICE,0.5638056993484497
+1473,Serum creatinine (mg/dl),3.2,patient 277,ICE,0.35148656368255615
+1474,Serum creatinine (mg/dl),3.2,patient 95,ICE,0.9989063739776611
+1475,Serum creatinine (mg/dl),3.2,patient 14,ICE,0.9993565678596497
+1476,Serum creatinine (mg/dl),3.2,patient 235,ICE,0.9782845377922058
+1477,Serum creatinine (mg/dl),3.2,patient 8,ICE,0.9997069239616394
+1478,Serum creatinine (mg/dl),3.2,patient 67,ICE,0.999444305896759
+1479,Serum creatinine (mg/dl),3.2,patient 180,ICE,0.9951313734054565
+1480,Serum creatinine (mg/dl),3.2,patient 355,ICE,0.4299863874912262
+1481,Serum creatinine (mg/dl),3.2,patient 26,ICE,0.9988512992858887
+1482,Serum creatinine (mg/dl),3.2,patient 12,ICE,0.9996849298477173
+1483,Serum creatinine (mg/dl),3.2,patient 34,ICE,0.9994668364524841
+1484,Serum creatinine (mg/dl),3.2,patient 165,ICE,0.9983028173446655
+1485,Serum creatinine (mg/dl),3.2,patient 221,ICE,0.9991372227668762
+1486,Serum creatinine (mg/dl),3.2,patient 323,ICE,0.2056831568479538
+1487,Serum creatinine (mg/dl),3.2,patient 267,ICE,0.28852608799934387
+1488,Serum creatinine (mg/dl),3.2,patient 293,ICE,0.2570739984512329
+1489,Serum creatinine (mg/dl),3.2,patient 148,ICE,0.9993150234222412
+1490,Serum creatinine (mg/dl),3.2,patient 103,ICE,0.9601555466651917
+1491,Serum creatinine (mg/dl),3.2,patient 209,ICE,0.9988954067230225
+1492,Serum creatinine (mg/dl),3.2,patient 183,ICE,0.9994086027145386
+1493,Serum creatinine (mg/dl),3.2,patient 331,ICE,0.22061792016029358
+1494,Serum creatinine (mg/dl),3.2,patient 250,ICE,0.2321610152721405
+1495,Serum creatinine (mg/dl),3.2,patient 346,ICE,0.31042179465293884
+1496,Serum creatinine (mg/dl),3.2,patient 63,ICE,0.999536395072937
+1497,Serum creatinine (mg/dl),3.2,patient 304,ICE,0.4155236780643463
+1498,Serum creatinine (mg/dl),3.2,patient 200,ICE,0.9989933371543884
+1499,Serum creatinine (mg/dl),3.2,patient 1,ICE,0.9990003705024719
+1500,Serum creatinine (mg/dl),3.2,patient 116,ICE,0.9678896069526672
+1501,Serum creatinine (mg/dl),3.2,patient 109,ICE,0.9993565678596497
+1502,Serum creatinine (mg/dl),3.2,patient 299,ICE,0.2445405125617981
+1503,Serum creatinine (mg/dl),3.2,patient 224,ICE,0.9996107220649719
+1504,Serum creatinine (mg/dl),3.2,patient 232,ICE,0.9997313618659973
+1505,Serum creatinine (mg/dl),3.900105263157894,All patients,PDP,0.7637291550636292
+1506,Serum creatinine (mg/dl),3.900105263157894,Elderly (>=60),Group PDP,0.8740779757499695
+1507,Serum creatinine (mg/dl),3.900105263157894,Non-elderly (<60),Group PDP,0.6943014860153198
+1508,Serum creatinine (mg/dl),3.900105263157894,patient 381,ICE,0.4278637766838074
+1509,Serum creatinine (mg/dl),3.900105263157894,patient 187,ICE,0.9996390342712402
+1510,Serum creatinine (mg/dl),3.900105263157894,patient 207,ICE,0.9990098476409912
+1511,Serum creatinine (mg/dl),3.900105263157894,patient 386,ICE,0.5608711838722229
+1512,Serum creatinine (mg/dl),3.900105263157894,patient 290,ICE,0.4362526834011078
+1513,Serum creatinine (mg/dl),3.900105263157894,patient 31,ICE,0.9993565678596497
+1514,Serum creatinine (mg/dl),3.900105263157894,patient 5,ICE,0.9992116689682007
+1515,Serum creatinine (mg/dl),3.900105263157894,patient 332,ICE,0.5638056993484497
+1516,Serum creatinine (mg/dl),3.900105263157894,patient 277,ICE,0.35148656368255615
+1517,Serum creatinine (mg/dl),3.900105263157894,patient 95,ICE,0.9989063739776611
+1518,Serum creatinine (mg/dl),3.900105263157894,patient 14,ICE,0.9993565678596497
+1519,Serum creatinine (mg/dl),3.900105263157894,patient 235,ICE,0.9782845377922058
+1520,Serum creatinine (mg/dl),3.900105263157894,patient 8,ICE,0.9997069239616394
+1521,Serum creatinine (mg/dl),3.900105263157894,patient 67,ICE,0.999444305896759
+1522,Serum creatinine (mg/dl),3.900105263157894,patient 180,ICE,0.9951313734054565
+1523,Serum creatinine (mg/dl),3.900105263157894,patient 355,ICE,0.4299863874912262
+1524,Serum creatinine (mg/dl),3.900105263157894,patient 26,ICE,0.9988512992858887
+1525,Serum creatinine (mg/dl),3.900105263157894,patient 12,ICE,0.9996849298477173
+1526,Serum creatinine (mg/dl),3.900105263157894,patient 34,ICE,0.9994668364524841
+1527,Serum creatinine (mg/dl),3.900105263157894,patient 165,ICE,0.9983028173446655
+1528,Serum creatinine (mg/dl),3.900105263157894,patient 221,ICE,0.9991372227668762
+1529,Serum creatinine (mg/dl),3.900105263157894,patient 323,ICE,0.2056831568479538
+1530,Serum creatinine (mg/dl),3.900105263157894,patient 267,ICE,0.28852608799934387
+1531,Serum creatinine (mg/dl),3.900105263157894,patient 293,ICE,0.2570739984512329
+1532,Serum creatinine (mg/dl),3.900105263157894,patient 148,ICE,0.9993150234222412
+1533,Serum creatinine (mg/dl),3.900105263157894,patient 103,ICE,0.9601555466651917
+1534,Serum creatinine (mg/dl),3.900105263157894,patient 209,ICE,0.9988954067230225
+1535,Serum creatinine (mg/dl),3.900105263157894,patient 183,ICE,0.9994086027145386
+1536,Serum creatinine (mg/dl),3.900105263157894,patient 331,ICE,0.22061792016029358
+1537,Serum creatinine (mg/dl),3.900105263157894,patient 250,ICE,0.2321610152721405
+1538,Serum creatinine (mg/dl),3.900105263157894,patient 346,ICE,0.31042179465293884
+1539,Serum creatinine (mg/dl),3.900105263157894,patient 63,ICE,0.999536395072937
+1540,Serum creatinine (mg/dl),3.900105263157894,patient 304,ICE,0.4155236780643463
+1541,Serum creatinine (mg/dl),3.900105263157894,patient 200,ICE,0.9989933371543884
+1542,Serum creatinine (mg/dl),3.900105263157894,patient 1,ICE,0.9990003705024719
+1543,Serum creatinine (mg/dl),3.900105263157894,patient 116,ICE,0.9678896069526672
+1544,Serum creatinine (mg/dl),3.900105263157894,patient 109,ICE,0.9993565678596497
+1545,Serum creatinine (mg/dl),3.900105263157894,patient 299,ICE,0.2445405125617981
+1546,Serum creatinine (mg/dl),3.900105263157894,patient 224,ICE,0.9996107220649719
+1547,Serum creatinine (mg/dl),3.900105263157894,patient 232,ICE,0.9997313618659973
+1548,Serum creatinine (mg/dl),5.984736842105264,All patients,PDP,0.7637291550636292
+1549,Serum creatinine (mg/dl),5.984736842105264,Elderly (>=60),Group PDP,0.8740779757499695
+1550,Serum creatinine (mg/dl),5.984736842105264,Non-elderly (<60),Group PDP,0.6943014860153198
+1551,Serum creatinine (mg/dl),5.984736842105264,patient 381,ICE,0.4278637766838074
+1552,Serum creatinine (mg/dl),5.984736842105264,patient 187,ICE,0.9996390342712402
+1553,Serum creatinine (mg/dl),5.984736842105264,patient 207,ICE,0.9990098476409912
+1554,Serum creatinine (mg/dl),5.984736842105264,patient 386,ICE,0.5608711838722229
+1555,Serum creatinine (mg/dl),5.984736842105264,patient 290,ICE,0.4362526834011078
+1556,Serum creatinine (mg/dl),5.984736842105264,patient 31,ICE,0.9993565678596497
+1557,Serum creatinine (mg/dl),5.984736842105264,patient 5,ICE,0.9992116689682007
+1558,Serum creatinine (mg/dl),5.984736842105264,patient 332,ICE,0.5638056993484497
+1559,Serum creatinine (mg/dl),5.984736842105264,patient 277,ICE,0.35148656368255615
+1560,Serum creatinine (mg/dl),5.984736842105264,patient 95,ICE,0.9989063739776611
+1561,Serum creatinine (mg/dl),5.984736842105264,patient 14,ICE,0.9993565678596497
+1562,Serum creatinine (mg/dl),5.984736842105264,patient 235,ICE,0.9782845377922058
+1563,Serum creatinine (mg/dl),5.984736842105264,patient 8,ICE,0.9997069239616394
+1564,Serum creatinine (mg/dl),5.984736842105264,patient 67,ICE,0.999444305896759
+1565,Serum creatinine (mg/dl),5.984736842105264,patient 180,ICE,0.9951313734054565
+1566,Serum creatinine (mg/dl),5.984736842105264,patient 355,ICE,0.4299863874912262
+1567,Serum creatinine (mg/dl),5.984736842105264,patient 26,ICE,0.9988512992858887
+1568,Serum creatinine (mg/dl),5.984736842105264,patient 12,ICE,0.9996849298477173
+1569,Serum creatinine (mg/dl),5.984736842105264,patient 34,ICE,0.9994668364524841
+1570,Serum creatinine (mg/dl),5.984736842105264,patient 165,ICE,0.9983028173446655
+1571,Serum creatinine (mg/dl),5.984736842105264,patient 221,ICE,0.9991372227668762
+1572,Serum creatinine (mg/dl),5.984736842105264,patient 323,ICE,0.2056831568479538
+1573,Serum creatinine (mg/dl),5.984736842105264,patient 267,ICE,0.28852608799934387
+1574,Serum creatinine (mg/dl),5.984736842105264,patient 293,ICE,0.2570739984512329
+1575,Serum creatinine (mg/dl),5.984736842105264,patient 148,ICE,0.9993150234222412
+1576,Serum creatinine (mg/dl),5.984736842105264,patient 103,ICE,0.9601555466651917
+1577,Serum creatinine (mg/dl),5.984736842105264,patient 209,ICE,0.9988954067230225
+1578,Serum creatinine (mg/dl),5.984736842105264,patient 183,ICE,0.9994086027145386
+1579,Serum creatinine (mg/dl),5.984736842105264,patient 331,ICE,0.22061792016029358
+1580,Serum creatinine (mg/dl),5.984736842105264,patient 250,ICE,0.2321610152721405
+1581,Serum creatinine (mg/dl),5.984736842105264,patient 346,ICE,0.31042179465293884
+1582,Serum creatinine (mg/dl),5.984736842105264,patient 63,ICE,0.999536395072937
+1583,Serum creatinine (mg/dl),5.984736842105264,patient 304,ICE,0.4155236780643463
+1584,Serum creatinine (mg/dl),5.984736842105264,patient 200,ICE,0.9989933371543884
+1585,Serum creatinine (mg/dl),5.984736842105264,patient 1,ICE,0.9990003705024719
+1586,Serum creatinine (mg/dl),5.984736842105264,patient 116,ICE,0.9678896069526672
+1587,Serum creatinine (mg/dl),5.984736842105264,patient 109,ICE,0.9993565678596497
+1588,Serum creatinine (mg/dl),5.984736842105264,patient 299,ICE,0.2445405125617981
+1589,Serum creatinine (mg/dl),5.984736842105264,patient 224,ICE,0.9996107220649719
+1590,Serum creatinine (mg/dl),5.984736842105264,patient 232,ICE,0.9997313618659973
+1591,Serum creatinine (mg/dl),9.269368421052633,All patients,PDP,0.7637291550636292
+1592,Serum creatinine (mg/dl),9.269368421052633,Elderly (>=60),Group PDP,0.8740779757499695
+1593,Serum creatinine (mg/dl),9.269368421052633,Non-elderly (<60),Group PDP,0.6943014860153198
+1594,Serum creatinine (mg/dl),9.269368421052633,patient 381,ICE,0.4278637766838074
+1595,Serum creatinine (mg/dl),9.269368421052633,patient 187,ICE,0.9996390342712402
+1596,Serum creatinine (mg/dl),9.269368421052633,patient 207,ICE,0.9990098476409912
+1597,Serum creatinine (mg/dl),9.269368421052633,patient 386,ICE,0.5608711838722229
+1598,Serum creatinine (mg/dl),9.269368421052633,patient 290,ICE,0.4362526834011078
+1599,Serum creatinine (mg/dl),9.269368421052633,patient 31,ICE,0.9993565678596497
+1600,Serum creatinine (mg/dl),9.269368421052633,patient 5,ICE,0.9992116689682007
+1601,Serum creatinine (mg/dl),9.269368421052633,patient 332,ICE,0.5638056993484497
+1602,Serum creatinine (mg/dl),9.269368421052633,patient 277,ICE,0.35148656368255615
+1603,Serum creatinine (mg/dl),9.269368421052633,patient 95,ICE,0.9989063739776611
+1604,Serum creatinine (mg/dl),9.269368421052633,patient 14,ICE,0.9993565678596497
+1605,Serum creatinine (mg/dl),9.269368421052633,patient 235,ICE,0.9782845377922058
+1606,Serum creatinine (mg/dl),9.269368421052633,patient 8,ICE,0.9997069239616394
+1607,Serum creatinine (mg/dl),9.269368421052633,patient 67,ICE,0.999444305896759
+1608,Serum creatinine (mg/dl),9.269368421052633,patient 180,ICE,0.9951313734054565
+1609,Serum creatinine (mg/dl),9.269368421052633,patient 355,ICE,0.4299863874912262
+1610,Serum creatinine (mg/dl),9.269368421052633,patient 26,ICE,0.9988512992858887
+1611,Serum creatinine (mg/dl),9.269368421052633,patient 12,ICE,0.9996849298477173
+1612,Serum creatinine (mg/dl),9.269368421052633,patient 34,ICE,0.9994668364524841
+1613,Serum creatinine (mg/dl),9.269368421052633,patient 165,ICE,0.9983028173446655
+1614,Serum creatinine (mg/dl),9.269368421052633,patient 221,ICE,0.9991372227668762
+1615,Serum creatinine (mg/dl),9.269368421052633,patient 323,ICE,0.2056831568479538
+1616,Serum creatinine (mg/dl),9.269368421052633,patient 267,ICE,0.28852608799934387
+1617,Serum creatinine (mg/dl),9.269368421052633,patient 293,ICE,0.2570739984512329
+1618,Serum creatinine (mg/dl),9.269368421052633,patient 148,ICE,0.9993150234222412
+1619,Serum creatinine (mg/dl),9.269368421052633,patient 103,ICE,0.9601555466651917
+1620,Serum creatinine (mg/dl),9.269368421052633,patient 209,ICE,0.9988954067230225
+1621,Serum creatinine (mg/dl),9.269368421052633,patient 183,ICE,0.9994086027145386
+1622,Serum creatinine (mg/dl),9.269368421052633,patient 331,ICE,0.22061792016029358
+1623,Serum creatinine (mg/dl),9.269368421052633,patient 250,ICE,0.2321610152721405
+1624,Serum creatinine (mg/dl),9.269368421052633,patient 346,ICE,0.31042179465293884
+1625,Serum creatinine (mg/dl),9.269368421052633,patient 63,ICE,0.999536395072937
+1626,Serum creatinine (mg/dl),9.269368421052633,patient 304,ICE,0.4155236780643463
+1627,Serum creatinine (mg/dl),9.269368421052633,patient 200,ICE,0.9989933371543884
+1628,Serum creatinine (mg/dl),9.269368421052633,patient 1,ICE,0.9990003705024719
+1629,Serum creatinine (mg/dl),9.269368421052633,patient 116,ICE,0.9678896069526672
+1630,Serum creatinine (mg/dl),9.269368421052633,patient 109,ICE,0.9993565678596497
+1631,Serum creatinine (mg/dl),9.269368421052633,patient 299,ICE,0.2445405125617981
+1632,Serum creatinine (mg/dl),9.269368421052633,patient 224,ICE,0.9996107220649719
+1633,Serum creatinine (mg/dl),9.269368421052633,patient 232,ICE,0.9997313618659973
+1634,Serum creatinine (mg/dl),15.848000000000024,All patients,PDP,0.7637291550636292
+1635,Serum creatinine (mg/dl),15.848000000000024,Elderly (>=60),Group PDP,0.8740779757499695
+1636,Serum creatinine (mg/dl),15.848000000000024,Non-elderly (<60),Group PDP,0.6943014860153198
+1637,Serum creatinine (mg/dl),15.848000000000024,patient 381,ICE,0.4278637766838074
+1638,Serum creatinine (mg/dl),15.848000000000024,patient 187,ICE,0.9996390342712402
+1639,Serum creatinine (mg/dl),15.848000000000024,patient 207,ICE,0.9990098476409912
+1640,Serum creatinine (mg/dl),15.848000000000024,patient 386,ICE,0.5608711838722229
+1641,Serum creatinine (mg/dl),15.848000000000024,patient 290,ICE,0.4362526834011078
+1642,Serum creatinine (mg/dl),15.848000000000024,patient 31,ICE,0.9993565678596497
+1643,Serum creatinine (mg/dl),15.848000000000024,patient 5,ICE,0.9992116689682007
+1644,Serum creatinine (mg/dl),15.848000000000024,patient 332,ICE,0.5638056993484497
+1645,Serum creatinine (mg/dl),15.848000000000024,patient 277,ICE,0.35148656368255615
+1646,Serum creatinine (mg/dl),15.848000000000024,patient 95,ICE,0.9989063739776611
+1647,Serum creatinine (mg/dl),15.848000000000024,patient 14,ICE,0.9993565678596497
+1648,Serum creatinine (mg/dl),15.848000000000024,patient 235,ICE,0.9782845377922058
+1649,Serum creatinine (mg/dl),15.848000000000024,patient 8,ICE,0.9997069239616394
+1650,Serum creatinine (mg/dl),15.848000000000024,patient 67,ICE,0.999444305896759
+1651,Serum creatinine (mg/dl),15.848000000000024,patient 180,ICE,0.9951313734054565
+1652,Serum creatinine (mg/dl),15.848000000000024,patient 355,ICE,0.4299863874912262
+1653,Serum creatinine (mg/dl),15.848000000000024,patient 26,ICE,0.9988512992858887
+1654,Serum creatinine (mg/dl),15.848000000000024,patient 12,ICE,0.9996849298477173
+1655,Serum creatinine (mg/dl),15.848000000000024,patient 34,ICE,0.9994668364524841
+1656,Serum creatinine (mg/dl),15.848000000000024,patient 165,ICE,0.9983028173446655
+1657,Serum creatinine (mg/dl),15.848000000000024,patient 221,ICE,0.9991372227668762
+1658,Serum creatinine (mg/dl),15.848000000000024,patient 323,ICE,0.2056831568479538
+1659,Serum creatinine (mg/dl),15.848000000000024,patient 267,ICE,0.28852608799934387
+1660,Serum creatinine (mg/dl),15.848000000000024,patient 293,ICE,0.2570739984512329
+1661,Serum creatinine (mg/dl),15.848000000000024,patient 148,ICE,0.9993150234222412
+1662,Serum creatinine (mg/dl),15.848000000000024,patient 103,ICE,0.9601555466651917
+1663,Serum creatinine (mg/dl),15.848000000000024,patient 209,ICE,0.9988954067230225
+1664,Serum creatinine (mg/dl),15.848000000000024,patient 183,ICE,0.9994086027145386
+1665,Serum creatinine (mg/dl),15.848000000000024,patient 331,ICE,0.22061792016029358
+1666,Serum creatinine (mg/dl),15.848000000000024,patient 250,ICE,0.2321610152721405
+1667,Serum creatinine (mg/dl),15.848000000000024,patient 346,ICE,0.31042179465293884
+1668,Serum creatinine (mg/dl),15.848000000000024,patient 63,ICE,0.999536395072937
+1669,Serum creatinine (mg/dl),15.848000000000024,patient 304,ICE,0.4155236780643463
+1670,Serum creatinine (mg/dl),15.848000000000024,patient 200,ICE,0.9989933371543884
+1671,Serum creatinine (mg/dl),15.848000000000024,patient 1,ICE,0.9990003705024719
+1672,Serum creatinine (mg/dl),15.848000000000024,patient 116,ICE,0.9678896069526672
+1673,Serum creatinine (mg/dl),15.848000000000024,patient 109,ICE,0.9993565678596497
+1674,Serum creatinine (mg/dl),15.848000000000024,patient 299,ICE,0.2445405125617981
+1675,Serum creatinine (mg/dl),15.848000000000024,patient 224,ICE,0.9996107220649719
+1676,Serum creatinine (mg/dl),15.848000000000024,patient 232,ICE,0.9997313618659973
+1677,Specific gravity,1.0096,All patients,PDP,0.8302769064903259
+1678,Specific gravity,1.0096,Elderly (>=60),Group PDP,0.9130942225456238
+1679,Specific gravity,1.0096,Non-elderly (<60),Group PDP,0.7781710028648376
+1680,Specific gravity,1.0096,patient 381,ICE,0.6089797019958496
+1681,Specific gravity,1.0096,patient 187,ICE,0.9994057416915894
+1682,Specific gravity,1.0096,patient 207,ICE,0.9986802935600281
+1683,Specific gravity,1.0096,patient 386,ICE,0.7894783616065979
+1684,Specific gravity,1.0096,patient 290,ICE,0.6405634880065918
+1685,Specific gravity,1.0096,patient 31,ICE,0.9993565678596497
+1686,Specific gravity,1.0096,patient 5,ICE,0.9954212307929993
+1687,Specific gravity,1.0096,patient 332,ICE,0.7538873553276062
+1688,Specific gravity,1.0096,patient 277,ICE,0.4867401421070099
+1689,Specific gravity,1.0096,patient 95,ICE,0.9989063739776611
+1690,Specific gravity,1.0096,patient 14,ICE,0.9993565678596497
+1691,Specific gravity,1.0096,patient 235,ICE,0.9980683922767639
+1692,Specific gravity,1.0096,patient 8,ICE,0.9997069239616394
+1693,Specific gravity,1.0096,patient 67,ICE,0.999444305896759
+1694,Specific gravity,1.0096,patient 180,ICE,0.9841655492782593
+1695,Specific gravity,1.0096,patient 355,ICE,0.612148642539978
+1696,Specific gravity,1.0096,patient 26,ICE,0.9988512992858887
+1697,Specific gravity,1.0096,patient 12,ICE,0.9996849298477173
+1698,Specific gravity,1.0096,patient 34,ICE,0.9995595812797546
+1699,Specific gravity,1.0096,patient 165,ICE,0.9988780617713928
+1700,Specific gravity,1.0096,patient 221,ICE,0.9991372227668762
+1701,Specific gravity,1.0096,patient 323,ICE,0.37281256914138794
+1702,Specific gravity,1.0096,patient 267,ICE,0.7614790201187134
+1703,Specific gravity,1.0096,patient 293,ICE,0.6158432364463806
+1704,Specific gravity,1.0096,patient 148,ICE,0.9993150234222412
+1705,Specific gravity,1.0096,patient 103,ICE,0.9601555466651917
+1706,Specific gravity,1.0096,patient 209,ICE,0.9988954067230225
+1707,Specific gravity,1.0096,patient 183,ICE,0.9994086027145386
+1708,Specific gravity,1.0096,patient 331,ICE,0.3015023469924927
+1709,Specific gravity,1.0096,patient 250,ICE,0.34599536657333374
+1710,Specific gravity,1.0096,patient 346,ICE,0.4639338552951813
+1711,Specific gravity,1.0096,patient 63,ICE,0.9992721676826477
+1712,Specific gravity,1.0096,patient 304,ICE,0.5530791282653809
+1713,Specific gravity,1.0096,patient 200,ICE,0.9992378950119019
+1714,Specific gravity,1.0096,patient 1,ICE,0.9981865286827087
+1715,Specific gravity,1.0096,patient 116,ICE,0.9963862895965576
+1716,Specific gravity,1.0096,patient 109,ICE,0.9993565678596497
+1717,Specific gravity,1.0096,patient 299,ICE,0.40267130732536316
+1718,Specific gravity,1.0096,patient 224,ICE,0.9994810223579407
+1719,Specific gravity,1.0096,patient 232,ICE,0.9997313618659973
+1720,Specific gravity,1.01,All patients,PDP,0.8302769064903259
+1721,Specific gravity,1.01,Elderly (>=60),Group PDP,0.9130942225456238
+1722,Specific gravity,1.01,Non-elderly (<60),Group PDP,0.7781710028648376
+1723,Specific gravity,1.01,patient 381,ICE,0.6089797019958496
+1724,Specific gravity,1.01,patient 187,ICE,0.9994057416915894
+1725,Specific gravity,1.01,patient 207,ICE,0.9986802935600281
+1726,Specific gravity,1.01,patient 386,ICE,0.7894783616065979
+1727,Specific gravity,1.01,patient 290,ICE,0.6405634880065918
+1728,Specific gravity,1.01,patient 31,ICE,0.9993565678596497
+1729,Specific gravity,1.01,patient 5,ICE,0.9954212307929993
+1730,Specific gravity,1.01,patient 332,ICE,0.7538873553276062
+1731,Specific gravity,1.01,patient 277,ICE,0.4867401421070099
+1732,Specific gravity,1.01,patient 95,ICE,0.9989063739776611
+1733,Specific gravity,1.01,patient 14,ICE,0.9993565678596497
+1734,Specific gravity,1.01,patient 235,ICE,0.9980683922767639
+1735,Specific gravity,1.01,patient 8,ICE,0.9997069239616394
+1736,Specific gravity,1.01,patient 67,ICE,0.999444305896759
+1737,Specific gravity,1.01,patient 180,ICE,0.9841655492782593
+1738,Specific gravity,1.01,patient 355,ICE,0.612148642539978
+1739,Specific gravity,1.01,patient 26,ICE,0.9988512992858887
+1740,Specific gravity,1.01,patient 12,ICE,0.9996849298477173
+1741,Specific gravity,1.01,patient 34,ICE,0.9995595812797546
+1742,Specific gravity,1.01,patient 165,ICE,0.9988780617713928
+1743,Specific gravity,1.01,patient 221,ICE,0.9991372227668762
+1744,Specific gravity,1.01,patient 323,ICE,0.37281256914138794
+1745,Specific gravity,1.01,patient 267,ICE,0.7614790201187134
+1746,Specific gravity,1.01,patient 293,ICE,0.6158432364463806
+1747,Specific gravity,1.01,patient 148,ICE,0.9993150234222412
+1748,Specific gravity,1.01,patient 103,ICE,0.9601555466651917
+1749,Specific gravity,1.01,patient 209,ICE,0.9988954067230225
+1750,Specific gravity,1.01,patient 183,ICE,0.9994086027145386
+1751,Specific gravity,1.01,patient 331,ICE,0.3015023469924927
+1752,Specific gravity,1.01,patient 250,ICE,0.34599536657333374
+1753,Specific gravity,1.01,patient 346,ICE,0.4639338552951813
+1754,Specific gravity,1.01,patient 63,ICE,0.9992721676826477
+1755,Specific gravity,1.01,patient 304,ICE,0.5530791282653809
+1756,Specific gravity,1.01,patient 200,ICE,0.9992378950119019
+1757,Specific gravity,1.01,patient 1,ICE,0.9981865286827087
+1758,Specific gravity,1.01,patient 116,ICE,0.9963862895965576
+1759,Specific gravity,1.01,patient 109,ICE,0.9993565678596497
+1760,Specific gravity,1.01,patient 299,ICE,0.40267130732536316
+1761,Specific gravity,1.01,patient 224,ICE,0.9994810223579407
+1762,Specific gravity,1.01,patient 232,ICE,0.9997313618659973
+1763,Specific gravity,1.015,All patients,PDP,0.8302769064903259
+1764,Specific gravity,1.015,Elderly (>=60),Group PDP,0.9130942225456238
+1765,Specific gravity,1.015,Non-elderly (<60),Group PDP,0.7781710028648376
+1766,Specific gravity,1.015,patient 381,ICE,0.6089797019958496
+1767,Specific gravity,1.015,patient 187,ICE,0.9994057416915894
+1768,Specific gravity,1.015,patient 207,ICE,0.9986802935600281
+1769,Specific gravity,1.015,patient 386,ICE,0.7894783616065979
+1770,Specific gravity,1.015,patient 290,ICE,0.6405634880065918
+1771,Specific gravity,1.015,patient 31,ICE,0.9993565678596497
+1772,Specific gravity,1.015,patient 5,ICE,0.9954212307929993
+1773,Specific gravity,1.015,patient 332,ICE,0.7538873553276062
+1774,Specific gravity,1.015,patient 277,ICE,0.4867401421070099
+1775,Specific gravity,1.015,patient 95,ICE,0.9989063739776611
+1776,Specific gravity,1.015,patient 14,ICE,0.9993565678596497
+1777,Specific gravity,1.015,patient 235,ICE,0.9980683922767639
+1778,Specific gravity,1.015,patient 8,ICE,0.9997069239616394
+1779,Specific gravity,1.015,patient 67,ICE,0.999444305896759
+1780,Specific gravity,1.015,patient 180,ICE,0.9841655492782593
+1781,Specific gravity,1.015,patient 355,ICE,0.612148642539978
+1782,Specific gravity,1.015,patient 26,ICE,0.9988512992858887
+1783,Specific gravity,1.015,patient 12,ICE,0.9996849298477173
+1784,Specific gravity,1.015,patient 34,ICE,0.9995595812797546
+1785,Specific gravity,1.015,patient 165,ICE,0.9988780617713928
+1786,Specific gravity,1.015,patient 221,ICE,0.9991372227668762
+1787,Specific gravity,1.015,patient 323,ICE,0.37281256914138794
+1788,Specific gravity,1.015,patient 267,ICE,0.7614790201187134
+1789,Specific gravity,1.015,patient 293,ICE,0.6158432364463806
+1790,Specific gravity,1.015,patient 148,ICE,0.9993150234222412
+1791,Specific gravity,1.015,patient 103,ICE,0.9601555466651917
+1792,Specific gravity,1.015,patient 209,ICE,0.9988954067230225
+1793,Specific gravity,1.015,patient 183,ICE,0.9994086027145386
+1794,Specific gravity,1.015,patient 331,ICE,0.3015023469924927
+1795,Specific gravity,1.015,patient 250,ICE,0.34599536657333374
+1796,Specific gravity,1.015,patient 346,ICE,0.4639338552951813
+1797,Specific gravity,1.015,patient 63,ICE,0.9992721676826477
+1798,Specific gravity,1.015,patient 304,ICE,0.5530791282653809
+1799,Specific gravity,1.015,patient 200,ICE,0.9992378950119019
+1800,Specific gravity,1.015,patient 1,ICE,0.9981865286827087
+1801,Specific gravity,1.015,patient 116,ICE,0.9963862895965576
+1802,Specific gravity,1.015,patient 109,ICE,0.9993565678596497
+1803,Specific gravity,1.015,patient 299,ICE,0.40267130732536316
+1804,Specific gravity,1.015,patient 224,ICE,0.9994810223579407
+1805,Specific gravity,1.015,patient 232,ICE,0.9997313618659973
+1806,Specific gravity,1.02,All patients,PDP,0.5928010940551758
+1807,Specific gravity,1.02,Elderly (>=60),Group PDP,0.7578027248382568
+1808,Specific gravity,1.02,Non-elderly (<60),Group PDP,0.48898759484291077
+1809,Specific gravity,1.02,patient 381,ICE,0.0031685279682278633
+1810,Specific gravity,1.02,patient 187,ICE,0.9979890584945679
+1811,Specific gravity,1.02,patient 207,ICE,0.9958329796791077
+1812,Specific gravity,1.02,patient 386,ICE,0.010250371880829334
+1813,Specific gravity,1.02,patient 290,ICE,0.003777358215302229
+1814,Specific gravity,1.02,patient 31,ICE,0.9992212057113647
+1815,Specific gravity,1.02,patient 5,ICE,0.977682888507843
+1816,Specific gravity,1.02,patient 332,ICE,0.0064750537276268005
+1817,Specific gravity,1.02,patient 277,ICE,0.0018258900381624699
+1818,Specific gravity,1.02,patient 95,ICE,0.9985635876655579
+1819,Specific gravity,1.02,patient 14,ICE,0.9992212057113647
+1820,Specific gravity,1.02,patient 235,ICE,0.9782845377922058
+1821,Specific gravity,1.02,patient 8,ICE,0.9996451139450073
+1822,Specific gravity,1.02,patient 67,ICE,0.9989691972732544
+1823,Specific gravity,1.02,patient 180,ICE,0.9297767877578735
+1824,Specific gravity,1.02,patient 355,ICE,0.003210902912542224
+1825,Specific gravity,1.02,patient 26,ICE,0.9983949065208435
+1826,Specific gravity,1.02,patient 12,ICE,0.9996185302734375
+1827,Specific gravity,1.02,patient 34,ICE,0.9994668364524841
+1828,Specific gravity,1.02,patient 165,ICE,0.9983028173446655
+1829,Specific gravity,1.02,patient 221,ICE,0.9988206028938293
+1830,Specific gravity,1.02,patient 323,ICE,0.001263096695765853
+1831,Specific gravity,1.02,patient 267,ICE,0.028601448982954025
+1832,Specific gravity,1.02,patient 293,ICE,0.003913756459951401
+1833,Specific gravity,1.02,patient 148,ICE,0.9991708993911743
+1834,Specific gravity,1.02,patient 103,ICE,0.4637798070907593
+1835,Specific gravity,1.02,patient 209,ICE,0.99811851978302
+1836,Specific gravity,1.02,patient 183,ICE,0.9992840886116028
+1837,Specific gravity,1.02,patient 331,ICE,0.000831902667414397
+1838,Specific gravity,1.02,patient 250,ICE,0.001019424176774919
+1839,Specific gravity,1.02,patient 346,ICE,0.0016665608854964375
+1840,Specific gravity,1.02,patient 63,ICE,0.9955263733863831
+1841,Specific gravity,1.02,patient 304,ICE,0.0023813850712031126
+1842,Specific gravity,1.02,patient 200,ICE,0.9989933371543884
+1843,Specific gravity,1.02,patient 1,ICE,0.9924241304397583
+1844,Specific gravity,1.02,patient 116,ICE,0.9678896069526672
+1845,Specific gravity,1.02,patient 109,ICE,0.9992212057113647
+1846,Specific gravity,1.02,patient 299,ICE,0.0013739550486207008
+1847,Specific gravity,1.02,patient 224,ICE,0.9979751706123352
+1848,Specific gravity,1.02,patient 232,ICE,0.9996747970581055
+1849,Specific gravity,1.025,All patients,PDP,0.5928010940551758
+1850,Specific gravity,1.025,Elderly (>=60),Group PDP,0.7578027248382568
+1851,Specific gravity,1.025,Non-elderly (<60),Group PDP,0.48898759484291077
+1852,Specific gravity,1.025,patient 381,ICE,0.0031685279682278633
+1853,Specific gravity,1.025,patient 187,ICE,0.9979890584945679
+1854,Specific gravity,1.025,patient 207,ICE,0.9958329796791077
+1855,Specific gravity,1.025,patient 386,ICE,0.010250371880829334
+1856,Specific gravity,1.025,patient 290,ICE,0.003777358215302229
+1857,Specific gravity,1.025,patient 31,ICE,0.9992212057113647
+1858,Specific gravity,1.025,patient 5,ICE,0.977682888507843
+1859,Specific gravity,1.025,patient 332,ICE,0.0064750537276268005
+1860,Specific gravity,1.025,patient 277,ICE,0.0018258900381624699
+1861,Specific gravity,1.025,patient 95,ICE,0.9985635876655579
+1862,Specific gravity,1.025,patient 14,ICE,0.9992212057113647
+1863,Specific gravity,1.025,patient 235,ICE,0.9782845377922058
+1864,Specific gravity,1.025,patient 8,ICE,0.9996451139450073
+1865,Specific gravity,1.025,patient 67,ICE,0.9989691972732544
+1866,Specific gravity,1.025,patient 180,ICE,0.9297767877578735
+1867,Specific gravity,1.025,patient 355,ICE,0.003210902912542224
+1868,Specific gravity,1.025,patient 26,ICE,0.9983949065208435
+1869,Specific gravity,1.025,patient 12,ICE,0.9996185302734375
+1870,Specific gravity,1.025,patient 34,ICE,0.9994668364524841
+1871,Specific gravity,1.025,patient 165,ICE,0.9983028173446655
+1872,Specific gravity,1.025,patient 221,ICE,0.9988206028938293
+1873,Specific gravity,1.025,patient 323,ICE,0.001263096695765853
+1874,Specific gravity,1.025,patient 267,ICE,0.028601448982954025
+1875,Specific gravity,1.025,patient 293,ICE,0.003913756459951401
+1876,Specific gravity,1.025,patient 148,ICE,0.9991708993911743
+1877,Specific gravity,1.025,patient 103,ICE,0.4637798070907593
+1878,Specific gravity,1.025,patient 209,ICE,0.99811851978302
+1879,Specific gravity,1.025,patient 183,ICE,0.9992840886116028
+1880,Specific gravity,1.025,patient 331,ICE,0.000831902667414397
+1881,Specific gravity,1.025,patient 250,ICE,0.001019424176774919
+1882,Specific gravity,1.025,patient 346,ICE,0.0016665608854964375
+1883,Specific gravity,1.025,patient 63,ICE,0.9955263733863831
+1884,Specific gravity,1.025,patient 304,ICE,0.0023813850712031126
+1885,Specific gravity,1.025,patient 200,ICE,0.9989933371543884
+1886,Specific gravity,1.025,patient 1,ICE,0.9924241304397583
+1887,Specific gravity,1.025,patient 116,ICE,0.9678896069526672
+1888,Specific gravity,1.025,patient 109,ICE,0.9992212057113647
+1889,Specific gravity,1.025,patient 299,ICE,0.0013739550486207008
+1890,Specific gravity,1.025,patient 224,ICE,0.9979751706123352
+1891,Specific gravity,1.025,patient 232,ICE,0.9996747970581055

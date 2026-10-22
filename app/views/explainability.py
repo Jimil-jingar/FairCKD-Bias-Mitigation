@@ -5,7 +5,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import shap
 from common import TEAL, group_colors, insight, np, page_header, page_setup, pd, px, sidebar, st
-from fairckd.explain import explain, importance_by_group, lime_explain, lime_figure
+from fairckd.explain import explain, importance_by_group, lime_explain, lime_figure, pdp_ice
 from fairckd.models import make_classifier
 from fairckd.preprocessing import make_preprocessor
 
@@ -40,7 +40,7 @@ insight(imp.index[0],
         bars=[(f, v, "teal" if i == 0 else "slate") for i, (f, v) in enumerate(imp["Overall"].head(5).items())],
         caption="Top 5 features, mean |SHAP value|", fmt="{:.2f}")
 
-t1, t2, t3 = st.tabs(["Global importance", f"By {at.lower()}", "Single patient"])
+t1, t2, t4, t3 = st.tabs(["Global importance", f"By {at.lower()}", "Partial dependence (PDP / ICE)", "Single patient"])
 with t1:
     top = imp.head(15)[::-1]
     f = px.bar(top.reset_index(), x="Overall", y="index", orientation="h", height=30 * len(top) + 120,
@@ -64,6 +64,41 @@ with t2:
             ", ".join(f"**{k}** (Δ {v:.2f})" for k, v in spread.items()) +
             ". When the model relies on different evidence for different groups, its errors also differ: "
             "this is the mechanism behind the bias found in the Fairness Audit.")
+
+with t4:
+    name2col = {spec.label(c): c for c in X.columns}
+    opts = [f for f in imp.index if f in name2col]
+    feat = st.selectbox("Feature", opts, index=0, help="Features are listed by overall SHAP importance.")
+
+    @st.cache_data(show_spinner="Computing partial dependence…")
+    def pdp_for(key, fs, at, model_name, f):
+        return pdp_ice(model, pre, X, A, [name2col[f]], spec.labels)
+    pd_ = pdp_for(spec.key + str(len(y)), fs, at, model_name, feat)
+    show_ice = st.toggle("Show individual patients (ICE curves)", value=True)
+    import plotly.graph_objects as go
+    fig = go.Figure()
+    if show_ice:
+        for _, ice in pd_[pd_.Kind == "ICE"].groupby("Curve"):
+            fig.add_trace(go.Scatter(x=ice.Value, y=ice["CKD probability"], mode="lines", showlegend=False,
+                                     line=dict(color="rgba(148,163,184,0.35)", width=1), hoverinfo="skip"))
+    gc = group_colors(groups)
+    for g in groups:
+        gd = pd_[(pd_.Kind == "Group PDP") & (pd_.Curve == g)]
+        fig.add_trace(go.Scatter(x=gd.Value, y=gd["CKD probability"], mode="lines+markers", name=g,
+                                 line=dict(color=gc[g], width=3), marker=dict(size=5)))
+    al = pd_[pd_.Kind == "PDP"]
+    fig.add_trace(go.Scatter(x=al.Value, y=al["CKD probability"], mode="lines", name="All patients",
+                             line=dict(color="#14213D", width=2, dash="dash")))
+    fig.update_layout(title=f"How the predicted CKD risk changes with {feat}", height=460, yaxis_range=[0, 1],
+                      xaxis_title=feat, yaxis_title="Predicted CKD probability", legend_title_text="",
+                      margin=dict(t=60, b=10))
+    st.plotly_chart(fig, width="stretch", theme=None)
+    gp = pd_[pd_.Kind == "Group PDP"].pivot(index="Value", columns="Curve", values="CKD probability")
+    gap = (gp.max(axis=1) - gp.min(axis=1))
+    st.info(f"Each coloured line sets **{feat}** to the same value for every patient and averages the model's risk "
+            f"within one group. Where the lines are far apart, the same lab value leads to a different risk "
+            f"depending on the group, because the other features differ between groups. Largest gap here: "
+            f"**{gap.max():.2f}** at {feat} = {gap.idxmax():.3g}. Grey lines (ICE) are individual patients.")
 
 with t3:
     c = st.columns([1, 1, 2])

@@ -1,0 +1,3 @@
+,Feature set,Features,AUC (Logistic Regression),AUC (XGBoost)
+0,All model features,17,1.0,1.0
+1,"Without age, female (unawareness)",15,0.871,0.877

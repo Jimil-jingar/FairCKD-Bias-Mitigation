@@ -1,0 +1,11 @@
+,Model,Group,Sensitivity (internal),Sensitivity (external),Change
+0,Logistic Regression,Hispanic,0.642,0.674,0.032
+1,Logistic Regression,Non-Hispanic Asian,0.59,0.661,0.071
+2,Logistic Regression,Non-Hispanic Black,0.716,0.676,-0.04
+3,Logistic Regression,Non-Hispanic White,0.79,0.745,-0.045
+4,Logistic Regression,Other/Multi-racial,0.596,0.586,-0.01
+5,XGBoost,Hispanic,0.635,0.661,0.026
+6,XGBoost,Non-Hispanic Asian,0.492,0.629,0.137
+7,XGBoost,Non-Hispanic Black,0.661,0.63,-0.031
+8,XGBoost,Non-Hispanic White,0.751,0.717,-0.034
+9,XGBoost,Other/Multi-racial,0.647,0.517,-0.13

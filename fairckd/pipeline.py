@@ -13,10 +13,13 @@ from . import SEED, plots
 from .data import ROOT, group_summary
 from .diagnosis import train_final_model
 from .evaluation import bootstrap_compare, cross_validate, downsample_group, summarize
-from .explain import explain, importance_by_group
+from .drift import data_drift, fairness_drift, prevalence_drift, sensitivity_drift
+from .explain import explain, importance_by_group, pdp_ice
 from .fairness import FAIR, PERF, calibration_by_group, fairness_report, reference_values
 from .features import feature_ranking
-from .mitigation import BASELINE, EXPGRAD, HYBRID, METHODS, REJECT, REWEIGH, SHORT, SMOTE, THRESH, UNAWARE, fit_predict
+from .proxy import proxy_audit
+from .mitigation import (ADVERSARIAL, BASELINE, EXPGRAD, HYBRID, METHODS, REJECT, REWEIGH, SHORT, SMOTE, THRESH,
+                         UNAWARE, fit_predict, supports)
 from .select import nested_select, pareto_front
 from .models import MODEL_NAMES, make_classifier
 from .preprocessing import make_preprocessor, missing_report
@@ -80,6 +83,8 @@ def run_experiment(spec, feature_set, attribute, models=MODEL_NAMES, mitigation_
     R["group_summary"] = group_summary(X, y, A)
     R["missing"] = missing_report(X, A)
     R["feature_ranking"] = feature_ranking(X, y, spec.labels)
+    log("[3b]  Proxy-feature audit (how much group information the features carry)")
+    R["proxy_features"], R["proxy_auc"] = proxy_audit(X, A, spec.labels, proxy)
 
     log("[4-6] Training models + fairness audit")
     raw, base_preds = {}, {}
@@ -116,7 +121,7 @@ def run_experiment(spec, feature_set, attribute, models=MODEL_NAMES, mitigation_
         for meth in methods:
             if meth == UNAWARE and not proxy:
                 continue
-            if meth == EXPGRAD and m == "KNN":
+            if not supports(meth, m):
                 continue
             d, pp = cross_validate(X, y, A, m, meth, n_repeats=repeats_mit, threshold=thr, proxy_cols=proxy,
                                    return_predictions=True)
@@ -167,13 +172,20 @@ def run_experiment(spec, feature_set, attribute, models=MODEL_NAMES, mitigation_
         Xe, ye, Ae = external.get(feature_set, attribute)
         rows = []
         for m in mitigation_models:
-            for meth in [BASELINE, REWEIGH, SMOTE, EXPGRAD, THRESH, REJECT, HYBRID]:
+            for meth in [BASELINE, REWEIGH, SMOTE, EXPGRAD, ADVERSARIAL, THRESH, REJECT, HYBRID]:
+                if not supports(meth, m):
+                    continue
                 p, pr = fit_predict(meth, m, X, y, A, Xe, Ae, threshold=thr, proxy_cols=proxy)
                 r = fairness_report(ye, p, Ae, pr)
                 rows.append({"Model": m, "Method": SHORT[meth], **{k: r[k] for k in
                              ["Accuracy", "Balanced acc.", "Recall", "AUC", "EOpp diff", "EOdds diff"]},
                              **{k: r[k] for k in r if k.startswith("TPR [")}})
         R["external"] = pd.DataFrame(rows).round(3)
+        log("[*]   Monitoring: data, prevalence and fairness drift between the two cohorts")
+        R["data_drift"] = data_drift(X, A, Xe, Ae, spec.labels)
+        R["prevalence_drift"] = prevalence_drift(y, A, ye, Ae)
+        R["fairness_drift"] = fairness_drift(R["mitigation_raw"], R["external"], SHORT)
+        R["sensitivity_drift"] = sensitivity_drift(R["baseline_raw"], R["external"], sorted(A.unique()))
 
     if representation_group:
         log(f"[*]   Representation-bias experiment (under-sampling '{representation_group}')")
@@ -194,6 +206,9 @@ def run_experiment(spec, feature_set, attribute, models=MODEL_NAMES, mitigation_
     sv = explain(xgb, pre, X, spec.labels)
     R["shap_by_group"] = importance_by_group(sv, A)
     R["lime_shap_agreement"] = lime_agreement(xgb, pre, X, A, sv, spec)
+    name2col = {spec.label(c): c for c in X.columns}
+    top_cols = [name2col[f] for f in R["shap_by_group"].index[:3] if f in name2col]
+    R["pdp_ice"] = pdp_ice(xgb, pre, X, A, top_cols, spec.labels)
 
     log("[9]   Training final fairness-aware model for decision support")
     train_final_model(spec, feature_set, attribute)
@@ -240,6 +255,10 @@ def run_experiment(spec, feature_set, attribute, models=MODEL_NAMES, mitigation_
     save("13_pareto_select", plots.pareto_select(R["pareto"], R["select_raw"]))
     if "external" in R:
         save("14_external_validation", plots.external(R["external"], groups))
+    save("15_proxy_audit", plots.proxy(R["proxy_features"], R["proxy_auc"]))
+    save("16_pdp_by_group", plots.pdp_groups(R["pdp_ice"]))
+    if "fairness_drift" in R:
+        save("17_drift", plots.drift(R["fairness_drift"], R["data_drift"]))
     R["figures"] = F
     R["runtime_min"] = round((time.time() - t0) / 60, 1)
 

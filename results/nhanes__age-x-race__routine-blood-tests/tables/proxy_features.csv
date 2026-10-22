@@ -1,0 +1,18 @@
+,Feature,Description,MI with group,Max standardised mean difference,Highest in,Lowest in,Potential proxy
+0,age,Age (years),0.6873,1.866,60+ Non-Hispanic White,<60 Other/Multi-racial,Yes
+1,bun,Blood urea nitrogen (mg/dl),0.1019,1.178,60+ Non-Hispanic White,<60 Non-Hispanic Black,Yes
+2,sbp,Systolic BP (mm Hg),0.0924,1.079,60+ Non-Hispanic Black,<60 Non-Hispanic Asian,Yes
+3,htn,Hypertension (BP >= 140/90),0.0541,0.816,60+ Non-Hispanic Black,<60 Non-Hispanic White,Yes
+4,glucose,Serum glucose (mg/dl),0.053,0.57,60+ Hispanic,<60 Non-Hispanic White,Yes
+5,bmi,BMI (kg/m2),0.0447,0.772,<60 Non-Hispanic Black,60+ Non-Hispanic Asian,Yes
+6,dm,Diabetes (self-reported),0.0369,0.797,60+ Other/Multi-racial,<60 Hispanic,Yes
+7,dbp,Diastolic BP (mm Hg),0.0362,0.495,<60 Non-Hispanic Black,60+ Non-Hispanic White,No
+8,potassium,Potassium (mmol/L),0.0358,0.773,60+ Non-Hispanic White,<60 Non-Hispanic Black,Yes
+9,rbc,RBC (million cells/uL),0.0276,0.64,<60 Non-Hispanic Asian,60+ Other/Multi-racial,Yes
+10,albumin_serum,Serum albumin (g/dl),0.0245,0.671,<60 Non-Hispanic Asian,60+ Non-Hispanic Black,Yes
+11,sodium,Sodium (mmol/L),0.0238,0.402,60+ Other/Multi-racial,<60 Non-Hispanic Asian,No
+12,hemo,Haemoglobin (g/dl),0.02,0.638,<60 Non-Hispanic White,60+ Non-Hispanic Black,Yes
+13,wbc,WBC (1000 cells/uL),0.0173,0.162,<60 Non-Hispanic White,60+ Non-Hispanic Asian,No
+14,hct,Haematocrit (%),0.0084,0.51,<60 Non-Hispanic White,60+ Non-Hispanic Black,Yes
+15,uric_acid,Uric acid (mg/dl),0.0017,0.531,60+ Non-Hispanic Black,<60 Hispanic,Yes
+16,female,Female,0.0002,0.326,<60 Non-Hispanic Black,60+ Other/Multi-racial,No
