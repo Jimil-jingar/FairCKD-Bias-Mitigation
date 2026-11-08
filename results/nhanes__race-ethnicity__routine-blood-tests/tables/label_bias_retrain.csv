@@ -1,0 +1,5 @@
+Model,CKD label,CKD prevalence (%),EOdds gap,Balanced acc.
+Logistic Regression,2021 race-free,18.55,0.204 ± 0.012,0.735 ± 0.001
+Logistic Regression,2009 race-based,18.9,0.214 ± 0.015,0.737 ± 0.002
+XGBoost,2021 race-free,18.55,0.259 ± 0.027,0.736 ± 0.003
+XGBoost,2009 race-based,18.9,0.222 ± 0.030,0.740 ± 0.004
