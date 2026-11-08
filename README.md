@@ -3,7 +3,7 @@
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-fairckd.streamlit.app-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://fairckd.streamlit.app/)
 [![Project Website](https://img.shields.io/badge/Project%20Website-GitHub%20Pages-0F766E?style=for-the-badge&logo=github&logoColor=white)](https://jimil-jingar.github.io/FairCKD-Bias-Mitigation/)
 
-**▶ Try the app live: https://fairckd.streamlit.app/** (no installation needed)
+**▶ Try the app live: https://fairckd.streamlit.app/** (no installation needed; if the app has been idle, it takes about 30 seconds to wake up)
 
 Built by **Jimil Jingar** · Guide: Ramizraja Shethwala · Co-guide: Robin Hojiwala<br>
 Department of Artificial Intelligence & Data Science, PIET, Parul University
